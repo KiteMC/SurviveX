@@ -1,0 +1,868 @@
+# Full color code support and some variables
+# Keep in mind that variables wont work for some lines, when it will for anothers :)
+# Just keep them where there are now and everything will be ok :)
+# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# [serverName] to show server name
+# [playerName] to show target player name
+# [playerDisplayName] to show target player display name
+# [lvl] to show target player level
+# [exp] to show target player total exp
+# [hp] to show target player health
+# [maxHp] to show target player max health
+# [hunger] to show target player hunger level
+# [gameMode] to show target player gamemode
+# [prefix] to show target player prefix if possible
+# [suffix] to show target player suffix if possible
+# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# [senderName] to show Sender player name
+# [senderDisplayName] to show Sender player display name
+# [senderLvl] to show Sender player level
+# [senderExp] to show Sender player total exp
+# [senderHp] to show Sender player health
+# [senderMaxHp] to show Sender player max health
+# [senderHunger] to show Sender player hunger level
+# [senderGameMode] to show Sender player gamemode
+# [senderPrefix] to show Sender player prefix if possible
+# [senderSuffix] to show Sender player suffix if possible
+# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# [sourceName] to show source player name
+# [sourceDisplayName] to show source player display name
+# [sourceLvl] to show source player level
+# [sourceExp] to show source player total exp
+# [sourceHp] to show source player health
+# [sourceMaxHp] to show source player max health
+# [sourceHunger] to show source player hunger level
+# [sourceGameMode] to show source player gamemode
+# [sourcePrefix] to show source player prefix if possible
+# [sourceSuffix] to show source player suffix if possible
+# ***********************************************
+# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If line starts with !actionbar! then player will get action bar message defined after this variable
+# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+# <T> and </T> required, other is optional
+# Use /n to break line
+# To have more than one JSON message use <Next>
+# <C> performs command as a player who clicked
+# <CC> performs command from console once
+# <CCI> performs command from console every time player clicks text
+# <URL> includes url
+info:
+  # Use !prefix! in any locale line to automatically include this prefix
+  prefix: '&e[&cCMI&e] '
+  NoPermission: '&cJus neturite tam jokių teisių!'
+  CantHavePermission: '&cJus negalite turėti šio leidimo!'
+  WrongGroup: '&cYou are in wrong group for this!'
+  NoPlayerPermission: '&c[playerName] neturi teisės: [permission]'
+  Ingame: '&cJus galite tai naudoti tik būdami prisijungę!'
+  NoInformation: '&cNerasta jokios informacijos!'
+  Console: '&cKonsole'
+  FromConsole: '&cJus tai galite naudoti tik konsolėje!'
+  NotOnline: '&cŽaidėjas yra neprisijungęs!'
+  NobodyOnline: '&cNėra nei vieno prisijungusio žaidėjo!'
+  Same: '&cNegalite atidaryti savo inventoriaus redagavimui!'
+  cantLoginWithDifCap: '&cNeina prisijungti su kito dydžio raidėmis! Senas vardas:
+    &e[oldName]&c. Dabartinis: &e[currentName]'
+  Searching: '&7Ieškomi žaidėjo duomenys, prašome palaukti, tai gali užimti kažkiek
+    laiko'
+  NoPlayer: '&cToks žaidėjas serveryje neegzistuoja!'
+  NoCommand: '&cTokia komanda serveryje neegzistuoja!'
+  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
+  cantFindCommand: '&cNepavyko rasti komandos &7[%1]&c, ar jus turėjote galvoje &7[%2]&c?'
+  nolocation: '&4Can''t find suitable location'
+  PurgeNotEnabled: '&cValymo funkcija yra išjungta konfigūracijos faile!'
+  FeatureNotEnabled: '&cŠi galimybė šiuo metu yra išjungta!'
+  TeamManagementDisabled: '&7Šios funkcijos funkcionalumas bus ribotas, o DisableTeamManagement
+    nustatyta kaip true!'
+  ModuleNotEnabled: '&cŠis modulys yra išjungtas!'
+  versionNotSupported: '&cŠios funkcijos serverio versija nepalaikoma'
+  bungeeNoGo: '&cŠi funkcija neveiks benunge tinklo serveriuose'
+  clickToTeleport: '&bSpauskite, kad teleportuotis'
+  UseMaterial: '&4Prašome naudoti medžiagų pavadinimus!'
+  IncorrectMaterial: '&4Incorrect material name!'
+  UseInteger: '&4Prašome naudoti tik skaičius!'
+  UseBoolean: '&4Prašome naudoti tik True arba False!'
+  NoLessThan: '&4Skaičius negali būti mažesnis už [amount]!'
+  NoMoreThan: '&4Skaičius negali būti didesnis už [amount]'
+  NoGameMode: '&cPrašome naudoti 0/1/2/3 arba Survival/Creative/Adventure/Spectator
+    arba s/c/a/sp!'
+  NoWorld: '&4Toks pasaulis neegzistuoja!'
+  IncorrectLocation: '&4Įvesta lokacija yra neteisinga!'
+  NameChange: '&b[playerDisplayName] &7prisijungė į serverį, kitaip žinomas: &b[namelist]'
+  Cooldowns: '&cŠios komandos negalite naudoti taip dažnai, palaukite &7[time]'
+  specializedCooldowns: '&cŠios komandos negalite naudoti taip dažnai, palaukite &7[time]'
+  specializedRunning: '&eCommand still running, please wait &6[time]'
+  CooldownOneTime: '&cŠią komandą galima naudoti tik vieną kartą!'
+  WarmUp:
+    canceled: '&7Komanda buvo atšaukta, nes pajudėjote iš vietos'
+    counter: '!actionbar!&b--> &7[time] &b<--'
+    DontMove: '!title!!subtitle!&bPrašome nejudėti!'
+    Boss:
+      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
+      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
+  Spawner: '&r[type] Narvas'
+  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
+  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+  Elevator:
+    created: '&bSukurtas lifto ženklas'
+  CantPlaceSpawner: '&cJus negalite dėti spawnerių arti vienas kito (&7[range]&c)'
+  ChunksLoading: '&eVis dar įkeliami pasaulio masto duomenys. Palaukite šiek tiek
+    ir bandykite dar kartą.'
+  ShulkerBox: Šulkerio dėžutė
+  CantUseNonEncrypted: '!actionbar!&cKomandos ant šio daikto nėra užkoduotos. Jus
+    negalite naudoti jį!'
+  CantDecode: '!actionbar!&cNepavyko iššifruoti pranešimo / komandos. Rakto faile
+    yra neteisingas šios užduoties raktas. Apie tai informuokite serverio administraciją'
+  Show: '&bRodyti'
+  Remove: '&cPašalinti'
+  Back: '&bGrįžti'
+  Forward: '&cĮ priekį'
+  Update: '&bAtnaujinti'
+  Save: '&aIšsaugoti'
+  Delete: '&cIštrinti'
+  Click: '&bPaspausti'
+  Preview: '&ePreview'
+  PasteOld: '&bĮklijuoti seną'
+  ClickToPaste: '&bPaspauskite, kad įklijuotumėte į chat'
+  CantTeleportWorld: '&cJus negalite atsiteleportuoti į šį pasaulį'
+  CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
+  CantTeleport: '&cJus negalite teleportuotis, nes turite per daug ribotų daiktų.
+    Pereikite per šią eilutę, kad pamatytumėte didžiausią leistiną daiktų kiekį.'
+  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
+  teleported: '&bJus nusiteleportavote.'
+  BlackList: '&7[material] [amount] &bDidžiausias: [max]'
+  PlayerSpliter: '&7----- &b[playerDisplayName] &7-----'
+  Spliter: '&e-------------------------------------------'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
+  singleSpliter: '&e-'
+  SpliterMiddle: ' &6[value] '
+  ListSpliter: ', '
+  ProgressBarFill: '&a▏'
+  ProgressBarEmpty: '&7▏'
+  nothingInHand: '&cJus turite laikyti daiktą rankoje'
+  nothingInHandLeather: '&cJus turite laikyti odinį daiktą rankoje'
+  nothingToShow: '&cNėra ko parodyti'
+  noItem: '&cNepavyko rasti tokio daikto'
+  dontHaveItem: '&cJus inventoriuje neturite &7[amount]x [itemName]'
+  wrongWorld: '&cJus negalite to daryti šiame pasaulyje.'
+  wrongPortal: '&cYou are in incorrect area of effect'
+  differentWorld: '&cSkirtingi pasauliai'
+  HaveItem: '&cJus inventoriuje turite &7[amount]x [itemName]'
+  ItemWillBreak: '!actionbar!&7Jūsų daiktas (&b[itemName]&7) greitai sulūš! &b[current]&7/&b[max]'
+  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
+  cantDoInGamemode: '&eYou can''t do this in this game mode'
+  cantDoForPlayer: '&cJus negalite to padaryti žaidėjui &7[playerDisplayName]'
+  cantDoForYourSelf: '&cJus negalite to padaryti sau'
+  cantDetermineMobType: '&cNepavyko nustatyti monstro tipo, kurio tipas buvo &7[type]'
+  cantRename: '!actionbar!&cJus negalite naudoti šio slapyvardžio'
+  confirmRedefine: '&eClick to confirm redefining'
+  cantEdit: '&eYou can''t edit this'
+  wrongName: '&cNeteisingas slapyvardis'
+  unknown: unknown
+  invalidName: '&cNetinkamas slapyvardis'
+  alreadyexist: '&4Šis slapyvardis jau yra užimtas'
+  dontexist: '&4Nerasta jokių rezultatų su šiuo slapyvardžiu'
+  worldDontExist: '&cĮ šį pasaulį daugiau negalima patekti. Čia, jūsų atiteleportuoti
+    negalime!'
+  flyingToHigh: '&cJus negalite skraidyti taip aukštai, max aukštis yra &7[max]&c!'
+  specializedItemFail: '&cNeįmanoma nustatyti specializuotų daiktų poreikio pagal
+    vertę: &7[value]'
+  sunSpeeding: Miega [count] iš [total] [hour] val. [speed]X greitis
+  sleepersRequired: '&f[sleeping] &7apie &f[required] &7miegojimas nuo būtino nakties
+    laiko pagreitinimo'
+  sunSpeedingTitle: '&b[hour]'
+  skippingNight: '!title!&7Skipping entire night'
+  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
+  repairConfirm: '&7Spauskite, kad patvirtinti &b[items] &7daiktų sutaisymą už &b[cost]'
+  bookDate: '&7Buvo parašyta &b[date]'
+  maintenance: '&7Priežiūros režimas'
+  notSet: nenustatyta
+  mapLimit: '&cNegalima peržengti 30 000 000 blokų'
+  startedEditingPainting: '&7Jus pradėjote redaguoti paveikslą. Paspauskite ant kito
+    bloko, kad baigtumėte redagavimą.'
+  canceledEditingPainting: '&7Jus baigėte paveikslo redagavimą'
+  changedPainting: '!actionbar!&7Paveikslas pakeistas į &b[name] &7, kurio id buvo
+    &b[id]'
+  noSpam: '!title!&cPrašome nespaminti!'
+  noCmdSpam: '!title!&cPrašome nespaminti komandų!'
+  spamConsoleInform: '&cŽaidėjas (&7[playerName]&c) pažeidė (&7[rules]&c) pokalbių
+    filtras susekė bandymą parašyti:&r [message]'
+  lookAtSign: '&7Žiūrėkite į sign'
+  lookAtBlock: '&7Žiūrėkite į bloką'
+  lookAtEntity: '&7Žiūrėkite į mob'
+  noSpace: '&eNot enough free space'
+  notOnGround: '&cJus negalite to daryti, kai esate skraidymo režime.'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '&7Sveikiname žaidėją &b[playerDisplayName] &7pirmą kartą prisijungus
+    į serverį!'
+  LogoutCustom: ' &7[playerDisplayName] &cpaliko serverį'
+  LoginCustom: ' &7[playerDisplayName] &bprisijungė į serverį'
+  deathlocation: '&7Jus mirėte x:&b[x]&7, y:&b[y]&7, z:&b[z]&7 koordinatėse, &b[world]&7
+    pasaulyje.'
+  book:
+    exploit: '&cYou cant create book with more than [amount] pages'
+  combat:
+    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
+      Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    bossBarPvp: '&cCombat mode [autoTimeLeft]'
+    bossBarPve: '&2Combat mode [autoTimeLeft]'
+  bungee:
+    Online: '&aĮjungtas'
+    Offline: '&cIšjungtas'
+    not: '&cServeris nepriklauso bungee tinklui'
+    noserver: '&cNepavyko rasti serverio su tokiu pavadinimu!'
+    server: '&7Serveris: &b[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&cPrisijunges'
+    Offline: '&cAtsijunges'
+    TrueColor: '&2'
+    FalseColor: '&4'
+    'True': '&aTiesa'
+    'False': '&cNetiesa'
+    Enabled: '&aĮjungtas'
+    Disabled: '&cIšjunktas'
+    survival: '&cIšlikimas'
+    creative: '&aKūrybinis'
+    adventure: '&cNuotykių'
+    spectator: '&cStebėtojas'
+    flying: '&cSkraidyti'
+    notflying: '&cNe skraidyti'
+  noSchedule: '&cSchedule tokiu pavadinimu nepavyko rasti'
+  totem:
+    cooldown: '&7Totemo cooldownas: &b[time]'
+    warmup: '&7Totemo efektas: &b[time]'
+    cantConsume: '&cTotemo naudojimas buvo atmestas dėl jo cooldowno laiko'
+  Inventory:
+    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+  InventorySave:
+    info: '&7Info: &b[playerDisplayName]'
+    saved: '&b[time] &7Inventorius išsaugotas, kurio id: &b[id]'
+    NoSavedInv: '&7Šis žaidėjas neturi jokių išsaugotų inventorių'
+    NoEntries: '&4Failas egzistuoja, tačiau išsaugotų inventorių nepavyko rasti!'
+    CantFind: '&cNepavyko rasti inventoriaus su tokiu id'
+    TopLine: '&7----------- &b[playerDisplayName] išsaugotas inventorius &7-----------'
+    List: '&7id: &b[id]&7. &b[time]'
+    KillerSymbol: '&c ☠'
+    Click: '&bSpauskite, kad patikrintumėte ([id]) išsaugotą inventorių'
+    IdDontExist: '&4Šis išsaugotas inventoriaus ID neegzistuoja!'
+    Deleted: '&bIšsaugotas inventorius buvo sėkmingai ištrintas!'
+    Restored: '&bJus atstatėte &7[sourcename] &binventorių žaidėjui &7[targetname].'
+    GotRestored: '&7Jūsų inventorius buvo sėkmingai atstatytas iš &b[sourcename] &7išsaugoto
+      inventoriaus, &b[time]'
+    LoadForSelf: '&7Užkrauti jūsų išsaugotą inventorių'
+    LoadForOwner: '&7Užkrauti šį inventorių savininkui'
+    NextInventory: '&7Kitas inventorius'
+    PreviousInventory: '&7Ankstesnis inventorius'
+    Editable: '&7Redagavimo režimas įjungtas'
+    NonEditable: '&7Redagavimo režimas išjungtas'
+  TimeNotRecorded: '&e-No record-'
+  years: '&b[years] &7metai '
+  oneYear: '&b[years] &7metai '
+  day: '&b[days] &7dienos '
+  oneDay: '&e[days] &7diena '
+  hour: '&b[hours] &7valandos '
+  oneHour: '&b[hours] &7valanda '
+  min: '&b[mins] &7minutės '
+  sec: '&b[secs] &7sekundės '
+  vanishSymbolOn: '&8[&7V&8]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '&7[&cAFK&7]&r'
+  afkSymbolOff: ''
+  nextPageConsole: '&fFor next page perform &5[command]'
+  prevPage: '&b----<< &7Atgal '
+  prevPageGui: '&7Ankstesnis puslapis '
+  prevPageClean: '&7Atgal '
+  prevPageOff: '&b----<< &7Atgal '
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&b Toliau &7>>----'
+  nextPageGui: '&7Sekantis puslapis'
+  nextPageClean: '&7 Toliau'
+  nextPageOff: '&7 Sekantis &b>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&b[current]&7/&b[total]'
+  pageCountHover: '&b[totalEntries] įrašai'
+  skullOwner: '!actionbar!&7Owner:&r [playerName]'
+  beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
+  circle: '&3Apskritimas'
+  square: '&5Kvadratas'
+  clear: '&7Clear'
+  protectedArea: '&cApsaugota teritorija. Čia to negalite daryti.'
+  valueToLong: '&cVertė per didelė. Max: [max]'
+  valueToShort: '&cVertė per maža. Min: [min]'
+  pvp:
+    noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
+  InvEmpty:
+    armor: '&eJūsų šarvų vietos turėtų būti tuščios!'
+    hand: '&eJūsų ranka turėtų būti tuščia!'
+    maininv: '&ePagrindinis jūsų inventorius neturėtų būti tuščias!'
+    maininvslots: '&eJūsų pagrindinis inventorius turėtų būti mažiausiai &6[count]
+      &elaisvų vietų!'
+    inv: '&eJūsų inventorius turėtų būti tuščios!'
+    offhand: '&eJūsų kairė ranka turėtų būti tuščia!'
+    quickbar: '&eInventoriaus greita juosta turėtų būti tuščia!'
+    quickbarslots: '&eGreita juosta turėtų būti atlaisvinta mažiausiai &6[count] &elaisvų
+      vietų!'
+    subinv: '&eYour sub inventory should be empty!'
+    subinvslots: '&eJūsų  kitas inventorius turėtų būti atlaisvinta mažiausiai &6[count]
+      &elaisvų vietų!'
+  pickIcon: '&8Pick icon'
+  DamageCause:
+    block_explosion: Sprogimas
+    contact: Bloko žala
+    cramming: cramming
+    custom: Nežinoma
+    dragon_breath: Drakono Kvėpavimas
+    drowning: Paskendimas
+    dryout: Išdžiūvimas
+    entity_attack: Subjekto ataka
+    entity_explosion: Sprogimas
+    entity_sweep_attack: entity sweep attack
+    fall: Nukritimas
+    falling_block: Prispaudė blokai
+    fire: Ugnis
+    fire_tick: Ugnis
+    fly_into_wall: Skrisdamas atsimušo į sieną
+    freeze: freeze
+    hot_floor: Magmaos Blokas
+    lava: Lava
+    lightning: Žaibas
+    magic: Magija
+    melting: Ištirpo
+    poison: Nuodų
+    projectile: Sviedinio
+    starvation: Bado
+    suffocation: Uždusimas
+    suicide: Nusižudymas
+    thorns: Spyglių
+    void: Pasaulio kraštas
+    wither: Wither
+  Biomes:
+    BADLANDS: Badlands
+    BADLANDS_PLATEAU: Badlands plateau
+    BAMBOO_JUNGLE: Bamboo jungle
+    BAMBOO_JUNGLE_HILLS: Bamboo jungle hills
+    BASALT_DELTAS: Basalt deltas
+    BEACH: Beach
+    BIRCH_FOREST: Birch forest
+    BIRCH_FOREST_HILLS: Birch forest hills
+    COLD_OCEAN: Cold ocean
+    CRIMSON_FOREST: Crimson forest
+    CUSTOM: Custom
+    DARK_FOREST: Dark forest
+    DARK_FOREST_HILLS: Dark forest hills
+    DEEP_COLD_OCEAN: Deep cold ocean
+    DEEP_FROZEN_OCEAN: Deep frozen ocean
+    DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
+    DEEP_OCEAN: Deep ocean
+    DEEP_WARM_OCEAN: Deep warm ocean
+    DESERT: Desert
+    DESERT_HILLS: Desert hills
+    DESERT_LAKES: Desert lakes
+    DRIPSTONE_CAVES: Dripstone caves
+    END_BARRENS: End barrens
+    END_HIGHLANDS: End highlands
+    END_MIDLANDS: End midlands
+    ERODED_BADLANDS: Eroded badlands
+    FLOWER_FOREST: Flower forest
+    FOREST: Forest
+    FROZEN_OCEAN: Frozen ocean
+    FROZEN_RIVER: Frozen river
+    GIANT_SPRUCE_TAIGA: Giant spruce taiga
+    GIANT_SPRUCE_TAIGA_HILLS: Giant spruce taiga hills
+    GIANT_TREE_TAIGA: Giant tree taiga
+    GIANT_TREE_TAIGA_HILLS: Giant tree taiga hills
+    GRAVELLY_MOUNTAINS: Gravelly mountains
+    ICE_SPIKES: Ice spikes
+    JUNGLE: Jungle
+    JUNGLE_EDGE: Jungle edge
+    JUNGLE_HILLS: Jungle hills
+    LUKEWARM_OCEAN: Lukewarm ocean
+    LUSH_CAVES: Lush caves
+    MODIFIED_BADLANDS_PLATEAU: Modified badlands plateau
+    MODIFIED_GRAVELLY_MOUNTAINS: Modified gravelly mountains
+    MODIFIED_JUNGLE: Modified jungle
+    MODIFIED_JUNGLE_EDGE: Modified jungle edge
+    MODIFIED_WOODED_BADLANDS_PLATEAU: Modified wooded badlands plateau
+    MOUNTAINS: Mountains
+    MOUNTAIN_EDGE: Mountain edge
+    MUSHROOM_FIELDS: Mushroom fields
+    MUSHROOM_FIELD_SHORE: Mushroom field shore
+    NETHER_WASTES: Nether wastes
+    OCEAN: Ocean
+    PLAINS: Plains
+    RIVER: River
+    SAVANNA: Savanna
+    SAVANNA_PLATEAU: Savanna plateau
+    SHATTERED_SAVANNA: Shattered savanna
+    SHATTERED_SAVANNA_PLATEAU: Shattered savanna plateau
+    SMALL_END_ISLANDS: Small end islands
+    SNOWY_BEACH: Snowy beach
+    SNOWY_MOUNTAINS: Snowy mountains
+    SNOWY_TAIGA: Snowy taiga
+    SNOWY_TAIGA_HILLS: Snowy taiga hills
+    SNOWY_TAIGA_MOUNTAINS: Snowy taiga mountains
+    SNOWY_TUNDRA: Snowy tundra
+    SOUL_SAND_VALLEY: Soul sand valley
+    STONE_SHORE: Stone shore
+    SUNFLOWER_PLAINS: Sunflower plains
+    SWAMP: Swamp
+    SWAMP_HILLS: Swamp hills
+    TAIGA: Taiga
+    TAIGA_HILLS: Taiga hills
+    TAIGA_MOUNTAINS: Taiga mountains
+    TALL_BIRCH_FOREST: Tall birch forest
+    TALL_BIRCH_HILLS: Tall birch hills
+    THE_END: The end
+    THE_VOID: The void
+    WARM_OCEAN: Warm ocean
+    WARPED_FOREST: Warped forest
+    WOODED_BADLANDS_PLATEAU: Wooded badlands plateau
+    WOODED_HILLS: Wooded hills
+    WOODED_MOUNTAINS: Wooded mountains
+  EntityType:
+    area_effect_cloud: Area effect cloud
+    armor_stand: Armor stand
+    arrow: Arrow
+    axolotl: Axolotl
+    bat: Bat
+    bee: Bee
+    blaze: Blaze
+    boat: Boat
+    cat: Cat
+    cave_spider: Cave spider
+    chicken: Chicken
+    cod: Cod
+    cow: Cow
+    creeper: Creeper
+    dolphin: Dolphin
+    donkey: Donkey
+    dragon_fireball: Dragon fireball
+    dropped_item: Dropped item
+    drowned: Drowned
+    egg: Egg
+    elder_guardian: Elder guardian
+    enderman: Enderman
+    endermite: Endermite
+    ender_crystal: Ender crystal
+    ender_dragon: Ender dragon
+    ender_pearl: Ender pearl
+    ender_signal: Ender signal
+    evoker: Evoker
+    evoker_fangs: Evoker fangs
+    experience_orb: Experience orb
+    falling_block: Falling block
+    fireball: Fireball
+    firework: Firework
+    fishing_hook: Fishing hook
+    fox: Fox
+    ghast: Ghast
+    giant: Giant
+    glow_item_frame: Glow item frame
+    glow_squid: Glow squid
+    goat: Goat
+    guardian: Guardian
+    hoglin: Hoglin
+    horse: Horse
+    husk: Husk
+    illusioner: Illusioner
+    iron_golem: Iron golem
+    item_frame: Item frame
+    leash_hitch: Leash hitch
+    lightning: Lightning
+    llama: Llama
+    llama_spit: Llama spit
+    magma_cube: Magma cube
+    marker: Marker
+    minecart: Minecart
+    minecart_chest: Minecart chest
+    minecart_command: Minecart command
+    minecart_furnace: Minecart furnace
+    minecart_hopper: Minecart hopper
+    minecart_mob_spawner: Minecart mob spawner
+    minecart_tnt: Minecart tnt
+    mule: Mule
+    mushroom_cow: Mushroom cow
+    ocelot: Ocelot
+    painting: Painting
+    panda: Panda
+    parrot: Parrot
+    phantom: Phantom
+    pig: Pig
+    piglin: Piglin
+    piglin_brute: Piglin brute
+    pillager: Pillager
+    player: Player
+    polar_bear: Polar bear
+    primed_tnt: Primed tnt
+    pufferfish: Pufferfish
+    rabbit: Rabbit
+    ravager: Ravager
+    salmon: Salmon
+    sheep: Sheep
+    shulker: Shulker
+    shulker_bullet: Shulker bullet
+    silverfish: Silverfish
+    skeleton: Skeleton
+    skeleton_horse: Skeleton horse
+    slime: Slime
+    small_fireball: Small fireball
+    snowball: Snowball
+    snowman: Snowman
+    spectral_arrow: Spectral arrow
+    spider: Spider
+    splash_potion: Splash potion
+    squid: Squid
+    stray: Stray
+    strider: Strider
+    thrown_exp_bottle: Thrown exp bottle
+    trader_llama: Trader llama
+    trident: Trident
+    tropical_fish: Tropical fish
+    turtle: Turtle
+    unknown: Unknown
+    vex: Vex
+    villager: Villager
+    vindicator: Vindicator
+    wandering_trader: Wandering trader
+    witch: Witch
+    wither: Wither
+    wither_skeleton: Wither skeleton
+    wither_skull: Wither skull
+    wolf: Wolf
+    zoglin: Zoglin
+    zombie: Zombie
+    zombie_horse: Zombie horse
+    zombie_villager: Zombie villager
+    zombified_piglin: Zombified piglin
+  EnchantAliases:
+    protection_fire:
+    - FireProtection
+    damage_all:
+    - Sharpness
+    arrow_fire:
+    - Flame
+    soul_speed:
+    - SOULSPEED
+    water_worker:
+    - AquaAffinity
+    arrow_knockback:
+    - Punch
+    loyalty:
+    - LOYALTY
+    depth_strider:
+    - DepthStrider
+    vanishing_curse:
+    - VanishingCurse
+    durability:
+    - Unbreaking
+    knockback:
+    - Knockback
+    luck:
+    - Luck
+    binding_curse:
+    - BindingCurse
+    loot_bonus_blocks:
+    - Fortune
+    protection_environmental:
+    - Protection
+    dig_speed:
+    - Efficiency
+    mending:
+    - Mending
+    frost_walker:
+    - FrostWalker
+    lure:
+    - Lure
+    loot_bonus_mobs:
+    - Looting
+    piercing:
+    - PIERCING
+    protection_explosions:
+    - BlastProtection
+    damage_undead:
+    - Smite
+    multishot:
+    - MULTISHOT
+    fire_aspect:
+    - FireAspect
+    channeling:
+    - CHANNELING
+    sweeping_edge:
+    - SweepingEdge
+    thorns:
+    - Thorns
+    damage_arthropods:
+    - BaneOfArthropods
+    oxygen:
+    - Respiration
+    riptide:
+    - RIPTIDE
+    silk_touch:
+    - SilkTouch
+    quick_charge:
+    - QUICKCHARGE
+    protection_projectile:
+    - ProjectileProtection
+    impaling:
+    - IMPALING
+    protection_fall:
+    - FallProtection
+    - FeatherFalling
+    arrow_damage:
+    - Power
+    arrow_infinite:
+    - Infinity
+  PotionEffectAliases:
+    speed:
+    - Speed
+    slow:
+    - Slow
+    fast_digging:
+    - Fast digging
+    slow_digging:
+    - Slow digging
+    increase_damage:
+    - Increase damage
+    heal:
+    - Heal
+    harm:
+    - Harm
+    jump:
+    - Jump
+    confusion:
+    - Confusion
+    regeneration:
+    - Regeneration
+    damage_resistance:
+    - Damage resistance
+    fire_resistance:
+    - Fire resistance
+    water_breathing:
+    - Water breathing
+    invisibility:
+    - Invisibility
+    blindness:
+    - Blindness
+    night_vision:
+    - Night vision
+    hunger:
+    - Hunger
+    weakness:
+    - Weakness
+    poison:
+    - Poison
+    wither:
+    - Wither
+    health_boost:
+    - Health boost
+    absorption:
+    - Absorption
+    saturation:
+    - Saturation
+    glowing:
+    - Glowing
+    levitation:
+    - Levitation
+    luck:
+    - Luck
+    unluck:
+    - Unluck
+    slow_falling:
+    - Slow falling
+    conduit_power:
+    - Conduit power
+    dolphins_grace:
+    - Dolphins grace
+    bad_omen:
+    - Bad omen
+    hero_of_the_village:
+    - Hero of the village
+direction:
+  n: Šiaurė
+  ne: Šiaurės Rytai
+  e: Rytai
+  se: Pietryčiai
+  s: Pietūs
+  sw: Pietvakariai
+  w: Vakarai
+  nw: Šiaurės Vakarai
+modify:
+  middlemouse: '&aPaspauskite vidurinį pelės mygtuką, kad redaguoti'
+  newItem: '&7Įdėti naują daiktą čia'
+  newLine: '&b<NewLine>'
+  newLineHover: '&7Pridėti naują eilutę'
+  newPage: '&b<NewPage>'
+  newPageHover: '&7Sukurti naują puslapį'
+  removePage: '&c<RemovePage>'
+  removePageHover: '&cPanaikinti puslapį'
+  deleteSymbol: ' &c[X]'
+  deleteSymbolHover: '&cIštrinti &e[text]'
+  extraEditSymbol: ' &b!'
+  addSymbol: '&a[+]'
+  addSymbolHover: '&7Pridėti naują'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&aCancel'
+  acceptSymbol: ' &a&l[✔]'
+  acceptSymbolHover: '&aSutikti'
+  denySymbol: ' &4&l[X]'
+  denySymbolHover: '&cAtmesti'
+  enabledSymbol: '&a[+]'
+  disabledSymbol: '&c[-]'
+  enabled: '&aĮjungtas'
+  disabled: '&cIšjungtas'
+  running: '&aVeikia'
+  paused: '&cSustabdytas'
+  editSymbol: '&b✎'
+  editSymbolHover: '&7Redaguoti &b[text]'
+  editLineColor: '&f'
+  listUpSymbol: '&b⇑'
+  listUpSymbolHover: '&7Aukštyn'
+  listDownSymbol: '&b⇓'
+  listDownSymbolHover: '&7Žemyn'
+  listNumbering: '&e[number]. '
+  listAlign: '&80'
+  ChangeHover: '&7Spauskite, kad pakeistumėte'
+  ChangeCommands: '&eCommands'
+  enabledColor: '&6'
+  disabledColor: '&7'
+  commandTitle: ' &7--- &b[name] &7---'
+  commandList: ' &b[command]  '
+  emptyLine: '&7[Empty line]'
+  commandEdit: '&7Keisti sąrašą'
+  lineAddInfo: '&7Įvesti naują eilutę. Rašykite &bcancel &7, kad baigtumėte'
+  commandAddInfo: '&7Įveskite naują komandą. Rašykite &bcancel &7, kad baigtumėte'
+  commandAddInformationHover: "&b[playerName] can be used to get player name \n&eTo\
+    \ include delay in commands: \n&edelay! 5 \n&eSpecialized commands are supported.\
+    \ More info at \n&ehttps://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&7Spauskite, kad įklijuotumėte seną tekstą. Rašykite &bcancel
+    &7, kad baigtumėte veiksmą. Rašykite &bremove &7, kad ištrintumėte eilutę'
+  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
+  commandEditInfoHover: '&7Spauskite, kad įklijuotumėte seną tekstą'
+warp:
+  list: '&7[pos]. &b[warpName] &f- &7[worldName] ([x]:[y]:[z])'
+teleportation:
+  relocation: '!actionbar!&4Jūsų teleportacijos vieta buvo užstatyta. Jus buvote nuteleportuotas
+    į saugią lokaciją.'
+afk:
+  'on': '&4AFK'
+  'off': '&aŽaidžia'
+  left: '&b[playerDisplayName] &7grįžo iš AFK'
+  MayNotRespond: '&cŽaidėjas, kuriam rašote yra &7AFK&c, todėl jis gali neatsakyti.'
+  MayNotRespondStaff: '&6✦ &4Administracijos narys yra &7AFK&4, todėl jis gali neatsakyti.
+    Prašome susisiekti per discord.'
+BossBar:
+  hpBar: '&f[victim] &b[max]&f/&b[current] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8Potion efektai'
+  List: '&b[PotionName] [PotionAmplifier] &7Duration: &b[LeftDuration] &7sec'
+  NoPotions: '&cNėra'
+Information:
+  Title: '&8Žaidėjų informacija'
+  Health: '&7Gyvybės: &b[Health]/[maxHealth]'
+  Hunger: '&7Alkis: &b[Hunger]'
+  Saturation: '&7Sotumas: &b[Saturation]'
+  Exp: '&7Exp: &b[Exp]'
+  NotEnoughExp: '&7Trūksta exp: &b[Exp]'
+  NotEnoughExpNeed: '&7Trūksta exp: &b[Exp]/[need]'
+  tooMuchExp: '&7Per daug exp: &b[Exp]/[need]'
+  NotEnoughVotes: '&7Nepakankamai balsų: &b[votes]'
+  TooMuchVotes: '&7Per daug balsų: &b[votes]'
+  BadGameMode: '&cJus negalite to daryti esamam režime'
+  BadArea: '&cJus negalite įvykdyti šio veiksmo šioje teritorijoje'
+  GameMode: '&7GameMode: &b[GameMode]'
+  GodMode: '&7GodMode: &b[GodMode]'
+  Flying: '&7Skraido: &b[Flying]'
+  CanFly: '&7Gali skraidyt: &b[CanFly]'
+  Uuid: '&b[uuid]'
+  ip: '&7Ip adresas: &b[address]'
+  FirstConnection: '&7Pirmą kartą prisijungė: &b[time]'
+  Lastseen: '&7Paskutinį kartą prisijungė: &b[time]'
+  Onlinesince: '&7Prisijungęs nuo: &b[time]'
+  Money: '&7Balansas: &b[money]'
+  Group: '&7Grupė: &b[group]'
+econ:
+  disabled: '&cNeįmanoma naudoti šios komandos, kai ekonomikos palaikymas yra išjungtas'
+  noMoney: '&cJus neturite pinigų'
+  charged: '!actionbar!&fCharged: &6[amount]'
+  notEnoughMoney: '&cJus neturite pakankamai pinigų. Reikia (&7[amount]&c)'
+  tooMuchMoney: '&cJus turite per daug pinigų'
+  commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
+Elytra:
+  Speed: '&7Greitis: &b[speed]&7km/h'
+  SpeedBoost: ' &a+ '
+  SpeedSuperBoost: ' &2+ '
+  CanUse: '&cNegalima užsidėti Elytra neturint tam jokių teisių!'
+  CantGlide: '&cCan''t use elytra here!'
+  Charging: '&7Kraunama &f[percentage]&7%'
+Selection:
+  SelectPoints: '&cPasirinkite 2 taškus su žymėjimo įrankiu! Tiksliau: &7[tool]'
+  PrimaryPoint: '&7Pasirinktas &bpirmas &7žymėjimo taškas [point]'
+  SecondaryPoint: '&7Pasirinktas &bantras &7žymėjimo taškas [point]'
+  CoordsTop: '&7X:&b[x] &7Y:&b[y] &7Z:&b[z]'
+  CoordsBottom: '&7X:&b[x] &7Y:&b[y] &7Z:&b[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+NetherPortal:
+  ToHigh: '&cPortalas per didelis, didžiausias aukštis &7[max]&c!'
+  ToWide: '&cPortalas per platus, didžiausias plotis &7[max]&c!'
+  Creation: '!actionbar!&7Created [height]x[width] nether portal!'
+  Disabled: '&cPortalų kūrimas išjungtas!'
+Location:
+  Title: '&8Žaidėjo lokacija'
+  Killer: '&7Žudikas: &b[killer]'
+  OneLiner: '&7Lokacija: &b[location]'
+  DeathReason: '&7Mirties priežastis: &b[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&7Pasaulis: &b[world]'
+  X: '&7X: &b[x]'
+  Y: '&7Y: &b[y]'
+  Z: '&7Z: &b[z]'
+  Pitch: '&7Duobė: &b[pitch]'
+  Yaw: '&7Yaw: &b[yaw]'
+Locations: '&7Locations: '
+Ender:
+  Title: '&7Atidaryti ender skrynią'
+Chat:
+  localPrefix: ''
+  shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
+  shoutDeduction: '!actionbar!&cBuvo atimta &7[amount] &cuž pranešimą'
+  # Use \n to add new line
+  publicHover: '&7Išsiuntimo laikas: &b%server_time_hh:mm:ss%'
+  privateHover: '&7Išsiuntimo laikas: &b%server_time_hh:mm:ss%'
+  staffHover: '&7Išsiuntimo laikas: &b%server_time_hh:mm:ss%'
+  helpopHover: '&7Išsiuntimo laikas: &b%server_time_hh:mm:ss%'
+  link: '&l&4[&7LINK&4]'
+  item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
+  itemAmount: ' x[amount]'
+  itemEmpty: '&7[Mighty fist]'
+command:
+  help:
+    output:
+      usage: '&eUsage: &7%usage%'
+      cmdInfoFormat: '[command] &f- &e[description]'
+      cmdFormat: '&6/[command]&f[arguments]'
+      helpPageDescription: '&e* [description]'
+      explanation: '&e * [explanation]'
+      title: '&e------ ======= &6Help&e &e======= ------'
+  nocmd:
+    help:
+      info: '&eShows all available commands'
+      args: ''
+  reload:
+    help:
+      info: '&eReloads plugins config and locale files'
+      args: ''
+    info:
+      feedback: '&6Configs and locale files reloaded! Took [ms]ms'
+      failedConfig: '&4Failed to load config file! Check spelling!'
+      failedLocale: '&4Failed to load locale file! Check spelling!'

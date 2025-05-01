@@ -1,0 +1,276 @@
+# +———————————————————————————————————————————————————+ #
+# |——————————     BANITEM 配置文件     ——————————| #
+# |——————————————————      v3.5      —————————————————| #
+# +———————————————————————————————————————————————————+ #
+# |                   文档:                  | #
+# |             https://banitem.andross.fr/           | #
+# +———————————————————————————————————————————————————+ #
+# 任何错误/建议: Andross96
+# +——————————————————————————————————————————————————————————————————————————————————————————————+
+# 一般信息:
+#  - 黑名单将阻止物品的使用。
+#  - 白名单将仅允许设置的物品。
+#    -> 'message' 键表示玩家尝试使用不在白名单中的物品时发送的消息
+#    -> 'ignored' 键表示所有忽略的操作（默认情况下不会被禁止）
+#
+#  - 世界可以写成:
+#    -> 单个: 'world' ; 'world_the_end'...
+#    -> 多个: 'world, world_the_end'...
+#    -> 全部: '*'
+#    -> 全部除外: '*, !world_the_end, !world_nether': 所有世界，除了 world_the_end 和 world_nether
+#    -> 正则表达式以 "#" 开头: '#world': world, world_nether, world_the_end
+#
+#  - 物品可以写成: (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
+#    -> 单个: 'stone' ; 'dirt'...
+#    -> 多个: 'stone, dirt'
+#    -> 全部: '*' (也包括空气 [=空手]!)
+#    -> 全部除外: '*, !stone' (全部, 除了 stone)
+#    -> 正则表达式以 "#" 开头: '#_BED' 将给出所有名称匹配 '_BED' 的材料
+#
+#  - 操作可以写成:
+#    -> 单个: 'place' ; 'break'...
+#    -> 多个: 'place, break'
+#    -> 全部: '*'
+#    -> 全部除外: '*, !place' (全部, 除了 place)
+#  - 每个操作可以存储一些数据进行检查。它们可以写成, 例如 (除了 cooldown 和 log):
+#    -> entity: pig, cow
+#    -> entity:
+#       - pig
+#       - cow
+#    -> entity:
+#       - pig,cow
+#
+#   - 操作数据: (* 仅适用于涉及玩家的操作)
+#     -> cooldown(*): 允许每 X 毫秒访问一次操作 (1 秒 = 1000 毫秒)
+#       -> '{time}': 在消息中显示剩余时间
+#     -> entity: 交互或涉及的实体
+#       -> EntityType: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+#     -> gamemode(*): 仅在玩家处于此游戏模式时禁止物品
+#     -> inventory-from: 物品来源的库存
+#       -> InventoryType: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryType.html
+#     -> inventory-to: 物品去往的库存 (同上类型)
+#     -> material: 额外检查的物品
+#       -> 例如, 在 BREAK 操作中, 此数据还将检查玩家手中的物品
+#       -> https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+#     -> permission(*): 检查玩家是否具有自定义权限
+#     -> log(*): true/false - 如果玩家激活了 /banitem log, 将收到此禁止的消息
+#     -> message(*): 字符串或字符串列表, 如果物品被禁止时发送
+#     -> region(*): worldguard 区域
+#     -> run(*): 操作被禁止时运行的命令列表:
+#       -> '{player}' : 玩家名称
+#       -> '{world}' : 世界名称
+#       -> '{itemname}' : 物品名称
+#        +——————————————————————————————————————————————————————+
+#  - 操作及其可能的数据:
+#    - ARMORSTANDPLACE: 玩家尝试将物品放置在盔甲架上 [无特定数据]
+#    - ARMORSTANDTAKE: 玩家尝试从盔甲架上取下物品 [无特定数据]
+#    - ATTACK: 玩家使用主手物品左键点击实体
+#      -> 特殊数据: entity - 被点击的实体
+#    - BOOKEDIT: 玩家编辑或签署书与笔物品 [无特定数据]
+#    - BREAK: 物品被破坏
+#      -> 特殊数据: material - 玩家手中的物品
+#    - BREW: 物品 (药水) 在酿造台中酿造 [无特定数据]
+#    - CLICK: 玩家使用主手物品左键点击
+#      -> 特殊数据: material - 被点击的方块, 如果有的话
+#    - CONSUME: 玩家尝试消耗食物 [无特定数据]
+#    - CRAFT: 物品将不再可合成 [无特定数据]
+#    - DELETE: 玩家打开并关闭库存时, 将检查并删除具有此操作的物品 [无特定数据]
+#    - DISPENSE: 物品从方块中被分配 [无特定数据]
+#    - DROP: 物品被玩家丢弃 [无特定数据]
+#    - DROPS: 物品从方块中掉落
+#      -> 特殊数据: material - 玩家手中的物品
+#    - ENCHANT: 玩家附魔物品
+#      -> 特殊数据: enchantment - 应用于物品的附魔
+#    - ENTITYDROP: 实体死亡并掉落物品
+#      -> 特殊数据: entity - 实体类型
+#    - ENTITYINTERACT: 玩家使用物品右键点击实体
+#      -> 特殊数据: entity - 交互的实体
+#    - FILL: 玩家使用物品右键点击流体 (水/岩浆)
+#      -> 特殊数据: material - 流体类型
+#    - GLIDE: 玩家尝试使用 (激活) 鞘翅 [无特定数据]
+#    - HANGINGPLACE: 玩家尝试放置悬挂实体 (物品展示框, 画...)
+#      -> 特殊数据: entity - 此放置创建的实体
+#    - HOLD: 玩家尝试手持物品 [无特定数据]
+#    - INTERACT: 玩家使用主手物品右键点击放置的物品
+#      -> 特殊数据: material - 玩家手中的物品
+#    - INVENTORYCLICK: 玩家尝试点击库存中的物品
+#      -> 特殊数据: inventory-from - 被点击的库存类型
+#    - MENDING: 玩家通过经验修补附魔修复物品 [无特定数据]
+#    - PICKUP: 物品被捡起 [无特定数据]
+#    - PLACE: 玩家尝试放置方块
+#      -> 特殊数据: material - 放置方块的对面
+#    - RENAME: 玩家尝试在铁砧中或通过命令重命名物品 [无特定数据]
+#    - SMELT: 物品将不再可熔炼 [无特定数据]
+#    - SMITH: 物品的配方在锻造台中完成
+#    - SWAP: 玩家尝试交换手中的物品 [无特定数据]
+#    - SWEEPINGEDGE: 玩家使用具有横扫之刃的物品攻击实体。原始攻击将继续，但横扫之刃伤害将被取消
+#    - TRANSFER: 玩家尝试将物品从一个库存转移到另一个库存
+#      -> 特殊数据:
+#        -> inventory-from: 物品来源的库存
+#        -> inventory-to: 物品去往的库存
+#    - UNFILL: 玩家尝试清空桶
+#      -> 特殊数据: material - 被点击的方块类型
+#    - USE: 玩家尝试使用物品 (右键点击)
+#      -> 特殊数据: material - 被点击的方块, 如果有的话
+#    - WEAR: 玩家尝试将物品作为盔甲穿戴 (还需要使用 'place' 操作) [无特定数据]
+#        +——————————————————————————————————————————————————————+
+#  - 示例:
+#    -> 简单结构:
+#      blacklist:  ##----> 黑名单
+#        world: ##----> 禁止应用的世界
+#          ender_pearl: ##----> 物品
+#            place: '&cYou can not use ender pearls in world.' ##----> 操作和消息
+#                        +————————————————————+
+#    -> 高级结构:
+#      blacklist:  ##----> 黑名单
+#       'world, world_the_end': ##----> 禁止应用的世界
+#         'dirt, stone': ##----> 物品
+#           'place, break': ##----> 操作, 及其数据
+#             message: ##----> 可配置的 (多行或单行) 消息
+#             - '&cA first message example'
+#             - '&cA second message example'
+#             gamemode: creative ##----> 仅在玩家处于创造模式时应用
+#             log: true: ##----> 激活了 /bi log 的玩家将收到消息
+#             cooldown: 30000 ##----> 此禁止每 30 秒仅应用一次 (玩家每 30 秒只能破坏或放置物品一次)
+# +——————————————————————————————————————————————————————————————————————————————————————————————+
+
+# 调试模式
+debug:
+  # 更好的和更详细的错误消息
+  errors: true
+  # 更详细的重新加载消息
+  reload: false
+  # 控制台中的彩色消息
+  colors-console: false
+
+# 无权限消息 (用于 /banitem)
+no-permission: '&c你没有权限执行此命令.'
+
+# 插件前缀
+prefix: '&c&l[&e&l禁用项&c&l] '
+
+# 这用于允许其他插件修改禁止的行为
+api:
+  playerbanitemevent: false
+  deletebanneditemevent: false
+
+# 如果为 true, 插件将异步检查是否有更新可用
+check-update: true
+
+# 应具有最高监听优先级的操作列表
+# 给予最高优先级将强制 banitem 插件在事件上有最终决定权
+# 这主要用于也阻止其他插件事件, 如果操作被禁止
+# 可以使用操作格式 ('*', 'action1, action2', '*,!break' 等.)
+priority: use,consume,click
+
+# 一些可配置的操作
+actions:
+  # 禁止附魔的物品。仅适用于 MC1.9+
+  enchant:
+    material: BARRIER
+    displayname: '&cBANNED'
+    lore:
+      - '&c你不能添加此附魔'
+      - '&c此物品已被禁止附魔。'
+
+
+  # 玩家可以用来重命名物品的命令列表
+  rename:
+    - '/rename'
+
+  # 阻止漏斗从/到禁止物品的库存中转移物品
+  # 这更消耗资源
+  transfer:
+    hoppers-block: false
+
+  # wear 操作的配置
+  wear:
+    # 如果插件需要在玩家进入或退出 WorldGuard 区域时检查
+    region-check: false
+    # 每秒扫描一次玩家是否穿戴禁止物品 [异步]
+    scanner: true
+
+  # 插件将不考虑名称在此列表中的库存
+  # 不带颜色代码 & 区分大小写: GUI 标题的颜色代码将被删除以进行比较
+  delete:
+    ignored-inventories-titles:
+      - 'My Cool Gui'
+      - 'Shop'
+
+# 与其他插件的钩子
+# 仅在您使用时启用这些钩子
+hooks:
+  # 用于 WorldGuard 区域 [WG6-WG7]
+  worldguard: false
+  # 用于 AdvancedEnchantments 的自定义物品附魔
+  advancedenchantments: false
+
+# 禁止物品消息发送时的动画
+sound:
+  enabled: true
+  type: ENCHANT_THORNS_HIT
+  volume: 1
+  pitch: 1
+  worldSound: false # 如果声音可以被周围的其他玩家听到或不
+particle: # 仅在 bukkit 1.9+ 可用
+  enabled: false
+  type: BARRIER
+  amount: 1
+
+# 非法堆叠配置
+# 您可以设置 vanilla-max-stack-size 为 true, 以便所有物品尊重其最大堆叠
+# 和/或为每个材料配置您希望的最大堆叠数量
+# 您可以使用材料格式 ('*', 'stone, dirt', '*,!dirt' 等.)。示例正则表达式: '#(?i)_helmet' -> 将给出所有头盔
+# 具有 banitem.bypassillegalstack 权限的玩家将不受影响
+# 如果没有指定世界, 默认包含所有世界
+# 如果没有在 items 中指定方块类型, 将使用默认的方块类型
+# 方块类型有:
+#   - split (拆分并返还物品直到正确的最大堆叠)
+#   - delete (删除整个堆叠)
+#   - deletemore (仅删除超出数量的部分)
+illegal-stacks:
+  enabled: false
+  vanilla-max-stack-size: true
+  block-type: split
+  #items:
+  #  'diamond_helmet,iron_helmet':
+  #    amount: 1
+  #    block-type: split
+  #    world: 'world,world_nether'
+
+# 这里是一些快速示例:
+#blacklist:
+#  world:
+#    diamond_block: # 不能放置或破坏 diamond_block, 无消息
+#      place: '&cYou are not allowed to place a diamond block in world.'
+#      break: '&cYou are not allowed to break a diamond block in world.'
+#    gold_block: # 不能在创造模式下放置 gold_block, 除非有 'my.bypass.permission'
+#      place:
+#        gamemode: creative
+#        message: '&cYou can not place gold block while in creative mode.'
+#        permission: 'my.bypass.permission'
+#    my_meta_item: # 来自 /bi metaitem 的元物品, 每分钟 (时间以毫秒为单位) 只能使用一次
+#      attack:
+#        cooldown: 60000
+#        message: '&cYou have to wait &e{time}&c before attacking with this item again.'
+#    stick: # 不能将 stick 放入物品展示框。发送日志消息给激活了 /bi log 的玩家。
+#      entityinteract:
+#        entity: item_frame
+#        message: '&cYou can not put a stick into an itemframe!'
+#        log: true
+#    diamond: # 不能从玩家库存将钻石放入箱子
+#      transfer:
+#        inventory-from: player
+#        inventory-to: chest
+#        message: '&cYou can not put diamonds in chests.'
+#  '*, !world_the_end': # 所有世界除了末地
+#    ender_pearl:
+#      use: '&cYou can use enderpearls only in the end.'
+#  # 您必须将优先级设置为 'use' (在配置上方) 才能使其工作
+#whitelist:
+#  world_the_end:
+#    message: '&cOnly thing allowed in this world: placing dirt.'
+#    ignored: 'interact' # 我们忽略 interact, 所以玩家可以与所有物品交互 (放置)
+#    dirt: place # 可以放置 dirt
+### 白名单结论: 在 world_the_end, 唯一允许的事情是放置 dirt。
+### 其他所有操作 (破坏, 捡起, 丢弃等) 将被阻止。

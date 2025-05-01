@@ -1,0 +1,40 @@
+config-version: 33
+
+# 是否收集关于您服务器的匿名数据？
+# 默认为false。
+bstats: false
+
+# 是否从/say命令中移除[Not Secure]？
+# 存在极小的可能性会捕获到不应捕获的内容。
+# 如果发生这种情况，请将事件报告给AntiPopup的GitHub问题页面。
+filter-not-secure: true
+
+# 如果我们不签名消息，则不需要该数据包。
+send-header: false
+
+# 是否在首次启动时运行设置？
+# 对各种设置或服务器托管非常有用。
+auto-setup: false
+
+# 是否阻止报告聊天消息？
+# 仅适用于1.19(.0)以上版本。
+block-chat-reports: true
+
+# 是否显示弹出窗口给玩家？
+# 不推荐启用。
+show-popup: false
+
+# --- 仅限SPIGOT ---
+# 在消息中重新添加可点击的URL。
+# 可能会导致兼容性问题！
+clickable-urls: false
+
+# --- 仅限SPIGOT ---
+# 相对于服务器文件夹的server.properties文件位置。
+# 除非必要，否则不要更改。
+properties-location: server.properties
+
+# 请勿修改以下内容！
+first-run: false
+ask-bstats: false
+setup-mode: true

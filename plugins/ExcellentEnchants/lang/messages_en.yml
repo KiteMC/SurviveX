@@ -1,0 +1,63 @@
+Command:
+  Argument:
+    Name:
+      Level: level
+      Slot: slot
+      Rarity: rarity
+  List:
+    Desc: List of custom enchantments.
+    DoneOthers: <lgray>Opened enchantments GUI for <lyellow>%player_name%</lyellow>.</lgray>
+  Enchant:
+    Desc: Enchant item in specific slot.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!</lgray>
+    Error:
+      NoItem: <lred>There is no item to enchant!</lred>
+  Disenchant:
+    Desc: Disenchant item in specific slot.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+  Book:
+    Desc: Give a book with specific enchantment.
+    Done: <lgray>Given <lyellow>%enchant%</lyellow> enchanted book to <lyellow>%player_display_name%</lyellow>.</lgray>
+  RarityBook:
+    Desc: Give a book with enchantment of specific rarity.
+    Done: <lgray>Given <lyellow>%name%</lyellow> enchanted book to <lyellow>%player_display_name%</lyellow>.</lgray>
+    Error:
+      Empty: <lgray>There is no enchantments with the <lred>%name%</lred> rarity!</lgray>
+  GetFuel:
+    Desc: Get enchantment fuel item.
+    Done: <lgray>You got <lyellow>x%amount% %name%</lyellow>.</lgray>
+    Error:
+      NoCharges: <lgray>Enchantment <lred>%name%</lred> don't have charges.</lgray>
+Error:
+  Command:
+    Argument:
+      InvalidRarity: <lgray><lred>%value%</lred> is not a valid rarity!</lgray>
+      InvalidSlot: <lgray><lred>%value%</lred> is not a valid slot!</lgray>
+ItemCategory:
+  Helmet: Helmet
+  Chestplate: Chestplate
+  Leggings: Leggings
+  Boots: Boots
+  Elytra: Elytra
+  Sword: Sword
+  Axe: Axe
+  Hoe: Hoe
+  Pickaxe: Pickaxe
+  Shovel: Shovel
+  Trident: Trident
+  Bow: Bow
+  Crossbow: Crossbow
+  FishingRod: FishingRod
+  Shield: Shield
+  Breakable: Breakable
+  Armor: Armor
+  Tool: Tool
+  Weapon: Sword/Axe
+  Bows: Bow/Crossbow
+  Torso: Chestplate/Elytra
+  AllWeapon: All Weapon
+  MiningTools: Mining Tools

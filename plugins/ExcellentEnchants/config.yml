@@ -1,0 +1,175 @@
+Core:
+  # Sets how often (in ticks) enchantment particle effects will be spawned behind projectiles.
+  # [Increase for performance; Decrease for better visuals]
+  # [20 ticks = 1 second]
+  # [Default is 1]
+  Projectile_Particles_Tick_Interval: 1
+  # Sets how often (in ticks) passive enchantment effects will trigger on all alive and loaded entities.
+  # For best results it's recommened to keep this value lower, but at the same rate as enchantment's 'Trigger_Interval' option.
+  # =============== EXAMPLES ===============
+  # ==> Global (this): 100 ticks; Regrowth: 200 ticks; Saturation: 300 ticks;
+  # ==> Global (this): 50 ticks, Regrowth: 100 ticks; Saturation: 150 ticks;
+  # [Increase for performance; Decrease for more smooth effect]
+  # [20 ticks = 1 second]
+  # [Default is 100]
+  Passive_Enchants_Trigger_Interval: 100
+  # Sets whether or not mobs can have passive enchantment effects (such as permanent potion effects, regeneration, etc.).
+  # [Enable for enhanced gameplay; Disable for performance]
+  # [Default is true]
+  Apply_Passive_Enchants_To_Mobs: true
+  # Sets max. amount of custom enchantments per item.
+  # [Default is 3]
+  Item_Enchantments_Limit: 3
+  # Sets whether or not Sword enchantments can be applied on Axes.
+  # [Default is true]
+  Sword_Enchants_To_Axes: true
+  # Sets whether or not Bow enchantments can be applied on Crossbows.
+  # [Default is true]
+  Bow_Enchants_To_Crossbows: true
+  # Sets whether or not Chestplate enchantments can be applied on Elytras.
+  # [Default is false]
+  Chestplate_Enchants_To_Elytra: false
+Enchantments:
+  Global_Distribution:
+    # Controls whether excellent enchants can be obtained via enchanting table.
+    # [*] Server reboot required.
+    # [Default is true]
+    Enchanting_Table: true
+    # Controls whether excellent enchants can be obtained via trading with villagers.
+    # [*] Server reboot required.
+    # [Default is true]
+    Trading: true
+    # Controls whether excellent enchants can be populated on mob's equipment.
+    # [*] Server reboot required.
+    # [Default is true]
+    Mob_Equipment: true
+    # Controls whether excellent enchants can be populated on traded equipment.
+    # [*] Server reboot required.
+    # [Default is true]
+    Trade_Equipment: true
+    # Controls whether excellent enchants can be populated on random loot.
+    # [*] Server reboot required.
+    # [Default is true]
+    Random_Loot: true
+  Disabled:
+    # Put here CUSTOM enchantment names that you want to disable and remove completely.
+    # Enchantment names are equal to their config file names in the '/enchants/' directory.
+    # [*] Reboot required when changed!
+    # [**] Disabled enchantments will be removed from all items forever!
+    List:
+    - custom_sharpness
+    - example_name
+    # Put here CUSTOM enchantment names that you want to disable in specific worlds.
+    # To disable all enchantments for a world, use '*' instead of enchantment names.
+    # Enchantment names are equal to their config file names in the '/enchants/' directory.
+    # [*] This setting only disables enchantment effects, not the enchantment distribution there!
+    ByWorld:
+      your_world_name:
+      - ice_aspect
+      - enchantment_name
+      another_world:
+      - ice_aspect
+      - another_enchantment
+  Display:
+    Name:
+      Component:
+        # Enchantment name display component for name format.
+        Name: '%value%'
+        # Enchantment level display component for name format.
+        Level: ' %value%'
+        # Enchantment charges display component for name format.
+        Charges: ' %value%'
+    Description:
+      # When 'true', adds the enchantment description to item lore under enchantment names.
+      Enabled: true
+      # Sets whether or not only enchanted books will have enchantment descriptions.
+      Books_Only: false
+      # Sets enchantment description format.
+      Format: '<lgray>• %name%%charges%: %description%</lgray>'
+  Charges:
+    # Enables Enchantment Charges feature.
+    # When enabled in the first time, make sure to check enchantments configs for new 'Charges' section.
+    # https://nightexpress.gitbook.io/excellentenchants/features/charges
+    Enabled: false
+    # Enchantment charges format depends on amount of charges left (in percent).
+    # If you don't want to display charges, leave only keys with negative values.
+    # Use '%amount%' placeholder for charges amount.
+    Formation:
+      zero:
+        Threshold: 0
+        Format: <lred>(%amount%⚡)</lred>
+      low:
+        Threshold: 25
+        Format: <lorange>(%amount%⚡)</lorange>
+      medium:
+        Threshold: 50
+        Format: <lyellow>(%amount%⚡)</lyellow>
+      high:
+        Threshold: 75
+        Format: <lgreen>(%amount%⚡)</lgreen>
+    # When enabled, only item material will be checked to determine if an item can be used as an enchantment fuel.
+    # When disabled, it will compare the whole item meta including name, lore, model data etc.
+    # [Default is false]
+    Compare_Material_Only: false
+    # Default item used to recharge item's enchantments on anvils.
+    # If you want different item for certain enchantments, you can do it in that enchantment configs.
+    # Item Options: https://nightexpressdev.com/nightcore/configuration/item-formation/
+    Fuel_Item:
+      Material: lapis_lazuli
+Rarity:
+  common:
+    Name: <lgray>Common</lgray>
+    # Sets general name format for all enchantments of this rarity.
+    # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+    # Use only 'static' placeholders! Level-dependant and charges placeholders will not update their values.
+    # Text formations: https://nightexpressdev.com/nightcore/configuration/text-formation/
+    # [*] Reboot required when changed!
+    Name_Format: <lgray>%enchantment_name%</lgray>
+    # Value between 1 and 1024.
+    # Controls the probability of enchantment with this rarity when enchanting.
+    # The probability is determined 'weight / total weight * 100%', where 'total_weight' is the sum of the weights of all available enchantments INCLUDING vanilla ones.
+    # Vanilla enchantment weights: https://minecraft.wiki/w/Enchanting#Summary_of_enchantments
+    # [*] Reboot required when changed!
+    Weight: 10
+  uncommon:
+    Name: <lgreen>Rare</lgreen>
+    # Sets general name format for all enchantments of this rarity.
+    # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+    # Use only 'static' placeholders! Level-dependant and charges placeholders will not update their values.
+    # Text formations: https://nightexpressdev.com/nightcore/configuration/text-formation/
+    # [*] Reboot required when changed!
+    Name_Format: <lgreen>%enchantment_name%</lgreen>
+    # Value between 1 and 1024.
+    # Controls the probability of enchantment with this rarity when enchanting.
+    # The probability is determined 'weight / total weight * 100%', where 'total_weight' is the sum of the weights of all available enchantments INCLUDING vanilla ones.
+    # Vanilla enchantment weights: https://minecraft.wiki/w/Enchanting#Summary_of_enchantments
+    # [*] Reboot required when changed!
+    Weight: 5
+  rare:
+    Name: <lyellow>Legendary</lyellow>
+    # Sets general name format for all enchantments of this rarity.
+    # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+    # Use only 'static' placeholders! Level-dependant and charges placeholders will not update their values.
+    # Text formations: https://nightexpressdev.com/nightcore/configuration/text-formation/
+    # [*] Reboot required when changed!
+    Name_Format: <lyellow>%enchantment_name%</lyellow>
+    # Value between 1 and 1024.
+    # Controls the probability of enchantment with this rarity when enchanting.
+    # The probability is determined 'weight / total weight * 100%', where 'total_weight' is the sum of the weights of all available enchantments INCLUDING vanilla ones.
+    # Vanilla enchantment weights: https://minecraft.wiki/w/Enchanting#Summary_of_enchantments
+    # [*] Reboot required when changed!
+    Weight: 2
+  very_rare:
+    Name: <lpurple>Mythic</lpurple>
+    # Sets general name format for all enchantments of this rarity.
+    # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+    # Use only 'static' placeholders! Level-dependant and charges placeholders will not update their values.
+    # Text formations: https://nightexpressdev.com/nightcore/configuration/text-formation/
+    # [*] Reboot required when changed!
+    Name_Format: <lpurple>%enchantment_name%</lpurple>
+    # Value between 1 and 1024.
+    # Controls the probability of enchantment with this rarity when enchanting.
+    # The probability is determined 'weight / total weight * 100%', where 'total_weight' is the sum of the weights of all available enchantments INCLUDING vanilla ones.
+    # Vanilla enchantment weights: https://minecraft.wiki/w/Enchanting#Summary_of_enchantments
+    # [*] Reboot required when changed!
+    Weight: 1

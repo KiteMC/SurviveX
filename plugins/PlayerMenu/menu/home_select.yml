@@ -1,0 +1,66 @@
+# 标题
+title: '&e家管理菜单'
+# 打开命令
+openCommand: home_select
+# 打开物品
+openItem: compass
+# 打开权限
+permission: false
+# 菜单大小
+size: 27
+# 打开本菜单播放的声音
+sound: BLOCK_STONE_BUTTON_CLICK_ON
+# 菜单内容
+menu:
+  '11':
+    index: 11
+    name: '   §8[§6国际版家管理§8(§ahomes§8)]'
+    material: GOLD_INGOT
+    lore:
+    - §f- §7点击选择国际版家管理
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] homes'
+    priority: 0
+    id: 1
+  '15':
+    index: 15
+    name: '   §8[§6基岩版家管理§8(§ahomegui§8)]'
+    material: DIAMOND
+    lore:
+    - §f- §7点击选择基岩版家管理
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] homegui'
+    priority: 0
+    id: 2
+  '22':
+    index: 22
+    name: '   §8[§6返回主菜单§8]'
+    material: BARRIER
+    lore:
+    - §f- §7返回到主菜单
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[open] menu'
+    priority: 0
+    id: 3
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,4,5,6,7,8,9,17,18,25,26
+  material: GRAY_STAINED_GLASS_PANE
+  isEnchant: false
+  name: '       &8[&7分割板&8]'
+  lore:
+  - '&7哎呀,不要随便戳人家啦'
+  custom-model-data: 0

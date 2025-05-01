@@ -1,0 +1,4 @@
+yml:
+  server:
+    name: survival
+  storage-method: mysql

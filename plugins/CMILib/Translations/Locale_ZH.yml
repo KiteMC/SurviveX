@@ -1,0 +1,813 @@
+# Full color code support and some variables
+# Keep in mind that variables wont work for some lines, when it will for anothers :)
+# Just keep them where there are now and everything will be ok :)
+# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# [serverName] to show server name
+# [playerName] to show target player name
+# [playerDisplayName] to show target player display name
+# [lvl] to show target player level
+# [exp] to show target player total exp
+# [hp] to show target player health
+# [maxHp] to show target player max health
+# [hunger] to show target player hunger level
+# [gameMode] to show target player gamemode
+# [prefix] to show target player prefix if possible
+# [suffix] to show target player suffix if possible
+# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# [senderName] to show Sender player name
+# [senderDisplayName] to show Sender player display name
+# [senderLvl] to show Sender player level
+# [senderExp] to show Sender player total exp
+# [senderHp] to show Sender player health
+# [senderMaxHp] to show Sender player max health
+# [senderHunger] to show Sender player hunger level
+# [senderGameMode] to show Sender player gamemode
+# [senderPrefix] to show Sender player prefix if possible
+# [senderSuffix] to show Sender player suffix if possible
+# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# [sourceName] to show source player name
+# [sourceDisplayName] to show source player display name
+# [sourceLvl] to show source player level
+# [sourceExp] to show source player total exp
+# [sourceHp] to show source player health
+# [sourceMaxHp] to show source player max health
+# [sourceHunger] to show source player hunger level
+# [sourceGameMode] to show source player gamemode
+# [sourcePrefix] to show source player prefix if possible
+# [sourceSuffix] to show source player suffix if possible
+# ***********************************************
+# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If line starts with !actionbar! then player will get action bar message defined after this variable
+# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+# <T> and </T> required, other is optional
+# Use /n to break line
+# To have more than one JSON message use <Next>
+# <C> performs command as a player who clicked
+# <CC> performs command from console once
+# <CCI> performs command from console every time player clicks text
+# <URL> includes url
+info:
+  # Use !prefix! in any locale line to automatically include this prefix
+  prefix: '&e[&aCMI&e] '
+  NoPermission: '&c你沒有權限'
+  CantHavePermission: '&c你無法擁有此權限!'
+  WrongGroup: '&c你在錯誤的群組中!'
+  NoPlayerPermission: '&c[playerName] 沒有權限: [permission]'
+  Ingame: '&c你只能在遊戲中這麼做'
+  NoInformation: '&c找不到資訊'
+  Console: '&6伺服器'
+  FromConsole: '&c只能在控制台這麼做!'
+  NotOnline: '&c玩家不在線上!'
+  NobodyOnline: '&c伺服器裡沒有玩家'
+  Same: '&c你不能打開你自己的背包'
+  cantLoginWithDifCap: '&c請注意名字的大小寫! 舊名字:&e[oldName]&c. 當前名字: &e[currentName]'
+  Searching: '&e正在搜尋玩家數據，請稍等...'
+  NoPlayer: '&c找不到這個玩家'
+  NoCommand: '&c未知指令'
+  NoCommandWhileSleeping: '&c不能睡覺時執行指令!'
+  cantFindCommand: '&5無法找到此指令: &7[%1]&5 你要找的指令是 &7[%2]&5?'
+  nolocation: '&4找不到適合的位置'
+  PurgeNotEnabled: '&c合並機制未在config中啟用'
+  FeatureNotEnabled: '&c該機制未啟用'
+  TeamManagementDisabled: '&7當 DisableTeamManagement 設置為 true 時，此功能將被限制!'
+  ModuleNotEnabled: '&c該功能未啟用!'
+  versionNotSupported: '&c伺服器版本不支持此特性'
+  bungeeNoGo: '&c此功能在基於Bungee伺服器上無法使用'
+  clickToTeleport: '&e點擊傳送'
+  UseMaterial: '&4請使用物品名字!'
+  IncorrectMaterial: '&4材料名稱不正確!'
+  UseInteger: '&4請使用數字'
+  UseBoolean: '&4請使用布林值 True 或者 False!'
+  NoLessThan: '&4數值不能小於 [amount]!'
+  NoMoreThan: '&4數值不能大於 [amount]'
+  NoGameMode: '&c你只能使用 0/1/2/3 或者 Survival/Creative/Adventure/Spectator 或者 s/c/a/sp!'
+  NoWorld: '&4找不到該世界'
+  IncorrectLocation: '&4位置指定錯誤'
+  NameChange: '&6[playerDisplayName] &e進入伺服器，他的原名是: &6[namelist]'
+  Cooldowns: '&e該指令 &6[cmd] &e需要冷卻 &6[time]'
+  specializedCooldowns: '&e該指令需要冷卻，請等待 &6[time]'
+  specializedRunning: '&e指令正在執行, 請等待 &6[time]'
+  CooldownOneTime: '&e該指令只能使用一次'
+  WarmUp:
+    canceled: '&e哎呀，你移動了一下，指令取消了'
+    counter: '!actionbar!&6--> &e[time] &6<--'
+    DontMove: '!title!!subtitle!&6不要移動'
+    Boss:
+      DontMove: '&4在&7[autoTimeLeft] &4秒內請不要移動!'
+      WaitFor: '&4等待 &7[autoTimeLeft] &4秒!'
+  Spawner: '&r[type] 生怪磚'
+  FailedSpawnerMine: '!actionbar!&c生成生磚失敗. &7[percent]% &c掉落機率'
+  ClickSpawner: '!actionbar!&7[percent]% &e掉落機率'
+  Elevator:
+    created: '&e創建電梯告示牌'
+  CantPlaceSpawner: '&e你不能把一個生怪磚放置的距離另一個那麼近，距離至少要大於 (&6[range]&e)'
+  ChunksLoading: '&e世界區塊數據正在加載中，請稍等...'
+  ShulkerBox: 界伏盒
+  CantUseNonEncrypted: '!actionbar!&c此項目上的命令未加密. 無法使用它們. 無法使用它們!'
+  CantDecode: '!actionbar!&c無法解碼 消息/指令. 密鑰文件對此任務為錯誤密鑰.
+    通知伺服器管理員這項訊息'
+  Show: '&e展示'
+  Remove: '&c移除'
+  Back: '&e返回'
+  Forward: '&e向前'
+  Update: '&e更新'
+  Save: '&e保存'
+  Delete: '&c刪除'
+  Click: '&e點擊'
+  Preview: '&e預覽'
+  PasteOld: '&e貼上舊的內容'
+  ClickToPaste: '&e點擊貼上聊天室'
+  CantTeleportWorld: '&e你不能傳送到該世界'
+  CantTeleportNoWorld: '&c目標世界不存在，傳送已被取消'
+  CantTeleport: '&e你無法傳送，因為你攜帶了過量的限制物品'
+  ClickToConfirmDelete: '&e點擊確認刪除 &6[name]'
+  teleported: '&e你被傳送了.'
+  BlackList: '&e[material] [amount] &6最多: [max]'
+  PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
+  Spliter: '&e--------------------------------------------------'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
+  singleSpliter: '&e-'
+  SpliterMiddle: ' &6[value] '
+  ListSpliter: ', '
+  ProgressBarFill: '&2▏'
+  ProgressBarEmpty: '&e▏'
+  nothingInHand: '&e你需要把這個拿在手上'
+  nothingInHandLeather: '&e你需要把皮革物品拿在手上'
+  nothingToShow: '&e沒有東西可以展示'
+  noItem: '&c找不到物品'
+  dontHaveItem: '&c你的背包中沒有 &6[itemName] x[amount] &c'
+  wrongWorld: '&c不可在此世界這樣做'
+  wrongPortal: '&c您處於錯誤的影響區域'
+  differentWorld: '&c不同的世界'
+  HaveItem: '&c在背包裡有&6[amount]x [itemName]'
+  ItemWillBreak: '!actionbar!&e你的物品 (&6[itemName]&e) 馬上快要爆了 &e[current]&6/&e[max]'
+  ArmorWillBreak: '!actionbar!&e你的 [itemName] 快要壞掉了! &e[current]&6/&e[max]'
+  cantDoInGamemode: '&e你無法在此遊戲模式下這麼做'
+  cantDoForPlayer: '&e你不能對 &6[playerDisplayName] &e這麼做'
+  cantDoForYourSelf: '&e你不能對自己這麼做'
+  cantDetermineMobType: '&c無法指定怪物種類 &e[type] &c'
+  cantRename: '!actionbar!&e你不能更改為這個名字'
+  confirmRedefine: '&e點擊確認來重新定義'
+  cantEdit: '&e您無法編輯此內容'
+  wrongName: '&c錯誤的名字'
+  unknown: unknown
+  invalidName: '&c無效的名字'
+  alreadyexist: '&4該名稱已被占用'
+  dontexist: '&4未找到'
+  worldDontExist: '&c目標世界不存在'
+  flyingToHigh: '&c你不能再飛得更高了, 最大高度限制是 &6[max]&c!'
+  specializedItemFail: '&c無法根據物品數量值:&7[value]確定具體物品'
+  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
+  sleepersRequired: '!actionbar!&f[sleeping] &7&f[required] &7個人中有 &f[sleeping] 個人需要睡覺，才能加速晚上'
+  sunSpeedingTitle: '&7[hour]'
+  skippingNight: '!title!&7跳過晚上'
+  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
+  repairConfirm: '&e點擊來確認修復 &7[items] &e要花 &7[cost]'
+  bookDate: '&7撰寫於 &f[date]'
+  maintenance: '&7維護模式'
+  notSet: 未設定
+  mapLimit: '&c不能超過 30 000 000 個方塊'
+  startedEditingPainting: '&e開始畫布編輯，點擊其它方塊取消'
+  canceledEditingPainting: '&e你取消了畫布編輯'
+  changedPainting: '!actionbar!&e將畫布更名為 &6[name] &eID為 &6[id]'
+  noSpam: '!title!&c不要洗頻!'
+  noCmdSpam: '!title!&c指令使用頻率太快！'
+  spamConsoleInform: '&c玩家 (&7[playerName]&c) 觸發了聊天過濾的 (&7[rules]&c) ,玩家的訊息: &r [message]'
+  lookAtSign: '&e請指向一個告示牌'
+  lookAtBlock: '&e請指向一個方塊'
+  lookAtEntity: '&e請指向一個實體'
+  noSpace: '&e沒有足夠的可用空間'
+  notOnGround: '&e飛行期間不能這麼做'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '&e歡迎 &6[playerDisplayName] &e來到本伺服器'
+  LogoutCustom: ' &6[playerDisplayName] &e退出了遊戲'
+  LoginCustom: ' &6[playerDisplayName] &e加入了遊戲'
+  deathlocation: '&e你死在了位於世界: &6[world]&e 的 x: &6[x]&e ,y:&6[y]&e ,z:&6[z]'
+  book:
+    exploit: '&c你不能創建超過 [amount] 頁的書'
+  combat:
+    CantUseShulkerBox: '&c戰鬥時無法使用界符盒.等待: [time]'
+    CantUseCommand: '!actionbar!&c在戰鬥中無法使用命令. 等待: [time]]'
+    bossBarPvp: '&c戰鬥模式 [autoTimeLeft]'
+    bossBarPve: '&2戰鬥模式 [autoTimeLeft]'
+  bungee:
+    Online: '&6線上'
+    Offline: '&c離線'
+    not: '&c這個伺服器不在群組下'
+    noserver: '&c找不到這個伺服器'
+    server: '&e伺服器: &7[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&6在線'
+    Offline: '&c離線'
+    TrueColor: '&2'
+    FalseColor: '&4'
+    'True': '&6開啟'
+    'False': '&c關閉'
+    Enabled: '&6啟用'
+    Disabled: '&c禁用'
+    survival: '&6生存'
+    creative: '&6創造'
+    adventure: '&6冒險'
+    spectator: '&6旁觀'
+    flying: '&6飛行'
+    notflying: '&6未飛行'
+  noSchedule: '&c找不到這個計劃任務'
+  totem:
+    cooldown: '&e不死圖騰冷卻中: [time]'
+    warmup: '&e不死圖騰效果: [time]'
+    cantConsume: '&e不死圖騰使用被取消，因為還在冷卻中！'
+  Inventory:
+    FullDrop: '&5你的背包有無法存在你背包的物品. 已經被丟棄在地上了'
+  InventorySave:
+    info: '&8Info: &8[playerDisplayName]'
+    saved: '&e[time] &e背包已保存 ID: &e[id]'
+    NoSavedInv: '&e該玩家沒有已保存的背包'
+    NoEntries: '&4數據存在，但是沒有已保存的背包'
+    CantFind: '&e找不到此ID的背包數據'
+    TopLine: '&e*************** [playerDisplayName] 已保存背包 ***************'
+    List: '&eid: &6[id]&e. &6[time]'
+    KillerSymbol: '&c ☠'
+    Click: '&e點擊查詢 ([id]) 已保存背包'
+    IdDontExist: '&4該ID不存在'
+    Deleted: '&e成功刪除已保存背包'
+    Restored: '&e你儲存了 &e[sourcename] &e背包，目標玩家： &e[targetname] &e'
+    GotRestored: '&e你的背包被儲存了 &e[sourcename] &e時間： &e[time]'
+    LoadForSelf: '&e為自己加載已保存的背包'
+    LoadForOwner: '&e為所有者加載已保存的背包'
+    NextInventory: '&e下一個背包'
+    PreviousInventory: '&e上一個背包'
+    Editable: '&e編輯模式啟用'
+    NonEditable: '&e編輯模式禁用'
+  TimeNotRecorded: '&e-無紀錄-'
+  years: '&e[years] &6年 '
+  oneYear: '&e[years] &6年 '
+  day: '&e[days] &6天 '
+  oneDay: '&e[days] &6天 '
+  hour: '&e[hours] &6小時 '
+  oneHour: '&e[hours] &6小時 '
+  min: '&e[mins] &6分鐘 '
+  sec: '&e[secs] &6秒 '
+  vanishSymbolOn: '&8[&7H&8]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '&8[&7離開&8]&r'
+  afkSymbolOff: ''
+  nextPageConsole: '&f對於下一頁，執行 &5[command]'
+  prevPage: '&2----<< &6上一頁 '
+  prevPageGui: '&6上一頁 '
+  prevPageClean: '&6上 '
+  prevPageOff: '&2----<< &7上一頁 '
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&6 下一頁 &2>>----'
+  nextPageGui: '&6下一頁'
+  nextPageClean: '&6 下'
+  nextPageOff: '&7 下一頁 &2>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&2[current]&7/&2[total]'
+  pageCountHover: '&2[totalEntries]'
+  skullOwner: '!actionbar!&7擁有者:&r [playerName]'
+  beeinfo: '!actionbar!&7蜂巢級別: &e[level]&7/&e[maxlevel] &7蜜蜂數量: &e[count]&7/&e[maxcount]]'
+  circle: '&3圓形'
+  square: '&5正方形'
+  clear: '&7清除'
+  protectedArea: '&c保護區域. 不可以這樣做.'
+  valueToLong: '&e數值過長，最長: [max]'
+  valueToShort: '&e數值過短，最短: [min]'
+  pvp:
+    noGodDamage: '!actionbar!&c你不能在上帝模式時傷害玩家'
+  InvEmpty:
+    armor: '&e你應該清空裝備欄!'
+    hand: '&e你應該清空手中物品!'
+    maininv: '&e你的主要背包應該為空的!'
+    maininvslots: '&e你的主要背包應該至少有 &6[count] &e個空位!'
+    inv: '&e你應該清空背包!'
+    offhand: '&e你應該清空副手!'
+    quickbar: '&e!'
+    quickbarslots: '&e你的快捷欄中至少要有 &6[count] &e個空位!'
+    subinv: '&e你的子(副)背包應該為空的!'
+    subinvslots: '&e你的子(副)背包至少要有 &6[count] &e個空位!'
+  pickIcon: '&8選擇圖標'
+  DamageCause:
+    block_explosion: 爆炸
+    contact: 方塊傷害
+    cramming: 擁擠
+    custom: 未知原因
+    dragon_breath: 龍息
+    drowning: 淹死
+    dryout: 變乾
+    entity_attack: 實體傷害
+    entity_explosion: 爆炸
+    entity_sweep_attack: 實體橫掃傷害
+    fall: 摔落
+    falling_block: 掉落的方塊
+    fire: 火
+    fire_tick: 火
+    fly_into_wall: 飛行卡進牆裡
+    hot_floor: 岩漿塊
+    lava: 岩漿
+    lightning: 閃電
+    magic: 魔法
+    melting: 熔煉
+    poison: 藥水
+    projectile: 投射物
+    starvation: 飢餓
+    suffocation: 窒息
+    suicide: 自殺
+    thorns: 荊棘
+    void: 虛空
+    wither: 凋零
+  Biomes:
+    BADLANDS: 惡地
+    BADLANDS_PLATEAU: 惡地高原
+    BAMBOO_JUNGLE: 竹林
+    BAMBOO_JUNGLE_HILLS: 竹林丘陵
+    BASALT_DELTAS: 玄武岩三角洲
+    BEACH: 沙灘
+    BIRCH_FOREST: 樺木森林
+    BIRCH_FOREST_HILLS: 樺木森林丘陵
+    COLD_OCEAN: 寒冷海洋
+    CRIMSON_FOREST: 緋紅森林
+    DARK_FOREST: 黑森林
+    DARK_FOREST_HILLS: 黑森林丘陵
+    DEEP_COLD_OCEAN: 寒冷深海
+    DEEP_FROZEN_OCEAN: 寒凍深海
+    DEEP_LUKEWARM_OCEAN: 溫和深海
+    DEEP_OCEAN: 深海
+    DEEP_WARM_OCEAN: 溫暖深海
+    DESERT: 沙漠
+    DESERT_HILLS: 沙漠丘陵
+    DESERT_LAKES: 沙漠湖泊
+    END_BARRENS: 終界荒地
+    END_HIGHLANDS: 終界高地
+    END_MIDLANDS: 終界平地
+    ERODED_BADLANDS: 侵蝕惡地
+    FLOWER_FOREST: 繁花森林
+    FOREST: 森林
+    FROZEN_OCEAN: 寒凍海洋
+    FROZEN_RIVER: 寒凍河流
+    GIANT_SPRUCE_TAIGA: 巨杉針葉林
+    GIANT_SPRUCE_TAIGA_HILLS: 巨杉針葉林丘陵
+    GIANT_TREE_TAIGA: 巨木針葉林
+    GIANT_TREE_TAIGA_HILLS: 巨木針葉林丘陵
+    GRAVELLY_MOUNTAINS: 礫質山地
+    ICE_SPIKES: 冰刺
+    JUNGLE: 叢林
+    JUNGLE_EDGE: 叢林邊緣
+    JUNGLE_HILLS: 叢林丘陵
+    LUKEWARM_OCEAN: 溫和海洋
+    MODIFIED_BADLANDS_PLATEAU: 特化惡地高地
+    MODIFIED_GRAVELLY_MOUNTAINS: 礫質山地+
+    MODIFIED_JUNGLE: 特化叢林
+    MODIFIED_JUNGLE_EDGE: 叢林邊緣變種
+    MODIFIED_WOODED_BADLANDS_PLATEAU: 特化繁茂的惡地
+    MOUNTAINS: 山地
+    MOUNTAIN_EDGE: 山地邊緣
+    MUSHROOM_FIELDS: 蘑菇地
+    MUSHROOM_FIELD_SHORE: 磨菇地海岸
+    NETHER_WASTES: 地獄荒原
+    OCEAN: 海洋
+    PLAINS: 平原
+    RIVER: 河流
+    SAVANNA: 莽原
+    SAVANNA_PLATEAU: 莽原高地
+    SHATTERED_SAVANNA: 零碎莽原
+    SHATTERED_SAVANNA_PLATEAU: 零碎莽原高地
+    SMALL_END_ISLANDS: 終界小島
+    SNOWY_BEACH: 冰雪沙灘
+    SNOWY_MOUNTAINS: 冰雪山地
+    SNOWY_TAIGA: 冰雪針葉林
+    SNOWY_TAIGA_HILLS: 冰雪針葉林丘陵
+    SNOWY_TAIGA_MOUNTAINS: 冰雪針葉林山地
+    SNOWY_TUNDRA: 冰雪凍原
+    SOUL_SAND_VALLEY: 靈魂砂谷
+    STONE_SHORE: 石岸
+    SUNFLOWER_PLAINS: 向日葵平原
+    SWAMP: 沼澤
+    SWAMP_HILLS: 沼澤丘陵
+    TAIGA: 針葉林
+    TAIGA_HILLS: 針葉林丘陵
+    TAIGA_MOUNTAINS: 針葉林山地
+    TALL_BIRCH_FOREST: 高樺木森林
+    TALL_BIRCH_HILLS: 高樺木丘陵
+    THE_END: 終界
+    THE_VOID: 虛空
+    WARM_OCEAN: 溫暖海洋
+    WARPED_FOREST: 扭曲森林
+    WOODED_BADLANDS_PLATEAU: 繁茂的惡地
+    WOODED_HILLS: 疏林丘陵
+    WOODED_MOUNTAINS: 疏林山地
+  EntityType:
+    area_effect_cloud: 藥水雲
+    armor_stand: 盔甲座
+    arrow: 箭
+    bat: 蝙蝠
+    bee: 蜜蜂
+    blaze: 烈焰人
+    boat: 船
+    cat: 貓
+    cave_spider: 洞穴蜘蛛
+    chicken: 雞
+    cod: 鱈魚
+    cow: 牛
+    creeper: 苦力怕
+    dolphin: 海豚
+    donkey: 驢
+    dragon_fireball: 龍炎彈
+    dropped_item: 掉落的物品
+    drowned: 沉屍
+    egg: 蛋
+    elder_guardian: 遠古守衛者
+    enderman: 終界使者
+    endermite: 終界蟎
+    ender_crystal: 終界水晶
+    ender_dragon: 終界龍
+    ender_pearl: 終界珍珠
+    ender_signal: 終界之眼指向的座標
+    evoker: 喚魔者
+    evoker_fangs: 尖牙
+    experience_orb: 經驗球
+    falling_block: 掉落的方塊
+    fireball: 火球
+    firework: 煙火
+    fishing_hook: 浮標
+    fox: 狐狸
+    ghast: 地獄幽靈
+    giant: 巨人
+    guardian: 深海守衛
+    hoglin: 豬布獸
+    horse: 馬
+    husk: 屍殼
+    illusioner: 幻術師
+    iron_golem: 鐵巨人
+    item_frame: 物品展示框
+    leash_hitch: 栓繩
+    lightning: 閃電
+    llama: 羊駝
+    llama_spit: 羊駝口水
+    magma_cube: 熔岩史萊姆
+    minecart: 礦車
+    minecart_chest: 箱子礦車
+    minecart_command: 命令方塊礦車
+    minecart_furnace: 動力礦車
+    minecart_hopper: 漏斗礦車
+    minecart_mob_spawner: 生怪磚礦車
+    minecart_tnt: TNT礦車
+    mule: 騾
+    mushroom_cow: 哞菇
+    ocelot: 豹貓
+    painting: 畫
+    panda: 熊貓
+    parrot: 鸚鵡
+    phantom: 夜魅
+    pig: 豬
+    piglin: 豬布林
+    pillager: 掠奪者
+    player: 玩家
+    polar_bear: 北極熊
+    primed_tnt: 激活的TNT
+    pufferfish: 河豚
+    rabbit: 兔子
+    ravager: 劫毀獸
+    salmon: 鮭魚
+    sheep: 羊
+    shulker: 潛影貝
+    shulker_bullet: 潛影貝子彈
+    silverfish: 蠹蟲
+    skeleton: 骷髏
+    skeleton_horse: 骷髏馬
+    slime: 史萊姆
+    small_fireball: 小火球
+    snowball: 雪球
+    snowman: 雪傀儡
+    spectral_arrow: 光靈箭
+    spider: 蜘蛛
+    splash_potion: 噴濺藥水
+    squid: 魷魚
+    stray: 流髑
+    strider: 熾足獸
+    thrown_exp_bottle: 扔出的經驗瓶
+    trader_llama: 羊駝
+    trident: 三叉戟
+    tropical_fish: 熱帶魚
+    turtle: 烏龜
+    unknown: 未知
+    vex: 惱鬼
+    villager: 村民
+    vindicator: 衛道士
+    wandering_trader: 流浪商人
+    witch: 女巫
+    wither: 凋零怪
+    wither_skeleton: 凋零骷髏
+    wither_skull: 凋零骷髏頭顱
+    wolf: 狼
+    zoglin: 殭屍化豬布林
+    zombie: 殭屍
+    zombie_horse: 殭屍馬
+    zombie_villager: 殭屍村民
+    zombified_piglin: 殭屍豬人
+  EnchantAliases:
+    protection_fire:
+    - 火焰保護
+    damage_all:
+    - 鋒利
+    arrow_fire:
+    - 火焰
+    soul_speed:
+    - 靈魂疾走
+    water_worker:
+    - 親水性
+    arrow_knockback:
+    - 衝擊
+    loyalty:
+    - 忠誠
+    depth_strider:
+    - 深海漫遊
+    vanishing_curse:
+    - 消失詛咒
+    durability:
+    - 耐久
+    knockback:
+    - 擊退
+    luck:
+    - 幸運
+    binding_curse:
+    - 綁定詛咒
+    loot_bonus_blocks:
+    - 財富
+    protection_environmental:
+    - 保護
+    dig_speed:
+    - 效率
+    mending:
+    - 修補
+    frost_walker:
+    - 冰霜行者
+    lure:
+    - 魚餌
+    loot_bonus_mobs:
+    - 掠奪
+    piercing:
+    - 貫穿
+    protection_explosions:
+    - 爆炸保護
+    damage_undead:
+    - 不死剋星
+    multishot:
+    - 分裂箭矢
+    fire_aspect:
+    - 燃燒
+    channeling:
+    - 喚雷
+    sweeping_edge:
+    - 橫掃之刃
+    thorns:
+    - 尖刺
+    damage_arthropods:
+    - 截肢剋星
+    oxygen:
+    - 水下呼吸
+    riptide:
+    - 波濤
+    silk_touch:
+    - 絲綢之觸
+    quick_charge:
+    - 快速上弦
+    protection_projectile:
+    - 投射物保護
+    impaling:
+    - 魚叉
+    protection_fall:
+    - 摔落保護
+    - 輕盈
+    arrow_damage:
+    - 強力
+    arrow_infinite:
+    - 無限
+  PotionEffectAliases:
+    speed:
+    - 速度提升
+    slow:
+    - 緩速
+    fast_digging:
+    - 挖掘加速
+    slow_digging:
+    - 挖掘疲勞
+    increase_damage:
+    - 立即傷害
+    heal:
+    - 治療
+    harm:
+    - 傷害
+    jump:
+    - 跳躍提升
+    confusion:
+    - 噁心
+    regeneration:
+    - 回復
+    damage_resistance:
+    - 抗性
+    fire_resistance:
+    - 抗火
+    water_breathing:
+    - 水下呼吸
+    invisibility:
+    - 隱形
+    blindness:
+    - 失明
+    night_vision:
+    - 夜視
+    hunger:
+    - 飢餓
+    weakness:
+    - 虛弱
+    poison:
+    - 中毒
+    wither:
+    - 凋零
+    health_boost:
+    - 生命值提升
+    absorption:
+    - 吸收
+    saturation:
+    - 飽食
+    glowing:
+    - 發光
+    levitation:
+    - 漂浮
+    luck:
+    - 幸運
+    unluck:
+    - 霉運
+    slow_falling:
+    - 緩降
+    conduit_power:
+    - 海靈祝福
+    dolphins_grace:
+    - 海豚悠游
+    bad_omen:
+    - 不祥之兆
+    hero_of_the_village:
+    - 村莊英雄
+direction:
+  n: 北
+  ne: 東北
+  e: 東
+  se: 東南
+  s: 南
+  sw: 西南
+  w: 西
+  nw: 西北
+modify:
+  middlemouse: '&2滑鼠中鍵單擊進行編輯'
+  newItem: '&7放置新物品'
+  newLine: '&2<新的一行>'
+  newLineHover: '&2添加新的一行'
+  newPage: '&2<新的一頁>'
+  newPageHover: '&2創建新的一頁'
+  removePage: '&c<移除一頁>'
+  removePageHover: '&c移除一頁'
+  deleteSymbol: '&cX'
+  deleteSymbolHover: '&c刪除 &e[text]'
+  extraEditSymbol: ' &6!'
+  addSymbol: ' &2+'
+  addSymbolHover: '&2新建'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&取消'
+  acceptSymbol: ' &2[!] '
+  acceptSymbolHover: '&2接受'
+  denySymbol: ' &4[X] '
+  denySymbolHover: '&2取消'
+  enabledSymbol: '&2[+]'
+  disabledSymbol: '&c[-]'
+  enabled: '&2啟用'
+  disabled: '&c禁用'
+  running: '&2運行中'
+  paused: '&c已暫停'
+  editSymbol: '&e✎'
+  editSymbolHover: '&e編輯 &6[text]'
+  editLineColor: '&f'
+  listUpSymbol: '&6⇑'
+  listUpSymbolHover: '&e上'
+  listDownSymbol: '&6⇓'
+  listDownSymbolHover: '&e下'
+  listNumbering: '&e[number]. '
+  listAlign: '&80'
+  ChangeHover: '&e點擊更改'
+  ChangeCommands: '&e指令'
+  enabledColor: '&6'
+  disabledColor: '&7'
+  commandTitle: ' &e--- &6[name] &e---'
+  commandList: ' &e[command]  '
+  emptyLine: '&7[Empty line]'
+  commandEdit: '&e編輯列表'
+  lineAddInfo: '&e輸入新的一行. 輸入 &6cancel &e來取消'
+  commandAddInfo: '&e輸入一個新指令，或使用 &6cancel &e取消'
+  commandAddInformationHover: "&e[playerName] 代表玩家變數 \n&e 想給指令加延遲請使用: \n&edelay! 5\
+    \ \n&e支持特殊指令 獲得更多資訊 \n&ehttps://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&e點擊貼上舊內容，使用 &6cancel &e取消，或使用 &6remove &e移除一行'
+  listLimit: '&e列表不能超過 &6[amount] &e個條目'
+  commandEditInfoHover: '&e點擊貼上舊內容'
+warp:
+  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
+teleportation:
+  relocation: '!actionbar!&4你將要傳送到的地方不安全，已將你傳送至 安全的地方'
+afk:
+  'on': '&6AFK'
+  'off': '&7遊玩中'
+  left: '&6[playerDisplayName] &e回來了'
+  MayNotRespond: '&e玩家暫時處於離開狀態，可能無法回覆你'
+  MayNotRespondStaff: '&e伺服器管理員暫時處於離開狀態，可能無法立刻解決你的問題'
+BossBar:
+  hpBar: '&f[victim] &e[max]&f/&e[current] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8藥水效果'
+  List: '&e[PotionName] [PotionAmplifier] &e時長: &e[LeftDuration] &e秒'
+  NoPotions: '&e無'
+Information:
+  Title: '&8玩家資訊'
+  Health: '&eH血量: &6[Health]/[maxHealth]'
+  Hunger: '&e飢餓值: &6[Hunger]'
+  Saturation: '&e飽食度: &6[Saturation]'
+  Exp: '&e經驗: &6[Exp]'
+  NotEnoughExp: '&e升級還需: &6[Exp]'
+  NotEnoughExpNeed: '&e經驗升級還需: &6[Exp]/[need]'
+  tooMuchExp: '&e過多經驗: &6[Exp]/[need]'
+  NotEnoughVotes: '&e投票數還需: &6[votes]'
+  TooMuchVotes: '&e票數過多: &6[votes]'
+  BadGameMode: '&c當前遊戲模式下不能這麼做'
+  BadArea: '&c你不可以在此區域這樣做'
+  GameMode: '&e遊戲模式: &6[GameMode]'
+  GodMode: '&e上帝模式: &6[GodMode]'
+  Flying: '&e飛行: &6[Flying]'
+  CanFly: '&e可以飛行: &6[CanFly]'
+  Uuid: '&6[uuid]'
+  ip: '&eIP 位址: &6[address]'
+  FirstConnection: '&e第一次進入伺服器時間: &6[y]-[m]-[d]'
+  Lastseen: '&e上次離線: &6[time]'
+  Onlinesince: '&e上線時間: &6[time]'
+  Money: '&e金錢: &6[money]'
+  Group: '&e群組: &6[group]'
+econ:
+  disabled: '&c經濟已禁用，你不能使用這個指令'
+  noMoney: '&c你的錢不夠'
+  charged: '!actionbar!&f收費: &6[amount]'
+  notEnoughMoney: '&c你沒有足夠的現金. 還需要 (&6[amount]&c)'
+  tooMuchMoney: '&c你現金太多了'
+  commandCost: '&7此指令的價格為 &6[cost] &7重複此操作或點擊此處確認'
+Elytra:
+  Speed: '&e速度: &6[speed]&ekm/h'
+  SpeedBoost: ' &2+ '
+  SpeedSuperBoost: ' &6+ '
+  CanUse: '&c沒有權限，無法裝載鞘翅'
+  CantGlide: '&c不能在這裡使用鞘翅!'
+  Charging: '&e充能 &f[percentage]&e%'
+Selection:
+  SelectPoints: '&c用選擇工具選擇 2 個點 AKA: &6[tool]'
+  PrimaryPoint: '&e選擇 &6第一個 &e選擇點 [point]'
+  SecondaryPoint: '&e選擇了 &6第二個 &e選擇點 [point]'
+  CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+NetherPortal:
+  ToHigh: '&c傳送門太高了，最大高度 &6[max]&c!'
+  ToWide: '&c傳送門太寬了，最寬寬度 &6[max]&c!'
+  Creation: '!actionbar!&7建造 [height]x[width] 地域傳送門!'
+  Disabled: '&c傳送門創建已禁用'
+Location:
+  Title: '&8玩家位置'
+  Killer: '&e擊殺者: &6[killer]'
+  OneLiner: '&地點: &6[location]'
+  DeathReason: '&e死亡原因: &6[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&e世界: &6[world]'
+  X: '&eX: &6[x]'
+  Y: '&eY: &6[y]'
+  Z: '&eZ: &6[z]'
+  Pitch: '&ePitch: &6[pitch]'
+  Yaw: '&eYaw: &6[yaw]'
+Locations: '&7地點: '
+Ender:
+  Title: '&7打開終界箱'
+Chat:
+  localPrefix: ''
+  shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&c現在沒有人可看到你的對話 ! 除非你在全域頻道聊'
+  shoutDeduction: '!actionbar!&c扣除 &e[amount] &c'
+  # Use \n to add new line
+  publicHover: '&e發送時間: &6%server_time_hh:mm:ss%'
+  privateHover: '&e發送時間: &6%server_time_hh:mm:ss%'
+  staffHover: '&e發送時間: &6%server_time_hh:mm:ss%'
+  helpopHover: '&e發送時間: &6%server_time_hh:mm:ss%'
+  link: '&l&4[&7連結&4]'
+  item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
+  itemAmount: ' x[amount]'
+  itemEmpty: '&7[Mighty fist]'

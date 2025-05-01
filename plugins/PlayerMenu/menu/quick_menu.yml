@@ -1,0 +1,80 @@
+# 标题
+title: '&e便携菜单'
+# 打开命令
+openCommand: quick_menu
+# 打开物品
+openItem: clock
+# 打开权限
+permission: false
+# 菜单大小
+size: 27
+# 打开本菜单播放的声音
+sound: ENTITY_ENDERMAN_TELEPORT
+# 菜单内容
+menu:
+  '11':
+    index: 11
+    name: '   §8[§6关闭测边栏§8(§asb§8)]'
+    material: STICK
+    lore:
+    - §f- §7点击关闭测边栏
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] sb'
+    id: 4
+    priority: 0
+  '13':
+    index: 13
+    name: '   §8[§6创建假人§8(§afp spawn§8)]'
+    material: PLAYER_HEAD
+    lore:
+    - §f- §7点击创建假人
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] fp spawn'
+    id: 5
+    priority: 0
+  '15':
+    index: 15
+    name: '   §8[§6加入/退出领地聊天频道§8(§ares rc§8)]'
+    material: PAPER
+    lore:
+    - §f- §7点击加入/退出领地聊天频道
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] res rc'
+    id: 6
+    priority: 0
+  '22':
+    index: 22
+    name: '   §8[§6关闭菜单§8]'
+    material: BARRIER
+    lore:
+    - §f- §7关闭当前菜单
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[close] menu'
+    id: 7
+    priority: 0
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,4,5,6,7,8,9,17,18,25,26
+  material: GRAY_STAINED_GLASS_PANE
+  isEnchant: false
+  name: '       &8[&7分割板&8]'
+  lore:
+  - '&7哎呀,不要随便戳人家啦'
+  custom-model-data: 0

@@ -1,0 +1,1287 @@
+ACACIA_BOAT: Barca de Acacia
+ACACIA_BUTTON: Botón de Acacia
+ACACIA_DOOR: Puerta de Acacia
+ACACIA_FENCE: Valla de Acacia
+ACACIA_FENCE_GATE: Puerta de Valla de Acacia
+ACACIA_LEAVES: Hojas de Acacia
+ACACIA_LOG: Tronco de Acacia
+ACACIA_PLANKS: Tablones de Acacia
+ACACIA_PRESSURE_PLATE: Placa de Presión de Acacia
+ACACIA_SAPLING: Brote de Acacia
+ACACIA_SLAB: Losa de Acacia
+ACACIA_STAIRS: Escaleras de Acacia
+ACACIA_TRAPDOOR: Trampilla de Acacia
+ACACIA_WOOD: Leño de Acacia
+ACTIVATOR_RAIL: Raíl Activador
+AIR: Aire
+ALLIUM: Allium
+ANDESITE: Andesita
+ANVIL: Yunque
+APPLE: Manzana
+ARMOR_STAND: Soporte para Armadura
+ARROW: Flecha
+ATTACHED_MELON_STEM: Tallo de Sandía unido
+ATTACHED_PUMPKIN_STEM: Tallo de Calabaza unido
+AZURE_BLUET: Azure Bluet
+BAKED_POTATO: Patata cocida
+BARRIER: Barrera
+BAT_SPAWN_EGG: ADN de Huevo de Murciélago
+BEACON: Baliza
+BEDROCK: Piedra Base
+BEEF: Filete crudo
+BEETROOT: Remolacha
+BEETROOTS: Remolachas
+BEETROOT_SEEDS: Semillas de Remolacha
+BEETROOT_SOUP: Estofado de Remolacha
+BIRCH_BOAT: Barca de Abedul
+BIRCH_BUTTON: Botón de Abedul
+BIRCH_DOOR: Puerta de Abedul
+BIRCH_FENCE: Valla de Abedul
+BIRCH_FENCE_GATE: Puerta de Valla de Abedul
+BIRCH_LEAVES: Hojas de Abedul
+BIRCH_LOG: Tronco de Abedul
+BIRCH_PLANKS: Tablones de Abedul
+BIRCH_PRESSURE_PLATE: Placa de Presión de Abedul
+BIRCH_SAPLING: Brote de Abedul
+BIRCH_SLAB: Losa de Abedul
+BIRCH_STAIRS: Escaleras de Abedul
+BIRCH_TRAPDOOR: Trampilla de Abedul
+BIRCH_WOOD: Leño de Abedul
+BLACK_BANNER: Estandarte Negro
+BLACK_BED: Cama Negra
+BLACK_CARPET: Alfombra Negra
+BLACK_CONCRETE: Hormigón Negro
+BLACK_CONCRETE_POWDER: Cemento Negro
+BLACK_GLAZED_TERRACOTTA: Azulejo Negro
+BLACK_SHULKER_BOX: Caja de Shulker Negra
+BLACK_STAINED_GLASS: Cristal Tintado Negro
+BLACK_STAINED_GLASS_PANE: Panel de Cristal Tintado Negro
+BLACK_TERRACOTTA: Terracota Negra
+BLACK_WALL_BANNER: Estandarte Adosado Negro
+BLACK_WOOL: Lana Negra
+BLAZE_POWDER: Polvo de Blaze
+BLAZE_ROD: Vara de Blaze
+BLAZE_SPAWN_EGG: ADN de Huevo de Blaze
+BLUE_BANNER: Estandarte Negro
+BLUE_BED: Cama Negra
+BLUE_CARPET: Alfombra Azul
+BLUE_CONCRETE: Hormigón Azul
+BLUE_CONCRETE_POWDER: Cemento Azul
+BLUE_GLAZED_TERRACOTTA: Azulejo Azul
+BLUE_ICE: Hielo Azul
+BLUE_ORCHID: Orquídea Azul
+BLUE_SHULKER_BOX: Caja de Shulker Azul
+BLUE_STAINED_GLASS: Cristal Tintado Azul
+BLUE_STAINED_GLASS_PANE: Panel de Cristal Tintado Azul
+BLUE_TERRACOTTA: Terracota Azul
+BLUE_WALL_BANNER: Estandarte Adosado Azul
+BLUE_WOOL: Lana Azul
+BONE: Hueso
+BONE_BLOCK: Bloque de Hueso
+BONE_MEAL: Polvo de Hueso
+BOOK: Libro
+BOOKSHELF: Librería
+BOW: Arco
+BOWL: Cuenco
+BRAIN_CORAL: Coral de Cerebro
+BRAIN_CORAL_BLOCK: Bloque de Coral de Cerebro
+BRAIN_CORAL_FAN: Gorgónia de Cerebro
+BRAIN_CORAL_WALL_FAN: Gorgónia de Cerebro Adosada
+BREAD: Pan
+BREWING_STAND: Soporte para Pociones
+BRICK: Ladrillo
+BRICKS: Ladrillos
+BRICK_SLAB: Losa de Ladrillos
+BRICK_STAIRS: Escaleras de Escalones de Ladrillos
+BROWN_BANNER: Estandarte Marrón
+BROWN_BED: Cama Marrón
+BROWN_CARPET: Alfombra Marrón
+BROWN_CONCRETE: Hormigón Marrón
+BROWN_CONCRETE_POWDER: Cemento Marrón
+BROWN_GLAZED_TERRACOTTA: Azulejo Marrón
+BROWN_MUSHROOM: Champiñón Marrón
+BROWN_MUSHROOM_BLOCK: Bloque de Champiñón Marrón
+BROWN_SHULKER_BOX: Caja de Shulker Marrón
+BROWN_STAINED_GLASS: Cristal Tintado Marrón
+BROWN_STAINED_GLASS_PANE: Panel de Cristal Tintado Marrón
+BROWN_TERRACOTTA: Terracota Marrón
+BROWN_WALL_BANNER: Estandarte Adosado Marrón
+BROWN_WOOL: Lana Marrón
+BUBBLE_COLUMN: Columna de Burbujas
+BUBBLE_CORAL: Coral de burbuja
+BUBBLE_CORAL_BLOCK: Bloque de Coral de Burbuja
+BUBBLE_CORAL_FAN: Gorgonia de Burbuja
+BUBBLE_CORAL_WALL_FAN: Gorgonia de Burbuja Adosada
+BUCKET: Cubo
+CACTUS: Cactus
+CACTUS_GREEN: Cactus Verde
+CAKE: Tarta
+CARROT: Zanahoria
+CARROTS: Zanahorias
+CARROT_ON_A_STICK: Caña con Zanahoria
+CARVED_PUMPKIN: Calabaza Tallada
+CAULDRON: Caldero
+CAVE_AIR: Aire de Cueva
+CAVE_SPIDER_SPAWN_EGG: ADN de Huevo de Araña de Cueva
+CHAINMAIL_BOOTS: Botas de Botas de Cota de Malla
+CHAINMAIL_CHESTPLATE: Peto de Peto de Cota de Malla
+CHAINMAIL_HELMET: Casco de Casco de Cota de Malla
+CHAINMAIL_LEGGINGS: Grebas de Grebas de Cota de Malla
+CHAIN_COMMAND_BLOCK: Bloque de Comandos Concatenados
+CHARCOAL: Carbón Vegetal
+CHEST: Cofre
+CHEST_MINECART: Vagoneta con Cofre
+CHICKEN: Pollo Crudo
+CHICKEN_SPAWN_EGG: ADN de Huevo de Gallina
+CHIPPED_ANVIL: Yunque Dañado
+CHISELED_QUARTZ_BLOCK: Cuarzo Cincelado
+CHISELED_RED_SANDSTONE: Arenisca Roja Cincelada
+CHISELED_SANDSTONE: Arenisca Cincelada
+CHISELED_STONE_BRICKS: Ladrillos de Piedra Cincelados
+CHORUS_FLOWER: Flor Chorus
+CHORUS_FRUIT: Fruta de Chorus
+CHORUS_PLANT: Planta Chorus
+CLAY: Arcilla
+CLAY_BALL: Bola de Arcilla
+CLOCK: Reloj
+COAL: Carbón
+COAL_BLOCK: Bloque de Carbón
+COAL_ORE: Mena de Mena de Carbón
+COARSE_DIRT: Tierra Estéril
+COBBLESTONE: Roca
+COBBLESTONE_SLAB: Losa de Roca
+COBBLESTONE_STAIRS: Escaleras de Escalones de Roca
+COBBLESTONE_WALL: Muro de Roca
+COBWEB: Telaraña
+COCOA: Cacao
+COCOA_BEANS: Semillas de Cacao
+COD: Bacalao Crudo
+COD_BUCKET: Cubo con Bacalao
+COD_SPAWN_EGG: ADN de Huevo de Bacalao
+COMMAND_BLOCK: Bloque de Comandos
+COMMAND_BLOCK_MINECART: Vagoneta con Bloque de Comandos
+COMPARATOR: Comparador de Redstone
+COMPASS: Brújula
+CONDUIT: Canalizador
+COOKED_BEEF: Filete Asado
+COOKED_CHICKEN: Pollo Asado
+COOKED_COD: Bacalao Cocinado
+COOKED_MUTTON: Cordero Asado
+COOKED_PORKCHOP: Chuleta de Cerdo cocinada
+COOKED_RABBIT: Conejo Asado
+COOKED_SALMON: Salmón Ahumado
+COOKIE: Galleta
+COW_SPAWN_EGG: ADN de Huevo de Vaca
+CRACKED_STONE_BRICKS: Ladrillos de Piedra Agrietados
+CRAFTING_TABLE: Mesa de Trabajo
+CREEPER_HEAD: Cabeza de Creeper
+CREEPER_SPAWN_EGG: ADN de Huevo de Creeper
+CREEPER_WALL_HEAD: Cabeza de Creeper Adosada
+CUT_RED_SANDSTONE: Arenisca Roja Cortada
+CUT_SANDSTONE: Arenisca Cortada
+CYAN_BANNER: Estandarte Cían
+CYAN_BED: Cama Cían
+CYAN_CARPET: Alfombra Cían
+CYAN_CONCRETE: Hormigón Cían
+CYAN_CONCRETE_POWDER: Cemento Cían
+CYAN_DYE: Tinte Cían
+CYAN_GLAZED_TERRACOTTA: Azulejo Cían
+CYAN_SHULKER_BOX: Caja de Shulker Cían
+CYAN_STAINED_GLASS: Cristal Tintado Cían
+CYAN_STAINED_GLASS_PANE: Panel de Cristal Tintado Cían
+CYAN_TERRACOTTA: Terracota Cían
+CYAN_WALL_BANNER: Estandarte Adosado Cían
+CYAN_WOOL: Lana Cían
+DAMAGED_ANVIL: Yunque Muy Dañado
+DANDELION: Diente de León
+DANDELION_YELLOW: Diente de León Amarillo
+DARK_OAK_BOAT: Barca de Roble Oscuro
+DARK_OAK_BUTTON: Botón de Roble Oscuro
+DARK_OAK_DOOR: Puerta de Roble Oscuro
+DARK_OAK_FENCE: Valla de Roble Oscuro
+DARK_OAK_FENCE_GATE: Puerta de Valla de Roble Oscuro
+DARK_OAK_LEAVES: Hojas de Roble Oscuro
+DARK_OAK_LOG: Tronco de Roble Oscuro
+DARK_OAK_PLANKS: Tablones de Roble Oscuro
+DARK_OAK_PRESSURE_PLATE: Placa de Presión de Roble Oscuro
+DARK_OAK_SAPLING: Brote de Roble Oscuro
+DARK_OAK_SLAB: Losa de Roble Oscuro
+DARK_OAK_STAIRS: Escaleras de Escalones de Roble Oscuro
+DARK_OAK_TRAPDOOR: Trampilla de Roble Oscuro
+DARK_OAK_WOOD: Leño de Roble Oscuro
+DARK_PRISMARINE: Prismarina Oscura
+DARK_PRISMARINE_SLAB: Losa de Prismarina Oscura
+DARK_PRISMARINE_STAIRS: Escaleras de Prismarina Oscura
+DAYLIGHT_DETECTOR: Sensor de Luz Solar
+DEAD_BRAIN_CORAL: Coral de Cerebro Muerto
+DEAD_BRAIN_CORAL_BLOCK: Bloque de Coral de Cerebro Muerto
+DEAD_BRAIN_CORAL_FAN: Gorgonia de Cerebro Muerta
+DEAD_BRAIN_CORAL_WALL_FAN: Gorgonia de Cerebro Muerta Adosada
+DEAD_BUBBLE_CORAL: Coral de Burbuja Muerto
+DEAD_BUBBLE_CORAL_BLOCK: Bloque de coral de burbuja muerto
+DEAD_BUBBLE_CORAL_FAN: Gorgonia de Burbuja Muerta
+DEAD_BUBBLE_CORAL_WALL_FAN: Gorgonia de Burbuja Muerta Adosada
+DEAD_BUSH: Arbusto Muerto
+DEAD_FIRE_CORAL: Coral de Fuego Muerto
+DEAD_FIRE_CORAL_BLOCK: Bloque de Coral de Fuego Muerto
+DEAD_FIRE_CORAL_FAN: Gorgonia de Fuego Muerta
+DEAD_FIRE_CORAL_WALL_FAN: Gorgonia de Fuego Muerta Adosada
+DEAD_HORN_CORAL: Coral de Cuerno Muerto
+DEAD_HORN_CORAL_BLOCK: Bloque de Coral de Cuerno Muerto
+DEAD_HORN_CORAL_FAN: Gorgonia de Cuerno Muerta
+DEAD_HORN_CORAL_WALL_FAN: Gorgonia de Cuerno Muerta Adosada
+DEAD_TUBE_CORAL: Coral de Tubo Muerto
+DEAD_TUBE_CORAL_BLOCK: Bloque de Coral de Tubo Muerto
+DEAD_TUBE_CORAL_FAN: Gorgonia de Tubo Muerta
+DEAD_TUBE_CORAL_WALL_FAN: Gorgonia de Tubo Muerta Adosada
+DEBUG_STICK: Palo de Depuración
+DETECTOR_RAIL: Raíl Detector
+DIAMOND: Diamante
+DIAMOND_AXE: Acha de Diamante
+DIAMOND_BLOCK: Bloque de Diamante
+DIAMOND_BOOTS: Botas de Diamante
+DIAMOND_CHESTPLATE: Peto de Diamante
+DIAMOND_HELMET: Casco de Diamante
+DIAMOND_HOE: Azada de Diamante
+DIAMOND_HORSE_ARMOR: Armadura de Diamante para Caballo
+DIAMOND_LEGGINGS: Grebas de Diamante
+DIAMOND_ORE: Mena de Diamante
+DIAMOND_PICKAXE: Pico de Diamante
+DIAMOND_SHOVEL: Pala de Diamante
+DIAMOND_SWORD: Espada de Diamante
+DIORITE: Diorita
+DIRT: Tierra
+DISPENSER: Dispensador
+DOLPHIN_SPAWN_EGG: ADN de Delfín
+DONKEY_SPAWN_EGG: ADN de Burro
+DRAGON_BREATH: Aliento de Dragón
+DRAGON_EGG: Huevo de Dragón
+DRAGON_HEAD: Cabeza de Dragón
+DRAGON_WALL_HEAD: Cabeza de Dragón Adosada
+DRIED_KELP: Algas Secas
+DRIED_KELP_BLOCK: Bloque de Algas Secas
+DROPPER: Soltador
+DROWNED_SPAWN_EGG: ADN de Ahogado
+EGG: Huevo
+ELDER_GUARDIAN_SPAWN_EGG: ADN de Guardián Anciano
+ELYTRA: Élitros
+EMERALD: Esmeralda
+EMERALD_BLOCK: Bloque de Esmeralda
+EMERALD_ORE: Mena de Esmeralda
+ENCHANTED_BOOK: Libro Encantado
+ENCHANTED_GOLDEN_APPLE: Manzana Dorada Encantada
+ENCHANTING_TABLE: Mesa de Encantamientos
+ENDERMAN_SPAWN_EGG: ADN de Enderman
+ENDERMITE_SPAWN_EGG: ADN de Endermite
+ENDER_CHEST: Cofre de Ender
+ENDER_EYE: Ojo de Ender
+ENDER_PEARL: Perla de Ender
+END_CRYSTAL: Cristal de End
+END_GATEWAY: Nexo del End
+END_PORTAL: Portal del End
+END_PORTAL_FRAME: Marco del Portal del End
+END_ROD: Vara del End
+END_STONE: Piedra del End
+END_STONE_BRICKS: Ladrillos de Piedra del End
+EVOKER_SPAWN_EGG: ADN de Evocador
+EXPERIENCE_BOTTLE: Frasco con Experiencia
+FARMLAND: Tierra de Cultivo
+FEATHER: Pluma
+FERMENTED_SPIDER_EYE: Ojo de Araña Fermentado
+FERN: Helecho
+FILLED_MAP: Mapa
+FIRE: Fuego
+FIREWORK_ROCKET: Cohete de Fuegos Artificiales
+FIREWORK_STAR: Estrella de Fuegos Artificiales
+FIRE_CHARGE: Carga Ígnea
+FIRE_CORAL: Coral de Fuego Muerto
+FIRE_CORAL_BLOCK: Bloque de coral de Fuego Muerto
+FIRE_CORAL_FAN: Gorgonia de Fuego Muerta
+FIRE_CORAL_WALL_FAN: Gorgonia de Fuego Muerta Adosada
+FISHING_ROD: Caña de Pescar
+FLINT: Pedernal
+FLINT_AND_STEEL: Mechero
+FLOWER_POT: Macetero
+FROSTED_ICE: Hielo Escarchado
+FURNACE: Horno
+FURNACE_MINECART: Vagoneta con Horno
+GHAST_SPAWN_EGG: ADN de Ghast
+GHAST_TEAR: Lágrima de Ghast
+GLASS: Cristal
+GLASS_BOTTLE: Frasco
+GLASS_PANE: Panel de Cristal
+GLISTERING_MELON_SLICE: Rodaja de Sandía Reluciente
+GLOWSTONE: Piedra Luminosa
+GLOWSTONE_DUST: Polvo de piedra luminosa
+GOLDEN_APPLE: Manzana Dorada
+GOLDEN_AXE: Acha de Oro
+GOLDEN_BOOTS: Botas de Oro
+GOLDEN_CARROT: Zanahoria Dorada
+GOLDEN_CHESTPLATE: Peto de Oro
+GOLDEN_HELMET: Casco de Oro
+GOLDEN_HOE: Azada de Oro
+GOLDEN_HORSE_ARMOR: Armadura de Oro para Caballo
+GOLDEN_LEGGINGS: Grebas de Oro
+GOLDEN_PICKAXE: Pico de Oro
+GOLDEN_SHOVEL: Pala de Oro
+GOLDEN_SWORD: Espada de Oro
+GOLD_BLOCK: Bloque de Oro
+GOLD_INGOT: Lingote de Oro
+GOLD_NUGGET: Pepita de Oro
+GOLD_ORE: Mena de Oro
+GRANITE: Granito
+GRASS: Hierba
+GRASS_BLOCK: Césped
+GRAVEL: Grava
+GRAY_BANNER: Estandarte Gris
+GRAY_BED: Cama Gris
+GRAY_CARPET: Alfombra Gris
+GRAY_CONCRETE: Hormigón Gris
+GRAY_CONCRETE_POWDER: Cemento Gris
+GRAY_DYE: Tinte Gris
+GRAY_GLAZED_TERRACOTTA: Azulejo Gris
+GRAY_SHULKER_BOX: Caja de Shulker Gris
+GRAY_STAINED_GLASS: Cristal Tintado Gris
+GRAY_STAINED_GLASS_PANE: Panel de Cristal Tintado Gris
+GRAY_TERRACOTTA: Terracota Gris
+GRAY_WALL_BANNER: Estandarte Adosado Gris
+GRAY_WOOL: Lana Gris
+GREEN_BANNER: Estandarte Verde
+GREEN_BED: Cama Verde
+GREEN_CARPET: Alfombra Verde
+GREEN_CONCRETE: Hormigón Verde
+GREEN_CONCRETE_POWDER: Cemento Verde
+GREEN_GLAZED_TERRACOTTA: Azulejo Verde
+GREEN_SHULKER_BOX: Caja de Shulker Verde
+GREEN_STAINED_GLASS: Cristal Tintado Verde
+GREEN_STAINED_GLASS_PANE: Panel de Cristal Tintado Verde
+GREEN_TERRACOTTA: Terracota Verde
+GREEN_WALL_BANNER: Estandarte Adosado Verde
+GREEN_WOOL: Lana Verde
+GUARDIAN_SPAWN_EGG: ADN de Guardián Anciano
+GUNPOWDER: Pólvora
+HAY_BLOCK: HBala de Heno
+HEART_OF_THE_SEA: Corazón del Mar
+HEAVY_WEIGHTED_PRESSURE_PLATE: Placa de Presión de Placa de Presión para Peso Elevado
+HOPPER: Tolva
+HOPPER_MINECART: Vagoneta con Tolva
+HORN_CORAL: Coral de Cuerno
+HORN_CORAL_BLOCK: Bloque de Coral de Cuerno
+HORN_CORAL_FAN: Gorgonia de Cuerno
+HORN_CORAL_WALL_FAN: Gorgonia de Cuerno Adosada
+HORSE_SPAWN_EGG: ADN de Caballo
+HUSK_SPAWN_EGG: ADN de Zombi Momificado
+ICE: Hielo
+INFESTED_CHISELED_STONE_BRICKS: Ladrillos de Piedra Cincelados Infestados
+INFESTED_COBBLESTONE: Roca Infestada
+INFESTED_CRACKED_STONE_BRICKS: Ladrillos de Piedra Agrietados Infestados
+INFESTED_MOSSY_STONE_BRICKS: Ladrillos de Piedra Musgosos Infestados
+INFESTED_STONE: Piedra Infestada
+INFESTED_STONE_BRICKS: Ladrillos de Piedra Infestados
+INK_SAC: Saco de Tinta
+IRON_AXE: Acha de Hierro
+IRON_BARS: Barrotes de Hierro
+IRON_BLOCK: Bloque de Hierro
+IRON_BOOTS: Botas de Hierro
+IRON_CHESTPLATE: Peto de Hierro
+IRON_DOOR: Puerta de Hierro
+IRON_HELMET: Casco de Hierro
+IRON_HOE: Azada de Hierro
+IRON_HORSE_ARMOR: Armadura de Hierro para Caballo
+IRON_INGOT: Lingote de Hierro
+IRON_LEGGINGS: Grebas de Hierro
+IRON_NUGGET: Pepita de Hierro
+IRON_ORE: Mena de Hierro
+IRON_PICKAXE: Pico de Hierro
+IRON_SHOVEL: Pala de Hierro
+IRON_SWORD: Espada de Hierro
+IRON_TRAPDOOR: Trampilla de ITrampilla de Hierro
+ITEM_FRAME: Marco
+JACK_O_LANTERN: Calabaza de Halloween
+JUKEBOX: Tocadiscos
+JUNGLE_BOAT: Barca de Jungla
+JUNGLE_BUTTON: Botón de Jungla
+JUNGLE_DOOR: Puerta de Jungla
+JUNGLE_FENCE: Valla de Jungla
+JUNGLE_FENCE_GATE: Puerta de Valla de Jungla
+JUNGLE_LEAVES: Hojas de Jungla
+JUNGLE_LOG: Tronco de Jungla
+JUNGLE_PLANKS: Tablones de Jungla
+JUNGLE_PRESSURE_PLATE: Placa de Presión de Jungla
+JUNGLE_SAPLING: Brote de Jungla
+JUNGLE_SLAB: Losa de Jungla
+JUNGLE_STAIRS: Escaleras de Jungla
+JUNGLE_TRAPDOOR: Trampilla de Jungla
+JUNGLE_WOOD: Leño de Jungla
+KELP: Alga
+KELP_PLANT: Tallo de Alga
+KNOWLEDGE_BOOK: Enciclopedia
+LADDER: Escalera de Mano
+LAPIS_BLOCK: Bloque de Lapislázuli
+LAPIS_LAZULI: Lapislázuli
+LAPIS_ORE: Mena de LLapislázuli
+LARGE_FERN: Helecho Grande
+LAVA: Lava Fluida
+LAVA_BUCKET: Cubo de Lava
+LEAD: Rienda
+LEATHER: Cuero
+LEATHER_BOOTS: Botas de Cuero
+LEATHER_CHESTPLATE: Túnica de Cuero
+LEATHER_HELMET: Sombrero de Cuero
+LEATHER_LEGGINGS: Pantalones de Cuero
+LEVER: Palanca
+LIGHT_BLUE_BANNER: Estandarte Azul Claro
+LIGHT_BLUE_BED: Cama Azul Claro
+LIGHT_BLUE_CARPET: Alfombra Azul Claro
+LIGHT_BLUE_CONCRETE: Hormigón Azul Claro
+LIGHT_BLUE_CONCRETE_POWDER: Cemento Azul Claro
+LIGHT_BLUE_DYE: Tinte Azul Claro
+LIGHT_BLUE_GLAZED_TERRACOTTA: Azulejo Azul Claro
+LIGHT_BLUE_SHULKER_BOX: Caja de Shulker Azul Claro
+LIGHT_BLUE_STAINED_GLASS: Cristal Tintado Azul Claro
+LIGHT_BLUE_STAINED_GLASS_PANE: Panel de Cristal Tintado Azul Claro
+LIGHT_BLUE_TERRACOTTA: Terracota Azul Claro
+LIGHT_BLUE_WALL_BANNER: Estandarte Adosado Azul Claro
+LIGHT_BLUE_WOOL: Lana Azul Claro
+LIGHT_GRAY_BANNER: Estandarte Gris Claro
+LIGHT_GRAY_BED: Cama Gris Claro
+LIGHT_GRAY_CARPET: Alfombra Gris Claro
+LIGHT_GRAY_CONCRETE: Hormigón Gris Claro
+LIGHT_GRAY_CONCRETE_POWDER: Cemento Gris Claro
+LIGHT_GRAY_DYE: Tinte Gris Claro
+LIGHT_GRAY_GLAZED_TERRACOTTA: Azulejo Gris Claro
+LIGHT_GRAY_SHULKER_BOX: Caja de Shulker Gris Claro
+LIGHT_GRAY_STAINED_GLASS: Cristal Tintado Gris Claro
+LIGHT_GRAY_STAINED_GLASS_PANE: Panel de Cristal Tintado Gris Claro
+LIGHT_GRAY_TERRACOTTA: Terracota Gris Claro
+LIGHT_GRAY_WALL_BANNER: Estandarte Adosado Gris Claro
+LIGHT_GRAY_WOOL: Lana Gris Claro
+LIGHT_WEIGHTED_PRESSURE_PLATE: Placa de Presión para Peso Ligero
+LILAC: Lila
+LILY_PAD: Nenúfar
+LIME_BANNER: Estandarte Verde Lima
+LIME_BED: Cama Verde Lima
+LIME_CARPET: Alfombra Verde Lima
+LIME_CONCRETE: Hormigón Verde Lima
+LIME_CONCRETE_POWDER: Cemento Verde Lima
+LIME_DYE: Tinte Verde Lima
+LIME_GLAZED_TERRACOTTA: Azulejo Verde Lima
+LIME_SHULKER_BOX: Caja de Shulker Verde Lima
+LIME_STAINED_GLASS: Cristal Tintado Verde Lima
+LIME_STAINED_GLASS_PANE: Panel de Cristal Tintado Verde Lima
+LIME_TERRACOTTA: Terracota Verde Lima
+LIME_WALL_BANNER: Estandarte Adosado Verde Lima
+LIME_WOOL: Lana Verde Lima Lana
+LINGERING_POTION: Poción Persistente
+LLAMA_SPAWN_EGG: ADN de Llama
+MAGENTA_BANNER: Estandarte Magenta
+MAGENTA_BED: Cama Magenta
+MAGENTA_CARPET: Alfombra Magenta
+MAGENTA_CONCRETE: Hormigón Magenta
+MAGENTA_CONCRETE_POWDER: Cemento Magenta
+MAGENTA_DYE: Tinte Magenta
+MAGENTA_GLAZED_TERRACOTTA: Azulejo Magenta
+MAGENTA_SHULKER_BOX: Caja de Shulker Magenta
+MAGENTA_STAINED_GLASS: Cristal Tintado Magenta
+MAGENTA_STAINED_GLASS_PANE: Panel de Cristal Tintado Magenta
+MAGENTA_TERRACOTTA: Terracota Magenta
+MAGENTA_WALL_BANNER: Estandarte Adosado Magenta
+MAGENTA_WOOL: Lana Magenta
+MAGMA_BLOCK: Bloque de Magma
+MAGMA_CREAM: Crema de Magma
+MAGMA_CUBE_SPAWN_EGG: ADN de Magma
+MAP: Mapa en Blanco
+MELON: Sandía
+MELON_SEEDS: Semillas de Sandía
+MELON_SLICE: Rodaja de Sandía
+MELON_STEM: Tallo de Sandía Unido
+MILK_BUCKET: Cubo de Leche
+MINECART: Vagoneta
+MOOSHROOM_SPAWN_EGG: ADN de Vacaseta
+MOSSY_COBBLESTONE: Roca Musgosa
+MOSSY_COBBLESTONE_WALL: Muro de Roca Musgosa
+MOSSY_STONE_BRICKS: Ladrillos de Piedra Musgosos
+MOVING_PISTON: Pistón en Movimiento
+MULE_SPAWN_EGG: ADN de Mula
+MUSHROOM_STEM: Tallo de Champiñón
+MUSHROOM_STEW: Estofado de Champiñones
+MUSIC_DISC_11: Disco 11
+MUSIC_DISC_13: Disco 13
+MUSIC_DISC_BLOCKS: Disco de Bloques
+MUSIC_DISC_CAT: Disco de Gatos
+MUSIC_DISC_CHIRP: Disco de Chirridos
+MUSIC_DISC_FAR: Disco Lejano
+MUSIC_DISC_MALL: Disco de Centro Comercial
+MUSIC_DISC_MELLOHI: Disco Mellohi
+MUSIC_DISC_STAL: Disco Stal
+MUSIC_DISC_STRAD: Disco Strad
+MUSIC_DISC_WAIT: Disco de Espera
+MUSIC_DISC_WARD: Disco Ward
+MUTTON: Cordero Crudo
+MYCELIUM: Micelio
+NAME_TAG: Etiqueta
+NAUTILUS_SHELL: Caparazón de Nautilo
+NETHERRACK: Infiedra
+NETHER_BRICK: Infradrillo
+NETHER_BRICKS: Infradrillos
+NETHER_BRICK_FENCE: Valla de Infradrillos
+NETHER_BRICK_SLAB: Losa de Infradrillos
+NETHER_BRICK_STAIRS: Escaleras de Infradrillos
+NETHER_PORTAL: Portal del Inframundo
+NETHER_QUARTZ_ORE: Mena de Cuarzo
+NETHER_STAR: Estrella del Inframundo
+NETHER_WART: Verruga del Inframundo
+NETHER_WART_BLOCK: Bloque de Verrugas del Inframundo
+NOTE_BLOCK: Bloque Musical
+OAK_BOAT: Barca
+OAK_BUTTON: Botón de Roble
+OAK_DOOR: Puerta de Roble
+OAK_FENCE: Valla de Roble
+OAK_FENCE_GATE: Puerta de Valla de Roble
+OAK_LEAVES: Hojas de Roble
+OAK_LOG: Tronco de Roble
+OAK_PLANKS: Tablones de Roble
+OAK_PRESSURE_PLATE: Placa de Presión de Roble
+OAK_SAPLING: Brote de Roble
+OAK_SLAB: Losa de Roble
+OAK_STAIRS: Escaleras de Roble
+OAK_TRAPDOOR: Trampilla de Roble
+OAK_WOOD: Leño de Roble
+OBSERVER: Observador
+OBSIDIAN: Obsidiana
+OCELOT_SPAWN_EGG: ADN de Ocelote
+ORANGE_BANNER: Estandarte Naranja
+ORANGE_BED: Cama Naranja
+ORANGE_CARPET: Alfombra Naranja
+ORANGE_CONCRETE: Hormigón Naranja
+ORANGE_CONCRETE_POWDER: Cemento Naranja
+ORANGE_DYE: Tinte Naranja
+ORANGE_GLAZED_TERRACOTTA: Azulejo Naranja
+ORANGE_SHULKER_BOX: Caja de Shulker Naranja
+ORANGE_STAINED_GLASS: Cristal Tintado Naranja
+ORANGE_STAINED_GLASS_PANE: Panel de Cristal Tintado Naranja
+ORANGE_TERRACOTTA: Terracota Naranja
+ORANGE_TULIP: Tulipán Naranja
+ORANGE_WALL_BANNER: Estandarte Adosado Naranja
+ORANGE_WOOL: Lana Naranja
+OXEYE_DAISY: Margarita
+PACKED_ICE: Hielo Compacto
+PAINTING: Cuadro
+PAPER: Papel
+PARROT_SPAWN_EGG: ADN de Loro
+PEONY: Peonía
+PETRIFIED_OAK_SLAB: Losa de Losa de Roble Petrificada
+PHANTOM_MEMBRANE: Membrana de Fantasma
+PHANTOM_SPAWN_EGG: ADN de Fantasma
+PIG_SPAWN_EGG: ADN de Cerdo
+PINK_BANNER: Estandarte Rosa
+PINK_BED: Cama Rosa
+PINK_CARPET: Alfombra Rosa
+PINK_CONCRETE: Hormigón Rosa
+PINK_CONCRETE_POWDER: Cemento Rosa
+PINK_DYE: Tinte Rosa
+PINK_GLAZED_TERRACOTTA: Azulejo Rosa
+PINK_SHULKER_BOX: Caja de Shulker Rosa
+PINK_STAINED_GLASS: Cristal Tintado Rosa
+PINK_STAINED_GLASS_PANE: Panel de Cristal Tintado Rosa
+PINK_TERRACOTTA: Terracota Rosa
+PINK_TULIP: Tulipán Rosa
+PINK_WALL_BANNER: Estandarte Adosado Rosa
+PINK_WOOL: Lana Rosa
+PISTON: Pistón
+PISTON_HEAD: Cabeza de Pistón
+PLAYER_HEAD: Cabeza de Jugador
+PLAYER_WALL_HEAD: Cabeza de Jugador Adosada
+PODZOL: Podsol
+POISONOUS_POTATO: Patata Venenosa
+POLAR_BEAR_SPAWN_EGG: ADN de Oso Polar
+POLISHED_ANDESITE: Andesita Pulida
+POLISHED_DIORITE: Diorita Pulida
+POLISHED_GRANITE: Granito Pulido
+POPPED_CHORUS_FRUIT: Fruta Chorus Horneada
+POPPY: Amapola
+PORKCHOP: Chuleta de Cerdo Cocinada
+POTATO: Patata
+POTATOES: Patatas
+POTION: Poción
+POTTED_ACACIA_SAPLING: Maceta con Brote de Acacia
+POTTED_ALLIUM: Maceta con Allium
+POTTED_AZURE_BLUET: Maceta con Azure Bluet
+POTTED_BIRCH_SAPLING: Maceta con Brote de Abedul
+POTTED_BLUE_ORCHID: Maceta con Orquídea Azul
+POTTED_BROWN_MUSHROOM: Maceta con Champiñón Marrón
+POTTED_CACTUS: Maceta con Cactus
+POTTED_DANDELION: Maceta con Diente de León
+POTTED_DARK_OAK_SAPLING: Maceta con Brote de Roble Oscuro
+POTTED_DEAD_BUSH: Maceta con Arbusto Muerto
+POTTED_FERN: Maceta con Helecho
+POTTED_JUNGLE_SAPLING: Maceta con Brote de Jungla
+POTTED_OAK_SAPLING: Maceta con Brote de Roble
+POTTED_ORANGE_TULIP: Maceta con Tulipán Naranja
+POTTED_OXEYE_DAISY: Maceta con Margarita
+POTTED_PINK_TULIP: Maceta con Tulipán Rosa
+POTTED_POPPY: Maceta con Amapola
+POTTED_RED_MUSHROOM: Maceta con Champiñón Rojo
+POTTED_RED_TULIP: Maceta con Tulipán Rojo
+POTTED_SPRUCE_SAPLING: Maceta con Brote de Abeto
+POTTED_WHITE_TULIP: Maceta con Tulipán Blanco
+POWERED_RAIL: Raíl Propulsor
+PRISMARINE: Prismarina
+PRISMARINE_BRICKS: Ladrillos de Prismarina
+PRISMARINE_BRICK_SLAB: Losa de Prismarina
+PRISMARINE_BRICK_STAIRS: Escaleras de Prismarina
+PRISMARINE_CRYSTALS: Cristales de Prismarina
+PRISMARINE_SHARD: Fragmento de Prismarina
+PRISMARINE_SLAB: Losa de Prismarina
+PRISMARINE_STAIRS: Escaleras de Prismarina
+PUFFERFISH: Pez Globo
+PUFFERFISH_BUCKET: Cubo con Pez Globo
+PUFFERFISH_SPAWN_EGG: ADN de Pez Globo
+PUMPKIN: Calabaza
+PUMPKIN_PIE: Tarta de Calabaza
+PUMPKIN_SEEDS: Semillas de Calabaza
+PUMPKIN_STEM: Tallo de Calabaza
+PURPLE_BANNER: Estandarte Morado
+PURPLE_BED: Cama Morada
+PURPLE_CARPET: Alfombra Morada
+PURPLE_CONCRETE: Hormigón Morado
+PURPLE_CONCRETE_POWDER: Cemento Morado
+PURPLE_DYE: Tinte Morado
+PURPLE_GLAZED_TERRACOTTA: Azulejo Morado
+PURPLE_SHULKER_BOX: Caja de Shulker Morada
+PURPLE_STAINED_GLASS: Cristal Tintado Morado
+PURPLE_STAINED_GLASS_PANE: Panel de Cristal Tintado Morado
+PURPLE_TERRACOTTA: Terracota Morada
+PURPLE_WALL_BANNER: Estandarte Adosado Morado
+PURPLE_WOOL: Lana Morada
+PURPUR_BLOCK: Bloque de Purpur
+PURPUR_PILLAR: Pilar de Purpur
+PURPUR_SLAB: Losa de Purpur
+PURPUR_STAIRS: Escaleras de Purpur
+QUARTZ: Cuarzo
+QUARTZ_BLOCK: Bloque de Cuarzo
+QUARTZ_PILLAR: Pilar de Cuarzo
+QUARTZ_SLAB: Losa de Cuarzo
+QUARTZ_STAIRS: Escaleras de Cuarzo
+RABBIT: Conejo
+RABBIT_FOOT: Pata de Conejo
+RABBIT_HIDE: Piel de Conejo
+RABBIT_SPAWN_EGG: ADN de Conejo
+RABBIT_STEW: Estofado de Conejo
+RAIL: Raíl
+REDSTONE: Redstone
+REDSTONE_BLOCK: Bloque de Redstone
+REDSTONE_LAMP: Lámpara de Redstone
+REDSTONE_ORE: Mena de Redstone
+REDSTONE_TORCH: Antorcha de Redstone
+REDSTONE_WALL_TORCH: Antorcha de Redstone Adosada
+REDSTONE_WIRE: Cable de Redstone
+RED_BANNER: Estandarte Rojo
+RED_BED: Cama Roja
+RED_CARPET: Alfombra Roja
+RED_CONCRETE: Hormigón Rojo
+RED_CONCRETE_POWDER: Cemento Rojo
+RED_GLAZED_TERRACOTTA: Azulejo Rojo
+RED_MUSHROOM: Champiñón Rojo
+RED_MUSHROOM_BLOCK: Bloque de Champiñón Rojo
+RED_NETHER_BRICKS: Infradrillos Rojos
+RED_SAND: Arena Roja
+RED_SANDSTONE: Arenisca Roja
+RED_SANDSTONE_SLAB: Losa de Arenisca Roja
+RED_SANDSTONE_STAIRS: Escaleras de Arenisca Roja
+RED_SHULKER_BOX: Caja de Shulker Roja
+RED_STAINED_GLASS: Cristal Tintado Rojo
+RED_STAINED_GLASS_PANE: Panel de Cristal Tintado Rojo
+RED_TERRACOTTA: Terracota Roja
+RED_TULIP: Tulipán Rojo
+RED_WALL_BANNER: Estandarte Adosado Rojo
+RED_WOOL: Lana Roja
+REPEATER: Repetidor de Redstone
+REPEATING_COMMAND_BLOCK: Bloque de Comando de Repetición
+ROSE_BUSH: Rosal
+ROSE_RED: Rosa Roja
+ROTTEN_FLESH: Carne Podrida
+SADDLE: Montura
+SALMON: Salmón Crudo
+SALMON_BUCKET: Cubo con Salmón
+SALMON_SPAWN_EGG: ADN de Salmón
+SAND: Arena
+SANDSTONE: Arenisca
+SANDSTONE_SLAB: Losa de Arenisca
+SANDSTONE_STAIRS: Escaleras de Arenisca
+SCUTE: Escama de Tortuga
+SEAGRASS: Hierba Marina
+SEA_LANTERN: Linterna Marina
+SEA_PICKLE: Pepino de Mar
+SHEARS: Tijeras
+SHEEP_SPAWN_EGG: ADN de Obeja
+SHIELD: Escudo
+SHULKER_BOX: Caja de Shulker
+SHULKER_SHELL: Caparazón dee Shulker
+SHULKER_SPAWN_EGG: ADN de Shulker
+SILVERFISH_SPAWN_EGG: ADN de Lepisma
+SKELETON_HORSE_SPAWN_EGG: ADN de Caballo Esqueleto
+SKELETON_SKULL: Calavera de Esqueleto
+SKELETON_SPAWN_EGG: ADN de Esqueleto
+SKELETON_WALL_SKULL: Calavera de Esqueleto Adosada
+SLIME_BALL: Bola de Baba
+SLIME_BLOCK: Bloque de Babosa
+SLIME_SPAWN_EGG: ADN de Babosa
+SMOOTH_QUARTZ: Bloque de Cuarzo Liso
+SMOOTH_RED_SANDSTONE: Arenisca Roja Lisa
+SMOOTH_SANDSTONE: Arenisca Lisa
+SMOOTH_STONE: Piedra Lisa
+SNOW: Nieve
+SNOWBALL: Bola de Nieve
+SNOW_BLOCK: Bloque de Nieve
+SOUL_SAND: Arena de Almas
+SPAWNER: Generador de Criaturas
+SPECTRAL_ARROW: Flecha Espectral
+SPIDER_EYE: Ojo de Araña
+SPIDER_SPAWN_EGG: ADN de Araña
+SPLASH_POTION: Poción Arrojadiza
+SPONGE: Esponja
+SPRUCE_BOAT: Barca de Abeto
+SPRUCE_BUTTON: Botón de Abeto
+SPRUCE_DOOR: Puerta de Abeto
+SPRUCE_FENCE: Valla de Abeto
+SPRUCE_FENCE_GATE: Puerta de Valla de Abeto
+SPRUCE_LEAVES: Hojas de Abeto
+SPRUCE_LOG: Tronco de Abeto
+SPRUCE_PLANKS: Tablones de Abeto
+SPRUCE_PRESSURE_PLATE: Placa de Presión de Abeto
+SPRUCE_SAPLING: Brote de Abeto
+SPRUCE_SLAB: Losa de Abeto
+SPRUCE_STAIRS: Escaleras de Abeto
+SPRUCE_TRAPDOOR: Trampilla de Abeto
+SPRUCE_WOOD: Leño de Abeto
+SQUID_SPAWN_EGG: ADN de Calamar
+STICK: Palo
+STICKY_PISTON: Pistón Pegajoso
+STONE: Stone
+STONE_AXE: Acha de Piedra
+STONE_BRICKS: Ladrillos de Piedra
+STONE_BRICK_SLAB: Losa de Piedra
+STONE_BRICK_STAIRS: Escaleras de Piedra
+STONE_BUTTON: Botón de Piedra
+STONE_HOE: Azada de Piedra
+STONE_PICKAXE: Pico de Piedra
+STONE_PRESSURE_PLATE: Placa de Presión de Piedra
+STONE_SHOVEL: Pala de Piedra
+STONE_SLAB: Losa de Piedra
+STONE_SWORD: Espada de Piedra
+STRAY_SPAWN_EGG: ADN de Esqueleto Glacial
+STRING: Hilo
+STRIPPED_ACACIA_LOG: Tronco de Acacia sin Corteza
+STRIPPED_ACACIA_WOOD: Leño de Acacia sin Corteza
+STRIPPED_BIRCH_LOG: Tronco de Abedul sin Corteza
+STRIPPED_BIRCH_WOOD: Leño de Abedul sin Corteza
+STRIPPED_DARK_OAK_LOG: Tronco de Roble Oscuro sin Corteza
+STRIPPED_DARK_OAK_WOOD: Leño de Roble Oscuro sin Corteza
+STRIPPED_JUNGLE_LOG: Tronco de Jungla sin Corteza
+STRIPPED_JUNGLE_WOOD: Leño de Jungla sin Corteza
+STRIPPED_OAK_LOG: Tronco de Roble sin Corteza
+STRIPPED_OAK_WOOD: Leño de Roble sin Corteza
+STRIPPED_SPRUCE_LOG: Tronco de Abeto sin Corteza
+STRIPPED_SPRUCE_WOOD: Leño de Abeto sin Corteza
+STRUCTURE_BLOCK: Bloque Estructural
+STRUCTURE_VOID: Vacío Estructural
+SUGAR: Azúcar
+SUGAR_CANE: Caña de Azúcar
+SUNFLOWER: Girasol
+TALL_GRASS: Hierba Alta
+TALL_SEAGRASS: Hierba Marina Alta
+TERRACOTTA: Terracota
+TIPPED_ARROW: Flecha con Efecto
+TNT: Dinamita
+TNT_MINECART: Vagoneta con Dinamita
+TORCH: Antorcha
+TOTEM_OF_UNDYING: Amuleto de Inmortalidad
+TRAPPED_CHEST: Cofre Trampa
+TRIDENT: Tridente
+TRIPWIRE: Cuerda
+TRIPWIRE_HOOK: Gancho de Cuerda
+TROPICAL_FISH: Pez Tropical
+TROPICAL_FISH_BUCKET: Cubo con Pez Tropical
+TROPICAL_FISH_SPAWN_EGG: ADN de Pez Tropical
+TUBE_CORAL: Coral de Tubo
+TUBE_CORAL_BLOCK: Bloque de Coral de Tubo Muerto
+TUBE_CORAL_FAN: Gorgonia de Tubo Muerta
+TUBE_CORAL_WALL_FAN: Gorgonia de Tubo Muerta Adosada
+TURTLE_EGG: Huevo de Tortuga
+TURTLE_HELMET: Caparazón de Tortuga
+TURTLE_SPAWN_EGG: ADN de Tortuga
+VEX_SPAWN_EGG: ADN de Vex
+VILLAGER_SPAWN_EGG: ADN de Aldeano
+VINDICATOR_SPAWN_EGG: ADN de Vindicador
+VINE: Enredaderas
+VOID_AIR: Aire de Vacío
+WALL_SIGN: Cartel Adosado
+WALL_TORCH: Antorcha Adosada
+WATER: Agua
+WATER_BUCKET: Cubo con Agua
+WET_SPONGE: Esponja Mojada
+WHEAT: Cultivo de Trigo
+WHEAT_SEEDS: Semillas de Trigo
+WHITE_BANNER: Estandarte Blanco
+WHITE_BED: Cama Blanca
+WHITE_CARPET: Alfombra Blanca
+WHITE_CONCRETE: Hormigón Blanco
+WHITE_CONCRETE_POWDER: Cemento Blanco
+WHITE_GLAZED_TERRACOTTA: Azulejo Blanco
+WHITE_SHULKER_BOX: Caja de Shulker Blanca
+WHITE_STAINED_GLASS: Cristal Tintado Blanco
+WHITE_STAINED_GLASS_PANE: Panel de Cristal Tintado Blanco
+WHITE_TERRACOTTA: Terracota Blanca
+WHITE_TULIP: Tulipan Blanco
+WHITE_WALL_BANNER: Estandarte Adosado Blanco
+WHITE_WOOL: Lana Blanca
+WITCH_SPAWN_EGG: ADN de Bruja
+WITHER_SKELETON_SKULL: Calavera de Esqueleto del Wither
+WITHER_SKELETON_SPAWN_EGG: ADN de Esqueleto del Wither
+WITHER_SKELETON_WALL_SKULL: Calavera de Esqueleto del Wither Adosado
+WOLF_SPAWN_EGG: ADN de Lobo
+WOODEN_AXE: Acha de Madera
+WOODEN_HOE: Azada de Madera
+WOODEN_PICKAXE: Pico de Madera
+WOODEN_SHOVEL: Pala de Madera
+WOODEN_SWORD: Espada de Madera
+WRITABLE_BOOK: Libro y Pluma
+WRITTEN_BOOK: Libro Escrito
+YELLOW_BANNER: Estandarte Amarillo
+YELLOW_BED: Cama Amarilla
+YELLOW_CARPET: Alfombra Amarilla
+YELLOW_CONCRETE: Hormigón Amarillo
+YELLOW_CONCRETE_POWDER: Cemento Amarillo
+YELLOW_GLAZED_TERRACOTTA: Azulejo Amarillo
+YELLOW_SHULKER_BOX: Caja de Shulker Amarilla
+YELLOW_STAINED_GLASS: Cristal Tintado Amarillo
+YELLOW_STAINED_GLASS_PANE: Panel de Cristal Tintado Amarillo
+YELLOW_TERRACOTTA: Terracota Amarilla
+YELLOW_WALL_BANNER: Estandarte Adosado Amarillo
+YELLOW_WOOL: Lana Amarilla
+ZOMBIE_HEAD: Cabeza de Zombi
+ZOMBIE_HORSE_SPAWN_EGG: ADN de Caballo Zombi
+ZOMBIE_PIGMAN_SPAWN_EGG: ADN de Cerdo Zombi
+ZOMBIE_SPAWN_EGG: ADN de Zombi
+ZOMBIE_VILLAGER_SPAWN_EGG: ADN de Aldeano Zombi
+ZOMBIE_WALL_HEAD: Cabeza de Zombi Adosada
+ACACIA_SIGN: Cartel de Acacia
+ACACIA_WALL_SIGN: Cartel Adosado de Acacia
+ANDESITE_SLAB: Losa de Andesita
+ANDESITE_STAIRS: Escaleras de Andesita
+ANDESITE_WALL: Muro de Andesita
+BAMBOO: Bambú
+BAMBOO_SAPLING: Brote de Bambú
+BARREL: Barril
+BELL: Campana
+BIRCH_SIGN: Cartel de Abedul
+BIRCH_WALL_SIGN: Cartel Adosado de Abedul
+BLACK_DYE: Tinte Negro
+BLAST_FURNACE: Alto Horno
+BLUE_DYE: Tinte Azul
+BRICK_WALL: Muro de Ladrillos
+BROWN_DYE: Tinte Marrón
+CAMPFIRE: Hoguera
+CARTOGRAPHY_TABLE: Mesa de Cartografía
+CAT_SPAWN_EGG: ADN de Gato
+CORNFLOWER: Aciano
+CREEPER_BANNER_PATTERN: Estampado de Creeper
+CROSSBOW: Ballesta
+CUT_RED_SANDSTONE_SLAB: Losa de Arenisca Roja Cortada
+CUT_SANDSTONE_SLAB: Losa de Arenisca Cortada
+DARK_OAK_SIGN: Cartel de Roble Oscuro
+DARK_OAK_WALL_SIGN: Cartel Adosado de Roble Oscuro
+DIORITE_SLAB: Losa de Diorita
+DIORITE_STAIRS: Escaleras de Diorita
+DIORITE_WALL: Muro de Diorita
+END_STONE_BRICK_SLAB: Losa de Ladrillos de Piedra del End
+END_STONE_BRICK_STAIRS: Escaleras de Ladrillos de Piedra del End
+END_STONE_BRICK_WALL: Muro de Ladrillos de Piedra del End
+FLETCHING_TABLE: Mesa de Flechas
+FLOWER_BANNER_PATTERN: Estampado de Flor
+FOX_SPAWN_EGG: ADN de Zorro
+GLOBE_BANNER_PATTERN: Estampado de Planeta
+GRANITE_SLAB: Losa de Granito
+GRANITE_STAIRS: Escaleras de Granito
+GRANITE_WALL: Muro de Granito
+GREEN_DYE: Tinte Verde
+GRINDSTONE: Afiladora
+JIGSAW: Bloque Rompecabezas
+JUNGLE_SIGN: Cartel de Jungla
+JUNGLE_WALL_SIGN: Cartel Adosado de Jungla
+LANTERN: Linterna
+LEATHER_HORSE_ARMOR: Armadura de Cuero para Caballo
+LECTERN: Atril
+LILY_OF_THE_VALLEY: Convalaria
+LOOM: Telar
+MOJANG_BANNER_PATTERN: Estampado de Mojang
+MOSSY_COBBLESTONE_SLAB: Losa de Roca Musgosa
+MOSSY_COBBLESTONE_STAIRS: Escaleras de Roca Musgosa
+MOSSY_STONE_BRICK_SLAB: Losa de Ladrillos de Piedra Musgosos
+MOSSY_STONE_BRICK_STAIRS: Escaleras de Ladrillos de Piedra Musgosos
+MOSSY_STONE_BRICK_WALL: Muro de Ladrillos de Piedra Musgosos
+NETHER_BRICK_WALL: Muro de Infradrillos
+OAK_SIGN: Cartel de Roble
+OAK_WALL_SIGN: Cartel Adosado de Roble
+PANDA_SPAWN_EGG: ADN de Panda
+PILLAGER_SPAWN_EGG: ADN de Saqueador
+POLISHED_ANDESITE_STAIRS: Escaleras de Andesita Pulida
+POLISHED_ANDESITE_SLAB: Losa de Andesita Pulida
+POLISHED_DIORITE_SLAB: Losa de Diorita Pulida
+POLISHED_DIORITE_STAIRS: Escaleras de Diorita Pulida
+POLISHED_GRANITE_SLAB: Losa de Granito Pulido
+POLISHED_GRANITE_STAIRS: Escaleras de Granito Pulido
+POTTED_BAMBOO: Maceta con Bambú
+POTTED_CORNFLOWER: Maceta con Aciano
+POTTED_LILY_OF_THE_VALLEY: Maceta con Convalaria
+POTTED_WITHER_ROSE: Maceta con Rosa del Wither
+PRISMARINE_WALL: Muro de Prismarina
+RAVAGER_SPAWN_EGG: ADN de Devastador
+RED_DYE: Tinte Red
+RED_NETHER_BRICK_SLAB: Losa de Infradillos Rojos
+RED_NETHER_BRICK_STAIRS: Escaleras de Infradillos Rojos
+RED_NETHER_BRICK_WALL: Muro de Infradillos Rojos
+RED_SANDSTONE_WALL: Muro de Arenisca Roja
+SANDSTONE_WALL: Muro de Arenisca
+SCAFFOLDING: Andamio
+SKULL_BANNER_PATTERN: Estampado de Calavera
+SMITHING_TABLE: Mesa de Herrería
+SMOKER: Ahumador
+SMOOTH_QUARTZ_SLAB: Losa de Cuarzo Liso
+SMOOTH_QUARTZ_STAIRS: Escaleras de Cuarzo Liso
+SMOOTH_RED_SANDSTONE_SLAB: Losa de Arenisca Roja Lisa
+SMOOTH_RED_SANDSTONE_STAIRS: Escaleras de Arenisca Roja Lisa
+SMOOTH_SANDSTONE_SLAB: Losa de Arenisca Lisa
+SMOOTH_SANDSTONE_STAIRS: Escaleras de SArenisca Lisa
+SMOOTH_STONE_SLAB: Losa de Piedra Lisa
+SPRUCE_SIGN: Cartel de Abeto
+SPRUCE_WALL_SIGN: Cartel Adosado de Abeto
+STONECUTTER: Cortapiedras
+STONE_BRICK_WALL: Muro de Piedra
+STONE_STAIRS: Escaleras de Piedra
+SUSPICIOUS_STEW: Estofado Sospechoso
+SWEET_BERRIES: Bayas Dulces
+SWEET_BERRY_BUSH: Arbusto de Bayas Dulces
+TRADER_LLAMA_SPAWN_EGG: ADN de Llama Ambulante
+WANDERING_TRADER_SPAWN_EGG: ADN de Vendedor Ambulante
+WHITE_DYE: Tinte Blanco
+WITHER_ROSE: Rosa del Wither
+YELLOW_DYE: Tinte Amarillo
+COMPOSTER: Compostador
+BEEHIVE: Apiario
+BEE_NEST: Colmena
+BEE_SPAWN_EGG: ADN de Abeja
+HONEYCOMB: Panal
+HONEYCOMB_BLOCK: Bloque de Panal
+HONEY_BLOCK: Bloque de Miel
+HONEY_BOTTLE: Frasco de Miel
+ANCIENT_DEBRIS: Escombros Ancestrales
+BASALT: Basalto
+BLACKSTONE: Piedra Negra
+BLACKSTONE_SLAB: Losa de Piedra Negra
+BLACKSTONE_STAIRS: Escaleras de Piedra Negra
+BLACKSTONE_WALL: Muro de Piedra Negra
+CHAIN: Cadena
+CHISELED_NETHER_BRICKS: Infradrillos Cincelados
+CHISELED_POLISHED_BLACKSTONE: Piedra Negra Pulida Cincelada
+CRACKED_NETHER_BRICKS: Infradrillos Agrietados
+CRACKED_POLISHED_BLACKSTONE_BRICKS: Ladrillos de Piedra Negra Pulida Agrietados
+CRIMSON_BUTTON: Botón Carmesí
+CRIMSON_DOOR: Puerta Carmesí
+CRIMSON_FENCE: Valla Carmesí
+CRIMSON_FENCE_GATE: Puerta de Valla Carmesí
+CRIMSON_FUNGUS: Hongo Carmesí
+CRIMSON_HYPHAE: Hifas Carmesí
+CRIMSON_NYLIUM: Necelio Carmesí
+CRIMSON_PLANKS: Tablones Carmesí
+CRIMSON_PRESSURE_PLATE: Placa de Presión Carmesí
+CRIMSON_ROOTS: Raíces Carmesí
+CRIMSON_SIGN: Cartel Carmesí
+CRIMSON_SLAB: Losa Carmesí
+CRIMSON_STAIRS: Escalones Carmesí
+CRIMSON_STEM: Tallo Carmesí
+CRIMSON_TRAPDOOR: Trampilla Carmesí
+CRIMSON_WALL_SIGN: Cartel Adosado Carmesí
+CRYING_OBSIDIAN: Obsidiana Llorosa
+GILDED_BLACKSTONE: Piedra Negra Áurea
+HOGLIN_SPAWN_EGG: ADN de Hoglin
+LODESTONE: Brújula Imantada
+MUSIC_DISC_PIGSTEP: Disco de Cerdos
+NETHERITE_AXE: Acha de Netherita
+NETHERITE_BLOCK: Bloque de Netherita
+NETHERITE_BOOTS: Botas de Netherita
+NETHERITE_CHESTPLATE: Peto de Netherita
+NETHERITE_HELMET: Casco de Netherita
+NETHERITE_HOE: Azada de Netherita
+NETHERITE_INGOT: Lingote de Netherita
+NETHERITE_LEGGINGS: Grebas de Netherita
+NETHERITE_PICKAXE: Pico de Netherita
+NETHERITE_SCRAP: Fragmentos de Netherita
+NETHERITE_SHOVEL: Pala de Netherita
+NETHERITE_SWORD: Espada de Netherita
+NETHER_GOLD_ORE: Mena de Oro del Inframundo
+NETHER_SPROUTS: Rastrojo del Inframundo
+PIGLIN_BANNER_PATTERN: Estampado de Hocico
+PIGLIN_SPAWN_EGG: ADN de Piglin
+POLISHED_BASALT: Basalto Pulido
+POLISHED_BLACKSTONE: Piedra Negra Pulida
+POLISHED_BLACKSTONE_BRICKS: Ladrillos de Piedra Negra Pulida
+POLISHED_BLACKSTONE_BRICK_SLAB: Losa de Piedra Negra Pulida
+POLISHED_BLACKSTONE_BRICK_STAIRS: Escaleras de Piedra Negra Pulida
+POLISHED_BLACKSTONE_BRICK_WALL: Muro de Piedra Negra Pulida
+POLISHED_BLACKSTONE_BUTTON: Botón de Piedra Negra Pulida
+POLISHED_BLACKSTONE_PRESSURE_PLATE: Placa de Presión de Piedra Negra Pulida
+POLISHED_BLACKSTONE_SLAB: Losa de Piedra Negra Pulida
+POLISHED_BLACKSTONE_STAIRS: Escaleras de Piedra Negra Pulida
+POLISHED_BLACKSTONE_WALL: Muro de Piedra Negra Pulida
+POTTED_CRIMSON_FUNGUS: Maceta con Hongo Carmesí
+POTTED_CRIMSON_ROOTS: Maceta con Raíces Carmesí
+POTTED_WARPED_FUNGUS: Maceta con Hongo Distorsionado
+POTTED_WARPED_ROOTS: Maceta con Raíces Distorsionadas
+QUARTZ_BRICKS: Ladrillos de Cuarzo
+RESPAWN_ANCHOR: Nexo de Reaparición
+SHROOMLIGHT: Brillongo
+SOUL_CAMPFIRE: Hoguera de Almas
+SOUL_FIRE: Fuego de Almas
+SOUL_LANTERN: Farol de Almas
+SOUL_SOIL: Tierra de Almas
+SOUL_TORCH: Antorcha de Almas
+SOUL_WALL_TORCH: Antorcha Adosada de Almas
+STRIDER_SPAWN_EGG: ADN de Lavagante
+STRIPPED_CRIMSON_HYPHAE: Hifas Carmesí Peladas
+STRIPPED_CRIMSON_STEM: Tallo Carmesí Pelado
+STRIPPED_WARPED_HYPHAE: Hifas Distorsionadas Peladas
+STRIPPED_WARPED_STEM: Tallo Distorsionado Pelado
+TARGET: Diana
+TWISTING_VINES: Enredaderas Retorcidas
+TWISTING_VINES_PLANT: Planta de Enredaderas Retorcidas
+WARPED_BUTTON: Botón Distorsionado
+WARPED_DOOR: Puerta Distorsionada
+WARPED_FENCE: Valla Distorsionada
+WARPED_FENCE_GATE: Puerta de Valla Distorsionada
+WARPED_FUNGUS: Hongo Distorsionado
+WARPED_FUNGUS_ON_A_STICK: Caña con Hongo Distorsionado
+WARPED_HYPHAE: Hifas Distorsionadas Peladas
+WARPED_NYLIUM: Necelio Distorsionado
+WARPED_PLANKS: Tablones Distorsionado
+WARPED_PRESSURE_PLATE: Placa de Presión Distorsionada
+WARPED_ROOTS: Raíces Distorsionadas
+WARPED_SIGN: Cartel Distorsionado
+WARPED_SLAB: Losa Distorsionada
+WARPED_STAIRS: Escalones Distorsionados
+WARPED_STEM: Tallo Distorsionado
+WARPED_TRAPDOOR: Trampilla Distorsionada
+WARPED_WALL_SIGN: Cartel Adosado Distorsionado
+WARPED_WART_BLOCK: Bloque de Verrugas Distorsionadas
+WEEPING_VINES: Enredaderas Lacrimosas
+WEEPING_VINES_PLANT: Planta de Enredaderas Lacrimosas
+ZOGLIN_SPAWN_EGG: ADN de Zoglin
+ZOMBIFIED_PIGLIN_SPAWN_EGG: ADN de Piglin Zombificado
+PIGLIN_BRUTE_SPAWN_EGG: ADN de Piglin Bruto
+AMETHYST_BLOCK: Bloque de Amatista
+AMETHYST_CLUSTER: Cúmulo de Amatista
+AMETHYST_SHARD: Fragmento de Amatista
+AXOLOTL_BUCKET: Cubo con Ajolote
+AXOLOTL_SPAWN_EGG: ADN de Ajolote
+AZALEA: Azalea
+AZALEA_LEAVES: Hojas de Azalea
+BIG_DRIPLEAF: Plantaforma Grande
+BIG_DRIPLEAF_STEM: Tallo de Plantaforma Grande
+BLACK_CANDLE: Vela Negra
+BLACK_CANDLE_CAKE: Tarta con Vela Negra
+BLUE_CANDLE: Vela Azul
+BLUE_CANDLE_CAKE: Tarta con Vela Azul
+BROWN_CANDLE: Vela Marrón
+BROWN_CANDLE_CAKE: Tarta con Vela Marrón
+BUDDING_AMETHYST: Brotador de Amatista
+BUNDLE: Saco
+CALCITE: Calcita
+CANDLE: Vela
+CANDLE_CAKE: Tarta con Vela
+CAVE_VINES: Enredaderas de Cueva
+CAVE_VINES_PLANT: Planta de Enredaderas de Cueva
+CHISELED_DEEPSLATE: Pizarra Profunda Cincelada
+COBBLED_DEEPSLATE: Pizarra Profunda Rocosa
+COBBLED_DEEPSLATE_SLAB: Losa de Pizarra Profunda Rocosa
+COBBLED_DEEPSLATE_STAIRS: Escaleras de Pizarra Profunda Rocosa
+COBBLED_DEEPSLATE_WALL: Muro de Pizarra Profunda Rocosa
+COPPER_BLOCK: Bloque de Cobre
+COPPER_INGOT: Lingote de Cobre
+COPPER_ORE: Mena de Cobre
+CRACKED_DEEPSLATE_BRICKS: Ladrillos de Pizarra Profunda Agrietados
+CRACKED_DEEPSLATE_TILES: Baldosas de Pizarra Profunda Agrietadas
+CUT_COPPER: Cobre Cortado
+CUT_COPPER_SLAB: Losa de Cobre Cortado
+CUT_COPPER_STAIRS: Escaleras de Cobre Cortado
+CYAN_CANDLE: Vela Cían
+CYAN_CANDLE_CAKE: Tarta con Vela Cían
+DEEPSLATE: Pizarra Profunda
+DEEPSLATE_BRICKS: Ladrillos de Pizarra Profunda
+DEEPSLATE_BRICK_SLAB: Losa de Pizarra Profunda
+DEEPSLATE_BRICK_STAIRS: Escaleras de Pizarra Profunda
+DEEPSLATE_BRICK_WALL: Muro de Pizarra Profunda
+DEEPSLATE_COAL_ORE: Mena de Carbón de Pizarra Profunda
+DEEPSLATE_COPPER_ORE: Mena de Cobre de Pizarra Profunda
+DEEPSLATE_DIAMOND_ORE: Mena de Diamante de Pizarra Profunda
+DEEPSLATE_EMERALD_ORE: Mena de Esmeralda de Pizarra Profunda
+DEEPSLATE_GOLD_ORE: Mena de Oro de Pizarra Profunda
+DEEPSLATE_IRON_ORE: Mena de Hierro de Pizarra Profunda
+DEEPSLATE_LAPIS_ORE: Mena de Lapislázuli de Pizarra Profunda
+DEEPSLATE_REDSTONE_ORE: Mena de Redstone de Pizarra Profunda
+DEEPSLATE_TILES: Baldosas de Pizarra Profunda
+DEEPSLATE_TILE_SLAB: Losa de Baldosas de Pizarra Profunda
+DEEPSLATE_TILE_STAIRS: Escaleras de Baldosas de Pizarra Profunda
+DEEPSLATE_TILE_WALL: Muro de Baldosas de Pizarra Profunda
+DIRT_PATH: Camino de Tierra
+DRIPSTONE_BLOCK: Bloque de Espeleotema
+EXPOSED_COPPER: Cobre Expuesto
+EXPOSED_CUT_COPPER: Cobre Cortado Expuesto
+EXPOSED_CUT_COPPER_SLAB: Losa de Cobre Cortado Expuesto
+EXPOSED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Expuesto
+FLOWERING_AZALEA: Azalea Florecida
+FLOWERING_AZALEA_LEAVES: Hojas de Azalea Florecida
+GLOW_BERRIES: Bayas Luminosas
+GLOW_INK_SAC: Saco de Tinta Luminosa
+GLOW_ITEM_FRAME: Marco Luminoso
+GLOW_LICHEN: Liquen Luminoso
+GLOW_SQUID_SPAWN_EGG: ADN de Calamar Luminoso
+GOAT_SPAWN_EGG: ADN de Cabra
+GRAY_CANDLE: Vela Gris
+GRAY_CANDLE_CAKE: Tarta con Vela Gris
+GREEN_CANDLE: Vela Verde
+GREEN_CANDLE_CAKE: Tarta con Vela Verde
+HANGING_ROOTS: Raíces Colgantes
+INFESTED_DEEPSLATE: Pizarra Profunda Infestada
+LARGE_AMETHYST_BUD: Brote de Amatista Grande
+LAVA_CAULDRON: Caldero con Lava
+LIGHT: Luz
+LIGHTNING_ROD: Pararrayos
+LIGHT_BLUE_CANDLE: Vela Azul
+LIGHT_BLUE_CANDLE_CAKE: Tarta con Vela Azul
+LIGHT_GRAY_CANDLE: Vela Gris Claro
+LIGHT_GRAY_CANDLE_CAKE: Tarta con Vela Gris Claro
+LIME_CANDLE: Vela Verde Lima
+LIME_CANDLE_CAKE: Tarta con Vela Verde Lima
+MAGENTA_CANDLE: Vela Magenta
+MAGENTA_CANDLE_CAKE: Tarta con Vela Magenta
+MEDIUM_AMETHYST_BUD: Brote de Amatista Mediano
+MOSS_BLOCK: Bloque de Musgo
+MOSS_CARPET: Capa de Musgo
+ORANGE_CANDLE: Vela Naranja
+ORANGE_CANDLE_CAKE: Tarta con Vela Naranja
+OXIDIZED_COPPER: Cobre Oxidado
+OXIDIZED_CUT_COPPER: Cobre Cortado Oxidado
+OXIDIZED_CUT_COPPER_SLAB: Losa de Cobre Cortado Oxidado
+OXIDIZED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Oxidado
+PINK_CANDLE: Vela Rosa
+PINK_CANDLE_CAKE: Tarta con Vela Rosa
+POINTED_DRIPSTONE: Lava Gotea
+POLISHED_DEEPSLATE: Pizarra Profunda Pulida
+POLISHED_DEEPSLATE_SLAB: Losa de Pizarra Profunda Pulida
+POLISHED_DEEPSLATE_STAIRS: Escaleras de Pizarra Profunda Pulida
+POLISHED_DEEPSLATE_WALL: Muro de Pizarra Profunda Pulida
+POTTED_AZALEA_BUSH: Maceta con Azalea
+POTTED_FLOWERING_AZALEA_BUSH: Maceta con Azalea Florecida
+POWDER_SNOW: Nieve Polvo
+POWDER_SNOW_BUCKET: Cubo con Nieve Polvo
+POWDER_SNOW_CAULDRON: Caldero con Nieve Polvo
+PURPLE_CANDLE: Vela Morada
+PURPLE_CANDLE_CAKE: Tarta con Vela Morada
+RAW_COPPER: Cobre en Bruto
+RAW_COPPER_BLOCK: Bloque de Cobre en Bruto
+RAW_GOLD: Oro en Bruto
+RAW_GOLD_BLOCK: Bloque de Oro en Bruto
+RAW_IRON: Hierro en Bruto
+RAW_IRON_BLOCK: Bloque de Hierro en Bruto
+RED_CANDLE: Vela Roja
+RED_CANDLE_CAKE: Tarta con Vela Roja
+ROOTED_DIRT: Tierra Enraizada
+SCULK_SENSOR: Sensor de Sculk
+SMALL_AMETHYST_BUD: Brote de Amatista Pequeño
+SMALL_DRIPLEAF: Plantaforma Pequeña
+SMOOTH_BASALT: Basalto Liso
+SPORE_BLOSSOM: Flor de Esporas
+SPYGLASS: Catalejo
+TINTED_GLASS: Cristal Opaco
+TUFF: Toba
+WATER_CAULDRON: Caldero con Agua
+WAXED_COPPER_BLOCK: Bloque de Cobre Encerado
+WAXED_CUT_COPPER: Cobre Cortado Encerado
+WAXED_CUT_COPPER_SLAB: Losa de Cobre Cortado Encerado
+WAXED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Encerado
+WAXED_EXPOSED_COPPER: Cobre Expuesto Encerado
+WAXED_EXPOSED_CUT_COPPER: Cobre Cortado Expuesto Encerado
+WAXED_EXPOSED_CUT_COPPER_SLAB: Losa de Cobre Cortado Expuesto Encerado
+WAXED_EXPOSED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Expuesto Encerado
+WAXED_OXIDIZED_COPPER: Cobre Oxidado Encerado
+WAXED_OXIDIZED_CUT_COPPER: Cobre Cortado Oxidado Encerado
+WAXED_OXIDIZED_CUT_COPPER_SLAB: Losa de Cobre Cortado Oxidado Encerado
+WAXED_OXIDIZED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Oxidado Encerado
+WAXED_WEATHERED_COPPER: Cobre Degradado Encerado
+WAXED_WEATHERED_CUT_COPPER: Cobre Cortado Degradado Encerado
+WAXED_WEATHERED_CUT_COPPER_SLAB: Losa de Cobre Cortado Degradado Encerado
+WAXED_WEATHERED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Degradado Encerado
+WEATHERED_COPPER: Cobre Degradado
+WEATHERED_CUT_COPPER: Cobre Cortado Degradado
+WEATHERED_CUT_COPPER_SLAB: Losa de Cobre Cortado Degradado
+WEATHERED_CUT_COPPER_STAIRS: Escaleras de Cobre Cortado Degradado
+WHITE_CANDLE: Vela Blanca
+WHITE_CANDLE_CAKE: Tarta con Vela Blanca
+YELLOW_CANDLE: Vela Amarilla
+YELLOW_CANDLE_CAKE: Tarta con Vela Amarilla
+MUSIC_DISC_OTHERSIDE: Disco del Otro Lado
+ACACIA_CHEST_BOAT: Barca de Acacia
+ALLAY_SPAWN_EGG: ADN de Allay
+BIRCH_CHEST_BOAT: Barca de de Abedul
+DARK_OAK_CHEST_BOAT: Barca de Roble Oscuro
+DISC_FRAGMENT_5: Fragmento de Disco 5
+ECHO_SHARD: Fragmento Resonante
+FROGSPAWN: Huevas de Rana
+FROG_SPAWN_EGG: ADN de Rana
+GOAT_HORN: Cuerno de Cabra
+JUNGLE_CHEST_BOAT: Barca de Jungla
+MANGROVE_BOAT: Barca de Mangle
+MANGROVE_BUTTON: Botón de Mangle
+MANGROVE_CHEST_BOAT: Barca de Mangle con Cofre
+MANGROVE_DOOR: Puerta de Mangle
+MANGROVE_FENCE: Valla de Mangle
+MANGROVE_FENCE_GATE: Puerta de Valla de Mangle
+MANGROVE_LEAVES: Hojas de Mangle
+MANGROVE_LOG: Tronco de Mangle
+MANGROVE_PLANKS: Tablones de Mangle
+MANGROVE_PRESSURE_PLATE: Placa de Presión de Mangle
+MANGROVE_PROPAGULE: Propágulo de Mangle
+MANGROVE_ROOTS: Raíces de Mangle
+MANGROVE_SIGN: Cartel de Mangle
+MANGROVE_SLAB: Losa de Mangle
+MANGROVE_STAIRS: Escaleras de Mangle
+MANGROVE_TRAPDOOR: Trampilla de Mangle
+MANGROVE_WALL_SIGN: Cartel Adosado de Mangle
+MANGROVE_WOOD: Leño de Mangle
+MUD: Barro
+MUDDY_MANGROVE_ROOTS: Raíces de Mangle Embarradas
+MUD_BRICKS: Ladrillos de Adobe
+MUD_BRICK_SLAB: Losa de Ladrillos de Adobe
+MUD_BRICK_STAIRS: Escaleras de Ladrillos de Adobe
+MUD_BRICK_WALL: Muro de Ladrillos de Adobe
+MUSIC_DISC_5: Disco 5
+OAK_CHEST_BOAT: Barca de Roble
+OCHRE_FROGLIGHT: Ranaluz Ocre
+PACKED_MUD: Adobe
+PEARLESCENT_FROGLIGHT: Ranaluz Nacarada
+POTTED_MANGROVE_PROPAGULE: Maceta con Propágulo de Mangle
+RECOVERY_COMPASS: Brújula de Recuperación
+REINFORCED_DEEPSLATE: Pizarra Profunda Reforzada
+SCULK: Sculk
+SCULK_CATALYST: Catalizador de Sculk
+SCULK_SHRIEKER: Chillador de Sculk
+SCULK_VEIN: Vena de Sculk
+SPRUCE_CHEST_BOAT: Barca de Abeto
+STRIPPED_MANGROVE_LOG: Tronco de Mangle sin Corteza
+STRIPPED_MANGROVE_WOOD: Leño de Mangle sin Corteza
+TADPOLE_BUCKET: Cubo con Renacuajo
+TADPOLE_SPAWN_EGG: ADN de Renacuajo
+VERDANT_FROGLIGHT: Ranaluz Verde
+WARDEN_SPAWN_EGG: ADN de Warden
+SIGN: Cartel

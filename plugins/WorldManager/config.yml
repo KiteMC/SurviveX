@@ -1,0 +1,6 @@
+#
+# This feature is just an update checker, not an updater.
+#
+
+update-checker: true
+lang: zh-CN # (en, fr, es, de, pl, ru, or custom but you have to do it yourself)

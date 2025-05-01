@@ -1,0 +1,882 @@
+# Full color code support and some variables
+# Keep in mind that variables wont work for some lines, when it will for anothers :)
+# Just keep them where there are now and everything will be ok :)
+# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# [serverName] to show server name
+# [playerName] to show target player name
+# [playerDisplayName] to show target player display name
+# [lvl] to show target player level
+# [exp] to show target player total exp
+# [hp] to show target player health
+# [maxHp] to show target player max health
+# [hunger] to show target player hunger level
+# [gameMode] to show target player gamemode
+# [prefix] to show target player prefix if possible
+# [suffix] to show target player suffix if possible
+# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# [senderName] to show Sender player name
+# [senderDisplayName] to show Sender player display name
+# [senderLvl] to show Sender player level
+# [senderExp] to show Sender player total exp
+# [senderHp] to show Sender player health
+# [senderMaxHp] to show Sender player max health
+# [senderHunger] to show Sender player hunger level
+# [senderGameMode] to show Sender player gamemode
+# [senderPrefix] to show Sender player prefix if possible
+# [senderSuffix] to show Sender player suffix if possible
+# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# [sourceName] to show source player name
+# [sourceDisplayName] to show source player display name
+# [sourceLvl] to show source player level
+# [sourceExp] to show source player total exp
+# [sourceHp] to show source player health
+# [sourceMaxHp] to show source player max health
+# [sourceHunger] to show source player hunger level
+# [sourceGameMode] to show source player gamemode
+# [sourcePrefix] to show source player prefix if possible
+# [sourceSuffix] to show source player suffix if possible
+# ***********************************************
+# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If line starts with !actionbar! then player will get action bar message defined after this variable
+# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+# <T> and </T> required, other is optional
+# Use /n to break line
+# To have more than one JSON message use <Next>
+# <C> performs command as a player who clicked
+# <CC> performs command from console once
+# <CCI> performs command from console every time player clicks text
+# <URL> includes url
+info:
+  # Use !prefix! in any locale line to automatically include this prefix
+  prefix: '&c&lCMI&r &b>> '
+  NoPermission: '&cУ вас немає дозволу!'
+  CantHavePermission: '&cУ вас немає дозволу на це!'
+  WrongGroup: Неправильна група!
+  NoPlayerPermission: '&c[playerName] не має дозволу: [permission]'
+  Ingame: '&cВи можете використовувати це тільки в грі!'
+  NoInformation: Інформація не знайдена!
+  Console: '&cАдміністратор'
+  FromConsole: '&cВи можете використовувати це тільки за допомогою консолі!'
+  NotOnline: Гравець не в мережі!
+  NobodyOnline: Нікого нема в мережі!
+  NoPlayer: '&cНе вдалося знайти гравця з таким ніком!'
+  NoCommand: '&cКоманди з цією назвою не існує!'
+  cantFindCommand: '&7Команда &c[%1]&7 не була знайдена, можливо, ви мали на увазі
+    &c[%2]&7?'
+  nolocation: '&4Не можу знайти відповідне місце'
+  FeatureNotEnabled: '&cЦя функція не увімкнена!'
+  ModuleNotEnabled: '&cЦей модуль не увімкнутий!'
+  versionNotSupported: '&cВерсія сервера не підтримує цю функцію'
+  spigotNotSupported: '&cДля цього вам потрібен сервер типу PaperSpigot'
+  bungeeNoGo: '&cЦя функція не буде працювати на серверах, пов`язаних з bungee'
+  clickToTeleport: '&fНатисніть, щоб телепортуватися'
+  UseMaterial: '&cБудь ласка, використовуйте назви матеріалів!'
+  IncorrectMaterial: '&4Неправильна назва матеріалу!'
+  UseInteger: '&cБудь ласка, використовуйте цифри!'
+  UseBoolean: '&cБудь ласка, використовуйте значення True або False!'
+  NoLessThan: '&cЗначення не може бути меншим, ніж [amount]!'
+  NoMoreThan: Значення не може бути більше ніж [amount]
+  NoWorld: '&cНеможливо знайти світ з цією назвою!'
+  IncorrectLocation: Місце розташування неправильне!
+  Show: '&7Показати'
+  Remove: '&cВидалити'
+  Back: '&7Назад'
+  Forward: '&7Вперед'
+  Update: '&7Оновити'
+  Save: '&7Зберегти'
+  Delete: '&cВидалити'
+  Click: '&7Натиснути'
+  Preview: '&eПопередній перегляд'
+  PasteOld: '&7Вставити старий текст'
+  ClickToPaste: '&7Натисніть, щоб вставити в чат'
+  CantTeleportWorld: '&cВи не можете телепортуватися в цей світ'
+  CantTeleportNoWorld: '&cЦільового світу не існує. Телепортацію скасовано.'
+  ClickToConfirmDelete: '&eНатисніть, щоб підтвердити видалення &6[name]'
+  teleported: '&aВи були телепортовані.'
+  PlayerSpliter: '&7----- &c[playerDisplayName] &7-----'
+  Spliter: '&c---------------------------------------------- ----'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
+  singleSpliter: '&e-'
+  SpliterMiddle: ' &6[value] '
+  ListSpliter: ', '
+  ProgressBarFill: '&a▏'
+  ProgressBarEmpty: '&7▏'
+  nothingInHand: '&cВам потрібно тримати предмет у руці'
+  nothingInHandLeather: '&cВам потрібно тримати шкіру в руці'
+  nothingToShow: '&cНемає чого показати'
+  noItem: '&cНе вдалося знайти предмет'
+  dontHaveItem: '&7У вас немає &c[amount]x [itemName] &7у вашому інвентарі'
+  wrongWorld: '&cНе вдалося зробити це в цьому світі'
+  differentWorld: Різні світи
+  HaveItem: '&7У вас є &c[amount]x [itemName] &7у вашому інвентарі'
+  cantDoInGamemode: '&eВи не можете зробити це у вашому ігровому режимі'
+  cantDoForPlayer: '&7Ви не можете це зробити гравцю &c[playerDisplayName]'
+  cantDoForYourSelf: '&7Ви не можете зробити це з собою'
+  cantDetermineMobType: '&7Не вдалося визначити тип істоти з &c[type] &7доступних'
+  cantRename: '!actionbar!&4&nВи не можете перейменувати річ на цю назву!'
+  confirmRedefine: '&eНатисніть, щоб підтвердити перевизначення'
+  cantEdit: '&eВи не можете редагувати це'
+  wrongName: '&cНеправильне ім`я'
+  unknown: невідомо
+  invalidName: '&cНеправильне ім`я'
+  alreadyexist: '&cЦе ім`я вже кимось зайняте'
+  dontexist: '&cНічого не знайдено за цим ім`ям'
+  worldDontExist: Вказаний світ більше недоступний. Не вдалося телепортувати вас туди!
+  notSet: не встановлено
+  lookAtSign: '&7Погляньте на табличку'
+  lookAtBlock: '&7Погляньте на блок'
+  lookAtEntity: '&7Погляньте на істоту'
+  noSpace: '&eНедостатньо вільного місця'
+  notOnGround: '&7Ви не можете виконати це під час польоту'
+  bungee:
+    Online: '&aОнлайн'
+    Offline: '&cОффлайн'
+    not: Сервер не під`єднаний до BungeeCord
+    noserver: '&cНе вдалося знайти сервер з такою назвою!'
+    server: '&7Сервер: &c[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&aОнлайн'
+    Offline: '&cОффлайн'
+    TrueColor: '&2'
+    FalseColor: '&4'
+    'True': '&aТак'
+    'False': '&cНі'
+    Enabled: '&aУвімкнено'
+    Disabled: '&cВимкнено'
+    survival: '&aВиживання'
+    creative: '&aКреатив'
+    adventure: '&aПригодницький'
+    spectator: '&aСпостереження'
+    flying: '&aЛітає'
+    notflying: '&cНе літає'
+  Inventory:
+    Full: '&5Ваш інвентар повний. Не вдається додати предмет'
+    FullDrop: '&5Не всі предмети поміщаються у вашому інвентарі. Тому їх було викинуто
+      на землю'
+  TimeNotRecorded: '&c-Немає записів-'
+  years: '&c[years] &7років, '
+  oneYear: '&c[years] &7рік, '
+  day: '&c[days] &7днів, '
+  oneDay: '&c[days] &7день, '
+  hour: '&c[hours] &7годин, '
+  oneHour: '&c[hours] &7година, '
+  min: '&c[mins] &7хв, '
+  sec: '&c[secs] &7сек. '
+  nextPageConsole: '&fДля наступної сторінки виконайте команду: &5[command]'
+  prevPage: '&c[назад]'
+  prevPageGui: '&7Попередня сторінка '
+  prevPageClean: '&7Попередня '
+  prevPageOff: '&7&o[назад]'
+  prevPageHover: '&cНатисніть, щоб переглянути попередню сторінку'
+  firstPageHover: '&7|<'
+  nextPage: '&a[далі]'
+  nextPageGui: '&7Наступна сторінка'
+  nextPageClean: '&7 Наступна'
+  nextPageOff: '&7&o[далі]'
+  nextPageHover: '&aНатисніть, щоб переглянути наступну сторінку'
+  lastPageHover: '&7>|'
+  pageCount: ' &8&l| &7[current]&8/&7[total] &8&l|'
+  pageCountHover: '&7[totalEntries] записів'
+  skullOwner: '!actionbar!&7Власник:&r [playerName]'
+  circle: '&cКоло'
+  square: '&5Площа'
+  clear: '&7Очистити'
+  protectedArea: Ця територія захищена. Не вдалося зробити це тут.
+  valueToLong: '&7Значення занадто високе. Максимум: [max]'
+  valueToShort: '&7Значення занадто низьке. Мінімум: [min]'
+  pickIcon: '&8Виберіть значок'
+  # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
+  Same: '&cНе вдалося відкрити власний інвентар для редагування!'
+  cantLoginWithDifCap: '&7Не вдалося увійти під іншим ніком! Старий нік: &c[oldName]&7.
+    Поточний: &c[currentName]'
+  Searching: '&7Пошук даних гравця, будь ласка, зачекайте, це може зайняти деяке час!'
+  NoCommandWhileSleeping: '&cНе можна виконувати команди під час сну!'
+  PurgeNotEnabled: '&cФункція очищення не увімкнена у конфігурації!'
+  TeamManagementDisabled: '&7Ця функція буде мати обмежений функціонал, саме у той
+    час коли DisableTeamManagement встановлено на true!'
+  NoGameMode: '&c Будь ласка, використовуйте значення 0/1/2/3 або Survival/Creative/Adventure/Spectator
+    або s/c/a/sp!'
+  NameChange: '&7Гравець &c[playerDisplayName] &7зайшов на сервер, також відомий як:
+    &c[namelist]'
+  Cooldowns: '&7Ця команда перезаряджається, зачекайте &c[time]'
+  specializedCooldowns: '&7Для цієї команди діють обмеження на використання, будь
+    ласка, зачекайте &c[time]'
+  specializedRunning: '&eКоманда все ще виконується, зачекайте &6[time]'
+  CooldownOneTime: '&cЦю команду можна використовувати лише один раз!'
+  WarmUp:
+    canceled: '&cКоманда була скасована через ваш рух'
+    counter: '!actionbar!&7--> &c[time] &7<--'
+    DontMove: '!title!!subtitle!&cНе рухайся!'
+    Boss:
+      DontMove: '&4Не рухайтесь &7[autoTimeLeft] &4секунд!'
+      WaitFor: '&4Зачекайте &7[autoTimeLeft] &4секунд!'
+  Spawner: Спавнер [type]
+  FailedSpawnerMine: '!actionbar!&cНе вдалося видобути спаунер. &7[percent]% &c: Шанс
+    випадіння'
+  ClickSpawner: '!actionbar!&7[percent]% &e: Шанс випадіння'
+  Elevator:
+    created: '&aТабличка-ліфт успішно створена!'
+  CantPlaceSpawner: '&7Не вдалося розмістити спавнер так близько до іншого спавнера.
+    Мінімальна відстань: (&c[range]&7)'
+  ChunksLoading: '&7Дані чанків світу досі завантажуються. Будь ласка зачекайте трохи
+    і спробуйте знову.'
+  CantUseNonEncrypted: '!actionbar!&cКоманда для цього предмета не зашифрована. Не
+    вдалося використати її!'
+  CantDecode: '!actionbar!&cНе вдалося декодувати повідомлення/команду. Файл містить
+    неправильний ключ для цього завдання. Повідомте про це адміністрацію серверу'
+  CantTeleport: '&cВи не можете телепортуватися, тому що у вас занадто багато обмежених
+    предметів. Прокрутіть цей рядок, щоб побачити максимально допустиму кількість
+    предметів.'
+  BlackList: '&7[material] [amount] &cМаксимум: [max]'
+  wrongPortal: '&cВи неправильно вказали зону впливу ефекту'
+  ItemWillBreak: '!actionbar!&7Ваш предмет (&c[itemName]&7) скоро зламається! &7[current]&c/&7[max]'
+  ArmorWillBreak: '!actionbar!&7Ваш предмет (&c[itemName]&7) скоро зламається! &7[current]&c/&7[max]'
+  flyingToHigh: '&7Ви не можете літати так високо, максимальна висота &c[max]&7!'
+  specializedItemFail: '&7Не вдалося визначити вимогу до спеціалізованого предмета
+    за значенням: &c[value]'
+  sunSpeeding: Сплять [count] з [total] гравців | [hour] година | Прискорення [speed]X
+  sleepersRequired: '!toast! -t:goal -icon:clock &6&lУВАГА: &f[sleeping] &7з &f[required]&7
+    гравців потрібно для прискорення нічного часу!'
+  sunSpeedingTitle: '&7[hour]'
+  skippingNight: '!title!&7Пропускання всієї ночі'
+  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
+  repairConfirm: '&7Натисніть, щоб підтвердити ремонт предмету &c[items] &7за &c[cost]'
+  bookDate: '&7Написано у &f[date]'
+  maintenance: '&7Технічний режим'
+  mapLimit: '&cНеможливо вийти за межі 30 000 000 блоків'
+  startedEditingPainting: '&7Ви включили режим редагування картини. Натисніть на будь-який
+    інший блок, щоб скасувати.'
+  canceledEditingPainting: '&7Ви скасували режим редагування картини'
+  changedPainting: '!actionbar!&7Картина змінена на &c[name] &7с ID &c[id]'
+  noSpam: '!title!&cНе спамьте!'
+  noCmdSpam: '!title!&cНе спамте командами!'
+  spamConsoleInform: '&7Гравець (&c[playerName]&7) спровокував (&c[rules]&7) чат фільтр:&r
+    [message]'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '&7Ласкаво просимо &c[playerDisplayName] &7до нашого серверу!'
+  LogoutCustom: '&7Гравець &c[playerDisplayName] &7 залишив гру'
+  LoginCustom: '&7Гравець &c[playerDisplayName] &7приєднався до гри'
+  deathlocation: '&7Ви померли на координатах x:&c[x]&7, y:&c[y]&7, z:&c[z]&7 у світі
+    &c[world]'
+  book:
+    exploit: '&cВи не можете створити книгу , що містить більше ніж [amount] сторінок'
+  combat:
+    CantUseShulkerBox: '&cНе можна використовувати коробку шалкеру під час бою з гравцем.
+      Wait: [time]'
+    CantUseCommand: '!actionbar!&cНе можна використовувати команду під час бою. Зачекайте:
+      [time]'
+    bossBarPvp: Бойовий режим [autoTimeLeft]
+    bossBarPve: '&2Бойовий режим [autoTimeLeft]'
+  noSchedule: Розклад цього імені не знайдено
+  totem:
+    cooldown: '&7Затримка тотему: [time]'
+    warmup: '&7Ефект тотема: [time]'
+    cantConsume: '&7Використання тотему неможливе через перезаряджання'
+  InventorySave:
+    info: '&0Інформація: &8[playerDisplayName]'
+    saved: '&c[time] &7Інвентар збережений з ID: &c[id]'
+    NoSavedInv: '&7У цього гравця немає збережених інвентарів'
+    NoEntries: '&cФайл існує, але інвентар не знайдено!'
+    CantFind: '&cНе вдалося знайти інвентар з цим ID'
+    TopLine: '&c----------- &7Збережені інвентарі гравця &c[playerDisplayName] &c-----------'
+    List: '&7ID: &c[id]&7. &c[time]'
+    KillerSymbol: '&c ☠'
+    Click: '&fНатисніть, щоб перевірити збережений інвентар ([id])'
+    IdDontExist: '&cЦей ID збереження не існує!'
+    Deleted: Збережений інвентар був успішно видалений!
+    Restored: '&7Ви відновили інвентар гравця &c[sourcename] &7для гравця &c[targetname]&7.'
+    GotRestored: '&7Ваш інвентар був відновлений з інвентарю &c[sourcename] &c[time]'
+    LoadForSelf: '&7Завантажити цей інвентар для себе'
+    LoadForOwner: '&7Завантажити інвентар для власника'
+    NextInventory: '&7Наступний інвентар'
+    PreviousInventory: '&7Попередній інвентар'
+    Editable: '&aРежим редагування увімкнено'
+    NonEditable: '&cРежим редагування вимкнено'
+  vanishSymbolOn: '&8[&7Прихований&8]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '&8[&7AFK&8]&r'
+  afkSymbolOff: ''
+  beeinfo: '!actionbar!&7Рівень меду: &e[level]&7/&e[maxlevel] &7Бджіл всередині:
+    &e[count]&7/&e[maxcount]'
+  pvp:
+    noGodDamage: '!actionbar!&cВи не можете завдати шкоди гравцям, залишаючись безсмертним'
+  pve:
+    noGodDamage: '!actionbar!&cВи не можете пошкодити істоти, будучи безсмертним'
+  InvEmpty:
+    armor: Ваші слоти броні повинні бути порожніми!
+    hand: Ваша рука повинна бути порожньою!
+    maininv: '&vВаш основний інвентар повинен бути порожнім!'
+    maininvslots: '&7Ваш основний інвентар повинен мати як мінімум &c[count] &7пустих
+      слотів!'
+    inv: Ваш інвентар повинен бути порожнім!
+    offhand: Ваша ліва повинна бути порожньою!
+    quickbar: Ваш швидкий інвентар повинен бути порожнім!
+    quickbarslots: '&7Ваш навбар повинен мати як мінімум &c[count] &7пустих слотів!'
+    subinv: Ваш суб інвентар повинен бути порожнім!
+    subinvslots: '&7Ваш суб інвентар повинен мати як мінімум &c[count] &7пустих слотів!'
+  DamageCause:
+    block_explosion: Вибух
+    contact: Блокування пошкоджень
+    cramming: Переповнення
+    custom: Невідомо
+    dragon_breath: Дихання дракона
+    drowning: Утоплення
+    dryout: Висихання
+    entity_attack: Атака сутностей
+    entity_explosion: Вибух
+    entity_sweep_attack: Атака снарядів
+    fall: Падіння
+    falling_block: Падаючий блок
+    fire: Вогонь
+    fire_tick: Вогонь
+    fly_into_wall: Політ у стіні
+    freeze: Замороження
+    hot_floor: Магма блок
+    lava: Лава
+    lightning: Блискавка
+    magic: Магія
+    melting: Переплавлення
+    poison: Отруєння
+    projectile: Снаряд
+    starvation: Голод
+    suffocation: Задуха
+    suicide: Самогубство
+    thorns: Шипи
+    void: Порожнеча
+    wither: Висушувач
+  Biomes:
+    BADLANDS: Безплідні землі
+    BADLANDS_PLATEAU: Плато безплідних земель
+    BAMBOO_JUNGLE: Бамбукові джунглі
+    BAMBOO_JUNGLE_HILLS: Бамбукові пагорби джунглів
+    BASALT_DELTAS: Базальтові дельти
+    BEACH: Пляж
+    BIRCH_FOREST: Березовий ліс
+    BIRCH_FOREST_HILLS: Березові лісові пагорби
+    COLD_OCEAN: Холодний океан
+    CRIMSON_FOREST: Багряний ліс
+    CUSTOM: Custom
+    DARK_FOREST: Темний ліс
+    DARK_FOREST_HILLS: Темні лісові пагорби
+    DEEP_COLD_OCEAN: Глибокий холодний океан
+    DEEP_FROZEN_OCEAN: Глибоко замерзлий океан
+    DEEP_LUKEWARM_OCEAN: Глибокий теплий океан
+    DEEP_OCEAN: Глибокий океан
+    DEEP_WARM_OCEAN: Глибокий теплий океан
+    DESERT: Пустеля
+    DESERT_HILLS: Пустельні пагорби
+    DESERT_LAKES: Пустельні озера
+    DRIPSTONE_CAVES: Капельні печери
+    END_BARRENS: Степи краю
+    END_HIGHLANDS: Гірські острови краю
+    END_MIDLANDS: Середні острови краю
+    ERODED_BADLANDS: Еродовані безплідні землі
+    FLOWER_FOREST: Квітковий ліс
+    FOREST: Ліс
+    FROZEN_OCEAN: Замерзлий океан
+    FROZEN_RIVER: Замерзла річка
+    GIANT_SPRUCE_TAIGA: Гігантська ялинова тайга
+    GIANT_SPRUCE_TAIGA_HILLS: Гігантські ялинові тайгові пагорби
+    GIANT_TREE_TAIGA: Гігантське дерево тайги
+    GIANT_TREE_TAIGA_HILLS: Гігантське дерево тайгових пагорбів
+    GRAVELLY_MOUNTAINS: Гравійні гори
+    ICE_SPIKES: Крижані шипи
+    JUNGLE: Джунглі
+    JUNGLE_EDGE: Край джунглів
+    JUNGLE_HILLS: Пагорби джунглів
+    LUKEWARM_OCEAN: Теплий океан
+    LUSH_CAVES: Пишні печери
+    MODIFIED_BADLANDS_PLATEAU: Змінене плато безплідних земель
+    MODIFIED_GRAVELLY_MOUNTAINS: Змінені гравійні гори
+    MODIFIED_JUNGLE: Змінені джунглі
+    MODIFIED_JUNGLE_EDGE: Змінений край джунглів
+    MODIFIED_WOODED_BADLANDS_PLATEAU: Змінене лісисте плато безплідних земель
+    MOUNTAINS: Гори
+    MOUNTAIN_EDGE: Гірський край
+    MUSHROOM_FIELDS: Грибні поля
+    MUSHROOM_FIELD_SHORE: Грибний польовий берег
+    NETHER_WASTES: Nether wastes
+    OCEAN: Океан
+    PLAINS: Рівнини
+    RIVER: Річка
+    SAVANNA: Саванна
+    SAVANNA_PLATEAU: Саванна плато
+    SHATTERED_SAVANNA: Зруйнована савана
+    SHATTERED_SAVANNA_PLATEAU: Розколоте плато савани
+    SMALL_END_ISLANDS: Малі острови краю
+    SNOWY_BEACH: Сніговий пляж
+    SNOWY_MOUNTAINS: Снігові гори
+    SNOWY_TAIGA: Снігова тайга
+    SNOWY_TAIGA_HILLS: Снігово-тайгові пагорби
+    SNOWY_TAIGA_MOUNTAINS: Снігові тайгові гори
+    SNOWY_TUNDRA: Снігова тундра
+    SOUL_SAND_VALLEY: Піщана долина душі
+    STONE_SHORE: Кам`яний берег
+    SUNFLOWER_PLAINS: Соняшники рівнини
+    SWAMP: Болото
+    SWAMP_HILLS: Болотяні пагорби
+    TAIGA: Тайга
+    TAIGA_HILLS: Тайгові пагорби
+    TAIGA_MOUNTAINS: Таємничі гори
+    TALL_BIRCH_FOREST: Високий березовий ліс
+    TALL_BIRCH_HILLS: Високі березові пагорби
+    THE_END: ​​Край
+    THE_VOID: Порожнеча
+    WARM_OCEAN: Теплий океан
+    WARPED_FOREST: Викривлений ліс
+    WOODED_BADLANDS_PLATEAU: Лісиста плоскогір`я
+    WOODED_HILLS: Лісисті пагорби
+    WOODED_MOUNTAINS: Лісисті гори
+  EntityType:
+    area_effect_cloud: Хмара ефектів
+    armor_stand: Стійка для броні
+    arrow: Стріла
+    axolotl: Аксолотль
+    bat: Кажан
+    bee: Бджола
+    blaze: Іфрит
+    boat: Човен
+    cat: Кішка
+    cave_spider: Печерний павук
+    chicken: Курка
+    cod: Тріска
+    cow: Корова
+    creeper: Кріпер
+    dolphin: Дельфін
+    donkey: Осел
+    dragon_fireball: Вогненна куля дракона
+    dropped_item: Випавший предмет
+    drowned: Водяник
+    egg: Яйце
+    elder_guardian: Стародавній сторож
+    enderman: Ендермен
+    endermite: Ендерміт
+    ender_crystal: Кристал краю
+    ender_dragon: Дракон краю
+    ender_pearl: Перли ендера
+    ender_signal: Сигнал ендера
+    evoker: Заклинатель
+    evoker_fangs: Шипи Заклинателя
+    experience_orb: Куля досвіду
+    falling_block: Падаючий блок
+    fireball: Вогненна куля
+    firework: Firework
+    fishing_hook: Рибальський гачок
+    fox: Лисиця
+    ghast: Гаст
+    giant: Гігант
+    glow_item_frame: Сяюча рамка
+    glow_squid: Сяючий спрут
+    goat: Козел
+    guardian: Страж
+    hoglin: Гоґлін
+    horse: Кінь
+    husk: Висушень
+    illusioner: Ілюзіоніст
+    iron_golem: Залізний голем
+    item_frame: Рамка
+    leash_hitch: Повідець
+    lightning: Блискавка
+    llama: Лама
+    llama_spit: Блювок лами
+    magma_cube: Лавовий куб
+    marker: Маркер
+    minecart: Вагонетка
+    minecart_chest: Вантажна вагонетка
+    minecart_command: Командна вагонетка
+    minecart_furnace: Самохідна вагонетка
+    minecart_hopper: Завантажувальна вагонетка
+    minecart_mob_spawner: Вагонетка зі спавнером
+    minecart_tnt: Вагонетка з динамітом
+    mule: Мул
+    mushroom_cow: Грибна корова
+    ocelot: Оцелот
+    painting: Картина
+    panda: Панда
+    parrot: Папуга
+    phantom: Фантом
+    pig: Свиня
+    piglin: Піглін
+    piglin_brute: Брутальний піглін
+    pillager: Розбійник
+    player: Гравець
+    polar_bear: Білий ведмідь
+    primed_tnt: Заряджений динаміт
+    pufferfish: Риба фугу
+    rabbit: Кролик
+    ravager: Руйнівник
+    salmon: Лосось
+    sheep: Вівця
+    shulker: Шалкер
+    shulker_bullet: Куля шалкера
+    silverfish: Луска
+    skeleton: Скелет
+    skeleton_horse: Кінь-cкелет
+    slime: Слимак
+    small_fireball: Мала вогненна куля
+    snowball: Снігова куля
+    snowman: Сніговик
+    spectral_arrow: Спектральна стрілка
+    spider: Павук
+    splash_potion: Вибухове зілля
+    squid: Спрут
+    stray: Зимогір
+    strider: Блукач
+    thrown_exp_bottle: Кинута пляшка з досвідом
+    trader_llama: Лама торговця
+    trident: Тризуб
+    tropical_fish: Тропічні риби
+    turtle: Черепаха
+    unknown: Невідомо
+    vex: Бісик
+    villager: Житель
+    vindicator: Поборник
+    wandering_trader: Мандрівний торговець
+    witch: Відьма
+    wither: Висушувач
+    wither_skeleton: Скелет-висушувач
+    wither_skull: Голова висушувача
+    wolf: Вовк
+    zoglin: Зоґлін
+    zombie: Зомбі
+    zombie_horse: Кінь-зомбі
+    zombie_villager: Зомбі-мешканець
+    zombified_piglin: Зоґлін-піґлін
+  EnchantAliases:
+    protection_fire:
+    - Вогнетривкість
+    damage_all:
+    - Гострота
+    arrow_fire:
+    - Палаюча стріла
+    soul_speed:
+    - SOULSPEED
+    water_worker:
+    - Підводник
+    arrow_knockback:
+    - Відкидання
+    loyalty:
+    - Вірність
+    depth_strider:
+    - Підводна ходьба
+    vanishing_curse:
+    - Прокляття_втрати
+    durability:
+    - Незламність
+    knockback:
+    - Віддача
+    luck:
+    - Везучий рибалка
+    binding_curse:
+    - Прокляття незнімності
+    loot_bonus_blocks:
+    - Успіх
+    protection_environmental:
+    - Захист
+    dig_speed:
+    - Ефективність
+    mending:
+    - Полагодження
+    frost_walker:
+    - Льодохід
+    lure:
+    - Принада
+    loot_bonus_mobs:
+    - Здобич
+    piercing:
+    - Пронизлива стріла
+    protection_explosions:
+    - Вибухостійкість
+    damage_undead:
+    - Небесна кара
+    multishot:
+    - MULTISHOT
+    fire_aspect:
+    - Змова вогню
+    channeling:
+    - Громовержець
+    glowing:
+    - Світіння
+    sweeping_edge:
+    - Разючий клинок
+    thorns:
+    - Шипи
+    damage_arthropods:
+    - Біч_членистоногих
+    oxygen:
+    - Підводне дихання
+    riptide:
+    - Тягун
+    silk_touch:
+    - Шовкове торкання
+    quick_charge:
+    - Швидка перезарядка
+    protection_projectile:
+    - Захист від снарядів
+    impaling:
+    - Пронизник
+    protection_fall:
+    - Невагомість
+    arrow_damage:
+    - Сила
+    arrow_infinite:
+    - Нескінченність
+  PotionEffectAliases:
+    speed:
+    - Швидкість
+    slow:
+    - Уповільнення
+    fast_digging:
+    - Швидке копання
+    slow_digging:
+    - Повільне копання
+    increase_damage:
+    - Збільшення шкоди
+    heal:
+    - Відновлення
+    harm:
+    - Шкода
+    jump:
+    - Стрибучість
+    confusion:
+    - Confusion
+    regeneration:
+    - Регенерація
+    damage_resistance:
+    - Стійкість до пошкоджень
+    fire_resistance:
+    - Вогнестійкість
+    water_breathing:
+    - Підводне дихання
+    invisibility:
+    - Невидимість
+    blindness:
+    - Сліпота
+    night_vision:
+    - Нічне бачення
+    hunger:
+    - Голод
+    weakness:
+    - Слабкість
+    poison:
+    - Зілля
+    wither:
+    - Візер
+    health_boost:
+    - Зміцнення здоров'я
+    absorption:
+    - Поглинання
+    saturation:
+    - Насиченість
+    glowing:
+    - Світіння
+    levitation:
+    - Левітація
+    luck:
+    - Вдача
+    unluck:
+    - Невдача
+    slow_falling:
+    - Падіння снігу
+    conduit_power:
+    - Сила кабелю
+    dolphins_grace:
+    - Грація дельфінів
+    bad_omen:
+    - Погана прикмета
+    hero_of_the_village:
+    - Герой села
+direction:
+  n: Північ
+  ne: Північний Схід
+  e: Схід
+  se: Південний Схід
+  s: Південь
+  sw: Південний Захід
+  w: Захід
+  nw: Північний Захід
+modify:
+  middlemouse: '&aСередня кнопка миші для редагування'
+  qButtonEdit: '&2Натисніть на Q щоб редагувати'
+  newItem: '&7Помістіть новий предмет сюди'
+  newLine: '&a< Нова лінія>'
+  newLineHover: '&aДодати новий рядок'
+  newPage: '&a<Нова сторінка>'
+  newPageHover: '&aСтворити нову сторінку'
+  removePage: '&c<Видалити сторінку>'
+  removePageHover: '&cВидалити сторінку'
+  deleteSymbol: '&c[✘]'
+  deleteSymbolHover: '&cВидалити &7[text]'
+  extraEditSymbol: '&c!'
+  addSymbol: '&a[+]'
+  addSymbolHover: '&aДодати новий'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&aВідхилити'
+  acceptSymbol: ' &a&l[✓]'
+  acceptSymbolHover: '&aПрийняти'
+  denySymbol: ' &4&l[✘]'
+  denySymbolHover: '&cВідхилити'
+  enabledSymbol: '&a[+]'
+  disabledSymbol: '&c[-]'
+  enabled: '&aУвімкнено'
+  disabled: '&cВимкнено'
+  running: '&aЗапущено'
+  paused: '&cЗупинено'
+  editSymbol: '&7✎'
+  editSymbolHover: '&7Редагувати &c[text]'
+  editLineColor: '&f'
+  listUpSymbol: '&c⇑'
+  listUpSymbolHover: '&7Підняти'
+  listDownSymbol: '&c⇓'
+  listDownSymbolHover: '&7Опустити'
+  listNumbering: '&e[number]. '
+  listAlign: '&80'
+  ChangeHover: '&7Натисніть, щоб змінити'
+  ChangeCommands: '&eКоманди'
+  enabledColor: '&6'
+  disabledColor: '&7'
+  commandTitle: ' &7--- &c[name] &7---'
+  commandList: '&7[command]'
+  emptyLine: '&7[Empty line]'
+  commandEdit: '&7Редагувати список'
+  nameAddInfo: '&eВведіть нове ім`я. Введіть &6cancel &e для скасування'
+  lineAddInfo: '&7Введіть новий рядок. Введіть &ccancel&7, щоб скасувати'
+  commandAddInfo: '&7Введіть нову команду. Введіть &ccancel&7, щоб скасувати'
+  commandAddInformationHover: "&7[playerName] може бути використаний для отримання\
+    \ імені гравця \n&7Щоб увімкнути затримку в командах: \n&7delay! 5 \n&7Підтрим\
+    уються спеціальні команди. Більше інформації на \n&7https://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&7Натисніть, щоб вставити старий текст. Введіть &ccancel&7, щоб
+    скасувати дію. Введіть &cremove&7, щоб видалити рядок'
+  listLimit: '&eСписок не може мати більше ніж &6[amount] &eзаписів'
+  commandEditInfoHover: '&7Натисніть, щоб вставити старий текст'
+teleportation:
+  relocation: '!actionbar!&4Ваше розташування телепортації було заблоковано. Ви були
+    телепортовані в безпечне місце.'
+econ:
+  noMoney: '&cУ вас не достатньо грошей'
+  charged: '!actionbar!&fЗаряджено: &6[amount]'
+  notEnoughMoney: '&cВам не вистачає грошей. Потрібна сума (&6[amount]&c)'
+  tooMuchMoney: '&cУ вас занадто багато грошей'
+  disabled: '&cНеможливо використовувати цю команду, тому що підтримка економіки відключена'
+  commandCost: '&7Вартість команди становить: &6[cost] &7повторіть її або натисніть
+    , аби підтвердити'
+Selection:
+  SelectPoints: '&cВиділіть дві точки за допомогою інструмента виділення: &c[tool]'
+  PrimaryPoint: '&cПерша &7точка виділення [point] &7обрана'
+  SecondaryPoint: '&cДруга &7точка виділення [point] &7обрана'
+  CoordsTop: '&7X:&c[x] &7Y:&c[y] &7Z:&c[z]'
+  CoordsBottom: '&7X:&c[x] &7Y:&c[y] &7Z:&c[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+Location:
+  Title: '&8Розташування гравця'
+  Killer: '&7Вбивця: &c[killer]'
+  OneLiner: '&7Положення: &c[location]'
+  DeathReason: '&7Причина смерті: &c[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&7Світ: &c[world]'
+  X: '&7X: &c[x]'
+  Y: '&7Y: &c[y]'
+  Z: '&7Z: &c[z]'
+  Pitch: '&7Висота: &c[pitch]'
+  Yaw: '&7Азимут: &c[yaw]'
+  WorldNames:
+  - world-&2World
+  - world_nether-&2World Nether
+  - world_the_end-&2World The End
+  - spawn-&2Spawn
+  - Arena-&2Arena
+Locations: '&7Локації: '
+warp:
+  list: '&7[pos]. &c[warpName] &f- &7[worldName] ([x]:[y]:[z])'
+afk:
+  'off': '&7Гравець наразі не у AFK'
+  MayNotRespond: '&7Гравець зараз у AFK і може не відповідати'
+  MayNotRespondStaff: Співробітник сервера AFK і може не відповідати. Спробуйте зв`язатися
+    з нами тут:(потім впишіть сюди , де саме)
+BossBar:
+  hpBar: '&f[victim] &7[max]&f/&7[current] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8Ефекти зілля'
+  List: '&7[PotionName] [PotionAmplifier] &7Тривалість: &7[LeftDuration] &7сек'
+  NoPotions: '&7Ні'
+Information:
+  Title: '&8Інформація про гравців'
+  Health: '&eЗдоров''я: &6[Health]/[maxHealth]'
+  Hunger: '&eГолод: &6[Hunger]'
+  Saturation: '&eНасиченість: &6[Saturation]'
+  Exp: '&eДосвід: &6[Exp]'
+  NotEnoughExp: '&eНедостатньо досвіду: &6[Exp]'
+  NotEnoughExpNeed: '&eНедостатньо досвіду: &6[Exp]/[need]'
+  tooMuchExp: '&eЗанадто великий ризик: &6[Exp]/[need]'
+  NotEnoughVotes: '&eНедостатньо голосів: &6[votes]'
+  TooMuchVotes: '&eЗанадто багато голосів: &6[votes]'
+  BadGameMode: '&cВи не можете зробити це в поточному режимі гри'
+  BadArea: '&cВи не можете виконати цю дію в цій області'
+  GameMode: '&eРежим гри: &6[GameMode]'
+  Flying: '&eЛітання: &6[Flying]'
+  Uuid: '&6[uuid]'
+  FirstConnection: '&eПерше з''єднання: &6[time]'
+  Lastseen: '&eОстанній раз заходив: &6[time]'
+  Onlinesince: '&eОнлайн з: &6[time]'
+  Money: '&eБаланс: &6[money]'
+  Group: '&eГрупа: &6[group]'
+Elytra:
+  Speed: '&7Швидкість: &c[speed]&7км/ч'
+  SpeedBoost: '&a+'
+  SpeedSuperBoost: ' &a+ '
+  CanUse: '&cУ вас немає дозволу, щоб одягнути елітри!'
+  CantGlide: '&cТут не можна використовувати елітри!'
+  Charging: '&7Заряд: &c[percentage]%'
+NetherPortal:
+  ToHigh: '&7Портал занадто великий, максимальна висота &c[max]&7!'
+  ToWide: '&7Портал занадто широкий, максимальна ширина &c[max]&7!'
+  Creation: '!actionbar!&7Cворено портал до пекла [height]x[width]!'
+  Disabled: Створення порталу вимкнено!
+Ender:
+  Title: '&7Відкрити скриню ендера'
+Chat:
+  localPrefix: '&c[ʟ] &r'
+  shoutPrefix: '&e[ɢ] &r'
+  LocalNoOne: '!actionbar!&cВас ніхто не чує, пишіть! перед повідомленням щоб писати
+    у глобальний чат'
+  shoutDeduction: '!actionbar!&c[amount] &7знято за повідомлення, відправлене до глобального
+    чату'
+  # Use \n to add new line
+  publicHover: '&7Відправлений час: &c%server_time_hh:mm:ss%'
+  privateHover: '&7Відправлений час: &c%server_time_hh:mm:ss%'
+  staffHover: '&7Відправлений час: &c%server_time_hh:mm:ss%'
+  helpopHover: '&7Відправлений час: &c%server_time_hh:mm:ss%'
+  link: '&l&4⦗&7ПОСИЛКА&4⦘'
+  item: '&7⦗%cmi_iteminhand_displayname%[amount]&7⦘'
+  itemAmount: ' x[amount]'
+  itemEmpty: '&7⦗Могутній кулак&7⦘'
+command:
+  help:
+    output:
+      usage: '&eВикористання: &7%usage%'
+      cmdInfoFormat: '[command] &f- &e[description]'
+      cmdFormat: '&6/[command]&f[arguments]'
+      helpPageDescription: '&e* [description]'
+      explanation: '&e * [explanation]'
+      title: '&e------ ======= &6Допомога&e &e======= ------'
+  nocmd:
+    help:
+      info: '&eПоказує усі доступні команди'
+      args: ''
+  reload:
+    help:
+      info: '&eПерезавантажує файли конфігурації та файли з локалізацією'
+      args: ''
+    info:
+      feedback: '&6CMIL Конфіги та файли локалізації перезавантажено! Це зайняло:
+        [ms] мс'
+      failedConfig: '&4Не вдалося завантажити файл конфігурації! Перевірте орфографію!'
+      failedLocale: '&4Не вдалося завантажити файл локалізації! Перевірте орфографію!'

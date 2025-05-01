@@ -1,0 +1,167 @@
+Settings:
+  # Rarity affects the chance of getting an enchantment from enchanting or loots depending on rarity weight value.
+  # You can create and edit rarities in the config.yml
+  Rarity: rare
+  # Enchantment display name.
+  Name: 斩首者
+  # Enchantment description.
+  # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+  Description:
+  - '%enchantment_trigger_chance%% 几率砍下敌人的头'
+  Level:
+    # The maximum level of this enchantment.
+    # Value between 1 and 255 (inclusive).
+    # [*] Reboot required when changed.
+    Max: 4
+  Cost:
+    # The minimum possible cost of this enchantment in levels.
+    # Explanation: https://minecraft.wiki/w/Enchanting_mechanics#How_enchantments_are_chosen
+    # Vanilla costs: https://minecraft.wiki/w/Enchanting/Levels
+    # [*] Reboot required when changed.
+    Min:
+      # The cost for a level I enchantment.
+      Base: 2
+      # The amount of levels added to the Base for each level above level I
+      Per_Level: 15
+    # The maximum possible cost of this enchantment in levels.
+    # Explanation: https://minecraft.wiki/w/Enchanting_mechanics#How_enchantments_are_chosen
+    # Vanilla costs: https://minecraft.wiki/w/Enchanting/Levels
+    # [*] Reboot required when changed.
+    Max:
+      # The cost for a level I enchantment.
+      Base: 8
+      # The amount of levels added to the Base for each level above level I
+      Per_Level: 15
+    # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.
+    # [*] Reboot required when changed.
+    Anvil: 4
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+  # A chance that this enchantment will be triggered.
+  Trigger_Chance:
+    # Start modifier value.
+    Base: 5.0
+    # Additional value calculated by enchantment level step (see below). Formula: <per_level> * <step>
+    Per_Level: 1.75
+    # Defines level step for 'Per_Level' value calculation. Formula: <enchant_level> / <step>
+    Step: 1.0
+    # Sets a limit for the final (base & per level calculations) value.
+    # Set '-1' for no limit.
+    Cap: 100.0
+    # Sets action performed between 'Base' and final 'Per_Level' values.
+    # Available types: ADD, MULTIPLY
+    Action: ADD
+  # Sets whether or not MythicMobs should be ignored.
+  Ignore_Mythic_Mobs: true
+  # List of entities, that won't drop heads.
+  Ignored_Entity_Types:
+  - WITHER
+  - WITHER_SKELETON
+  - ENDER_DRAGON
+  Head_Item:
+    # Head item display name. Use '%type%' for entity name.
+    Name: <lyellow>%type%'s Head</lyellow>
+    # Head texture values for each entity type.
+    # You can take some from http://minecraft-heads.com
+    # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+    Textures:
+      PILLAGER: 18e57841607f449e76b7c820fcbd1913ec1b80c4ac81728874db230f5df2b3b
+      BAT: 3820a10db222f69ac2215d7d10dca47eeafa215553764a2b81bafd479e7933d1
+      HORSE: a996399fff9cbcfb7ba677dd0c2d104229d1cc2307a6f075a882da4694ef80ae
+      LLAMA: 9f7d90b305aa64313c8d4404d8d652a96eba8a754b67f4347dcccdd5a6a63398
+      AXOLOTL: 5c167410409336acc58e6433ffa8b7f86a8786e35ec7300b9062340281d4691c
+      DONKEY: 63a976c047f412ebc5cb197131ebef30c004c0faf49d8dd4105fca1207edaff3
+      HOGLIN: 9bb9bc0f01dbd762a08d9e77c08069ed7c95364aa30ca1072208561b730e8d75
+      WOLF: 28d408842e76a5a454dc1c7e9ac5c1a8ac3f4ad34d6973b5275491dff8c5c251
+      GOAT: 457a0d538fa08a7affe312903468861720f9fa34e86d44b89dcec5639265f03
+      ENDERMAN: c09f1de6135f4bea781c5a8e0d61095f833ee2685d8154ecea814ee6d328a5c6
+      WITCH: 8aa986a6e1c2d88ff198ab2c3259e8d2674cb83a6d206f883bad2c8ada819
+      PANDA: 8018a1771d69c11b8dad42cd310375ba2d827932b25ef357f7e572c1bd0f9
+      WANDERING_TRADER: ee011aac817259f2b48da3e5ef266094703866608b3d7d1754432bf249cd2234
+      MOOSHROOM: 45603d539f666fdf0f7a0fe20b81dfef3abe6c51da34b9525a5348432c5523b2
+      TROPICAL_FISH: d6dd5e6addb56acbc694ea4ba5923b1b25688178feffa72290299e2505c97281
+      DROWNED: c84df79c49104b198cdad6d99fd0d0bcf1531c92d4ab6269e40b7d3cbbb8e98c
+      SALMON: 8aeb21a25e46806ce8537fbd6668281cf176ceafe95af90e94a5fd84924878
+      MAGMA_CUBE: 38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429
+      DOLPHIN: 8e9688b950d880b55b7aa2cfcd76e5a0fa94aac6d16f78e833f7443ea29fed3
+      ELDER_GUARDIAN: 1c797482a14bfcb877257cb2cff1b6e6a8b8413336ffb4c29a6139278b436b
+      BEE: cce9edbbc5fdc0d8487ac72eab239d2cacfe408d74288d6384b044111ba4de0f
+      SKELETON_HORSE: 47effce35132c86ff72bcae77dfbb1d22587e94df3cbc2570ed17cf8973a
+      EVOKER: 806ac02fd9dac966b7e5806736b6feb90e2f3b0577969e673291b8307c1ef8e5
+      HUSK: d674c63c8db5f4ca628d69a3b1f8a36e29d8fd775e1a6bdb6cabb4be4db121
+      RABBIT: ffecc6b5e6ea5ced74c46e7627be3f0826327fba26386c6cc7863372e9bc
+      SHEEP: a723893df4cfb9c7240fc47b560ccf6ddeb19da9183d33083f2c71f46dad290a
+      SQUID: d8705624daa2956aa45956c81bab5f4fdb2c74a596051e24192039aea3a8b8
+      COW: b667c0e107be79d7679bfe89bbc57c6bf198ecb529a3295fcfdfd2f24408dca3
+      SPIDER: cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1
+      ZOMBIFIED_PIGLIN: 7eabaecc5fae5a8a49c8863ff4831aaa284198f1a2398890c765e0a8de18da8c
+      CHICKEN: 1638469a599ceef7207537603248a9ab11ff591fd378bea4735b346a7fae893
+      COD: 7892d7dd6aadf35f86da27fb63da4edda211df96d2829f691462a4fb1cab0
+      MULE: a0486a742e7dda0bae61ce2f55fa13527f1c3b334c57c034bb4cf132fb5f5f
+      GUARDIAN: a0bf34a71e7715b6ba52d5dd1bae5cb85f773dc9b0d457b4bfc5f9dd3cc7c94
+      CAT: d0dba942c06b77a2828e3f66a1faec5e8643e9ea61a81a4523279739ed82d
+      POLAR_BEAR: d46d23f04846369fa2a3702c10f759101af7bfe8419966429533cd81a11d2b
+      ENDERMITE: 1730127e3ac7677122422df0028d9e7368bd157738c8c3cddecc502e896be01c
+      SLIME: a5acd8b24f7389a40404348f4344eec2235d4ca718453be9803b60b71a125891
+      ZOMBIE_VILLAGER: b2b393be2dc2973d41a834e19dd6b73b866782d684a097ebfe99cb390194f
+      PIG: fa305e321e87ec91421ecccf7cfef10703fb77f62658d6b998f117fcf34cd0b2
+      RAVAGER: cd20bf52ec390a0799299184fc678bf84cf732bb1bd78fd1c4b441858f0235a8
+      STRIDER: 125851a86ee1c54c94fc5bed017823dfb3ba08eddbcab2a914ef45b596c1603
+      ZOGLIN: e67e18602e03035ad68967ce090235d8996663fb9ea47578d3a7ebbc42a5ccf9
+      TURTLE: 8fa552139966c5fac1b98061ce23fc0ddef058c163142dd6d1c768cd2da207c2
+      IRON_GOLEM: a9ceb73d97cf5dc32e333dbef7af25f39e42033d684649075ba4681af2a3c01b
+      PUFFERFISH: 6df8c316962949ba3be445c94ebf714108252d46459b66110f4bc14e0e1b59dc
+      TRADER_LLAMA: 8424780b3c5c5351cf49fb5bf41fcb289491df6c430683c84d7846188db4f84d
+      STRAY: 9e391c6e535f7aa5a2b6ee6d137f59f2d7c60def88853ba611ceb2d16a7e7c73
+      PHANTOM: 7e95153ec23284b283f00d19d29756f244313a061b70ac03b97d236ee57bd982
+      SNOW_GOLEM: 8e8d206f61e6de8a79d0cb0bcd98aced464cbfefc921b4160a25282163112a
+      BLAZE: b20657e24b56e1b2f8fc219da1de788c0c24f36388b1a409d0cd2d8dba44aa3b
+      CAVE_SPIDER: eccc4a32d45d74e8b14ef1ffd55cd5f381a06d4999081d52eaea12e13293e209
+      GHAST: 64ab8a22e7687cc4c78f3b6ff5b1eb04917b51cd3cd7dbce36171160b3c77ced
+      PARROT: a4ba8d66fecb1992e94b8687d6ab4a5320ab7594ac194a2615ed4df818edbc3
+      SILVERFISH: da91dab8391af5fda54acd2c0b18fbd819b865e1a8f1d623813fa761e924540
+      VILLAGER: a36e9841794a37eb99524925668b47a62b5cb72e096a9f8f95e106804ae13e1b
+      ILLUSIONER: 512512e7d016a2343a7bff1a4cd15357ab851579f1389bd4e3a24cbeb88b
+      OCELOT: 5657cd5c2989ff97570fec4ddcdc6926a68a3393250c1be1f0b114a1db1
+      VEX: 5e7330c7d5cd8a0a55ab9e95321535ac7ae30fe837c37ea9e53bea7ba2de86b
+      ZOMBIE_HORSE: d22950f2d3efddb18de86f8f55ac518dce73f12a6e0f8636d551d8eb480ceec
+      VINDICATOR: 6deaec344ab095b48cead7527f7dee61b063ff791f76a8fa76642c8676e2173
+      FOX: d8954a42e69e0881ae6d24d4281459c144a0d5a968aed35d6d3d73a3c65d26a
+  # Enchantments that are incompatible with this enchantment.
+  # [*] Reboot required when changed.
+  Conflicts: []
+Distribution:
+  # Sets whether this enchantment is a treasure enchantment.
+  # Treasure enchantments are those that can't be obtained using an enchantment table, and won't be generated on randomly enchanted equipment sold by villagers or worn by mobs.
+  # Treasure enchantments can only be received via looting, trading, or fishing.
+  # If a treasure enchantment is tradable, it will have double the price (before capping to 64 emeralds) compared to a non-treasure enchantment of the same level.
+  # [*] Reboot required when changed.
+  Treasure: true
+  # Tradable enchantments are those that can be generated on Enchanted Books sold by librarians.
+  # [*] Reboot required when changed.
+  Tradeable: true
+  # Sets in which village biomes this enchantment can be found in villager trades.
+  # Allowed values: [DESERT_COMMON, DESERT_SPECIAL, PLAINS_COMMON, PLAINS_SPECIAL, SAVANNA_COMMON, SAVANNA_SPECIAL, JUNGLE_COMMON, JUNGLE_SPECIAL, SNOW_COMMON, SNOW_SPECIAL, SWAMP_COMMON, SWAMP_SPECIAL, TAIGA_COMMON, TAIGA_SPECIAL]
+  # https://minecraft.wiki/w/Villager_Trade_Rebalance#Trading
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Tradeable' is set on 'false' and Villager Trade Rebalance is disabled.
+  TradeTypes:
+  - SAVANNA_COMMON
+  # Sets whether or not this enchantment can be found on spawned mobs' equipment.
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Treasure' is set on 'true'.
+  On_Mob_Spawn_Equipment: false
+  # Sets whether or not this enchantment can be found on equipment sold by villagers.
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Treasure' is set on 'true'.
+  On_Traded_Equipment: false
+  # Sets whether or not this enchantment can be found on naturally generated equipment from loot tables.
+  # [*] Reboot required when changed.
+  On_Random_Loot: true
+  # Sets whether or not this enchantment can be generated in enchanting table.
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Treasure' is set on 'true'.
+  Discoverable: false

@@ -1,0 +1,28 @@
+storage:
+  # storage method, can be MySQL or sqlite
+  # ATTENTION! DON'T USE SAME DATABASE TABLES FOR MORE THEN ONE SERVER, YOU WILL HAVE UNEXPECTED ISSUES. EACH SERVER SHOULD HAVE ITS OWN DATABASE TABLE SETUP
+  method: sqlite
+mysql:
+  # Requires Mysql.
+  username: root
+  password: ''
+  hostname: localhost:3306
+  database: minecraft
+  # Valid characters are a-z 0-9 and _
+  tablePrefix: CMI_
+  # If you have no clue what these values do, then keep it at default values
+  autoReconnect: true
+  useSSL: false
+  verifyServerCertificate: false
+# Auto save interval in seconds
+# This will define how often to write down data into data base
+# Save operation will not be performed if there is no changes to save
+# !ATTENTION! Keep it in low numbers, around 60 seconds
+# Minimal interval is 10 seconds
+AutoSaveInterval: 15
+# Player data will be recorded straight after he logs out, without any delay
+ForceSaveOnLogOut: false
+# EXPERIMENTAL. This is not fully tested yet and some minor issues can happen when ussing on bungee network
+# Player data will be loaded from database each time player joins server
+# When its set to false then precached data will be uses which is more efficient
+ForceLoadOnLogIn: false

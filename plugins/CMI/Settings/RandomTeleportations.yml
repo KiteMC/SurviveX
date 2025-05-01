@@ -1,0 +1,115 @@
+RandomTeleportation:
+  # How long force player to wait before using command again.
+  Cooldown: 5
+  # How many times to try find correct location for teleportation.
+  # Keep it at low number, as player always can try again after delay
+  MaxTries: 20
+  # List of biomes to exclude from random teleportation
+  ExcludedBiomes:
+  - Ocean
+  - Deep ocean
+  - Deep cold ocean
+  - Cold ocean
+  - Deep lukewarm ocean
+  - Lukewarm ocean
+  - Warm ocean
+  - River
+  # If this set to true we will generate random teleport default settings for all detected worlds
+  # Setting to false will no longer generate world setups, but you can add them manually if needed
+  AutoGenerateWorlds: true
+  Worlds:
+    # World name to use this feature. Add another one with appropriate name to enable random teleportation
+    world:
+      Enabled: true
+      # Amount of times we should try to find valid location. This is mostly directly correlates with amount of chunks we will check
+      # If set to 0 we will use default MaxTries set at the top of file
+      MaxTries: 0
+      # Cooldown when looking for valid location, if set to 0 we will use default Cooldown set at the top of file
+      Cooldown: 0
+      Range:
+        # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
+        # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
+        Max: 1000
+        # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      # Shape of area player can be teleported into. If your map is square shaped then keep this at false
+      Circle: false
+      # With this option we will only attempt to teleport player on highest block and ignore any cave teleportations
+      # Exception when you have Ignore.Leaves set to true which will attempt to place player under the tree leaves if there is any empty space
+      SurfaceOnly: false
+      # When enabled player will be able to random teleport at specied world while being in another one
+      FromAnotherWorld: true
+      # When enabled player will be required to have (cmi.randomteleport.world) permission node to random teleport inside this world
+      RequireWorldPermission: false
+      YLimits:
+        # Location detection limitations on Y axis. If you want to minimize teleportations underground then you can set this value to 63
+        # Higher limitations might increase time needed to find valid one
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        # List of floor materials we should ignore when random teleporting
+        Materials: []
+        # List of biomes we should ignore when random teleporting
+        # Keeping it empty will include all of them
+        # If this is empty and ExcludedBiomes contains set biomes then we will use it
+        Biomes: []
+      # List of biomes we should look for when random teleporting
+      # If this contains biome names then we will ignore Ignore.Biomes section
+      PreferredBiomes: []
+    world_nether:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    world_the_end:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []

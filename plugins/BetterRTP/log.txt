@@ -1,0 +1,27 @@
+2025-04-26 18:07:30 [INFO]: Loading Overrides...
+2025-04-26 18:07:30 [INFO]: Loading World Types...
+2025-04-26 18:07:30 [INFO]: - World Type for 'world' set to 'NORMAL'
+2025-04-26 18:07:30 [INFO]: - World Type for 'world_nether' set to 'NETHER'
+2025-04-26 18:07:30 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
+2025-04-26 18:07:30 [INFO]: Loading Defaults...
+2025-04-26 18:07:30 [INFO]: Loading Custom Worlds...
+2025-04-26 18:07:30 [INFO]: Custom World 'world' registered:
+2025-04-26 18:07:30 [INFO]: - UseWorldBorder: false
+2025-04-26 18:07:30 [INFO]: - CenterX: 0
+2025-04-26 18:07:30 [INFO]: - CenterZ: 0
+2025-04-26 18:07:30 [INFO]: - MaxRadius: 2000
+2025-04-26 18:07:30 [INFO]: - MinRadius: 100
+2025-04-26 18:07:30 [INFO]: - Shape: SQUARE
+2025-04-26 18:07:30 [INFO]: - MinY: 0
+2025-04-26 18:07:30 [INFO]: - MaxY: 320
+2025-04-26 18:07:30 [INFO]: - Cooldown: 60
+2025-04-26 18:07:30 [SEVERE]: The particle 'EXPLOSION_NORMAL' created a fatal error when loading particles! Your MC version isn't supported!
+2025-04-26 18:07:31 [INFO]: Database PLAYERS:Players configured and loaded!
+2025-04-26 18:07:31 [INFO]: Database COOLDOWN:world configured and loaded!
+2025-04-26 18:07:31 [INFO]: Database QUEUE:Queue configured and loaded!
+2025-04-26 18:07:31 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
+2025-04-26 18:07:31 [INFO]: Database COOLDOWN:world_nether configured and loaded!
+2025-04-26 18:07:31 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
+2025-04-26 18:07:32 [INFO]: Attempting to queue up some more safe locations...
+2025-04-26 18:07:32 [INFO]: Queueing paused, max queue limit reached!
+2025-04-26 18:09:50 [INFO]: Disabling BetterRTP v3.6.13

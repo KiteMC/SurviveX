@@ -1,0 +1,65 @@
+Messages:
+  1:
+    LeaveMessage: 您已离开领地 %residence。
+    EnterMessage: 欢迎 %player 来到 %residence，由 %owner 所拥有。
+Flags:
+  1:
+    container: true
+    ignite: true
+    move: true
+    harvest: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  2:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    pvp: false
+    animalkilling: false
+    hook: false
+    build: false
+    explode: false
+    vehicledestroy: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+Residences:
+  jiyan:
+    TPLoc: -5657.7:128.0:2703.93:83.55:77.1
+    Messages: 1
+    BlockSellPrice: 0.25
+    Permissions:
+      PlayerFlags:
+        a917d040-ca82-367d-8029-6e8068f61875: 1
+      AreaFlags: 2
+      OwnerUUID: a917d040-ca82-367d-8029-6e8068f61875
+      OwnerLastKnownName: Ocean_Yu
+    CreatedOn: 1741582427539
+    Areas:
+      main: -5660:0:2702:-5658:319:2705
+  jiyan2:
+    TPLoc: -5905.7:128.0:2702.03:90.0:97.95
+    Messages: 1
+    BlockSellPrice: 0.25
+    Permissions:
+      PlayerFlags:
+        a917d040-ca82-367d-8029-6e8068f61875: 1
+      AreaFlags: 2
+      OwnerUUID: a917d040-ca82-367d-8029-6e8068f61875
+      OwnerLastKnownName: Ocean_Yu
+    CreatedOn: 1741582721321
+    Areas:
+      main: -5908:0:2700:-5906:319:2703

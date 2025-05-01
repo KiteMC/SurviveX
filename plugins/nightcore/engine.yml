@@ -1,0 +1,13 @@
+Plugin:
+  # Localized plugin name. It's used in messages and with internal placeholders.
+  Name: nightcore
+  # Plugin prefix. Used in messages.
+  Prefix: <lyellow><b>nightcore</b></lyellow><dgray> » </dgray><gray>
+  # Command names that will be registered as main plugin commands.
+  # Do not leave this empty. Split multiple names with a comma.
+  Command_Aliases: nightcore,ncore
+  # Sets the plugin language.
+  # Basically it tells the plugin to use certain messages config from the '/lang/' sub-folder.
+  # If specified language is not available, default one (English) will be used instead.
+  # [Default is System Locale]
+  Language: en

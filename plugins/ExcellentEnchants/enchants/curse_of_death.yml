@@ -1,0 +1,90 @@
+Settings:
+  # Rarity affects the chance of getting an enchantment from enchanting or loots depending on rarity weight value.
+  # You can create and edit rarities in the config.yml
+  Rarity: rare
+  # Enchantment display name.
+  Name: 死亡诅咒
+  # Enchantment description.
+  # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+  Description:
+  - 杀死玩家时你有几率死亡
+  Level:
+    # The maximum level of this enchantment.
+    # Value between 1 and 255 (inclusive).
+    # [*] Reboot required when changed.
+    Max: 3
+  Cost:
+    # The minimum possible cost of this enchantment in levels.
+    # Explanation: https://minecraft.wiki/w/Enchanting_mechanics#How_enchantments_are_chosen
+    # Vanilla costs: https://minecraft.wiki/w/Enchanting/Levels
+    # [*] Reboot required when changed.
+    Min:
+      # The cost for a level I enchantment.
+      Base: 4
+      # The amount of levels added to the Base for each level above level I
+      Per_Level: 19
+    # The maximum possible cost of this enchantment in levels.
+    # Explanation: https://minecraft.wiki/w/Enchanting_mechanics#How_enchantments_are_chosen
+    # Vanilla costs: https://minecraft.wiki/w/Enchanting/Levels
+    # [*] Reboot required when changed.
+    Max:
+      # The cost for a level I enchantment.
+      Base: 7
+      # The amount of levels added to the Base for each level above level I
+      Per_Level: 19
+    # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.
+    # [*] Reboot required when changed.
+    Anvil: 5
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+  # A chance that this enchantment will be triggered.
+  Trigger_Chance:
+    # Start modifier value.
+    Base: 0.5
+    # Additional value calculated by enchantment level step (see below). Formula: <per_level> * <step>
+    Per_Level: 0.15
+    # Defines level step for 'Per_Level' value calculation. Formula: <enchant_level> / <step>
+    Step: 1.0
+    # Sets a limit for the final (base & per level calculations) value.
+    # Set '-1' for no limit.
+    Cap: 100.0
+    # Sets action performed between 'Base' and final 'Per_Level' values.
+    # Available types: ADD, MULTIPLY
+    Action: ADD
+  # Enchantments that are incompatible with this enchantment.
+  # [*] Reboot required when changed.
+  Conflicts: []
+Distribution:
+  # Sets whether this enchantment is a treasure enchantment.
+  # Treasure enchantments are those that can't be obtained using an enchantment table, and won't be generated on randomly enchanted equipment sold by villagers or worn by mobs.
+  # Treasure enchantments can only be received via looting, trading, or fishing.
+  # If a treasure enchantment is tradable, it will have double the price (before capping to 64 emeralds) compared to a non-treasure enchantment of the same level.
+  # [*] Reboot required when changed.
+  Treasure: true
+  # Tradable enchantments are those that can be generated on Enchanted Books sold by librarians.
+  # [*] Reboot required when changed.
+  Tradeable: true
+  # Sets in which village biomes this enchantment can be found in villager trades.
+  # Allowed values: [DESERT_COMMON, DESERT_SPECIAL, PLAINS_COMMON, PLAINS_SPECIAL, SAVANNA_COMMON, SAVANNA_SPECIAL, JUNGLE_COMMON, JUNGLE_SPECIAL, SNOW_COMMON, SNOW_SPECIAL, SWAMP_COMMON, SWAMP_SPECIAL, TAIGA_COMMON, TAIGA_SPECIAL]
+  # https://minecraft.wiki/w/Villager_Trade_Rebalance#Trading
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Tradeable' is set on 'false' and Villager Trade Rebalance is disabled.
+  TradeTypes: []
+  # Sets whether or not this enchantment can be found on spawned mobs' equipment.
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Treasure' is set on 'true'.
+  On_Mob_Spawn_Equipment: false
+  # Sets whether or not this enchantment can be found on equipment sold by villagers.
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Treasure' is set on 'true'.
+  On_Traded_Equipment: false
+  # Sets whether or not this enchantment can be found on naturally generated equipment from loot tables.
+  # [*] Reboot required when changed.
+  On_Random_Loot: true
+  # Sets whether or not this enchantment can be generated in enchanting table.
+  # [*] Reboot required when changed.
+  # [**] Has no effect if 'Treasure' is set on 'true'.
+  Discoverable: false

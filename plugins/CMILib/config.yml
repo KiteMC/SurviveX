@@ -1,0 +1,62 @@
+# Language file you want to use
+Language: CN
+# Defines if you want to auto download default locale files from github repository
+# You can disable this if you are using EN or you already have your locale setup and you don't need to have other languages being downloaded
+LanguageDownload: true
+# When enabled plugin will try to keep CMILib up to date automatically
+AutoUpdate: false
+ExploitPatcher:
+  Placeholders:
+    blocked:
+      # By default we are blocking PAPI %checkitem_...% placeholder to avoid potential serious issues with it
+      # Only disable this if you have dedicated protection for it
+      checkItem: true
+Skins:
+  # Defines time in minutes how often we want to update skin information from online Mojang servers
+  # Keep in mind that your server can only send 1 request every minute, so keep it at a decent amount, hour or more
+  # So if you have this set to 1 hour, then player skin information will be updated if player old skin information is older then 1 hour
+  # This only triggers when player joins server or changes skin manually
+  SkinUpdateTimer: 1320
+  # Defines time in minutes how often we want to send requests to Mojang servers
+  # This is to limit amount of requests in specific time to avoid clutter with possible requests
+  SkinRequestFrequency: 10
+GlobalGui:
+  # Defines item type in empty fields in GUI when its needed to be filled up
+  EmptyField: BLACK_STAINED_GLASS_PANE
+  Pages:
+    # Icon for UI previous page button
+    Previous: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    # Icon for UI next page button
+    Next: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+    # Icon for UI information button
+    Middle: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyYWZhN2JiMDYzYWMxZmYzYmJlMDhkMmM1NThhN2RmMmUyYmFjZGYxNWRhYzJhNjQ2NjJkYzQwZjhmZGJhZCJ9fX0=
+  # Icon for UI close button
+  Close: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM4YWIxNDU3NDdiNGJkMDljZTAzNTQzNTQ5NDhjZTY5ZmY2ZjQxZDllMDk4YzY4NDhiODBlMTg3ZTkxOSJ9fX0=
+  # Icon for UI info button
+  Info: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=
+Spawners:
+  # List of spawners to pick from while using spawner:random variable
+  mysterySpawners:
+  - skeleton
+  - zombie
+  - silverfish
+  - panda
+  - fox
+RMCCommands:
+  # When enabled we will (where possible) include which command was performed when using rmc commands
+  ConsoleLog: true
+Images:
+  # Symbol to be used to create image fields
+  # Color codes are NOT supported here
+  # This will take full effect after server restart due to some images being already cached
+  Filler: ⬛
+  # Symbol to be used to fill in empty image fields
+  # Color codes are supported here
+  EmptyFiller: '&7_|'
+Colors:
+  # When enabled plugin will try to detect simplified hex color codes like #f6f6f6 or #ff6 in adition to {#f6f6f6} and {#red}
+  # Keep in mind that this adds extra checks and simplified format will not support gradients or named colors so you will still need to use more complex format for those
+  OfficialHex: true
+  # When enabled plugin will try to detect quirky hex color codes like &#f6f6f6 or &#ff6 in adition to {#f6f6f6} and {#red}
+  # Keep in mind that this adds extra checks and quirky format will not support gradients or named colors so you will still need to use more complex format for those
+  QuirkyHex: true

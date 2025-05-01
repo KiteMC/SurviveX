@@ -1,0 +1,184 @@
+# Configuration file for Leaves.
+
+config-version: 6
+settings:
+  misc:
+    auto-update:
+      enable: false
+      download-source: application
+      allow-experimental: false
+      time:
+      - '14:00'
+      - '2:00'
+    extra-yggdrasil-service:
+      enable: false
+      login-protect: false
+      urls:
+      - https://url.with.authlib-injector-yggdrasil
+    disable-method-profiler: true
+    no-chat-sign: true
+    dont-respond-ping-before-start-fully: true
+    server-lang: en_us
+    server-mod-name: Leaves
+    bstats-privacy-mode: false
+    force-minecraft-command: false
+    leaves-packet-event: true
+  modify:
+    fakeplayer:
+      enable: false
+      unable-fakeplayer-names:
+      - player-name
+      limit: 10
+      prefix: ''
+      suffix: ''
+      regen-amount: 0.0
+      always-send-data: true
+      resident-fakeplayer: false
+      open-fakeplayer-inventory: false
+      skip-sleep-check: false
+      spawn-phantom: false
+      use-action: true
+      modify-config: false
+      manual-save-and-load: false
+      cache-skin: false
+      tick-type: NETWORK
+    elytra-aeronautics:
+      no-chunk-load: false
+      no-chunk-height: 500.0
+      no-chunk-speed: -1.0
+      message: true
+      message-start: Flight enter cruise mode
+      message-end: Flight exit cruise mode
+    redstone-shears-wrench: true
+    budding-amethyst-can-push-by-piston: false
+    spectator-dont-get-advancement: false
+    stick-change-armorstand-arm-status: true
+    snowball-and-egg-can-knockback-player: true
+    flatten-triangular-distribution: false
+    player-operation-limiter: false
+    renewable-elytra: -1.0
+    stackable-shulker-boxes: 'false'
+    force-void-trade: false
+    mc-technical-survival-mode: true
+    return-nether-portal-fix: false
+    use-vanilla-random: false
+    fix-update-suppression-crash: true
+    bedrock-break-list: false
+    disable-distance-check-for-use-item: false
+    no-feather-falling-trample: false
+    shared-villager-discounts: false
+    disable-check-out-of-order-command: false
+    despawn-enderman-with-block: false
+    creative-no-clip: false
+    shave-snow-layers: true
+    ignore-lc: false
+    disable-packet-limit: false
+    lava-riptide: false
+    no-block-update-command: false
+    no-tnt-place-update: false
+    raider-die-skip-self-raid-check: false
+    container-passthrough: false
+    avoid-anvil-too-expensive: false
+    bow-infinity-fix: false
+    hopper-counter: false
+    spider-jockeys-drop-gapples: -1.0
+    renewable-deepslate: false
+    renewable-sponges: false
+    renewable-coral: 'FALSE'
+    fast-resume: false
+    force-peaceful-mode-switch:
+      tick: -1
+      types:
+      - BLAZE
+      - WITHER
+      - SHULKER
+      - WARDEN
+    disable-vault-blacklist: false
+    minecraft-old:
+      block-updater:
+        instant-block-updater-reintroduced: false
+        cce-update-suppression: false
+        redstone-wire-dont-connect-if-on-trapdoor: false
+        old-block-entity-behaviour: false
+      shears-in-dispenser-can-zero-amount: false
+      armor-stand-cant-kill-by-mob-projectile: false
+      villager-infinite-discounts: false
+      copper-bulb-1gt-delay: false
+      crafter-1gt-delay: false
+      zero-tick-plants: false
+      rng-fishing: false
+      allow-grindstone-overstacking: false
+      allow-entity-portal-with-passenger: true
+      disable-gateway-portal-entity-ticking: false
+      disable-LivingEntity-ai-step-alive-check: false
+      fix-fortress-mob-spawn: false
+      old-hopper-suck-in-behavior: false
+      revert-raid-changes:
+        allow-bad-omen-trigger-raid: false
+        give-bad-omen-when-kill-patrol-leader: false
+        skip-height-check: false
+      allow-anvil-destroy-item-entities: false
+      string-tripwire-hook-duplicate: false
+  performance:
+    optimized-dragon-respawn: false
+    dont-send-useless-entity-packets: true
+    enable-suffocation-optimization: true
+    check-spooky-season-once-an-hour: true
+    inactive-goal-selector-disable: false
+    reduce-entity-allocations: true
+    cache-climb-check: true
+    reduce-chuck-load-and-lookup: true
+    cache-ignite-odds: true
+    faster-chunk-serialization: true
+    skip-secondary-POI-sensor-if-absent: true
+    store-mob-counts-in-array: true
+    optimize-noise-generation: false
+    optimize-sun-burn-tick: true
+    optimized-CubePointRange: true
+    check-frozen-ticks-before-landing-block: true
+    skip-entity-move-if-movement-is-zero: true
+    skip-cloning-advancement-criteria: false
+    skip-negligible-planar-movement-multiplication: true
+    fix-villagers-dont-release-memory: false
+    remove:
+      tick-guard-lambda: true
+      damage-lambda: true
+  protocol:
+    bladeren:
+      protocol: true
+      mspt-sync-protocol: false
+      mspt-sync-tick-interval: 20
+    syncmatica:
+      enable: false
+      quota: false
+      quota-limit: 40000000
+    pca:
+      pca-sync-protocol: false
+      pca-sync-player-entity: OPS
+    appleskin:
+      protocol: false
+      sync-tick-interval: 20
+    servux:
+      structure-protocol: false
+      entity-protocol: false
+      hud-metadata-protocol: false
+      hud-metadata-protocol-share-seed: true
+    bbor-protocol: false
+    jade-protocol: false
+    alternative-block-placement: NONE
+    xaero-map-protocol: false
+    xaero-map-server-id: 256842074
+    leaves-carpet-support: false
+    lms-paster-protocol: false
+    rei-server-protocol: false
+  region:
+    format: ANVIL
+    linear:
+      version: V2
+      auto-convert-anvil-to-linear: false
+      flush-max-threads: 6
+      flush-delay-ms: 100
+      use-virtual-thread: true
+      compression-level: 1
+  fix:
+    vanilla-hopper: false

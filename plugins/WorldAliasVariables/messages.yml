@@ -1,0 +1,20 @@
+prefix: "&6[世界别名] &r"
+no-permission: "{prefix}&c你没有权限使用此命令!"
+plugin:
+  enable: "{prefix}&a插件已启用!"
+  disable: "{prefix}&c插件已禁用!"
+  reload: "{prefix}&a配置文件已重新加载!"
+  papi-not-found: "{prefix}&c未找到 PlaceholderAPI! 插件将无法正常工作!"
+
+command:
+  help:
+    title: "&6=== 世界别名变量插件命令 ==="
+    reload: "&e/wav reload &f- 重载配置文件"
+    set: "&e/wav set <世界名> <别名> &f- 设置世界别名"
+    list: "&e/wav list &f- 查看所有世界别名"
+  set:
+    usage: "{prefix}&c用法: /wav set <世界名> <别名>"
+    success: "{prefix}&a已设置世界 &e{world} &a的别名为: {alias}"
+  list:
+    title: "&6=== 世界别名列表 ==="
+    format: "&e{world} &f-> {alias}" 

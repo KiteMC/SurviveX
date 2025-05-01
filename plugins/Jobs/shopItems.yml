@@ -1,0 +1,80 @@
+Items:
+  SuperPickAxe:
+    # (Optional) Item price in Jobs Points
+    pointPrice: 10000.0
+    # (Optional) Item price in Vault economy currency.
+    # Atleast one type of currency needs to be defined
+    vaultPrice: 10000.0
+    Icon:
+      # (REQUIRED) Icon item. [player] can be used as a variable for the player who opens UI
+      ItemStack: diamond_pickaxe;&eBest_pick_axe_ever!;&6Efficiency_V\n&6Unbreaking_III\n&eAnd_one_tasty_apple!      
+      # (Optional - default: false) Hides icon if player don't have permission to get this item
+      HideWithoutPermission: true
+      # (Optional - default: false) Hides icon if player don't have enough point levels to get this icon
+      HideIfThereIsNoEnoughPoints: false  
+    # (Optional) List of permissions required to buy this item
+    RequiredPermission:
+    - jobs.item.pickaxe
+    # (Optional) List of jobs and levels to buy this item
+    RequiredJobLevels:
+    - Miner-50
+    - Woodcutter-10
+    # (Optional) Total level from all jobs player currently in
+    RequiredTotalLevels: 100
+    # (Optional) Performs commands on item purchase
+    # use 'msg ' at start of command to send nice message to player
+    # all other commands will be performed normally as they would be executed from console
+    # use [player] variable to include buyers name
+    PerformCommands:
+    - "msg &eThanks for buying this super pick axe!"
+    # (Optional) Gives items by defined criteria
+    GiveItems:
+    - diamond_pickaxe;2;&eSuper_PickAxe;&eUber_pickAxe;DIG_SPEED:5,DURABILITY:3
+    - potion;n{&6Jump_boost};jump
+    - apple
+  WoodenShovel:
+    pointPrice: 100.0
+    Icon:
+      Id: wooden_shovel
+      Name: "&eWooden shovel"
+      HideWithoutPermission: true
+    RequiredPermission:
+    - jobs.item.shovel
+    RequiredJobLevels:
+    - Digger-5
+    PerformCommands:
+    - "msg &eThanks [player] for buying this shovel!"
+    - "give [player] wooden_shovel 1"
+  LureEnchantBook:
+    pointPrice: 100.0
+    Icon:
+      Id: enchanted_book
+      Name: "&eEnchant book"
+      Lore:
+      - "&eContains Lure 3 enchant"
+      HideWithoutPermission: true
+    RequiredPermission:
+    - jobs.item.LureBook
+    RequiredJobLevels:
+    - Fisherman-100
+    PerformCommands:
+    - "msg &eThanks [player] for buying this book!"
+    GiveItems:
+      Book:
+        Id: enchanted_book
+        Enchants:
+        - LURE=3
+  Elytra:
+    pointPrice: 100000.0
+    Icon:
+      Id: elytra
+      Name: "&eAngel wings"
+      HideWithoutPermission: true
+    RequiredPermission:
+    - jobs.item.elytra
+    PerformCommands:
+    - "msg &eThanks [player] for buying Angel Wings!"
+    # (Optional) Gives items by defined criteria
+    GiveItems:
+      Elytra:
+        Id: elytra

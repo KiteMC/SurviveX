@@ -1,0 +1,122 @@
+# 标题
+title: '&e传送菜单'
+# 打开命令
+openCommand: tp_menu
+# 打开物品
+openItem: ender_pearl
+# 打开权限
+permission: false
+# 菜单大小
+size: 27
+# 打开本菜单播放的声音
+sound: ENTITY_ENDERMAN_TELEPORT
+# 菜单内容
+menu:
+  '4':
+    index: 4
+    name: '   §8[§6传送至主城§8(§ares tp main§8)]'
+    material: BEACON
+    lore:
+    - §f- §7点击传送至主城
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] res tp main'
+    priority: 0
+    id: 8
+  '11':
+    index: 11
+    name: '   §8[§6主世界随机传送§8(§artp§8)]'
+    material: STONE
+    lore:
+    - §f- §7在主世界随机传送
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] rtp'
+    priority: 0
+    id: 9
+  '12':
+    index: 12
+    name: '   §8[§6接受玩家传送§8(§atpaccept§8)]'
+    material: GREEN_WOOL
+    lore:
+    - §f- §7接受玩家传送请求
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] tpaccept'
+    priority: 0
+    id: 10
+  '13':
+    index: 13
+    name: '   §8[§6拒绝玩家传送§8(§atpdeny§8)]'
+    material: RED_WOOL
+    lore:
+    - §f- §7拒绝玩家传送请求
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] tpdeny'
+    priority: 0
+    id: 11
+  '14':
+    index: 14
+    name: '   §8[§6请求所有玩家传送至我§8(§atpaall§8)]'
+    material: WHITE_WOOL
+    lore:
+    - §f- §7类型：tpaall
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] tpaall'
+    priority: 0
+    id: 12
+  '15':
+    index: 15
+    name: '   §8[§6返回上一个位置(§aback§8)]'
+    material: CLOCK
+    lore:
+    - §f- §7返回上一个位置
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] back'
+    priority: 0
+    id: 13
+  '22':
+    index: 22
+    name: '   §8[§6返回主菜单§8]'
+    material: BARRIER
+    lore:
+    - §f- §7返回到主菜单
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[open] menu'
+    priority: 0
+    id: 14
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,4,5,6,7,8,9,17,18,25,26
+  material: GRAY_STAINED_GLASS_PANE
+  isEnchant: false
+  name: '       &8[&7分割板&8]'
+  lore:
+  - '&7哎呀,不要随便戳人家啦'
+  custom-model-data: 0

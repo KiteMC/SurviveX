@@ -1,0 +1,44 @@
+version: 2
+quickshop-hikari:
+  blocked: []
+  everyone:
+  - quickshop-hikari.purchase
+  - quickshop-hikari.show_information
+  - quickshop-hikari.preview_shop
+  - quickshop-hikari.search
+  staff:
+  - quickshop-hikari.purchase
+  - quickshop-hikari.show_information
+  - quickshop-hikari.preview_shop
+  - quickshop-hikari.search
+  - quickshop-hikari.access_inventory
+  - quickshop-hikari.toggle_display
+  - quickshop-hikari.set_shoptype
+  - quickshop-hikari.set_price
+  - quickshop-hikari.set_item
+  - quickshop-hikari.set_stack_amount
+  - quickshop-hikari.set_currency
+  - quickshop-hikari.alert.receive
+  - quickshop-hikari.set_benefit
+  - quickshop-hikari.set_sign_type
+  - quickshop-hikari.view_purchase_logs
+  administrator:
+  - quickshop-hikari.purchase
+  - quickshop-hikari.show_information
+  - quickshop-hikari.preview_shop
+  - quickshop-hikari.search
+  - quickshop-hikari.delete
+  - quickshop-hikari.alert.receive
+  - quickshop-hikari.access_inventory
+  - quickshop-hikari.ownership_transfer
+  - quickshop-hikari.management_permission
+  - quickshop-hikari.toggle_display
+  - quickshop-hikari.set_shoptype
+  - quickshop-hikari.set_price
+  - quickshop-hikari.set_item
+  - quickshop-hikari.set_stack_amount
+  - quickshop-hikari.set_currency
+  - quickshop-hikari.set_name
+  - quickshop-hikari.set_benefit
+  - quickshop-hikari.set_sign_type
+  - quickshop-hikari.view_purchase_logs

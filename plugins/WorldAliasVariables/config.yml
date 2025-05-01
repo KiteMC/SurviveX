@@ -1,0 +1,22 @@
+#-------------------
+#     +wav配置文件+
+#     作者:柠枺
+#-------------------
+#提示
+#变量占位符为
+#%wav%     显示玩家当前世界的别名
+#%wav_<world>% 显示指定世界的别名 
+#是否开启调试日志
+debug: false
+
+#已应用的世界
+world:
+  - world
+  - world_the_end
+  - world_nether
+
+#世界别名
+world_alias_variables:
+  world: "&a主世界"
+  world_the_end: "&5末地" 
+  world_nether: "&c下界"

@@ -1,0 +1,95 @@
+# +———————————————————————————————————————————————————+ #
+# |——————————     禁用物品 配置文件     ——————————| #
+# |——————————————————      v3.2      —————————————————| #
+# +———————————————————————————————————————————————————+ #
+# |                   文档说明:                  | #
+# |             https://banitem.andross.fr/           | #
+# +———————————————————————————————————————————————————+ #
+# 对于任何错误或建议: Andross#5254
+# +——————————————————————————————————————————————————————————————————————————————————————————————+
+# 此文件用于创建自定义物品禁用规则。
+# 自定义物品是在此配置文件中手动创建的物品，以便轻松地根据特定元数据来禁用物品。
+# 比如说，你想禁用所有具有“耐久 III”附魔效果的钻石剑。
+# --------
+# 1. 首先你需要创建自定义物品:
+#   customItemName:
+#     material: DIAMOND_SWORD
+#     enchantment-contains: 'unbreaking:3'
+#   # 创建了自定义物品后，你可以将其添加到黑名单（config.yml）中，名称为 'customItemName':
+# 2. 将自定义物品添加到黑名单（config.yml）
+#   blacklist:
+#    world:
+#     customItemName:
+#      attack: '&c你不能使用这把剑进行攻击。'
+## 完成！玩家将无法使用任何具有“耐久 III”附魔效果的钻石剑进行攻击。
+# --------
+# 元数据列表：
+#  -> DISPLAYNAME-EQUALS: 字符串
+#    -> 如果物品的显示名称等于字符串
+#  -> DISPLAYNAME-CONTAINS: 字符串
+#    -> 如果物品的显示名称包含字符串
+#  -> LORE-EQUALS: 字符串 或 字符串列表
+#    -> 如果物品的描述完全等于所写的描述
+#    -> 示例：
+#      -> lore-equals:
+#         - '第一行'
+#         - '第二行'
+#  -> LORE-CONTAINS: 字符串 或 字符串列表
+#    -> 如果物品描述中的任意一行包含所写的任意一行字符串
+#  -> LORE-CONTAINS-REGEX: 字符串（正则表达式）
+#    -> 如果物品描述中的任意一行匹配所写的正则表达式
+#    -> 示例：匹配描述中含有 'Damage +X' 的物品，其中 X 为 1 到 9 之间的数字：
+#      -> lore-contains-regex: 'Damage \+[1-9]'
+#  -> LORE-LINE-CONTAINS: 字符串
+#    -> 如果物品描述中的任意一行包含字符串
+#  -> DURABILITY: 整数（数值） 或 字符串（区间）
+#    -> 如果物品的耐久度匹配
+#    -> 多种语法：
+#      -> durability: 1 - 匹配耐久度为 1 的物品
+#      -> durability: '0-300' - 匹配耐久度在 0（含）到 300（含）之间的物品
+#  -> ENCHANTMENT-CONTAINS: 字符串 或 字符串列表
+#    -> 如果物品包含其中一个附魔效果
+#    -> 支持多种语法：
+#      -> '附魔效果': 如果物品包含此附魔效果，不考虑等级；
+#      -> '附魔效果:等级': 如果物品包含此附魔效果且等级相同；
+#      -> '附魔效果:最小等级:最大等级': 如果物品包含此附魔效果，并且等级在最小和最大等级区间内（含两端）；
+#    -> 示例：
+#      -> enchantment-contains: 'unbreaking,efficiency:5:32767'
+#  -> ENCHANTMENT-EQUALS: 字符串 或 字符串列表
+#    -> 如果物品的附魔效果与所写的完全匹配，不多也不少。
+#    -> 语法为 '附魔效果:等级'
+#    -> 示例：
+#      -> enchantment-equals: 'unbreaking:3,efficiency:5'
+#  -> POTION: 字符串 或 字符串列表
+#    -> 如果物品包含其中一个药水效果
+#    -> 支持多种语法：
+#      -> '药水效果': 如果物品包含此药水效果，不考虑等级；
+#      -> '药水效果:等级': 如果物品包含此药水效果且等级相同；
+#      -> '药水效果:最小等级:最大等级': 如果物品包含此药水效果，并且等级在最小和最大等级区间内（含两端）；
+#    -> 示例：
+#      -> potion: 'speed,slow:1'
+#  -> UNBREAKABLE: 布尔值
+#    -> 如果物品不可破坏
+#  -> MODELDATA-EQUALS: 字符串
+#    -> 如果物品模型数据等于所写的（适用于 MC>=1.14）
+#  -- 插件支持: -- 
+#  -> ADVANCEDENCHANTMENTS:
+#    -> 如果安装了 AdvancedEnchantments 插件（来自 GC.），可以匹配高级附魔效果。
+#    -> 语法与 ENCHANTMENT-CONTAINS 相同。
+#    -> 示例：
+#      -> advancedenchantments: 'custom_enchant:1'
+#  -> ITEMSADDER:
+#    -> 如果安装了 ItemsAdder 插件（来自 LoneDev），可以匹配自定义物品。
+#    -> 示例：
+#      -> itemsadder: 'ruby_head, astral_bow'
+#  -> NBTAPI:
+#    -> 如果安装了 NBT-API 插件（https://www.spigotmc.org/resources/nbt-api.7939/），可以匹配自定义 NBT 数据。
+#    -> 需要写出完整的节点并用 # 分隔以及要匹配的对象。
+#    -> 示例: {EntityTag:{id:"minecraft:zombie"}}
+#      -> nbtapi:
+#           'EntityTag#id': 'minecraft:zombie'
+#    -> 使用以下语法，可以为同一个自定义物品写出多个节点及多个可能的匹配项：
+#      -> nbtapi:
+#           'EntityTag#id':
+#             1: 'minecraft:zombie'
+#             2: 'minecraft:pig'

@@ -1,0 +1,23 @@
+<AutoPage>
+&6Player Rules:
+&61. &eNo Griefing
+&62. &eNo Spamming
+&63. &eNo Advertising
+&64. &eNo Cursing/No Constant Cursing
+&65. &eNo Trolling/Flaming
+&66. &eNo Banned Items(Tekkit Rule)
+&67. &eNo Asking for OP, Ranks, or Items
+&68. &eRespect all Players
+&69. &eObey Staff There the Law
+&610. &eNo Racist or Sexist Remarks.
+&611. &eNo Mods/Hacks
+&612. &eNo Full Caps Messages
+&614. &eNo 1x1 Towers
+&613. &eNo Builds Near Spawn
+<NextPage>
+&6Mod/Admin Rules:
+&61. Be Responsible with the privileges you are given as a Builder/Mod
+&62. Do not spawn blocks or items for other players
+&63. When Trading, only buy and sell legit items
+&64. Only help build for other players using legit items and blocks
+&65. No Power Abuse

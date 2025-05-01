@@ -1,0 +1,144 @@
+ClickKey:
+  LEFT: L-Click
+  RIGHT: R-Click
+  SHIFT_LEFT: Shift + L-Click
+  SHIFT_RIGHT: Shift + R-Click
+  DROP_KEY: Drop [Q]
+  SWAP_KEY: Swap [F]
+  DRAG_N_DROP: Drag & Drop
+Command:
+  Argument:
+    Type:
+      Required: <lred><%name%></lred>
+      Optional: <lyellow>[%name%]</lyellow>
+    Name:
+      Generic: value
+      Type: type
+      Name: name
+      Player: player
+      World: world
+      Amount: amount
+      Material: material
+      ItemMaterial: item type
+      BlockMaterial: block type
+      Enchantment: enchantment
+  Flag:
+    Format: <lgray>[%name%]</lgray>
+  Help:
+    List:
+    - <noprefix>
+    - ' '
+    - '  <yellow><b>%name%</b></yellow><gray> - </gray><yellow><b>Commands:</b></yellow>'
+    - ' '
+    - <gray>  <red><b><></b></red> - Required, <green><b>[]</b></green> - Optional.</gray>
+    - ' '
+    - '%entry%'
+    - ' '
+    Entry: '  <yellow>/%command_label%</yellow> <orange>%command_usage%</orange><gray> - %command_description%</gray>'
+    Desc: Show help page.
+  CheckPerm:
+    Desc: Print player permission info.
+  DumpItem:
+    Desc: Print item components info.
+  Reload:
+    Desc: Reload the plugin.
+    Done: <lgray>Plugin <lgreen>reloaded</lgreen>!</lgray>
+Time:
+  Day: '%amount%d.'
+  Hour: '%amount%h.'
+  Min: '%amount%min.'
+  Sec: '%amount%sec.'
+  Delimiter: ' '
+Other:
+  'Yes': <green>Yes</green>
+  'No': <red>No</red>
+  Enabled: <green>Enabled</green>
+  Disabled: <red>Disabled</red>
+  Any: Any
+  None: None
+  Never: Never
+  OneTimed: One-Timed
+  Unlimited: Unlimited
+  Infinity: ∞
+Entry:
+  Good: <green>✔</green> <gray>%entry%</gray>
+  Bad: <red>✘</red> <gray>%entry%</gray>
+  Warn: <orange>[❗]</orange> <gray>%entry%</gray>
+Error:
+  Invalid_Player: <red>Invalid player!</red>
+  Invalid_World: <red>Invalid world!</red>
+  Invalid_Number: <red>Invalid number!</red>
+  InvalidMaterial: <red>Invalid material!</red>
+  InvalidEnchantment: <red>Invalid enchantment!</red>
+  NoPermission: <red>You don't have permissions to do that!</red>
+  Command:
+    ParseFlag: <lgray>Invalid value <lred>%value%</lred> for <lred>%name%</lred> flag.</lgray>
+    ParseArgument: <lgray>Invalid value <lred>%value%</lred> for <lred>%name%</lred> argument.</lgray>
+    Argument:
+      InvalidPlayer: <lgray><lred>Can not find player %value%</lred>!</lgray>
+      InvalidWorld: <lgray><lred>Can not find world %value%</lred>!</lgray>
+      InvalidNumber: <lgray><lred>%value%</lred> is not a valid number!</lgray>
+      InvalidMaterial: <lgray><lred>%value%</lred> is not a valid material!</lgray>
+      InvalidEnchantment: <lgray><lred>%value%</lred> is not a valid enchantment!</lgray>
+    NotYourself: <red>This command can not be used on yourself.</red>
+    PlayerOnly: <red>This command is for players only.</red>
+    Usage:
+    - <noprefix>
+    - ' '
+    - '<red>Error: </red><gray>Wrong arguments!</gray>'
+    - '<red>Usage: </red><yellow>/%command_label%</yellow> <orange>%command_usage%</orange>'
+    - ' '
+Editor:
+  Action:
+    Exit:
+    - <noprefix>
+    - ''
+    - <gray>Click <click:run_command:"/#exit"><hover:show_text:'<gray>Click to cancel</gray>'><green>[Here]</green></hover></click> to leave input mode.</gray>
+  Input:
+    Header:
+      Main: <green><b>Input Mode</b></green>
+      Error: <red><b>ERROR</b></red>
+    Error:
+      NotInteger: <gray>Expecting <red>whole</red> number!</gray>
+      Generic: <gray>Invalid value!</gray>
+  Button:
+    Name: <lyellow><b>%name%</b></lyellow>
+    Description: <gray>%entry%</gray>
+    Current:
+      DefaultName: Current
+      Info: '<lyellow>● <lgray>%name%: </lgray>%value%</lyellow>'
+    ClickKey: <lyellow>[▶]</lyellow> <lgray>%name% to <lyellow>%value%</lyellow>.</lgray>
+  Generic:
+    Close:
+      Name: <lred><b>Exit</b></lred>
+      Lore: []
+    Return:
+      Name: <lgray><b>Return</b></lgray>
+      Lore: []
+    NextPage:
+      Name: <lgray>Next Page →</lgray>
+      Lore: []
+    PreviousPage:
+      Name: <lgray>← Previous Page</lgray>
+      Lore: []
+  Item:
+    Exit:
+      Name: <lred><b>Exit</b></lred>
+      Description: []
+    Return:
+      Name: <lgray><b>Return</b></lgray>
+      Description: []
+    NextPage:
+      Name: <lgray><!b>Next Page →</!b></lgray>
+      Description: []
+    PreviousPage:
+      Name: <lgray><!b>← Previous Page</!b></lgray>
+      Description: []
+Dialog:
+  Header: <lyellow>%time%</lyellow>
+  DefaultPrompt: <lgray>Enter <lgreen>[Value]</lgreen></lgray>
+  Info:
+    Exit:
+    - <noprefix>
+    - ''
+    - <gray>Click <click:run_command:"/#exit"><hover:show_text:'<gray>Click to cancel.</gray>'><green>[Here]</green></hover></click> to leave input mode.</gray>

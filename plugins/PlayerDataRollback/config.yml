@@ -1,0 +1,5 @@
+backup-auto-remove: 7 # 自动删除超过指定天数的备份（设置为 -1 禁用）
+backup-interval: 1728000 # 自动备份间隔（以刻（ticks）为单位，约20刻 = 1秒）
+world-name: world # 存储玩家数据的世界名称
+language: zh_CN # 语言
+update-checker: true # 更新检查

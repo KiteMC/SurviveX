@@ -1,0 +1,95 @@
+# 标题
+title: '&e主菜单'
+# 打开命令
+openCommand: 'main_menu'
+# 打开物品
+openItem: 'compass'
+# 打开权限
+permission: false
+# 菜单大小
+size: 54
+# 打开本菜单播放的声音
+sound: "BLOCK_NOTE_BLOCK_PLING"
+# 菜单内容
+menu:
+  '10':
+    index: 10
+    name: '   &8[&6传送菜单&8]'
+    material: COMPASS
+    lore:
+      - "&f- &7点击打开传送菜单"
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '[open] tp_menu'
+  '11':
+    index: 11
+    name: '   &8[&6皮肤菜单&8]'
+    material: LEATHER
+    lore:
+      - "&f- &7点击打开皮肤菜单"
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '[command] skins'
+  '12':
+    index: 12
+    name: '   &8[&6帮助菜单&8]'
+    material: BOOK
+    lore:
+      - "&f- &7点击打开帮助菜单"
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '[open] help_menu'
+  '13':
+    index: 13
+    name: '   &8[&6管理家菜单&8]'
+    material: DIAMOND_CHESTPLATE
+    lore:
+      - "&f- &7点击打开管理家菜单"
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '[open] home_select'
+  '14':
+    index: 14
+    name: '   &8[&6便捷菜单&8]'
+    material: CLOCK
+    lore:
+      - "&f- &7点击打开便捷菜单"
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '[open] quick_menu'
+  '15':
+    index: 15
+    name: '   &8[&6职业菜单&8]'
+    material: IRON_PICKAXE
+    lore:
+      - "&f- &7点击打开职业菜单"
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '[command] jobs join'
+  '16':
+    index: 16
+    name: '   &8[&6更多附魔菜单&8]'
+    material: ENCHANTED_BOOK
+    lore:
+      - "&f- &7点击打开更多附魔菜单"
+    isEnchant: true
+    custom-model-data: 0
+    commands:
+      - '[command] excellentenchants list'
+
+  # 分隔板
+  pane:
+    enable: true
+    index: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53
+    material: BLACK_STAINED_GLASS_PANE
+    isEnchant: false
+    name: "       &8[&7分割板&8]"
+    lore:
+      - "&7哎呀,不要随便戳人家啦"
+    custom-model-data: 0

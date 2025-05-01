@@ -1,0 +1,39 @@
+prefix: '&7[&aPlayerData&bRollback&7]'
+messages:
+  backup-completed: '%prefix% &aBackup completed successfully.'
+  rollback-completed: '%prefix% &7Rolled back data for player {player}.'
+  rollback-all-completed: '%prefix% &eSuccessfully restored all player data from backup
+    {name}.'
+  removeall-completed: '%prefix% &eRemoved backups older than {time}.'
+  remove-completed: '%prefix% &eRemoved backup.'
+  reload-completed: '%prefix% &aPlugin configuration reloaded.'
+  usage-error: '%prefix% &cInvalid command usage. Please use &e/pld help&c to get
+    help.'
+  no-backup-found: '%prefix% &cUnable to find a backup named {name}.'
+  no-playerdata: '%prefix% &cPlayer data folder not found!'
+  no-permission: '%prefix% &cYou don''t have permission to do this.'
+  rollback-kick: '&6Admin is rolling back your player data and you can rejoin now'
+  help-title: '&e&l---»-- &aPlayerData&bRollback &6Help &e&l--«---'
+  help-reload: '&6/pld reload &e- Reload the configuration'
+  help-backup-create: '&6/pld backup create &7(Backup Name) &e- Backup all player''s
+    data'
+  help-rollback: '&6/pld rollback &a<Player Name> <Backup Name> &e- Rollback player''s
+    data from backup'
+  help-rollbackall: '&6/pld rollbackall <backup name> &e- Roll back all player data
+    from the specified backup'
+  help-backup-remove: '&6/pld backup remove &a<Backup Name> &e- Delete a backup'
+  help-backup-removeall: '&6/pld backup removeall &a<xd/m/y> &e- Delete all backups
+    the time ago.'
+  help-backup-list: '&6/pld list &7(xd/m/y) &e- List backups'
+  help-end: |2-
+
+    &7() - Optional  &a<> - Required
+  backup-list-header: '&e&l---»-- &aPlayerData&bRollback &6Backup List &e&l--«---'
+  backup-list-item: '&e{id}. &6{folder} &e- &6{time}'
+  backup-list-footer: '%prefix% &eDisplaying page {current}/{total}.'
+  invalid-page: '%prefix% &cInvalid page number!'
+  page-navigation: '&7(Page {current}/{total})[Use &e/pld page <Page> &7to turn page]'
+  no-backups-found: '%prefix% &cNo backups found for the specified time period.'
+  no-backups: '%prefix% &cNo backups available.'
+  invalid-time-filter: '%prefix% &cInvalid time filter {filter}.'
+  update-available: '%prefix% &aNew version {version} now available!'

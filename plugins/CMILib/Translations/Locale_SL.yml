@@ -1,0 +1,827 @@
+# Full color code support and some variables
+# Keep in mind that variables wont work for some lines, when it will for anothers :)
+# Just keep them where there are now and everything will be ok :)
+# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# [serverName] to show server name
+# [playerName] to show target player name
+# [playerDisplayName] to show target player display name
+# [lvl] to show target player level
+# [exp] to show target player total exp
+# [hp] to show target player health
+# [maxHp] to show target player max health
+# [hunger] to show target player hunger level
+# [gameMode] to show target player gamemode
+# [prefix] to show target player prefix if possible
+# [suffix] to show target player suffix if possible
+# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# [senderName] to show Sender player name
+# [senderDisplayName] to show Sender player display name
+# [senderLvl] to show Sender player level
+# [senderExp] to show Sender player total exp
+# [senderHp] to show Sender player health
+# [senderMaxHp] to show Sender player max health
+# [senderHunger] to show Sender player hunger level
+# [senderGameMode] to show Sender player gamemode
+# [senderPrefix] to show Sender player prefix if possible
+# [senderSuffix] to show Sender player suffix if possible
+# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# [sourceName] to show source player name
+# [sourceDisplayName] to show source player display name
+# [sourceLvl] to show source player level
+# [sourceExp] to show source player total exp
+# [sourceHp] to show source player health
+# [sourceMaxHp] to show source player max health
+# [sourceHunger] to show source player hunger level
+# [sourceGameMode] to show source player gamemode
+# [sourcePrefix] to show source player prefix if possible
+# [sourceSuffix] to show source player suffix if possible
+# ***********************************************
+# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If line starts with !actionbar! then player will get action bar message defined after this variable
+# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+# <T> and </T> required, other is optional
+# Use /n to break line
+# To have more than one JSON message use <Next>
+# <C> performs command as a player who clicked
+# <CC> performs command from console once
+# <CCI> performs command from console every time player clicks text
+# <URL> includes url
+info:
+  # Use !prefix! in any locale line to automatically include this prefix
+  prefix: '&e[&aCMI&e] '
+  NoPermission: '&cNimaš dovoljenja!'
+  CantHavePermission: '&cNe moreš imeti tega dovoljenja!'
+  WrongGroup: '&cSi v napačni skupini za to!'
+  NoPlayerPermission: '&c[playerName] Nima dovoljenja za: [permission]'
+  Ingame: '&cTo lahko uporabiš samo v igri!'
+  NoInformation: '&cNi informacije!'
+  Console: '&6Konzola'
+  FromConsole: '&cTo lahko uporabiš samo v konzoli!'
+  NotOnline: '&cIgralec ni aktiven!'
+  NobodyOnline: '&cNihče ni aktiven!'
+  Same: '&cNemoreš odpreti svojega inventarja za urejanje!'
+  cantLoginWithDifCap: '&cNe moreš se prijaviti z uporabo velikih začetnic! Staro
+    ime: &e[oldName]&c. Trenutno: &e[currentName]'
+  Searching: '&eČe iščete podatke o igralcih, počakajte, ker lahko traja nekaj časa!'
+  NoPlayer: '&cNe najdem igralca z tem imenom!'
+  NoCommand: '&cTa ukaz ne obstaja!'
+  NoCommandWhileSleeping: '&cKo spiš nemoreš pisati!'
+  cantFindCommand: '&5Nisem našel &7[%1]&5 ukaza, ali si mislil &7[%2]&5?'
+  nolocation: '&4Ne najdem primerne lokacije'
+  PurgeNotEnabled: '&cV konfiguracijski datoteki funkcija čiščenja ni omogočena!'
+  FeatureNotEnabled: '&cTa funkcija ni omogočena!'
+  TeamManagementDisabled: '&7Ta funkcija bo imela omejene funkcije, medtem ko je možnost
+    onemogoči upravljanje ekipe nastavljena na True!'
+  ModuleNotEnabled: '&cTa modul ni omogočen!'
+  versionNotSupported: '&cRazličica strežnika za to funkcijo ni podprta'
+  bungeeNoGo: '&cTa funkcija ne bo delovala na strežnikih, ki temeljijo na bungee
+    omrežju'
+  clickToTeleport: '&eKliknite za teleport'
+  UseMaterial: '&4Uporabite imena materialov!'
+  IncorrectMaterial: '&4Incorrect material name!'
+  UseInteger: '&4Uporabite številke!'
+  UseBoolean: '&4Prosim uporabite True ali False!'
+  NoLessThan: '&4Številka nesme biti manjša od [amount]!'
+  NoMoreThan: '&4Vrednost nesme biti večja od [amount]'
+  NoGameMode: '&cProsim uporabi 0/1/2/3 ali Survival/Creative/Adventure/Spectator
+    ali s/c/a/sp!'
+  NoWorld: '&4Ne najdem sveta z tem imenom!'
+  IncorrectLocation: '&4Lokacija je bila napačno določena!'
+  NameChange: '&6[playerDisplayName] &ese je prijavil, poznan tudi kot: &6[namelist]'
+  Cooldowns: '&eProsim počakaj! &6[time]'
+  specializedCooldowns: '&eProsim počakaj! &6[time]'
+  specializedRunning: '&eUkaz v teku, prosim počakaj &6[time]'
+  CooldownOneTime: '&eTa ukaz lahko uporabiš samo enkrat!'
+  WarmUp:
+    canceled: '&eUkaz prekinjen, zaradi premika!'
+    counter: '!actionbar!&6--> Počakaj &e[time] &6sekund <--'
+    DontMove: '!title!&6Ne premikaj se!!subtitle!&7Počakaj &c[time] &7sekund'
+    Boss:
+      DontMove: '&4Ne premikaj se za &7[autoTimeLeft] &4sekund!'
+      WaitFor: '&4Počakaj &7[autoTimeLeft] &4sekund!'
+  Spawner: '&r[type] Spawner'
+  FailedSpawnerMine: '!actionbar!&cNeuspešno uničevanje Spawnerja. &7[percent]% &cmožnost
+    dobitka'
+  ClickSpawner: '!actionbar!&7[percent]% &eMožnost dobitka'
+  Elevator:
+    created: '&eUstvarjen znak za dvigalo'
+  CantPlaceSpawner: '&eNe moreš postaviti Spawnerja preblizu drugega Spawnerja (&6[range]&e)'
+  ChunksLoading: '&ePodatki o svetu se še vedno nalagajo. Prosim počakaj malo.'
+  ShulkerBox: Shulker Box
+  CantUseNonEncrypted: '!actionbar!&cUkazi niso šifrirani. Nemoreš jih uporabiti!'
+  CantDecode: '!actionbar!&cSporočila ali ukaza ni mogoče dekodirati. Datoteka ključa
+    vsebuje napačen ključ za to nalogo. O tem obvestite nadrejenega!'
+  Show: '&ePokaži'
+  Remove: '&cOdstrani'
+  Back: '&eNazaj'
+  Forward: '&eNaprej'
+  Update: '&ePosodobi'
+  Save: '&eShrani'
+  Delete: '&cOdstrani'
+  Click: '&eKlikni'
+  Preview: '&ePoglej'
+  PasteOld: '&ePrilepi staro'
+  ClickToPaste: '&eKlikni, da prilepiš v pogovor'
+  CantTeleportWorld: '&eTeleportacija v ta svet ni mogoča.'
+  CantTeleportNoWorld: '&cDoločeni svet ne obstaja. Teleportacija prekinjena'
+  CantTeleport: '&eNe morem se teleportirati, ker imaš preveč omejenih predmetov.
+    Pomaknite se po tej vrstici, da vidite največjo dovoljeno količino elementov.'
+  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
+  teleported: '&eBil si teleportiran.'
+  BlackList: '&e[material] [amount] &6Največ: [max]'
+  PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
+  Spliter: '&e--------------------------------------------------'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
+  singleSpliter: '&e-'
+  SpliterMiddle: ' &6[value] '
+  ListSpliter: ', '
+  ProgressBarFill: '&2▏'
+  ProgressBarEmpty: '&e▏'
+  nothingInHand: '!actionbar!&eV roki moram držati stvar'
+  nothingInHandLeather: '&eV roki moram držati usnje.'
+  nothingToShow: '&eNičesar za pokazati'
+  noItem: '&cNe najdem stvari'
+  dontHaveItem: '&cNimaš dovolj &6[amount]x [itemName] &cv inventarju.'
+  wrongWorld: '&cTega na tem svetu ne morem storiti'
+  wrongPortal: '&cNahajate se na napačnem področju portala'
+  differentWorld: '&cRazlični svetovi'
+  HaveItem: '&cImaš  &6[amount]x [itemName] &cv inventarju.'
+  ItemWillBreak: '!actionbar!&eVaša stvar (&6[itemName]&e) se bo kmalu polomila! &e[current]&6/&e[max]'
+  ArmorWillBreak: '!actionbar!&eVaš [itemName] se bo kmalu polomil! &e[current]&6/&e[max]'
+  cantDoInGamemode: '&eTega v tem načinu igre ne morete storiti'
+  cantDoForPlayer: '&eTega ne moreš storiti &6[playerDisplayName]'
+  cantDoForYourSelf: '&eTega si ne moreš storiti'
+  cantDetermineMobType: '&cNe morem določiti vrste nezemljana &e[type] &cspremenljivka'
+  cantRename: '!actionbar!&eTega imena nemoreš uporabljati'
+  confirmRedefine: '&eClick to confirm redefining'
+  cantEdit: '&eTega nemoreš urejati'
+  wrongName: '&cNarobno ime'
+  unknown: Neznano
+  invalidName: '&cNeznano ime'
+  alreadyexist: '&4To ime je zasedeno'
+  dontexist: '&4S tem imenom ni bilo mogoče najti ničesar'
+  worldDontExist: '&cCiljni svet ni več dostopen. Ne morem te teleportirati!'
+  flyingToHigh: '&cNe morete leteti tako visoko, največja višina je &6[max]&c!'
+  specializedItemFail: '&cPo ceni ne morem določiti zahteve po specializiranih artiklih:&7[value]'
+  sunSpeeding: Spanje [count] od [total] [hour] ur [speed]X hitrost
+  sleepersRequired: '!actionbar!&f[sleeping] &7od &f[required] &7spanje igralcev za
+    nočno pospešitev'
+  sunSpeedingTitle: '&7[hour]'
+  skippingNight: '!title!&7Noč je bila preskočena'
+  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
+  repairConfirm: '&eKlikni da potrdiš &7[items] &epopravi stvar za &7[cost]'
+  bookDate: '&7Napisano je bilo &f[date]'
+  maintenance: '&7Vzdrževalni način'
+  notSet: Ni nastavljeno
+  mapLimit: '&cNe morem preseči 30 000 000 blokov'
+  startedEditingPainting: '&eZačeli ste urejati sliko. Kliknite na drugo kocko, da
+    prekličete.'
+  canceledEditingPainting: '&ePreklicali ste način urejanja slik'
+  changedPainting: '!actionbar!&eSpremenjena slika v &6[name] &ez ID od &6[id]'
+  noSpam: '!title!&cNe ponavljaj besed!'
+  noCmdSpam: '!title!&cNe ponavljaj ukazov!'
+  spamConsoleInform: '&cIgralec (&7[playerName]&c) je sprožil (&7[rules]&c) pogovornega
+    filtra z:&r [message]'
+  lookAtSign: '&ePoglej v znak'
+  lookAtBlock: '&ePoglej v kocko'
+  lookAtEntity: '&ePoglej v entiteto'
+  noSpace: '&eNot enough free space'
+  notOnGround: '&eTo ni mogoče med letenjem'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '&eDobrodošel &6[playerDisplayName] &ena našem strežniku!'
+  LogoutCustom: ' &6[playerDisplayName] &ese je odjavil'
+  LoginCustom: ' &6[playerDisplayName] &ese je pridružil'
+  deathlocation: '&eUmrl si na x:&6[x]&e, y:&6[y]&e, z:&6[z]&e v svetu &6[world]'
+  book:
+    exploit: '&cYou cant create book with more than [amount] pages'
+  combat:
+    CantUseShulkerBox: '&cNe morem uporabljati shulker box-a, medtem ko se borim z
+      igralcem. Wait: [time]'
+    CantUseCommand: '!actionbar!&cNe morem uporabljati ukaza, medtem ko sem v boju.
+      Počakaj: [time]'
+    bossBarPvp: '&cBojni način [autoTimeLeft]'
+    bossBarPve: '&2Bojni način [autoTimeLeft]'
+  bungee:
+    Online: '&6Online'
+    Offline: '&cOffline'
+    not: '&cServer ne pripada nobenemu bungee network-u'
+    noserver: '&cNe najdem strežnika z tem imenom!'
+    server: '&eStrežnik: &7[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&6Online'
+    Offline: '&cOffline'
+    TrueColor: '&2'
+    FalseColor: '&4'
+    'True': '&6Drži'
+    'False': '&cNe Drži'
+    Enabled: '&6Omogočeno'
+    Disabled: '&cOnemogočeno'
+    survival: '&6Preživetje'
+    creative: '&6Ustvarjalno'
+    adventure: '&6Pustolovščina'
+    spectator: '&6Gledalec'
+    flying: '&6Letenje'
+    notflying: '&6Ne leti'
+  noSchedule: '&cUrnika s tem imenom ni mogoče najti'
+  totem:
+    cooldown: '&eTotem se regenerira: [time]'
+    warmup: '&eTotem efekt: [time]'
+    cantConsume: '&eUporaba totema ni mogoča, prosim počakaj.'
+  Inventory:
+    FullDrop: '&5Nekatere stvari ne sodijo v tvoj inventar fit. Bile so odvržene.'
+  InventorySave:
+    info: '&8Informacije: &8[playerDisplayName]'
+    saved: '&e[time] &eInventar shranjen z ID: &e[id]'
+    NoSavedInv: '&eTa igralec nima nobenega shranjenega inventarja'
+    NoEntries: '&4Datoteka obstaja, temveč inventarja ne najdem!'
+    CantFind: '&eNe najdem inventarja z tem id-jem'
+    TopLine: '&e----------- &6[playerDisplayName] shranjen inventar &e-----------'
+    List: '&eid: &6[id]&e. &6[time]'
+    KillerSymbol: '&c ☠'
+    Click: '&eKlikni, da preveriš ([id]) shranjeni inventar'
+    IdDontExist: '&4This save Id doesn''t exist!'
+    Deleted: '&eUspešno izbrisan shranjen inventar!'
+    Restored: '&eObnovil si &e[sourcename] &einventar od &e[targetname] &eosebe.'
+    GotRestored: '&eVaš inventar je bil obnovljen &e[sourcename] &esharnjen inventar
+      v &e[time]'
+    LoadForSelf: '&eTa inventar naložite sami'
+    LoadForOwner: '&eNaloži ta inventar za lastnika'
+    NextInventory: '&eNaslednji popis'
+    PreviousInventory: '&ePrejšnji popis'
+    Editable: '&eNačin urejanja je omogočen'
+    NonEditable: '&eNačin urejanja je onemogočen'
+  TimeNotRecorded: '&e-Ni zapisa-'
+  years: '&e[years] &6leta '
+  oneYear: '&e[years] &6leto '
+  day: '&e[days] &6dnevi '
+  oneDay: '&e[days] &6dan '
+  hour: '&e[hours] &6ure '
+  oneHour: '&e[hours] &6ura '
+  min: '&e[mins] &6minuta '
+  sec: '&e[secs] &6sekunda '
+  vanishSymbolOn: '&8[&7H&8]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '&8[&7Afk&8]&r'
+  afkSymbolOff: ''
+  nextPageConsole: '&fZa naslednjo stran izvedite &5[command]'
+  prevPage: '&2----<< &Prejšnja '
+  prevPageGui: '&6Prejšnja stran '
+  prevPageClean: '&6Prejšnja '
+  prevPageOff: '&2----<< &7Prejšnja '
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&6 Naslednja &2>>----'
+  nextPageGui: '&6Naslednja stran'
+  nextPageClean: '&6 Naslednja'
+  nextPageOff: '&7 Naslednja &2>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&2[current]&7/&2[total]'
+  pageCountHover: '&e[totalEntries] vnosi'
+  skullOwner: '!actionbar!&7Lastnik:&r [playerName]'
+  beeinfo: '!actionbar!&7Med stopnja: &e[level]&7/&e[maxlevel] &7Čebele znotraj: &e[count]&7/&e[maxcount]'
+  circle: '&3Krog'
+  square: '&5Kvadrat'
+  clear: '&7Jasno'
+  protectedArea: '&cZaščiteno območje. Tega tukaj ne morem storiti.'
+  valueToLong: '&eVrednost je previsoka. Max: [max]'
+  valueToShort: '&eVrednost je prenizka. Min: [min]'
+  pvp:
+    noGodDamage: '!actionbar!&cIgralcev ne morete poškodovati, medtem ko ste nesmrtni'
+  InvEmpty:
+    armor: '&eReže za oklep naj bodo prazne!'
+    hand: '&eVaša roka mora biti prazna!'
+    maininv: '&eVaš glavni inventar naj bo prazen!'
+    maininvslots: '&eVaš glavni inventar bi moral imeti vsaj &6[count] &epraznih rež!'
+    inv: '&eVaš inventar naj bo prazen!'
+    offhand: '&eVaš druga roka bi moral biti prazna!'
+    quickbar: '&eVaša hitra vrstica naj bo prazna!'
+    quickbarslots: '&eVaša hitra vrstica bi morala imeti vsaj &6[count] &epraznih
+      rež!'
+    subinv: '&eVaš podpopis naj bo prazen!'
+    subinvslots: '&eVaš podpopis bi moral imeti vsaj &6[count] &epraznih rež!'
+  pickIcon: '&8Izberite ikono'
+  DamageCause:
+    block_explosion: Eksplozija
+    contact: Škoda kocke
+    cramming: Krčenje
+    custom: Neznano
+    dragon_breath: Zmajev dih
+    drowning: Utapljanje
+    dryout: Izsušijo
+    entity_attack: Napad entitete
+    entity_explosion: Eksplozija
+    entity_sweep_attack: Napad na entiteto
+    fall: Padec
+    falling_block: Padajoča kocka
+    fire: Ogenj
+    fire_tick: Ogenj
+    fly_into_wall: Letenje v steno
+    hot_floor: Kocka magme
+    lava: Lava
+    lightning: Strela
+    magic: Čarovnija
+    melting: Taljenje
+    poison: Strup
+    projectile: Izstrelek
+    starvation: Lakota
+    suffocation: Zadušitev
+    suicide: Samomor
+    thorns: Trnje
+    void: Prazno
+    wither: Wither
+  Biomes:
+    BADLANDS: Badlands
+    BADLANDS_PLATEAU: Badlandska planota
+    BAMBOO_JUNGLE: Bambusova džungla
+    BAMBOO_JUNGLE_HILLS: Hribi iz bambusove džungle
+    BASALT_DELTAS: Bazaltne delte
+    BEACH: Plaža
+    BIRCH_FOREST: Brezov gozd
+    BIRCH_FOREST_HILLS: Breze gozdni griči
+    COLD_OCEAN: Hladen ocean
+    CRIMSON_FOREST: Škrlatni gozd
+    DARK_FOREST: Temni gozd
+    DARK_FOREST_HILLS: Temni gozdni griči
+    DEEP_COLD_OCEAN: Globoko hladen ocean
+    DEEP_FROZEN_OCEAN: Globoko zamrznjen ocean
+    DEEP_LUKEWARM_OCEAN: Globok mlačen ocean
+    DEEP_OCEAN: Globoki ocean
+    DEEP_WARM_OCEAN: Globoko topel ocean
+    DESERT: Puščava
+    DESERT_HILLS: Puščavski hribi
+    DESERT_LAKES: Puščavska jezera
+    END_BARRENS: Končne jalove
+    END_HIGHLANDS: Konec visokogorja
+    END_MIDLANDS: Končna sredina
+    ERODED_BADLANDS: Erodirane badlands
+    FLOWER_FOREST: Cvetlični gozd
+    FOREST: Gozd
+    FROZEN_OCEAN: Zamrznjeni ocean
+    FROZEN_RIVER: Zamrznjena reka
+    GIANT_SPRUCE_TAIGA: Ogromna smrekova tajga
+    GIANT_SPRUCE_TAIGA_HILLS: Ogromni smrekovi hribi tajge
+    GIANT_TREE_TAIGA: Velikanska drevesna tajga
+    GIANT_TREE_TAIGA_HILLS: Ogromni drevesni hribi tajge
+    GRAVELLY_MOUNTAINS: Prodnate gore
+    ICE_SPIKES: Ledeni konici
+    JUNGLE: Džungla
+    JUNGLE_EDGE: Rob džungle
+    JUNGLE_HILLS: Hribi v džungli
+    LUKEWARM_OCEAN: Mlak ocean
+    MODIFIED_BADLANDS_PLATEAU: Spremenjena planota Badlands
+    MODIFIED_GRAVELLY_MOUNTAINS: Spremenjene prodnate gore
+    MODIFIED_JUNGLE: Spremenjena džungla
+    MODIFIED_JUNGLE_EDGE: Spremenjen rob džungle
+    MODIFIED_WOODED_BADLANDS_PLATEAU: Spremenjena gozdnata planota
+    MOUNTAINS: Gorovje
+    MOUNTAIN_EDGE: Gorski rob
+    MUSHROOM_FIELDS: Gobja polja
+    MUSHROOM_FIELD_SHORE: Gobova poljska obala
+    NETHER_WASTES: Netherni odpadki
+    OCEAN: Ocean
+    PLAINS: Ravnice
+    RIVER: Reka
+    SAVANNA: Savanna
+    SAVANNA_PLATEAU: Savanna planota
+    SHATTERED_SAVANNA: Razbita savana
+    SHATTERED_SAVANNA_PLATEAU: Razbita planota savane
+    SMALL_END_ISLANDS: Majhni končni otoki
+    SNOWY_BEACH: Snežna plaža
+    SNOWY_MOUNTAINS: Snežne gore
+    SNOWY_TAIGA: Snežna tajga
+    SNOWY_TAIGA_HILLS: Snežni hribi tajge
+    SNOWY_TAIGA_MOUNTAINS: Snežne gore tajge
+    SNOWY_TUNDRA: Snežna tundra
+    SOUL_SAND_VALLEY: Dušna peščena dolina
+    STONE_SHORE: Kamnita obala
+    SUNFLOWER_PLAINS: Sončnična planjava
+    SWAMP: Močvirje
+    SWAMP_HILLS: Močvirnati griči
+    TAIGA: Tajga
+    TAIGA_HILLS: Hribi Taiga
+    TAIGA_MOUNTAINS: Gore Taiga
+    TALL_BIRCH_FOREST: Visok brezek
+    TALL_BIRCH_HILLS: Visoki brezovi griči
+    THE_END: Konec
+    THE_VOID: Praznina
+    WARM_OCEAN: Topel ocean
+    WARPED_FOREST: Ukrivljen gozd
+    WOODED_BADLANDS_PLATEAU: Gozdnata planota
+    WOODED_HILLS: Gozdnati griči
+    WOODED_MOUNTAINS: Gozdnate gore
+  EntityType:
+    area_effect_cloud: Območni učinek oblaka
+    armor_stand: Stojalo za oklep
+    arrow: Puščica
+    bat: Netopir
+    bee: Čebela
+    blaze: Velik požar
+    boat: Čoln
+    cat: Mačka
+    cave_spider: Jamski pajek¸
+    chicken: Piščanec
+    cod: Trska
+    cow: Krava
+    creeper: Lezenje
+    dolphin: Delfin
+    donkey: Osel
+    dragon_fireball: Zmajeva ognjena krogla
+    dropped_item: Spuščen element
+    drowned: Utopljen
+    egg: Jajce
+    elder_guardian: Starejši skrbnik¸
+    enderman: Enderčlovek
+    endermite: Endermit
+    ender_crystal: Ender kristal
+    ender_dragon: Ender zmaj
+    ender_pearl: Ender biser
+    ender_signal: Ender signal
+    evoker: Evoker
+    evoker_fangs: Okvirji Evoker
+    experience_orb: Orb Izkušnenj
+    falling_block: Padajoča kocka
+    fireball: Ognjena krogla
+    firework: Ognjemet
+    fishing_hook: Ribiški kavelj
+    fox: Lisica
+    ghast: Grozno
+    giant: Velikan
+    guardian: Skrbnik
+    hoglin: Hoglin
+    horse: Konj
+    husk: Husk
+    illusioner: Prividnik
+    iron_golem: Železni golem
+    item_frame: Element okvirja
+    leash_hitch: Povodec
+    lightning: Strela
+    llama: Lama
+    llama_spit: Pljunek lame
+    magma_cube: Kocka Magme
+    minecart: Minecart
+    minecart_chest: Minecart voziček
+    minecart_command: Ukaz Minecart
+    minecart_furnace: Peč za mine
+    minecart_hopper: Minecart lijak
+    minecart_mob_spawner: Minecart mob spawner
+    minecart_tnt: Minecart tnt
+    mule: Osel
+    mushroom_cow: Gobova krava
+    ocelot: Ocelot
+    painting: Slika
+    panda: Panda
+    parrot: Papiga
+    phantom: Fantom
+    pig: Prašič
+    piglin: Piglin
+    piglin_brute: Piglin surovi
+    pillager: Razbojnik
+    player: Igralec
+    polar_bear: Polarni medved
+    primed_tnt: Grundiran tnt
+    pufferfish: Pufferfish
+    rabbit: Zajec
+    ravager: Ravager
+    salmon: Losos
+    sheep: Ovce
+    shulker: Shulker
+    shulker_bullet: Shulker krogla
+    silverfish: Srebrna ribica
+    skeleton: Okostje
+    skeleton_horse: Konjski okostnjak
+    slime: Sluz
+    small_fireball: Majhna ognjena krogla
+    snowball: Snežna kepa
+    snowman: Sneženi mož
+    spectral_arrow: Spektralna puščica
+    spider: Pajek
+    splash_potion: Splash napoj
+    squid: Lignji
+    stray: Potepuh
+    strider: Strider
+    thrown_exp_bottle: Vržena steklenica
+    trader_llama: Trgovec z lamo
+    trident: Trident
+    tropical_fish: Tropske ribe
+    turtle: Želva
+    unknown: Neznano
+    vex: Vex
+    villager: Vaščan
+    vindicator: Vindicator
+    wandering_trader: Potujoči trgovec
+    witch: Čarovnica
+    wither: Usuši
+    wither_skeleton: Okostje vihra
+    wither_skull: Lobanja vene
+    wolf: Volk
+    zoglin: Zoglin
+    zombie: Zombi
+    zombie_horse: Zombi konj
+    zombie_villager: Zombi vaščan
+    zombified_piglin: Zombi piglin
+  EnchantAliases:
+    protection_fire:
+    - Protipožarna zaščita
+    damage_all:
+    - Ostrina
+    arrow_fire:
+    - Plamen
+    soul_speed:
+    - Hitrost duše
+    water_worker:
+    - AquaAffinity
+    arrow_knockback:
+    - Punch
+    loyalty:
+    - Zvestoba
+    depth_strider:
+    - Globinski pas
+    vanishing_curse:
+    - Izginjajoče prekletstvo
+    durability:
+    - Nezlomljivo
+    knockback:
+    - Odrinitev
+    luck:
+    - Sreča
+    binding_curse:
+    - Zavezujoče prekletstvo
+    loot_bonus_blocks:
+    - Sreča
+    protection_environmental:
+    - Zaščita
+    dig_speed:
+    - Učinkovitost
+    mending:
+    - Popravljanje
+    lure:
+    - Lure
+    loot_bonus_mobs:
+    - Ropanje
+    piercing:
+    - Piercing
+    damage_undead:
+    - Smite
+    multishot:
+    - Multishot
+    fire_aspect:
+    - Požarni vidik
+    channeling:
+    - Usmerjanje
+    sweeping_edge:
+    - Pometalni rob
+    thorns:
+    - Trnji
+    damage_arthropods:
+    - BaneOfArthropods
+    oxygen:
+    - Dihanje
+    riptide:
+    - Riptide
+    silk_touch:
+    - Dotik_svile
+    quick_charge:
+    - Hitri reaload
+    protection_projectile:
+    - Zaščita izstrelkov
+    impaling:
+    - Impaling
+    protection_fall:
+    - Zaščita pred padcem
+    - Perje proti padcu
+    arrow_damage:
+    - Moč
+    arrow_infinite:
+    - Neskončnost
+  PotionEffectAliases:
+    speed:
+    - Hitrost
+    slow:
+    - Počastnost
+    fast_digging:
+    - Fast digging
+    slow_digging:
+    - Slow digging
+    increase_damage:
+    - Powecana Moč
+    heal:
+    - zdravi
+    harm:
+    - Škoda
+    jump:
+    - Skočiti
+    confusion:
+    - Zmedenost
+    regeneration:
+    - Regeneracija
+    damage_resistance:
+    - Odpornost na škodo
+    fire_resistance:
+    - Požarna odpornost
+    water_breathing:
+    - Vodno Dihanje
+    invisibility:
+    - Nevidnost
+    blindness:
+    - Slepota
+    night_vision:
+    - Nočni vid
+    hunger:
+    - Lakota
+    weakness:
+    - Slabost
+    poison:
+    - Strup
+    wither:
+    - Wither
+    health_boost:
+    - Okrepitev Zdravja
+    absorption:
+    - Absorpcija
+    saturation:
+    - nasičenost
+    glowing:
+    - Svetleč
+    levitation:
+    - Levitacija
+    luck:
+    - Srečca
+    unluck:
+    - Nesreča
+    slow_falling:
+    - Počasno Padanje
+    conduit_power:
+    - Moč vodovoda
+    dolphins_grace:
+    - Milost delfinov
+    bad_omen:
+    - Slab znak
+    hero_of_the_village:
+    - Junak vasi
+direction:
+  n: Sever
+  ne: Severovzhod
+  e: Vzhod
+  se: Jugovzhod
+  s: Jug
+  sw: Jugozahod
+  w: Zahod
+  nw: Severozahod
+modify:
+  middlemouse: '&2Sredni kliknite miško za urejanje'
+  newItem: '&7postavi nov izdelek tukaj'
+  newLine: '&2<NewLine>'
+  newLineHover: '&2dodaj Nova linja'
+  newPage: '&2<NewPage>'
+  newPageHover: '&2Create Nova stran'
+  removePage: '&c<RemovePage>'
+  removePageHover: '&czbrisi stran'
+  deleteSymbol: ' &c[X]'
+  deleteSymbolHover: '&codstrani &e[text]'
+  extraEditSymbol: ' &6!'
+  addSymbol: '&2[+]'
+  addSymbolHover: '&2dodaj novo'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&aPrekliči'
+  acceptSymbol: ' &2&l[✔]'
+  acceptSymbolHover: '&aPotrdi'
+  denySymbol: ' &4&l[X]'
+  denySymbolHover: '&cPreklici'
+  enabledSymbol: '&2[+]'
+  disabledSymbol: '&c[-]'
+  enabled: '&2Vklopi'
+  disabled: '&cIzklopi'
+  running: '&2Zagon'
+  paused: '&cPavza'
+  editSymbol: '&e✎'
+  editSymbolHover: '&eUredi &6[text]'
+  editLineColor: '&f'
+  listUpSymbol: '&6⇑'
+  listUpSymbolHover: '&eGor'
+  listDownSymbol: '&6⇓'
+  listDownSymbolHover: '&eDol'
+  listNumbering: '&e[number]. '
+  listAlign: '&80'
+  ChangeHover: '&eClick to change'
+  ChangeCommands: '&eCommands'
+  enabledColor: '&6'
+  disabledColor: '&7'
+  commandTitle: ' &e--- &6[name] &e---'
+  commandList: ' &e[command]  '
+  emptyLine: '&7[Empty line]'
+  commandEdit: '&eUrejanje lista'
+  lineAddInfo: '&eVpiši novo linijo. Napiši &6cancel &eza preklic'
+  commandAddInfo: '&eNapiši nov ukaz. Napiši &6cancel &eza preklic'
+  commandAddInformationHover: "&e[playerName] izpis imena igralca \n&eTo include delay\
+    \ in commands: \n&edelay! 5 \n&eSpecialized commands are supported. More info\
+    \ at \n&ehttps://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&eClick to paste old text. Type &6cancel &eto cancel action'
+  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
+  commandEditInfoHover: '&eClick to paste old text'
+warp:
+  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
+teleportation:
+  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported
+    to a safe location.'
+afk:
+  'on': '&6AFK'
+  'off': '&7Playing'
+  left: '&6[playerDisplayName] &eni več AFk'
+  MayNotRespond: '&eIgralec je AFK in se morda ne bo odzval'
+  MayNotRespondStaff: '&eAdministrator je AFK in se morda ne bo odzval. Poskusite
+    nas kontaktirati skozi discord!'
+BossBar:
+  hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8Potion effects'
+  List: '&e[PotionName] [PotionAmplifier] &eDuration: &e[LeftDuration] &esec'
+  NoPotions: '&eNone'
+Information:
+  Title: '&8Igralcev Information'
+  Health: '&eZdravje: &6[Health]/[maxHealth]'
+  Hunger: '&eLakota: &6[Hunger]'
+  Saturation: '&eNasičenost: &6[Saturation]'
+  Exp: '&eExp: &6[Exp]'
+  NotEnoughExp: '&eNi dovol exp: &6[Exp]'
+  NotEnoughExpNeed: '&eNi dovol exp: &6[Exp]/[need]'
+  tooMuchExp: '&ePreveč exp: &6[Exp]/[need]'
+  NotEnoughVotes: '&eNi dovol votes: &6[votes]'
+  TooMuchVotes: '&ePreveč votes: &6[votes]'
+  BadGameMode: '&cTega ne morete storiti v trenutnem načinu igre'
+  BadArea: '&cNa tem območju ne morete izvesti tega dejanja'
+  GameMode: '&eIgraalni način: &6[GameMode]'
+  GodMode: '&eGodMode: &6[GodMode]'
+  Flying: '&eletenje: &6[Flying]'
+  CanFly: '&eLahko letiš: &6[CanFly]'
+  Uuid: '&6[uuid]'
+  ip: '&eIp address: &6[address]'
+  FirstConnection: '&ePrva povezava: &6[time]'
+  Lastseen: '&eNazadnje viden: &6[time]'
+  Onlinesince: '&eAktiven od: &6[time]'
+  Money: '&eStanje računa: &6[money]'
+  Group: '&eSkupina: &6[group]'
+econ:
+  disabled: '&cTega ukaza ni mogoče uporabiti, medtem ko je ekonomična podpora onemogočena'
+  noMoney: '&cNimas denarja'
+  charged: '!actionbar!&fNapolnjeno: &6[amount]'
+  notEnoughMoney: '&cNImas dovol denarja. POtrebujes (&6[amount]&c)'
+  tooMuchMoney: '&cPrevec denarja mas :D'
+  commandCost: '&7Ta strošek ukaza znaša &6[cost] &7ponovite ali kliknite tukaj za
+    potrditev'
+Elytra:
+  Speed: '&eHitrost: &6[speed]&ekm/h'
+  SpeedBoost: ' &a+ '
+  SpeedSuperBoost: ' &2+ '
+  CanUse: '&cBrez dovoljenja ne morem opremiti elitre!'
+  CantGlide: '&cTu ne morem uporabiti elitre!'
+  Charging: '&ePolnjenje &f[percentage]&e%'
+Selection:
+  SelectPoints: '&cZ orodjem za izbiro izberite 2 točki! AKA: &6[tool]'
+  PrimaryPoint: '&ePostavljeno & 6Primarno & eIzbirna točka [point]'
+  SecondaryPoint: '&ePlaced &6Postavljeno & 6Sekundarno & eIzbirna točka [point]'
+  CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+NetherPortal:
+  ToHigh: '&cPortal je velik, največja višina je &6[max]&c!'
+  ToWide: '&cPortal je širok, največja širina je &6[max]&c!'
+  Creation: '!actionbar!&7Narejen [height]x[width] nether portal!'
+  Disabled: '&cIzdelava portala onemogočena!'
+Location:
+  Title: '&8Lokacija igralca'
+  Killer: '&eMorilec: &6[killer]'
+  OneLiner: '&eLokacija: &6[location]'
+  DeathReason: '&eRazlog smrti: &6[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&eSvet: &6[world]'
+  X: '&eX: &6[x]'
+  Y: '&eY: &6[y]'
+  Z: '&eZ: &6[z]'
+  Pitch: '&eVišina tona: &6[pitch]'
+  Yaw: '&eYaw: &6[yaw]'
+Locations: '&7Locations: '
+Ender:
+  Title: '&7Odprti ender chest'
+Chat:
+  localPrefix: ''
+  shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&cNihče te ne sliši, piši! pred sporočilom za globalni klepet'
+  shoutDeduction: '!actionbar!&cOdšteto &e[amount] &cfor shout'
+  # Use \n to add new line
+  publicHover: '&ePoslano ob: &6%server_time_hh:mm:ss%'
+  privateHover: '&ePoslano ob: &6%server_time_hh:mm:ss%'
+  staffHover: '&ePoslano ob: &6%server_time_hh:mm:ss%'
+  helpopHover: '&ePoslano ob: &6%server_time_hh:mm:ss%'
+  link: '&l&4[&7LINK&4]'
+  item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
+  itemAmount: ' x[amount]'
+  itemEmpty: '&7[Mighty fist]'

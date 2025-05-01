@@ -1,0 +1,172 @@
+# 这些组对应在你的 '<worldname>.yml' 中定义的权限组。
+Groups:
+    Default: # 组名，不要删除这个组
+       # 关于玩家可以定义的住宅区域的信息。
+       # 取消下面的注释行以将此配置镜像到其他组。
+       # Mirror:
+         # - 'group1'
+         # - 'group2'
+       Residence:
+           # 确定此组是否可以创建住宅。此选项可以通过权限节点 'residence.create' 覆盖。
+           CanCreate: true
+           # 玩家可以拥有的住宅最大数量。
+           MaxResidences: 10
+           # 住宅可以拥有的物理区域的最大数量。
+           MaxAreasPerResidence: 2
+           # 住宅从东到西的最大区块数。
+           MaxEastWest: 160
+           # (可选) 住宅从东到西的最小区块数。
+           MinEastWest: 3
+           # 住宅从北到南的最大区块数。
+           MaxNorthSouth: 160
+           # (可选) 住宅从北到南的最小区块数。
+           MinNorthSouth: 3
+           # 住宅从高到低的最大区块数。
+           MaxUpDown: 320
+           # (可选) 住宅从高到低的最小区块数。
+           MinUpDown: 3
+           # 此组允许保护的最低高度。
+           MinHeight: -64
+           # 此组允许保护的最高高度。
+           MaxHeight: 320
+           # 当前区域可以拥有的子区最大数量。
+           MaxSubzonesInArea: 3
+           # 子区可以递归的最深层次。
+           # 住宅区内的子区内的子区深度为 2。
+           # 设置为 0 禁用子区。
+           SubzoneDepth: 3
+           # (可选) 住宅子区从东到西的最大区块数。
+           SubzoneMaxEastWest: 160
+           # (可选) 住宅子区从东到西的最小区块数。
+           SubzoneMinEastWest: 3
+           # (可选) 住宅子区从北到南的最大区块数。
+           SubzoneMaxNorthSouth: 160
+           # (可选) 住宅子区从北到南的最小区块数。
+           SubzoneMinNorthSouth: 3
+           # (可选) 住宅子区从高到低的最大区块数。
+           SubzoneMaxUpDown: 320
+           # (可选) 住宅子区从高到低的最小区块数。
+           SubzoneMinUpDown: 3
+           # 是否允许传送到住宅。
+           CanTeleport: true
+           # 是否允许使用 /res unstuck 命令，如果被困在住宅中可以自行离开。
+           Unstuck: true
+           # 是否允许使用 /res kick 命令，踢出住宅中的玩家。
+           Kick: False
+           # 是否允许使用 /res select 命令，如果禁用则只能使用选择工具。
+           SelectCommandAccess: true
+           # 是否允许该组访问他们拥有的住宅的黑名单/忽略列表。
+           ItemListAccess: true
+       # 与住宅的进入和离开消息相关的选项。
+       Messaging:
+           # 玩家是否可以更改住宅的进入和离开消息。
+           CanChange: true
+           # 应用于此组玩家创建的新住宅的默认进入消息。
+           # 使用 %zone 如果只想包括当前住宅名称而不包括父级区域名称
+           # 留空消息将禁用它。
+           DefaultEnter: "欢迎 %player 来到 %residence，由 %owner 所拥有。"
+           # 应用于此组玩家创建的新住宅的默认离开消息。
+           # %player 如果想包含玩家名称
+           # %playerDisplay 如果想包含玩家显示名称
+           # %owner 如果想包含住宅拥有者名称
+           # %residence 如果想包含住宅名称
+           # %zone 如果只想包括当前住宅名称而不包括父级区域名称
+           # 
+           # 留空消息将禁用它。
+           DefaultLeave: "您已离开领地 %residence。"
+       # 与租赁系统相关的选项。
+       Lease:
+          # 允许租赁的最大天数。
+          MaxDays: 16
+          # 使用 '/res lease renew' 命令后添加到租赁的天数。
+          RenewIncrement: 14
+       # 与租金系统相关的选项
+       Rent:
+           # 确定此组的玩家可以同时租赁多少住宅。
+           MaxRents: 3
+           # 确定此组的玩家可以同时设置多少住宅出租。
+           MaxRentables: 3
+           # 确定玩家可以一次租赁住宅的最大天数。
+           MaxRentDays: 31
+       # 与住宅经济相关的选项。
+       Economy:
+          # 此组的玩家是否可以购买待售的其他住宅。
+          CanBuy: true
+          # 此组的玩家是否可以出售他们的住宅。
+          CanSell: false
+          # 购买住宅时是否忽略住宅大小/数量限制。
+          IgnoreLimits: false
+          # 创建新住宅或向其添加区域时每块的费用。
+          BuyCost: 0.5
+          # 移除住宅时玩家可以获得的退款金额。 
+          # 注意：ResMoneyBack 需要在配置文件中启用才能生效。
+          SellCost: 0.25
+          # 续租住宅时每块的费用（如果启用了租赁系统）。
+          RenewCost: 0.2
+       # 标志的检查顺序：
+       # 1: 玩家
+       # 2: 组
+       # 3: 拥有者
+       # 4: 如果所有其他都未定义，则恢复为默认值（通常是 true）。
+       # 标志权限默认为 false。
+       # 这些标志设置覆盖全局设置。
+       Flags:
+          # 明确允许或禁止此组更改某些标志。
+          Permission:
+               #build: true
+          # 指定此组玩家在创建住宅时应用的标志。
+          Default:
+              #build: true
+          # 指定在创建住宅时对创建者应用的标志。
+          CreatorDefault:
+              #build: true
+          # 指定在创建住宅时为其他组应用的标志。
+          GroupDefault:
+               #default: #组名
+                   #build: false
+          # 这些标志专门应用于此组在住宅外的情况
+          # 这些标志将覆盖位于 Global 部分顶部的标志。
+          World:
+                Global: #这些标志将应用于所有世界
+                     #build: false
+                WorldNameHere: #或者你可以按每个独立世界应用它们
+                     #build: false
+    NextGroup: # 组名，玩家应具有 residence.group.nextgroup 权限节点才能访问此住宅组
+       Residence:
+           CanCreate: true
+           MaxResidences: 4
+           MaxAreasPerResidence: 2
+           MaxEastWest: 200
+           MaxNorthSouth: 200
+           MaxUpDown: 200
+           MinHeight: -64
+           MaxHeight: 320
+           SubzoneDepth: 3
+           CanTeleport: true
+           Unstuck: true
+           Kick: true
+           SelectCommandAccess: true
+           ItemListAccess: true
+       Messaging:
+           CanChange: true
+           DefaultEnter: "欢迎 %player 来到 %residence，由 %owner 所拥有。"
+           DefaultLeave: "您已离开领地 %residence。"
+       Lease:
+          MaxDays: 16
+          RenewIncrement: 14
+       Rent:
+           MaxRents: 3
+           MaxRentables: 3
+           MaxRentDays: 31
+       Economy:
+          CanBuy: true
+          CanSell: false
+          IgnoreLimits: false
+          BuyCost: 0.7
+          SellCost: 0.3
+          RenewCost: 0.3
+
+# 你可以手动指定玩家所在的组，这会覆盖他们的权限组。
+GroupAssignments:
+     bekvon: default
+     player: default

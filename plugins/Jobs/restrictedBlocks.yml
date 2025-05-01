@@ -1,0 +1,60 @@
+# Block protected by timer in sec
+# Category name can be any you like to be easily recognized
+# id can be actual block id (use /jobs blockinfo to get correct id) or use block name
+# By setting time to -1 will keep block protected until global cleanup, mainly used for structure blocks like diamond
+# Set to 0 if you want to disable protection on specific blocks
+# If you want to have default value for all blocks, enable GlobalBlockTimer in generalConfig file
+blocksTimer:
+  OAK_SAPLING: 60
+  ACACIA_SAPLING: 60
+  BIRCH_SAPLING: 60
+  DARK_OAK_SAPLING: 60
+  JUNGLE_SAPLING: 60
+  OAK_LEAVES: 60
+  SPRUCE_LEAVES: 60
+  ACACIA_LEAVES: 60
+  BIRCH_LEAVES: 60
+  DARK_OAK_LEAVES: 60
+  JUNGLE_LEAVES: 60
+  SHORT_GRASS: 60
+  TALL_GRASS: 60
+  SEAGRASS: 60
+  DEAD_BUSH: 60
+  RAIL: 60
+  POWERED_RAIL: 60
+  DETECTOR_RAIL: 60
+  ACTIVATOR_RAIL: 60
+  COBWEB: 60
+  DANDELION: 60
+  POPPY: 60
+  SUNFLOWER: 60
+  BROWN_MUSHROOM: 60
+  BROWN_MUSHROOM_BLOCK: 60
+  MUSHROOM_STEM: 60
+  RED_MUSHROOM: 60
+  RED_MUSHROOM_BLOCK: 60
+  TORCH: 60
+  REDSTONE_TORCH: 60
+  LADDER: 5
+  OAK_BUTTON: 5
+  SPRUCE_BUTTON: 5
+  STONE_BUTTON: 60
+  ACACIA_BUTTON: 60
+  BIRCH_BUTTON: 60
+  DARK_OAK_BUTTON: 60
+  JUNGLE_BUTTON: 60
+  LEVER: 60
+  TRIPWIRE_HOOK: 60
+  REPEATER: 60
+  COMPARATOR: 60
+  LILY_PAD: 30
+  VINE: 30
+  WHEAT: 5
+  SUGAR_CANE: 30
+  CACTUS: 30
+  NETHER_WART: 60
+  PUMPKIN: 30
+  CARVED_PUMPKIN: 30
+  MELON: 30
+  DIAMOND_ORE: -1
+  DEEPSLATE_DIAMOND_ORE: -1

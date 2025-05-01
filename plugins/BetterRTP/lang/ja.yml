@@ -1,0 +1,97 @@
+# Translation author: ViaSnake (GitHub)
+Messages:
+  Sign: '&7Command sign has been created! &7Command is... ''&f/rtp %command%&7'''
+  Edit:
+    Error: '&cError! &7Invalid input provided!'
+    Set: '&bSuccess! &7%type% set to %value%'
+    Remove: '&cRemoved! &7You removed the Custom World %world%'
+  Prefix: '&7[&6BetterRTP&7] '
+  Success:
+    Loading: '&aSafe spot located! &7Loading chunks...'
+    Teleport: '&aTeleporting... &fplease wait while we find a safe location!'
+    Paid: '&aあなたは&c$%price%&aで&7x=%x% y=%y% z=%z% に&f%attempts%&7回の試行でTPされました！'
+    Bypass: '&aあなたは&7x=%x% y=%y% z=%z% に&f%attempts%&7回の試行でTPされました！'
+  #    Loading: '&aSafe spot located! &7Loading chunks...'
+  #    Teleport: '&aTeleporting... &fplease wait while we find a safe location!'
+  Failed:
+    Hunger: '&cCould not rtp because you are... &7too hungry&c, eat something fella!'
+    Price: '&c資金が不十分のためRTPできませんでした！ &7RTPには最低$%price%&7が必要です！'
+    NotSafe: '&c%attempts%回の試行で安全な場所が見つかりませんでした！ &7あなたははRTPされませんでした！'
+  #    Hunger: '&cCould not rtp because you are... &7too hungry&c, eat something fella!'
+  Other:
+    Biome: '&cSeems like the biome&7 %biome%&c does not exist! &7Try using the tab
+      list!'
+    Success: '&a%player%が&7x=%x% y=%y% z=%z% に&f%attempts%&7回の試行でテレポートしました！'
+    NotSafe: '&c%attempts%回の試行で安全な場所が見つかりませんでした！ &7%player%はRTPされませんでした！'
+  #    Biome: '&cSeems like the biome&7 %biome%&c does not exist! &7Try using the tab list!'
+  Reload: '&eコンフィグは正常にリロードされました！'
+  NoPermission:
+    Basic: '&cごめんなさい！ &7このコマンドを使う権限がありません！ &8Permission: %permission%'
+    World: '&cごめんなさい！ &7ワールド%world%ではrtpが許可されていません！ &8Permission: %permission%'
+  DisabledWorld: '&cワールド%world%は無効です！ &7RTPできませんでした！'
+  Cooldown: '&cごめんなさい！ &7あなたは&c%time%&7秒間RTPできません！'
+  Locked: '&cSorry! &7You''ve used up all your RTP''s!'
+  Invalid: '&c無効な引数。 ''/%command% help''を試してください。'
+  NotOnline: '&cプレイヤー&7%player%&cはオンラインではありません！'
+  Delay: '&f%time%&a秒でテレポートします！ 動かないで！'
+  Moved: '&cあなたは移動しました！ &7RTPはキャンセルされました！'
+  NotExist: '&cワールド&7%world%&cが存在しないようです。'
+  Already: '&cおっと！ &7あなたはすでにRTPしているように見えます。'
+#  Sign: '&7Command sign has been created! &7Command is... ''&f/rtp %command%&7'''
+#  Edit:
+#    Error: '&cError! &7Invalid input provided!'
+#    Set: '&bSuccess! &7%type% set to %value%'
+#    Remove: '&cRemoved! &7You removed the Custom World %world%'
+
+Help:
+  Prefix: '&e&m-----&6&l BetterRTP &8| Help &e&m-----'
+  Edit: ' &7- &e/%command% edit <default/world> [args...] &7- Edit some plugin settings'
+  Info: ' &7- &e/%command% info [world/particles/shapes/potion_effects] &7- View specific
+    information about plugin parameters'
+  Settings: ' &7- &e/%command% settings &7- Pull up a gui and edit some settings'
+  Test: ' &7- &e/%command% test &7- Test out plugin effects after a teleport without
+    moving'
+  Version: ' &7- &e/%command% version &7- View currently running version'
+  Location: ' &7- &e/%command% location <location_name> &7- Rtp using a specific location'
+  #  Prefix: '&e&m-----&6&l BetterRTP &8| Help &e&m-----'
+  Main: ' &7- &e/%command% &7- あなたをランダムテレポートする！'
+  Biome: ' &7- &e/%command% biome <biome1, biome2...> &7- Randomly teleport withing
+    these biomes'
+  #  Edit: ' &7- &e/%command% edit <default/world> [args...] &7- Edit some plugin settings'
+  Help: ' &7- &e/%command% help &7- ヘルプを見る'
+  #  Info: ' &7- &e/%command% info [world/particles/shapes/potion_effects] &7- View specific information about plugin parameters'
+  Player: ' &7- &e/%command% player <player> [world] &7- 他のプレイヤーをランダムテレポート'
+  Reload: ' &7- &e/%command% reload &7- プラグインをリロード'
+  #  Settings: ' &7- &e/%command% settings &7- Pull up a gui and edit some settings'
+  #  Test: ' &7- &e/%command% test &7- Test out plugin effects after a teleport without moving'
+  #  Version: ' &7- &e/%command% version &7- View currently running version'
+  World: ' &7- &e/%command% world <world> &7- 他のワールドにランダムテレポート'
+#  Location: ' &7- &e/%command% location <location_name> &7- Rtp using a specific location'
+
+Usage:
+  Location: '&cUsage&7: /%command% location <location_name>'
+  Edit:
+    Base: '&cUsage&7: /%command% edit <default/world> [args...]'
+    Default: '&cUsage&7: /%command% edit default <max/min/useworldborder/center> <value>'
+    World: '&cUsage&7: /%command% edit customworld <world> <max/min/useworldborder/center>
+      <value>'
+    PermissionGroup: '&cUsage&7: /%command% edit permission_group <group> <world>
+      <max/min/useworldborder/center> <value>'
+    Location: '&cUsage&7: /%command% edit location <location_name> <max/min/useworldborder/center>
+      <value>'
+    Worldtype: '&cUsage&7: /%command% edit world_type <world> <NETHER/NORMAL>'
+    Override: '&cUsage&7: /%command% edit override <world> <world_to>'
+    BlacklistedBlocks: '&cUsage&7: /%command% edit blacklistedblocks <add/remove>
+      <block_id>'
+  Player: '&c使い方&7: /%command% player <プレイヤー> [ワールド]'
+  World: '&c使い方&7: /%command% world <ワールド>'
+  Biome: '&cUsage&7: /%command% biome <biome1, biome2...>'
+#  Location: '&cUsage&7: /%command% location <location_name>'
+#  Edit:
+#    Base: '&cUsage&7: /%command% edit <default/world> [args...]'
+#    Default: '&cUsage&7: /%command% edit default <max/min/useworldborder/center> <value>'
+#    World: '&cUsage&7: /%command% edit world <world> <max/min/useworldborder/center> <value>'
+#    PermissionGroup: '&cUsage&7: /%command% edit permission_group <group> <world> <max/min/useworldborder/center> <value>'
+#    Worldtype: '&cUsage&7: /%command% edit world_type <world> <NETHER/NORMAL>'
+#    Override: '&cUsage&7: /%command% edit override <world> <world_to>'
+#    BlacklistedBlocks: '&cUsage&7: /%command% edit blacklistedblocks <add/remove> <block_id>'

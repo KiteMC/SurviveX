@@ -1,0 +1,77 @@
+# ==================== [SECTION] SETTINGS ====================
+# > [MenuType] : String | Represents the menu type. Allowed values: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html
+# > [Title] : String | Sets menu title.
+# > [Auto_Refresh] : Integer | Defines menu refresh rate in seconds. Set 0 to disable.
+# > [PlaceholderAPI -> Enabled] : Boolean | When enabled, applies PlaceholderAPI placeholders for all items in the menu per player.
+#  
+# ==================== [SECTION] CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# > [Item] : Section | Item to display.
+#     [*] Navigate to https://nightexpressdev.com/nightcore/configuration/item-formation/ for a list of available options.
+# > [Priority] : Integer | Item priority. Higher values will override other item(s) in the same slot(s).
+# > [Slots] : Int Array | Item slots, starts from 0. Split with commas.
+#     Slots: '0,4,9,10'
+# > [Type] : String | Defines item click action.
+#     [*] Available types: ['close', 'page_next', 'page_previous']
+# > [Click_Commands] : Section | Executes commands on click with PlaceholderAPI support.
+#     [*] Works only if [Type] is not set (null).
+#     [*] Available click types: [LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, DRAG_N_DROP]
+#     [*] Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: warp shop
+# ==================================================
+Settings:
+  MenuType: generic_9x4
+  Title: <black>Custom Enchantments</black>
+  Auto_Refresh: -1
+  PlaceholderAPI:
+    Enabled: false
+Enchantment:
+  Icon:
+    Material: enchanted_book
+  Name: <lyellow><b>%enchantment_name% %enchantment_level%</b></lyellow>
+  Lore:
+    Main:
+    - '%enchantment_rarity%'
+    - ''
+    - '%enchantment_description_replaced%'
+    - <dgray>(click to switch levels)</dgray>
+    - ''
+    - <lyellow><b>Info:</b></lyellow>
+    - '<lyellow>▪ <lgray>Applies to: </lgray>%enchantment_fit_item_types%</lyellow>'
+    - '<lyellow>▪ <lgray>Levels: </lgray>%enchantment_level_min%<lgray> - </lgray>%enchantment_level_max%</lyellow>'
+    - '%charges%'
+    - '%conflicts%'
+    Conflicts:
+    - ''
+    - <lred><b>Conflicts:</b></lred>
+    - <lred>✘ </lred><lgray>%name%</lgray>
+    Charges:
+    - '<lyellow>▪ <lgray>Charges: </lgray>%amount%⚡<lgray> (<white>%item%</white>)</lgray></lyellow>'
+  Slots: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
+Content:
+  page_next:
+    Priority: 0
+    Item:
+      Material: player_head
+      Display_Name: <lyellow><b><lgray><!b>Next Page →</!b></lgray></b></lyellow>
+      Lore:
+      - '%empty-if-above%'
+      - '%empty-if-below%'
+      SkinURL: f32ca66056b72863e98f7f32bd7d94c7a0d796af691c9ac3a9136331352288f9
+    Slots: '35'
+    Type: page_next
+  page_previous:
+    Priority: 0
+    Item:
+      Material: player_head
+      Display_Name: <lyellow><b><lgray><!b>← Previous Page</!b></lgray></b></lyellow>
+      Lore:
+      - '%empty-if-above%'
+      - '%empty-if-below%'
+      SkinURL: 86971dd881dbaf4fd6bcaa93614493c612f869641ed59d1c9363a3666a5fa6
+    Slots: '27'
+    Type: page_previous

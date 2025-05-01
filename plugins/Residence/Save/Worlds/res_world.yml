@@ -1,0 +1,134 @@
+Messages:
+  1:
+    LeaveMessage: 您已离开领地 %residence。
+    EnterMessage: 欢迎 %player 来到 %residence，由 %owner 所拥有。
+Flags:
+  1:
+    container: true
+    ignite: true
+    move: true
+    harvest: true
+    shear: true
+    use: true
+    destroy: true
+    animalkilling: true
+    trade: true
+    mobkilling: true
+    build: true
+    vehicledestroy: true
+    leash: true
+  2:
+    container: false
+    egg: false
+    decay: false
+    icemelt: false
+    lavaflow: false
+    bank: false
+    hook: false
+    explode: false
+    cake: false
+    trample: false
+    animals: false
+    nmonsters: true
+    flow: false
+    chorustp: false
+    grow: false
+    mobitemdrop: true
+    witherdamage: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    brew: false
+    dryup: false
+    honeycomb: false
+    canimals: false
+    dragongrief: false
+    sanimals: false
+    diode: false
+    tnt: false
+    snowball: false
+    creeper: false
+    anvil: false
+    sun: true
+    cmonsters: false
+    copper: false
+    itempickup: true
+    place: false
+    subzone: false
+    coords: true
+    fireball: false
+    table: false
+    shear: false
+    nanimals: false
+    piston: false
+    enderpearl: false
+    dye: false
+    mobkilling: true
+    chat: true
+    fallinprotection: true
+    enchant: false
+    leash: false
+    tp: true
+    bed: false
+    ignite: false
+    door: false
+    waterflow: false
+    use: false
+    craft: false
+    nametag: false
+    healing: true
+    mobexpdrop: true
+    goathorn: false
+    snowtrail: false
+    shoot: false
+    flowinprotection: true
+    vehicledestroy: false
+    day: true
+    brush: false
+    rain: false
+    lever: false
+    pressure: false
+    nomobs: true
+    feed: true
+    beacon: false
+    itemdrop: true
+    witherspawn: false
+    pistonprotection: true
+    glow: true
+    note: true
+    shop: true
+    riding: false
+    title: true
+    animalkilling: false
+    hotfloor: false
+    phantomspawn: false
+    button: false
+    iceform: false
+    falldamage: true
+    honey: false
+    witherdestruction: false
+    skulk: false
+    burn: true
+    harvest: false
+    move: true
+    anvilbreak: true
+    spread: false
+    trade: false
+    build: false
+    flowerpot: false
+    smonsters: false
+Residences:
+  main:
+    TPLoc: 16.74:144.0:0.56:34.5:-94.8
+    Messages: 1
+    BlockSellPrice: 0.3
+    Permissions:
+      PlayerFlags:
+        08165148-150e-3822-bb52-2123739de91e: 1
+      AreaFlags: 2
+      OwnerUUID: 08165148-150e-3822-bb52-2123739de91e
+      OwnerLastKnownName: Starry
+    CreatedOn: 1742623467781
+    Areas:
+      main: -21:-64:-20:19:319:20

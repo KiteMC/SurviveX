@@ -1,0 +1,95 @@
+help:
+  - "<color:#7d66ff>{</color><color:#6258a6>-----</color> <color:#02a876>世界管理器 - 子命令</color> <color:#6258a6>-----</color><color:#7d66ff>}</color>"
+  - ""
+  - "<click:suggest_command:'/wm create '><color:#7471b0>➥</color> <color:#ff9900>create</color> <dark_green>[名称]</dark_green> <dark_aqua><类型> <种子> <生成器></dark_aqua> <dark_gray>-</dark_gray> <color:#ffa1f9>创建一个新世界</color></click>"
+  - "<click:suggest_command:'/wm delete '><color:#7471b0>➥</color> <color:#ff9900>delete</color> <dark_green>[名称]</dark_green> <dark_gray>-</dark_gray> <color:#ffa1f9>删除一个世界 =(</color></click>"
+  - "<click:suggest_command:'/wm pregen start '><color:#7471b0>➥</color> <color:#ff9900>pregen start|stop|resume|pause</color> <dark_green> [世界]</dark_green> <dark_gray>-</dark_gray> <color:#ffa1f9>预生成一个世界</color></click>"
+  - "<click:suggest_command:'/wm load '><color:#7471b0>➥</color> <color:#ff9900>load</color> <dark_green>[名称] [类型] <dark_aqua><生成器></dark_aqua></dark_green> <dark_gray>-</dark_gray> <color:#ffa1f9>加载一个世界</color></click>"
+  - "<click:suggest_command:'/wm unload '><color:#7471b0>➥</color> <color:#ff9900>unload</color> <dark_green>[名称]</dark_green> <dark_gray>-</dark_gray> <color:#ffa1f9>卸载一个世界</color></click>"
+  - "<click:suggest_command:'/wm teleport '><color:#7471b0>➥</color> <color:#ff9900>teleport</color> <dark_green>[世界]</dark_green> <dark_aqua><玩家></dark_aqua> <dark_gray>-</dark_gray> <color:#ffa1f9>传送到世界</color></click>"
+  - "<click:suggest_command:'/wm list '><color:#7471b0>➥</color> <color:#ff9900>list</color> <dark_gray>-</dark_gray> <color:#ffa1f9>查看已加载的世界列表</color></click>"
+
+create:
+  invalidSeed: "(ERROR) 种子必须是一个数字！"
+  invalidDimensionType: "(ERROR) 无效的维度类型！"
+  availableDimensions: "(CUSTOM) <color:#19cdff>可用的维度类型：</color>"
+  dimensionList: "(CUSTOM) <color:#19cdff> <color:#7471b0>➥</color> {0} </color>"
+  startingWorldCreation: "(WAITING) 开始创建世界..."
+  worldRecap:
+    name: "(CUSTOM) <color:#19cdff> <color:#7471b0>➥</color> 名称: <yellow> {0} </yellow></color>"
+    type: "(CUSTOM) <color:#19cdff> <color:#7471b0>➥</color> 类型: <yellow> {0} </yellow></color>"
+    seed: "(CUSTOM) <color:#19cdff> <color:#7471b0>➥</color> 种子: <yellow> {0} </yellow></color>"
+    generator: "(CUSTOM) <color:#19cdff> <color:#7471b0>➥</color> 生成器: <yellow> {0} </yellow></color>"
+  generatorNotFound: "(ERROR) 未找到生成器: {0}"
+  worldCreationError: "(ERROR) 创建世界时发生错误: {0}"
+  worldCreationSuccess: "(SUCCESS) 世界 {0} 创建成功！"
+  worldAlreadyExists: "(ERROR) 这个世界已经存在！"
+  worldNameCantBeUsed: "(ERROR) 无法使用这个世界的名称！"
+  worldExistButNotLoaded: "(CUSTOM) <click:suggest_command:'/wm load {0} (类型)'><color:#aa3e00>☠</color> <color:#7d66ff>{</color><color:#02a876>世界管理器</color><color:#7d66ff>}</color> <color:#ff2e1f>这个世界已经存在，点击此消息以加载它。</color></click>"
+
+delete:
+  worldNotFound: "(ERROR) 指定的世界不存在。"
+  defaultWorld: "(ERROR) 不能删除默认世界。"
+  warning: "(WAITING) 世界 {0} 及其文件夹将被删除。"
+  kickedPlayers: "(CUSTOM) <color:#aa3e00>☠</color> <color:#ff2e1f>您所在的那个世界已被删除。</color>"
+  failedToDelete: "(ERROR) 删除世界 {0} 失败。"
+  success: "(SUCCESS) 成功！"
+
+list:
+  worldList: "(SUCCESS) 世界列表: \n<color:#19cdff>点击以传送\n</color>"
+  worlds: "(CUSTOM) <hover:show_text:'<blue>传送到</blue> <yellow> {0} </yellow>'><click:run_command:'/wm tp {0} '><color:#19cdff> <color:#7471b0>➥</color> {0} </color></click></hover>"
+
+backup:
+  backupStarted: "(WAITING) 备份开始..."
+  backupFinished: "(SUCCESS) 备份成功完成！"
+  backupFailed: "(ERROR) 备份失败！"
+  worldNotFound: "(ERROR) 指定的世界不存在。"
+
+restore:
+  playersInWorld: "(CUSTOM) <color:#aa3e00>☠</color> <color:#ff2e1f>您所在的那个世界已被恢复。</color>"
+  restoreStarted: "(WAITING) 恢复开始..."
+  restoreFinished: "(SUCCESS) 恢复成功完成！"
+  worldNotFound: "(ERROR) 指定的世界不存在。"
+
+load:
+  worldAlreadyLoaded: "(ERROR) 世界 {0} 已经加载。"
+  invalidDimension: "(ERROR) 无效的维度类型！"
+  availableDimensions: "(CUSTOM) <color:#19cdff>可用的维度类型：</color>"
+  dimensionList: "(CUSTOM) <color:#19cdff> <color:#7471b0>➥</color> {0} </color>"
+  loadSuccess: "(SUCCESS) 世界 {0} 加载成功！"
+  failedLoadingWorld: "(ERROR) 加载世界时发生错误: {0}"
+
+unload:
+  worldNotLoaded: "(ERROR) 世界 {0} 尚未加载。"
+  playersInWorld: "(CUSTOM) <color:#aa3e00>☠</color> <color:#ff2e1f>您所在的那个世界已被卸载。</color>"
+  unloadSuccess: "(SUCCESS) 世界 {0} 卸载成功！"
+  failedUnloadingWorld: "(ERROR) 卸载世界时发生错误: {0}"
+
+teleport:
+  playerNotFound: "(ERROR) 玩家未找到。"
+  worldNotFound: "(ERROR) 指定的世界不存在。"
+  teleportSuccess: "(SUCCESS) 将 {0} 传送到世界 {1}。"
+  errorFromConsole: "(CUSTOM) 在控制台执行时必须指定玩家。"
+
+pregen:
+  finished: "(SUCCESS) 预生成成功完成！{0} 块已生成。"
+  start: "(WAITING) 开始为世界 \"{0}\" 预生成，中心坐标 ({1},{2})，总块数 {3}。"
+  pause: "(SUCCESS) 暂停了世界 \"{0}\" 的预生成。"
+  resume: "(SUCCESS) 继续了世界 \"{0}\" 的预生成。"
+  stop: "(SUCCESS) 停止了世界 \"{0}\" 的预生成。"
+  worldNotFound: "(ERROR) 指定的世界不存在。"
+  alreadyRunning: "(ERROR) 世界 \"{0}\" 的预生成已经在运行。"
+  notRunning: "(ERROR) 世界 \"{0}\" 的预生成没有在运行。"
+  invalidRadius: "(ERROR) 无效的半径值。"
+  invalidCenter: "(ERROR) 无效的中心坐标。"
+
+
+permission:
+  noPermission: "(ERROR) 您没有权限使用此命令。"
+  noPermissionToTeleport: "(ERROR) 您没有权限传送到这个世界。"
+  noPermissionToLoad: "(ERROR) 您没有权限加载这个世界。"
+  noPermissionToUnload: "(ERROR) 您没有权限卸载这个世界。"
+  noPermissionToCreate: "(ERROR) 您没有权限创建一个世界。"
+  noPermissionToDelete: "(ERROR) 您没有权限删除这个世界。"
+  noPermissionToBackup: "(ERROR) 您没有权限备份这个世界。"
+  noPermissionToRestore: "(ERROR) 您没有权限恢复这个世界。"

@@ -1,0 +1,65 @@
+Combat:
+  # Defines combat timer to be used in particular features
+  Timer: 15
+  # When enabled we will allow for players to be damaged in safe zone if they are tagged for pvp
+  safeZoneDamage: false
+  Player:
+    # If set to true, then player who gets placed into combat mode will get its fly mode disabled
+    # This will disable players fly mode which will result in player dropping down and will disable option to start flying
+    # This can be bypassed by player performing fly command if he has access to it and commands durring combat are not blocked
+    # Can be bypassed with cmi.pvp.PFlyBypass permission node
+    DisableFlight: false
+    # If set to true, then attacked player will be included into combat mode even if he doesnt fight back
+    # If set to false then only attacker will be marked for pvp mode
+    IncludeVictim: true
+    # If set to true player whose fly mode got disabled will not suffer fall damage, once
+    DisableFallDamage: false
+    # When set to true player will see boss bar message indicating how long until combat mode ends
+    # This only applies for pvp type combat
+    ShowBossBar: false
+    # When enabled we will show damage numbers in a form of holograms when damaging players
+    ShowDamageNumbers: true
+    DamageNumbersFormat: '&c⚔[damage]'
+    # Prevents damage from players with god mode enabled
+    # Can be bypassed with cmi.pvp.godBypass permission node
+    noGodDamage: false
+    # Informs player that he cant damage players while in god mode
+    noGodDamageInform: false
+    # When set to true players will be only able to use commands defined in the list
+    # This only applies for pvp type combat
+    BlockCommands: false
+    AllowedCommands:
+    - cmi msg
+    - cmi reply
+    # When set to true AllowedCommands become black list which will define which commands player cant use
+    MakeBlackList: false
+  Mob:
+    # If set to true, then player who gets placed into combat mode will get its fly mode disabled
+    # Can be bypassed with cmi.pvp.MFlyBypass permission node
+    DisableFlight: false
+    # If set to true, then attacked player will be included into combat mode even if he doesnt fight back
+    IncludeVictim: false
+    # If set to true player whose fly mode got disabled will not suffer fall damage, once
+    DisableFallDamage: false
+    # When set to true player will see boss bar message indicating how long until combat mode ends
+    # This only applies for pve type combat
+    ShowBossBar: false
+    # When enabled we will include damage from environmental damage into mob combat timer
+    # This can include damage from cactus, magma blocks, suffocation, burning, fall damage and similar
+    IncludeEnvironment: true
+    # When enabled we will show damage numbers in a form of holograms when damaging mobs
+    ShowDamageNumbers: true
+    DamageNumbersFormat: '&c❤[damage]'
+    # Prevents damage from players with god mode enabled
+    # Can be bypassed with cmi.pve.godBypass permission node
+    noGodDamage: false
+    # Informs player that he cant damage mobs while in god mode
+    noGodDamageInform: false
+    # When set to true players will be only able to use commands defined in the list
+    # This only applies for pve type combat
+    BlockCommands: false
+    AllowedCommands:
+    - cmi msg
+    - cmi reply
+    # When set to true AllowedCommands become black list which will define which commands player cant use
+    MakeBlackList: false

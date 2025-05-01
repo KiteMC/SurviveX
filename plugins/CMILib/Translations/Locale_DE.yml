@@ -1,0 +1,822 @@
+# Full color code support and some variables
+# Keep in mind that variables wont work for some lines, when it will for anothers :)
+# Just keep them where there are now and everything will be ok :)
+# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# [serverName] to show server name
+# [playerName] to show target player name
+# [playerDisplayName] to show target player display name
+# [lvl] to show target player level
+# [exp] to show target player total exp
+# [hp] to show target player health
+# [maxHp] to show target player max health
+# [hunger] to show target player hunger level
+# [gameMode] to show target player gamemode
+# [prefix] to show target player prefix if possible
+# [suffix] to show target player suffix if possible
+# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# [senderName] to show Sender player name
+# [senderDisplayName] to show Sender player display name
+# [senderLvl] to show Sender player level
+# [senderExp] to show Sender player total exp
+# [senderHp] to show Sender player health
+# [senderMaxHp] to show Sender player max health
+# [senderHunger] to show Sender player hunger level
+# [senderGameMode] to show Sender player gamemode
+# [senderPrefix] to show Sender player prefix if possible
+# [senderSuffix] to show Sender player suffix if possible
+# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# [sourceName] to show source player name
+# [sourceDisplayName] to show source player display name
+# [sourceLvl] to show source player level
+# [sourceExp] to show source player total exp
+# [sourceHp] to show source player health
+# [sourceMaxHp] to show source player max health
+# [sourceHunger] to show source player hunger level
+# [sourceGameMode] to show source player gamemode
+# [sourcePrefix] to show source player prefix if possible
+# [sourceSuffix] to show source player suffix if possible
+# ***********************************************
+# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If line starts with !actionbar! then player will get action bar message defined after this variable
+# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+# <T> and </T> required, other is optional
+# Use /n to break line
+# To have more than one JSON message use <Next>
+# <C> performs command as a player who clicked
+# <CC> performs command from console once
+# <CCI> performs command from console every time player clicks text
+# <URL> includes url
+info:
+  # Use !prefix! in any locale line to automatically include this prefix
+  prefix: '&e[&aCMI&e] '
+  NoPermission: '&cDu hast dazu keine Berechtigung!'
+  CantHavePermission: '&cDu kannst diese Berechtigung nicht haben!'
+  WrongGroup: '&cYou are in wrong group for this!'
+  NoPlayerPermission: '&c[playerName] hat keine Permissions für: [permission]'
+  Ingame: '&cDu kannst diesen Befehl nur im Spiel benutzen!'
+  NoInformation: '&cKeine Information gefunden!'
+  Console: '&6[Server]'
+  FromConsole: '&cDu kannst diesen Befehl nur mit der Console benutzen!'
+  NotOnline: '&cDer Spieler ist nicht Online!'
+  NobodyOnline: '&cEs ist niemand online!'
+  Same: '&cDu kannst dein eigenes Inventar nicht verändern!'
+  cantLoginWithDifCap: '&cLogin ist auf Grund unterschiedlicher Schreibweise fehlgeschlagen!
+    Alter Name: &e[oldName]&c. Aktueller Name: &e[currentName]'
+  Searching: '&eSuche nach Spieler Daten, bitte warte - dies kann einige Zeit dauern
+    ...'
+  NoPlayer: '&cEs wurde kein Spieler mit diesem Namen gefunden!'
+  NoCommand: '&cEs gibt keinen Befehl mit diesem Namen!'
+  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
+  cantFindCommand: '&5Es wurde kein Befehl namens &7[%1]&5 gefunden, meinst du vielleicht
+    &7[%2]&5?'
+  nolocation: '&4Can''t find suitable location'
+  PurgeNotEnabled: '&c&lPurge &cFunktion ist in der Config nicht aktiviert!'
+  FeatureNotEnabled: '&cDieses Feature ist nicht aktiviert!'
+  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
+    is set to true!'
+  ModuleNotEnabled: '&cDieses Modul ist nicht aktiviert!'
+  versionNotSupported: '&cDie Serverversion unterstützt dieses Feature nicht.'
+  bungeeNoGo: '&cThis feature will not work on bungee network based servers'
+  clickToTeleport: '&eKlicke hier um teleport zu starten.'
+  UseMaterial: '&4Bitte nutzte Materialnamen!'
+  IncorrectMaterial: '&4Incorrect material name!'
+  UseInteger: '&4Bitte nutze Zahlen!'
+  UseBoolean: '&4Bitte nutze &2True&4 oder &cFalse&4!'
+  NoLessThan: '&4Zahl darf nicht weniger als [amount] sein!'
+  NoMoreThan: '&4Zahl darf nicht mehr als [amount] sein!'
+  NoGameMode: '&4Bitte nutze 0/1/2/3 oder Survival/Creative/Adventure/Spectator!'
+  NoWorld: '&4Es wurde keine Welt mit diesem Namen gefunden!'
+  IncorrectLocation: '&4Standort wurde falsch definiert!'
+  NameChange: '&6[playerDisplayName] &eist auf bekannt als: &6[namelist]'
+  Cooldowns: '&6Cooldown für &c[cmd] &6bitte warte &c [time]'
+  specializedCooldowns: '&eCooldown für die Ausführung des Befehls, bitte warte &6[time]'
+  specializedRunning: '&eCommand still running, please wait &6[time]'
+  CooldownOneTime: '&eDieser Befehl kann nur einmal benutzt werden'
+  WarmUp:
+    canceled: '&6Vorgang abgebrochen, da du dich bewegt hast.'
+    counter: '!actionbar!&6--> &e[time] &6<--'
+    DontMove: '!title!!subtitle!&6Beweg dich nicht!'
+    Boss:
+      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
+      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
+  Spawner: '&r[type] Spawner'
+  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
+  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+  Elevator:
+    created: '&eAufzugsschild wurde erstellt.'
+  CantPlaceSpawner: '&eDu kannst den Spawner nicht zu nah an andere platzieren (&6[range]&e)'
+  ChunksLoading: '&eWelt Chunk Daten werden noch geladen. Bitte warte einen Moment
+    und versuch es nochmal.'
+  ShulkerBox: Shulkerbox
+  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
+    use them!'
+  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
+    key for this task. Inform server administration about this'
+  Show: '&eanzeigen'
+  Remove: '&centfernen'
+  Back: '&6zurück'
+  Forward: '&6vorwärts'
+  Update: '&6Update'
+  Save: '&6speichern'
+  Delete: '&clöschen'
+  Click: '&6Klick'
+  Preview: '&ePreview'
+  PasteOld: '&eAltes einfügen'
+  ClickToPaste: '&6Klick hier um in Chat einzufügen'
+  CantTeleportWorld: '&eDu kannst dich nicht in diese Welt teleportieren.'
+  CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
+  CantTeleport: '&6Du kannst dich nicht teleportieren, weil du zuviele limitierte
+    Gegenstände im Inventar hast. Fahre mit der Maus über den Text um maximal zulässige
+    Items anzuzeigen.'
+  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
+  teleported: '&eDu wurdest teleportiert.'
+  BlackList: '&e[material] [amount] &6Max: [max]'
+  PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
+  Spliter: '&e--------------------------------------------------'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
+  singleSpliter: '&e-'
+  SpliterMiddle: ' &6[value] '
+  ListSpliter: ', '
+  ProgressBarFill: '&2▏'
+  ProgressBarEmpty: '&e▏'
+  nothingInHand: '&6Du musst ein Item in der Hand halten'
+  nothingInHandLeather: '&eDu musst ein Lederitem in der Hand halten'
+  nothingToShow: '&eEs gibt nichts zu sehen'
+  noItem: '&cEs wurde kein Item gefunden.'
+  dontHaveItem: '&cDu hast nicht &6[amount]x [itemName] &cin deinem Inventar'
+  wrongWorld: '&cIn dieser Welt kannst du das nicht tun'
+  wrongPortal: '&cYou are in incorrect area of effect'
+  differentWorld: '&cDifferent worlds'
+  HaveItem: '&cDu hast &6[amount]x [itemName] &cin deinem Inventar'
+  ItemWillBreak: '!actionbar!&6Dein Item (&e[itemName]&6) wird bald kaputt gehen!
+    &e[current]&6/&d[max]'
+  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
+  cantDoInGamemode: '&eYou can''t do this in this game mode'
+  cantDoForPlayer: '&b[playerDisplayName] &6du kannst das nicht tun'
+  cantDoForYourSelf: '&eDu kannst dies nicht bei dir selber anwenden!'
+  cantDetermineMobType: '&cCan''t determine mob type from &e[type] &cvariable'
+  cantRename: '!actionbar!&6Du kannst dieses Item nicht so benennen'
+  confirmRedefine: '&eClick to confirm redefining'
+  cantEdit: '&eYou can''t edit this'
+  wrongName: '&cFalscher Name'
+  unknown: unknown
+  invalidName: '&cUngültiger Name'
+  alreadyexist: '&4Dieser Name ist bereits vergeben'
+  dontexist: '&4Es wurde nichts gefunden mit diesem Namen'
+  worldDontExist: '&cTarget world can''t be accessed anymore. Can''t teleport you
+    there!'
+  flyingToHigh: '&cDu kannst nicht so hoch fliegen, maximale Höhe ist &6[max]&c!'
+  specializedItemFail: '&cCan''t determine specialized item requirement by value:
+    &7[value]'
+  sunSpeeding: Schlafe [count] von [total] [hour] Stunden [speed]X Geschwindigkeit
+  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
+    for night time speedup'
+  sunSpeedingTitle: '&7[hour]'
+  skippingNight: '!title!&7Skipping entire night'
+  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
+  repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
+  bookDate: '&7Written at &f[date]'
+  maintenance: '&7Maintenance mode'
+  notSet: nicht eingestellt
+  mapLimit: '&cCant go beyond 30 000 000 blocks'
+  startedEditingPainting: '&6Der Gemälde-Änderungsmodus wurde aktiviert. Um ihn zu
+    beenden klicke auf einen anderen Block.'
+  canceledEditingPainting: '&6Der Gemälde-Änderungsmodus wurde deaktiviert'
+  changedPainting: '!actionbar!&6Ändere Gemälde zu &e[name] &6mit der ID &6[id]'
+  noSpam: '!title!&cNicht Spamen!'
+  noCmdSpam: '!title!&ckeine Befehle spamen!'
+  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
+    with:&r [message]'
+  lookAtSign: '&6Schau auf das Schild'
+  lookAtBlock: '&6Schau auf den Block'
+  lookAtEntity: '&6Schau auf ein Entity'
+  noSpace: '&eNot enough free space'
+  notOnGround: '&6 Du kannst diesen Befehl nicht benutzen, weil du fliegst'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '&dWillkommen &6[playerDisplayName] &dauf Server.de!'
+  LogoutCustom: '&6[playerName] &ehat das Spiel verlassen.'
+  LoginCustom: '&6[playerName] &ehat das Spiel betreten.'
+  deathlocation: '&6Du bist gestorben &ex:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
+  book:
+    exploit: '&cYou cant create book with more than [amount] pages'
+  combat:
+    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
+      Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    bossBarPvp: '&cCombat mode [autoTimeLeft]'
+    bossBarPve: '&2Combat mode [autoTimeLeft]'
+  bungee:
+    Online: '&6Online'
+    Offline: '&cOffline'
+    not: '&cDer Server gehört nicht zum Bungee-Netzwerk'
+    noserver: '&cEs wurde kein Server mit diesem Namen gefunden!'
+    server: '&eServer: &7[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&6Online'
+    Offline: '&cOffline'
+    TrueColor: '&2'
+    FalseColor: '&4'
+    'True': '&2true'
+    'False': '&cfalse'
+    Enabled: '&6Aktiviert'
+    Disabled: '&cDeaktiviert'
+    survival: '&6Survival'
+    creative: '&6Kreativ'
+    adventure: '&6Adventure'
+    spectator: '&6Spectator'
+    flying: '&6fliegen'
+    notflying: '&6nicht fliegend'
+  noSchedule: '&cEs wurde kein Zeitplan mit diesem Namen gefunden.'
+  totem:
+    cooldown: '&6Totem Cooldown: [time]'
+    warmup: '&6Totem Effekt: [time]'
+    cantConsume: '&6Benutzung des Totems wurde abgebrochen, aufgrund der Abklingzeit'
+  Inventory:
+    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+  InventorySave:
+    info: '&8Info: &8[playerDisplayName]'
+    saved: '&e[time] &6Inventar wurde gespeichert mit der ID: &e[id]'
+    NoSavedInv: '&6Dieser Spieler hat kein gespeichertes Inventar'
+    NoEntries: '&4Daten vorhanden, aber kein Inventar gefunden!'
+    CantFind: '&6Es konnte kein Inventar mit dieser ID gefunden werden'
+    TopLine: '&e*************** [playerDisplayName] gespeicherte Inventare ***************'
+    List: '&6ID: &e[id]&6. &e[time]'
+    KillerSymbol: '&c ☠'
+    Click: '&eKlicke um Informationen zu gespeicherten Inventar zu erhalten ([id])'
+    IdDontExist: '&4Diese ID existiert nicht!'
+    Deleted: '&eGespeichertes Inventar wurde erfolgreich enfernt!'
+    Restored: '&6Du hast das Inventar von &b[targetname] &6hergestellt.'
+    GotRestored: '&6Dein Inventar wurde von &b[sourcename] &6wieder hergestellt.'
+    LoadForSelf: '&6Lade dieses Inventar für dich selbst'
+    LoadForOwner: '&6Lade dieses Inventar für den Besitzer'
+    NextInventory: '&6Nächstes Inventar'
+    PreviousInventory: '&6vorheriges Inventar'
+    Editable: '&6Änderungsmodus ist aktiviert'
+    NonEditable: '&eÄnderungsmodus ist deaktiviert'
+  TimeNotRecorded: '&e-No record-'
+  years: '&6[years] &6Jahre '
+  oneYear: '&e[years] &6Jahr '
+  day: '&6[days] &6Tage '
+  oneDay: '&e[days] &6Tag '
+  hour: '&6[hours] &6Std '
+  oneHour: '&e[hours] &6Stunde '
+  min: '&6[mins] &6Min '
+  sec: '&6[secs] &6Sek '
+  vanishSymbolOn: '&8[&7Vanish&8]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '&8[&7abwesend&8]&r'
+  afkSymbolOff: ''
+  nextPageConsole: '&fFor next page perform &5[command]'
+  prevPage: '&2----<< &6Zurück '
+  prevPageGui: '&6Vorherige Seite '
+  prevPageClean: '&6vorherigee Seite '
+  prevPageOff: '&2----<< &7Zurück '
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&6 Nächste &2>>----'
+  nextPageGui: '&6Nächste Seite'
+  nextPageClean: '&6 Nächste Seite'
+  nextPageOff: '&7 Nächste &2>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&2[current]&7/&2[total]'
+  pageCountHover: '&2[totalEntries]'
+  skullOwner: '!actionbar!&7Owner:&r [playerName]'
+  beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
+  circle: '&3Kreis'
+  square: '&5Square'
+  clear: '&7Clear'
+  protectedArea: '&cGesicherter Bereich. Du kannst das hier nicht tun!.'
+  valueToLong: '&eWert ist zu hoch. Max: [max]'
+  valueToShort: '&eWert ist zu gering. Min: [min]'
+  pvp:
+    noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
+  InvEmpty:
+    armor: '&eDeine Rüstungsslots sollten leer sein!'
+    hand: '&eHalte keine Items in der Hand!'
+    maininv: '&eYour main inventory should be empty!'
+    maininvslots: '&eYour main inventory should have atleast &6[count] &eempty slots!'
+    inv: '&eDein Inventar sollte leer sein!'
+    offhand: '&eHalte kein Item in deiner anderen Hand!'
+    quickbar: '&eDeine Schnellleiste sollte leer sein!'
+    quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
+    subinv: '&eDein Sub-Inventar sollte leer sein!'
+    subinvslots: '&eYour  sub inventory should have atleast &6[count] &eempty slots!'
+  pickIcon: '&8Pick icon'
+  DamageCause:
+    block_explosion: Explosion
+    contact: Block Schaden
+    cramming: cramming
+    custom: unbekannt
+    dragon_breath: Drachenatem
+    drowning: Ertrinken
+    dryout: dryout
+    entity_attack: Entity Attake
+    entity_explosion: Explosion
+    entity_sweep_attack: Entity Schwungattake
+    fall: fallen
+    falling_block: fallender Block
+    fire: Feuer
+    fire_tick: Feuer
+    fly_into_wall: Flug in die Wand
+    hot_floor: Magmablock
+    lava: Lava
+    lightning: Blitz
+    magic: Magie
+    melting: schmelzen
+    poison: Vergiftung
+    projectile: Projektil
+    starvation: Hunger
+    suffocation: Erstickung
+    suicide: Selbstmord
+    thorns: Dornen
+    void: Leere
+    wither: Wither
+  Biomes:
+    BADLANDS: Tafelberge
+    BADLANDS_PLATEAU: Tafelberghochebene
+    BAMBOO_JUNGLE: Bambusdschungel
+    BAMBOO_JUNGLE_HILLS: Bambusdschungelhügel
+    BEACH: Strand
+    BIRCH_FOREST: Birkenwald
+    BIRCH_FOREST_HILLS: Birkenwaldhügel
+    COLD_OCEAN: kalter Ozean
+    DARK_FOREST: dichter Wald
+    DARK_FOREST_HILLS: dichter Hügelwald
+    DEEP_COLD_OCEAN: kalte Tiefsee
+    DEEP_FROZEN_OCEAN: vereiste Tiefsee
+    DEEP_LUKEWARM_OCEAN: Lauwarme Tiefsee
+    DEEP_OCEAN: Tiefsee
+    DEEP_WARM_OCEAN: warme Tiefsee
+    DESERT: Wüste
+    DESERT_HILLS: Wüstenhügel
+    DESERT_LAKES: Wüstenseen
+    END_BARRENS: End-Kargland
+    END_HIGHLANDS: End-Hochland
+    END_MIDLANDS: End-Mittelland
+    ERODED_BADLANDS: Abgetragene Tafelberge
+    FLOWER_FOREST: Blumenwald
+    FOREST: Wald
+    FROZEN_OCEAN: vereister Ozean
+    FROZEN_RIVER: vereister Fluss
+    GIANT_SPRUCE_TAIGA: Riesenfichtentaiga
+    GIANT_SPRUCE_TAIGA_HILLS: Riesenfichtentaigahügel
+    GIANT_TREE_TAIGA: Riesenbaumtaiga
+    GIANT_TREE_TAIGA_HILLS: Riesenbaumtaigahügel
+    GRAVELLY_MOUNTAINS: Geröllberge
+    ICE_SPIKES: Eiszapfentundra
+    JUNGLE: Dschungel
+    JUNGLE_EDGE: Dschungelrand
+    JUNGLE_HILLS: Dschungelhügel
+    LUKEWARM_OCEAN: lauwarmer Ozean
+    MODIFIED_BADLANDS_PLATEAU: Tafelberghochebene (Variante)
+    MODIFIED_GRAVELLY_MOUNTAINS: Geröllberge (Variante)
+    MODIFIED_JUNGLE: Dschungel (Variante)
+    MODIFIED_JUNGLE_EDGE: Dschungelrand (Variante)
+    MODIFIED_WOODED_BADLANDS_PLATEAU: Tafelbergwaldhochebene (Variante)
+    MOUNTAINS: Berge
+    MOUNTAIN_EDGE: Bergrand
+    MUSHROOM_FIELDS: Pilzland
+    MUSHROOM_FIELD_SHORE: Küste
+    NETHER: Nether
+    OCEAN: Ozean
+    PLAINS: Ebene
+    RIVER: Fluss
+    SAVANNA: Savanne
+    SAVANNA_PLATEAU: Savannenhochebene
+    SHATTERED_SAVANNA: zerklüftete Savanne
+    SHATTERED_SAVANNA_PLATEAU: Zerklüftete Savannenhochebene
+    SMALL_END_ISLANDS: kleine Endinsel
+    SNOWY_BEACH: verschneiter Strand
+    SNOWY_MOUNTAINS: verschneite Berge
+    SNOWY_TAIGA: verschneite Taiga
+    SNOWY_TAIGA_HILLS: verschneite Taigahügel
+    SNOWY_TAIGA_MOUNTAINS: verschneite Taigaberge
+    SNOWY_TUNDRA: verschneite Tundra
+    STONE_SHORE: Felsküste
+    SUNFLOWER_PLAINS: Sonnenblumenebene
+    SWAMP: Sumpf
+    SWAMP_HILLS: Sumpfhügel
+    TAIGA: Taiga
+    TAIGA_HILLS: Taigahügel
+    TAIGA_MOUNTAINS: Taigaberge
+    TALL_BIRCH_FOREST: Hochbirkenwald
+    TALL_BIRCH_HILLS: Hochbirkenwaldhügel
+    THE_END: Das Ende
+    THE_VOID: Die Leere
+    WARM_OCEAN: Warmer Ozean
+    WOODED_BADLANDS_PLATEAU: Tafelbergwaldhochebene
+    WOODED_HILLS: Waldhügel
+    WOODED_MOUNTAINS: Bergwald
+  EntityType:
+    area_effect_cloud: Effektwolke
+    armor_stand: Rüstungsständer
+    arrow: Pfeil
+    bat: Fledermaus
+    blaze: Lohe
+    boat: Boot
+    cat: Katze
+    cave_spider: Höhlenspinne
+    chicken: Huhn
+    cod: Kabeljau
+    cow: Kuh
+    creeper: Creeper
+    dolphin: Delfin
+    donkey: Esel
+    dragon_fireball: Drachen Feuerball
+    dropped_item: Dropped item
+    drowned: Ertrunkener
+    egg: Ei
+    elder_guardian: Elderguardian
+    enderman: Enderman
+    endermite: Endermite
+    ender_crystal: Enderkristall
+    ender_dragon: Enderdrache
+    ender_pearl: Enderperle
+    ender_signal: Endersignal
+    evoker: Evoker
+    evoker_fangs: Evoker fangs
+    experience_orb: Erfahrungs Punkt
+    falling_block: fallender Block
+    fireball: Feuerball
+    firework: Feuerwerk
+    fishing_hook: Angelhaken
+    fox: Fuchs
+    ghast: Ghast
+    giant: Giant
+    guardian: Guardian
+    horse: Pferd
+    husk: Wüstenzombie
+    illusioner: Illusioner
+    iron_golem: Eisengolem
+    item_frame: Bilderrahmen
+    leash_hitch: Leinenknoten
+    lightning: Blitz
+    llama: Lama
+    llama_spit: Lama Spucke
+    magma_cube: Magmaslime
+    minecart: Minecart
+    minecart_chest: Minecart chest
+    minecart_command: Minecart command
+    minecart_furnace: Minecart furnace
+    minecart_hopper: Minecart hopper
+    minecart_mob_spawner: Minecart mob spawner
+    minecart_tnt: Minecart tnt
+    mule: Maultier
+    mushroom_cow: Pilzkuh
+    ocelot: Ozelot
+    painting: Gemälde
+    panda: Panda
+    parrot: Papagei
+    phantom: Phantom
+    pig: Schwein
+    pig_zombie: Schweinezombie
+    pillager: Pillager
+    player: Spieler
+    polar_bear: Eisbär
+    primed_tnt: gezündetes TNT
+    pufferfish: Pufferfish
+    rabbit: Hase
+    ravager: Verwüster
+    salmon: Lachs
+    sheep: Schaf
+    shulker: Shulker
+    shulker_bullet: Shulker bullet
+    silverfish: Silberfisch
+    skeleton: Skelett
+    skeleton_horse: Skelettpferd
+    slime: Slime
+    small_fireball: kleiner Feuerball
+    snowball: Schneeball
+    snowman: Schneemann
+    spectral_arrow: Spektralpfeil
+    spider: Spinne
+    splash_potion: Wurftrank
+    squid: Tintenfisch
+    stray: Stray
+    thrown_exp_bottle: geworfene EXP-Flasche
+    trader_llama: Händler Lama
+    trident: Dreizack
+    tropical_fish: tropischer Fisch
+    turtle: Schildkröte
+    unknown: Unbekannt
+    vex: Vex
+    villager: Dorfbewohner
+    vindicator: Vindicator
+    wandering_trader: wandernder Händler
+    witch: Hexe
+    wither: Wither
+    wither_skeleton: Witherskelett
+    wither_skull: Witherskelettschädel
+    wolf: Wolf
+    zombie: Zombie
+    zombie_horse: Zombiepferd
+    zombie_villager: Dorfbewohnerzombie
+  EnchantAliases:
+    protection_fire:
+    - Feuerschutz
+    damage_all:
+    - Schärfe
+    arrow_fire:
+    - Flamme
+    water_worker:
+    - Wasseraffinität
+    arrow_knockback:
+    - Schlag
+    multshot:
+    - Mehrfachschuss
+    loyalty:
+    - Treue
+    depth_strider:
+    - Wasserläufer
+    vanishing_curse:
+    - FluchdesVerschwindens
+    durability:
+    - Haltbarkeit
+    knockback:
+    - Rückstoss
+    luck:
+    - GlückdesMeeres
+    binding_curse:
+    - FluchderBindung
+    loot_bonus_blocks:
+    - Glück
+    protection_environmental:
+    - Schutz
+    dig_speed:
+    - Effizienz
+    mending:
+    - Reperatur
+    frost_walker:
+    - Eisläufer
+    lure:
+    - Köder
+    loot_bonus_mobs:
+    - Plünderung
+    piercing:
+    - Durchdringung
+    protection_explosions:
+    - Explosionsschutz
+    damage_undead:
+    - Bann
+    fire_aspect:
+    - Verbrennung
+    channeling:
+    - Entladung
+    sweeping_edge:
+    - Schwungkraft
+    thorns:
+    - Dornen
+    damage_arthropods:
+    - NemesisderGliederfüßer
+    oxygen:
+    - Atmung
+    riptide:
+    - Sog
+    silk_touch:
+    - Behutsamkeit
+    quick_charge:
+    - Schnellladen
+    protection_projectile:
+    - Schusssicher
+    impaling:
+    - Harpune
+    protection_fall:
+    - Federfall
+    arrow_damage:
+    - Stärke
+    arrow_infinite:
+    - Unendlichkeit
+  PotionEffectAliases:
+    speed:
+    - Schnelligkeit
+    slow:
+    - Langsamkeit
+    fast_digging:
+    - schneller Graben
+    slow_digging:
+    - langsamer Graben
+    increase_damage:
+    - Schaden erhöhen
+    heal:
+    - Heilung
+    harm:
+    - Schaden
+    jump:
+    - springen
+    confusion:
+    - Verwirrung
+    regeneration:
+    - Regeneration
+    damage_resistance:
+    - Resistenz
+    fire_resistance:
+    - Feuerresistenz
+    water_breathing:
+    - Unterwasseratmung
+    invisibility:
+    - Unsichtbarkeit
+    blindness:
+    - Blindheit
+    night_vision:
+    - Nachtsicht
+    hunger:
+    - Hunger
+    weakness:
+    - Schwäche
+    poison:
+    - Vergiftung
+    wither:
+    - Wither
+    health_boost:
+    - Extra Heilung
+    absorption:
+    - Absonderung
+    saturation:
+    - Sättigung
+    glowing:
+    - Leuchten
+    levitation:
+    - Schwebekraft
+    luck:
+    - Glück
+    unluck:
+    - Unglück
+    slow_falling:
+    - sanfter Fall
+    conduit_power:
+    - Meereskraft
+    dolphins_grace:
+    - Gunst des Delfins
+    bad_omen:
+    - Böses Omen
+    hero_of_the_village:
+    - Held des Dorfes
+direction:
+  n: Norden
+  ne: Nord Ost
+  e: Osten
+  se: Süd Ost
+  s: Süden
+  sw: Süd West
+  w: Westen
+  nw: Nord West
+modify:
+  middlemouse: '&2klicke Mittlere Maustaste zum bearbeiten'
+  newItem: '&7Platziere neues Item hier'
+  newLine: '&2<Neue Zeile>'
+  newLineHover: '&2Füge eine neue Zeile hinzu'
+  newPage: '&2<Neue Seite>'
+  newPageHover: '&2erstelle eine neue Seite'
+  removePage: '&c<Seite löschen>'
+  removePageHover: '&cSeite löschen'
+  deleteSymbol: '&cX'
+  deleteSymbolHover: '&cLösche &e[text]'
+  extraEditSymbol: ' &6!'
+  addSymbol: ' &2+'
+  addSymbolHover: '&2Hinzufügen'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&aCancel'
+  acceptSymbol: ' &2[!] '
+  acceptSymbolHover: '&2Annehmen'
+  denySymbol: ' &4[X] '
+  denySymbolHover: '&2Ablehnen'
+  enabledSymbol: '&2[+]'
+  disabledSymbol: '&c[-]'
+  enabled: '&2aktiviert'
+  disabled: '&cdeaktiviert'
+  running: '&2läuft'
+  paused: '&cpausiert'
+  editSymbol: '&e✎'
+  editSymbolHover: '&eVerändern &6[text]'
+  editLineColor: '&f'
+  listUpSymbol: '&6⇑'
+  listUpSymbolHover: '&ehoch'
+  listDownSymbol: '&6⇓'
+  listDownSymbolHover: '&erunter'
+  listNumbering: '&e[number]. '
+  listAlign: '&80'
+  ChangeHover: '&eKlicke hier um zu ändern'
+  ChangeCommands: '&eCommands'
+  enabledColor: '&6'
+  disabledColor: '&7'
+  commandTitle: ' &e--- &6[name] &e---'
+  commandList: ' &e[command]  '
+  emptyLine: '&7[Empty line]'
+  commandEdit: '&eListe bearbeiten'
+  lineAddInfo: '&eNeue Zeile eingeben. Nutze &6cancel &eum abzubrechen'
+  commandAddInfo: '&eGebe einen neuen Befehl ein. Schreibe &6cancel &eum die Aktion
+    abzubrechen'
+  commandAddInformationHover: "&e[playerName] kann benutzt werden um Spielername einzusetzen\
+    \ \n&eUm Delay in Befehlen einzusetzen: \n&edelay! 5 \n&eSpezialisierte Befehle\
+    \ werden unterstützt. Mehr Infos auf \n&ehttp://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&eKlick hier um den alten Text einzufügen. Schreibe &6cancel &eum
+    die Aktion abzubrechen. Schreibe &6remove &eum die Zeile zu löschen.'
+  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
+  commandEditInfoHover: '&eKlicke hier um den alten Text einzufügen'
+warp:
+  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
+teleportation:
+  relocation: '!actionbar!&4Dein Teleportationsort wurde blockiert. Du wurdest an
+    einen sicheren Ort teleportiert.'
+afk:
+  'on': '&6AFK'
+  'off': '&7Spielt'
+  left: '&7* [playerDisplayName] &7ist nun nicht mehr abwesend'
+  MayNotRespond: '&eSpieler kann nicht antworten, er ist abwesend'
+  MayNotRespondStaff: '&eDas Teammitglied ist gerade AFK erstell ein Ticket oder warte
+    bis das Mitglied wieder da ist'
+BossBar:
+  hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8Trankeffekte'
+  List: '&6[PotionName] [PotionAmplifier] &6Dauer: &e[LeftDuration] &6Sek'
+  NoPotions: '&ekeine'
+Information:
+  Title: '&8Spielerinformation'
+  Health: '&eGesundheit: &6[Health]/[maxHealth]'
+  Hunger: '&eHunger: &6[Hunger]'
+  Saturation: '&eLuft: &6[Saturation]'
+  Exp: '&eExp: &6[Exp]'
+  NotEnoughExp: '&eNicht genügend Exp: &6[Exp]'
+  NotEnoughExpNeed: '&eNicht genügend EXP: &6[Exp]/[need]'
+  tooMuchExp: '&eZu viele EXP: &6[Exp]/[need]'
+  NotEnoughVotes: '&eNicht genügend Votes: &6[votes]'
+  TooMuchVotes: '&eZu viele Votes: &6[votes]'
+  BadGameMode: '&cDu kannst das im aktuellen Spielmodus nicht tun.'
+  BadArea: '&cDi kannst diese Aktion in diesem Bereich nicht ausführen.'
+  GameMode: '&eSpielmodus: &6[GameMode]'
+  GodMode: '&eGottmodus: &6[GodMode]'
+  Flying: '&eFlugmodus: &6[Flying]'
+  CanFly: '&ekann fliegen: &6[CanFly]'
+  Uuid: '&6[uuid]'
+  ip: '&eIP-Addresse: &6[address]'
+  FirstConnection: '&eErste Verbindung: &6[time]'
+  Lastseen: '&ezuletzt Online: &6[time]'
+  Onlinesince: '&eOnline seit: &6[time]'
+  Money: '&eGeld: &6[money]'
+  Group: '&eSpielergruppe: &6[group]'
+econ:
+  disabled: '&cDu kannst diesen Befehl nicht benutzen, weil Economy-Support über CMI
+    deaktiviert ist.'
+  noMoney: '&cNicht genügend Geld auf dem Konto'
+  charged: '!actionbar!&fCharged: &6[amount]'
+  notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
+  tooMuchMoney: '&cDu hast zuviel geld You have too much money'
+  commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
+Elytra:
+  Speed: '&eGeschwindigkeit: &6[speed]&ekm/h'
+  SpeedBoost: ' &2+ '
+  SpeedSuperBoost: ' &2+ '
+  CanUse: '&cDu kannst ohne Permission die Elytra nicht anziehen!'
+  CantGlide: '&cCan''t use elytra here!'
+  Charging: '&eAufladen &f[percentage]&e%'
+Selection:
+  SelectPoints: '&cWählen die mit dem Auswahltool 2 Punkte aus! Tool: &6[tool]'
+  PrimaryPoint: '&6erster Zielpunkt wurde ausgewählt [point]'
+  SecondaryPoint: '&6zweiter Zielpunkt wurde ausgewählt [point]'
+  CoordsTop: '&6X:&e[x] &6Y:&e[y] &6Z:&e[z]'
+  CoordsBottom: '&6X:&e[x] &6Y:&e[y] &6Z:&e[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+NetherPortal:
+  ToHigh: '&cPortal ist zu groß, max. Höhe ist &6[max]&c!'
+  ToWide: '&cPortal ist zu breit, max. Breite ist &6[max]&c!'
+  Creation: '!actionbar!&7Created [height]x[width] nether portal!'
+  Disabled: '&cErstellen von Portalen wurde deaktiviert!'
+Location:
+  Title: '&8Ort des Spielers'
+  Killer: '&eKiller: &6[killer]'
+  OneLiner: '&eLocation: &6[location]'
+  DeathReason: '&eTodesgrund: &6[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&6Welt: &e[world]'
+  X: '&6X: &e[x]'
+  Y: '&6Y: &e[y]'
+  Z: '&6Z: &e[z]'
+  Pitch: '&6Pitch: &e[pitch]'
+  Yaw: '&6Yaw: &e[yaw]'
+Locations: '&7Locations: '
+Ender:
+  Title: '&7Öffne Enderchest'
+Chat:
+  localPrefix: ''
+  shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
+  shoutDeduction: '!actionbar!&cStraf-Abzug fürs schreien: &e[amount]'
+  # Use \n to add new line
+  publicHover: '&6gesendete Zeit: &e%server_time_hh:mm:ss%'
+  privateHover: '&6gesendete Zeit: &e%server_time_hh:mm:ss%'
+  staffHover: '&egesendete Zeit: &6%server_time_hh:mm:ss%'
+  helpopHover: '&egesendete Zeit: &6%server_time_hh:mm:ss%'
+  link: '&l&4[&7LINK&4]'
+  item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
+  itemAmount: ' x[amount]'
+  itemEmpty: '&7[Mighty fist]'

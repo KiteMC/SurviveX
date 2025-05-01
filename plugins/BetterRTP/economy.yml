@@ -1,0 +1,17 @@
+Economy:
+  # # Enable world charges? ALL Worlds included, even custom worlds!
+  Enabled: false
+  # # Set to "0" to not charge for rtp, "Success.Bypass" message will be sent!
+  # # Give players the permission "betterrtp.eco.bypass" to bypass economy
+  Price: 500
+
+Hunger: # Make rtp'ing take up hunger to avoid exploits
+  Enabled: false
+  Honches: 4
+
+CustomWorlds:
+  # # Enable custom world charging
+  Enabled: true
+  Prices:
+  - world: 50
+  - world_end: 0

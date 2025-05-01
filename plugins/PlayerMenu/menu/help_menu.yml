@@ -1,0 +1,137 @@
+# 标题
+title: '&e帮助菜单'
+# 打开命令
+openCommand: help_menu
+# 打开物品
+openItem: book
+# 打开权限
+permission: false
+# 菜单大小
+size: 27
+# 打开本菜单播放的声音
+sound: BLOCK_STONE_BUTTON_CLICK_ON
+# 菜单内容
+menu:
+  '10':
+    index: 10
+    name: '   §8[§6领地帮助§8(§ares help§8)]'
+    material: DIAMOND_SWORD
+    lore:
+    - §f- §7点击获取领地相关帮助
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] res help'
+    id: 16
+    priority: 0
+  '11':
+    index: 11
+    name: '   §8[§6更多指令帮助§8(§acmi help§8)]'
+    material: DIAMOND_PICKAXE
+    lore:
+    - §f- §7点击获取更多指令帮助
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] cmi help'
+    id: 17
+    priority: 0
+  '12':
+    index: 12
+    name: '   §8[§6假人帮助§8(§afp help§8)]'
+    material: GOLDEN_SWORD
+    lore:
+    - §f- §7点击获取假人相关帮助
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] fp help'
+    id: 18
+    priority: 0
+  '14':
+    index: 14
+    name: '   §8[§6如何圈地§8(§anull§8)]'
+    material: WOODEN_HOE
+    lore:
+    - §e使用木锄头
+    - §e在两个点各用左键与右键点击(为平面圈地)
+    - §e圈出的范围即圈地范围
+    - §e输入指令 §6/res create <领地名字> §e即可圈地
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    id: 19
+    priority: 0
+  '13':
+    index: 13
+    name: '   §8[§6如何创建箱子商店§8(§anull§8)]'
+    material: CHEST
+    lore:
+    - §e先放下一个箱子
+    - §e然后用你想卖的物品左键商店容器
+    - §e按照提示即可创建一个商店
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    id: 20
+    priority: 0
+  '15':
+    index: 15
+    name: '   §8[§6更多附魔帮助§8(§aexcellentenchants help§8)]'
+    material: ENCHANTED_BOOK
+    lore:
+    - §f- §7点击获取更多附魔相关帮助
+    isEnchant: true
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] excellentenchants help'
+    id: 22
+    priority: 0
+  '16':
+    index: 16
+    name: '   §8[§6职业帮助§8(§ajobs help§8)]'
+    material: IRON_PICKAXE
+    lore:
+    - §f- §7点击获取职业相关帮助
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[command] jobs help'
+    id: 23
+    priority: 0
+  '22':
+    index: 22
+    name: '   §8[§6返回主菜单§8]'
+    material: BARRIER
+    lore:
+    - §f- §7返回到主菜单
+    isEnchant: false
+    custom-model-data: 0
+    hideFlag: true
+    hideEnchant: true
+    commands:
+    - '[open] menu'
+    id: 21
+    priority: 0
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,4,5,6,7,8,9,17,18,25,26
+  material: GRAY_STAINED_GLASS_PANE
+  isEnchant: false
+  name: '       &8[&7分割板&8]'
+  lore:
+  - '&7哎呀,不要随便戳人家啦'
+  custom-model-data: 0
