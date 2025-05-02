@@ -1,3 +1,9 @@
+# 详细内容请见 SurviveX 服务端文档​
+
+[SurviveX 服务端文档](https://docs.plumage.cc/zh_Hans/survivex/guide/v1)
+
+[https://docs.plumage.cc/zh_Hans/survivex/guide/v1](https://docs.plumage.cc/zh_Hans/survivex/guide/v1)
+
 # LeavesMC 1.21.4 服务端说明
 
 ## 服务器配置
@@ -15,17 +21,22 @@
 
 ✅ 进阶功能：职业、更多附魔
 
-> CMI (9.7.11.1)[注意：该插件因为付费插件，未包含于整合包中，如需获取，请自行购买下载]
+> 如果基础插件使用 `CMI` 插件
+> 
+> 请将 `EssentialsX` 插件替换为 `CMI` 插件 (必须将 `EssentialsX` 插件删除)
+> 
+> 再将插件 `CMIEInjector` 插件启用 (将后缀 `.jar【停用】` 改为 `.jar`)
 
 ### 完整插件列表
 
 ```bash
 Initialized 29 plugins
 Paper plugins (1):
- - nightcore (2.7.5.2)
+ - nightcore (2.7.4)
 Bukkit plugins (28):
- - AntiPopup (11), AuthMe (5.6.0-bCUSTOM), BanItem (3.7), BellCommand (1.3.0), BetterRTP (3.6.13), CMI (9.7.11.1), CMIEInjector (1.0.2.4), CMILib (1.5.4.2), Chunky (1.4.36), CommandAPI (9.7.0), ExcellentEnchants (4.3.3), Jobs (5.2.5.0), LuckPerms (5.4.145), MiniMOTD (2.1.5), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.6-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.9-RELEASE-1), Residence (5.1.7.5), SkinsRestorer (15.6.2), TAB (5.2.0), Vault (1.7.3-b131), ViaVersion (5.3.2), WorldAliasVariables (1.0.1), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.4-SNAPSHOT (b116-0e3163c))
+ - AntiPopup (10.1), AuthMe (5.6.0-bCUSTOM), BanItem (3.5), BedrockParity (2.0.2), BellCommand (1.2.3), BetterRTP (3.6.13), CMILib (1.5.3.5), Chunky (1.4.28), CommandAPI (9.7.0), Essentials (2.21.0), ExcellentEnchants (4.3.3), Jobs (5.2.4.6), LuckPerms (5.4.145), MiniMOTD (2.1.4), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.5-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.8), Residence (5.1.6.5), SkinsRestorer (15.6.2), TAB (5.0.3), Vault (1.7.3-b131), ViaVersion (5.2.1), WorldAliasVariables (1.0.0), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.3-SNAPSHOT (b109-49bd564))
 ```
+
 [nightcore](https://modrinth.com/plugin/nightcore/)
 [AntiPopup](https://modrinth.com/plugin/antipopup)
 [AuthMe](https://github.com/AuthMe/AuthMeReloaded/)
@@ -37,6 +48,7 @@ Bukkit plugins (28):
 [CMILib](https://www.spigotmc.org/resources/cmilib.87610/)
 [Chunky](https://modrinth.com/plugin/chunky)
 [CommandAPI](https://www.spigotmc.org/resources/api-commandapi-1-16-5-1-21-5.62353/)
+[Essentials](https://github.com/EssentialsX/Essentials/)
 [ExcellentEnchants](https://modrinth.com/plugin/excellentenchants)
 [Jobs](https://www.spigotmc.org/resources/jobs-reborn.4216/)
 [LuckPerms](https://modrinth.com/plugin/luckperms)
