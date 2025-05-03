@@ -13,7 +13,7 @@
 ## 核心功能
 🛡️ [![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-🚀 [![GitHub Stars](https://img.shields.io/github/stars/Starry-cbz/SurviveX)](https://github.com/Starry-cbz/SurviveX/stargazers)
+🚀 [![GitHub Stars](https://img.shields.io/github/stars/PlumageMc/SurviveX)](https://github.com/PlumageMc/SurviveX/stargazers)
 
 ✅ 原版特性
 
@@ -77,4 +77,4 @@ Bukkit plugins (28):
 ```
 
 ## 许可证
-[GPLv3 License](LICENSE) © 2025 [Starry-cbz](https://github.com/Starry-cbz/SurviveX)
+[GPLv3 License](LICENSE) © 2025 [PlumageMc](https://github.com/PlumageMc/SurviveX)
