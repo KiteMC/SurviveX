@@ -12,12 +12,12 @@ size: 27
 sound: BLOCK_STONE_BUTTON_CLICK_ON
 # 菜单内容
 menu:
-  '10':
-    index: 10
-    name: '   §8[§6查看所有家§8(§ahomes§8)]'
-    material: yellow_bed
+  '11':
+    index: 11
+    name: '   §8[§6国际版家管理§8(§ahomes§8)]'
+    material: GOLD_INGOT
     lore:
-    - §f- §7点击查看所有家
+    - §f- §7点击选择国际版家管理
     isEnchant: false
     custom-model-data: 0
     hideFlag: true
@@ -28,49 +28,18 @@ menu:
     id: 1
   '15':
     index: 15
-    name: '   §8[§6设置家§8(§asethome§8)]'
-    material: light_blue_bed
+    name: '   §8[§6基岩版家管理§8(§ahomegui§8)]'
+    material: DIAMOND
     lore:
-    - §f- §7点击设置家home
-    - §f- §6/sethome <家名字> §e即可创建更多家
+    - §f- §7点击选择基岩版家管理
     isEnchant: false
     custom-model-data: 0
     hideFlag: true
     hideEnchant: true
     commands:
-    - '[command] sethome home'
+    - '[command] homegui'
     priority: 0
     id: 2
-  '16':
-    index: 16
-    name: '   §8[§6删除家§8(§adelhome§8)]'
-    material: orange_bed
-    lore:
-    - §f- §7点击删除家home
-    - §f- §6/delhome <家名字> §e即可删除指定家
-    isEnchant: false
-    custom-model-data: 0
-    hideFlag: true
-    hideEnchant: true
-    commands:
-    - '[command] delhome home'
-    priority: 0
-    id: 3
-  '11':
-    index: 11
-    name: '   §8[§6传送至家§8(§ahome§8)]'
-    material: lime_bed
-    lore:
-    - §f- §7点击传送至家home
-    - §f- §6/home <家名字> §e即可传送至指定家
-    isEnchant: false
-    custom-model-data: 0
-    hideFlag: true
-    hideEnchant: true
-    commands:
-    - '[command] home home'
-    priority: 0
-    id: 5
   '22':
     index: 22
     name: '   §8[§6返回主菜单§8]'
@@ -84,7 +53,7 @@ menu:
     commands:
     - '[open] menu'
     priority: 0
-    id: 4
+    id: 3
 # 分隔板
 pane:
   enable: true
