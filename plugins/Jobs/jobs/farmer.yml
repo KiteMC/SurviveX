@@ -1,8 +1,8 @@
 Farmer:
-  fullname: Farmer
-  shortname: Fa
+  fullname: 农夫
+  shortname: F
   FullDescription:
-  - "Earns money farming crops."
+  - "通过种植、收获和养殖赚取金币。"
   ChatColour: BLUE
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Farmer:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Regular Joe
+      Name: 丰收季节
       Objectives:
-      - Breed;Sheep;10
-      - Shear;White;10
-      - Milk;Cow;3
+      - Break;wheat-7;20
+      - Break;carrots-7;20
+      - Break;potatoes-7;20
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Be a farmer and get money
-      - Get 100 for this!
+      - 收获作物并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: wooden_hoe
   Tame:

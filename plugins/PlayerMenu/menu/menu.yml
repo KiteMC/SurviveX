@@ -1,7 +1,7 @@
 # 标题
 title: '&e主菜单'
 # 打开命令
-openCommand: 'main_menu'
+openCommand: 'cd'
 # 打开物品
 openItem: 'compass'
 # 打开权限

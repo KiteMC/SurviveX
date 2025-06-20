@@ -1,8 +1,8 @@
 Brewer:
-  fullname: Brewer
+  fullname: 酿造师
   shortname: Br
   FullDescription:
-  - "Earns money brewing potions."
+  - "通过酿造药水赚取金币。"
   ChatColour: LIGHT_PURPLE
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Brewer:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Heavy drinker
+      Name: 酒鬼
       Objectives:
       - Brew;glowstone_dust;2
       - Brew;redstone;2
       - Brew;sugar;2
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Brew some stuff and get money
-      - Get 100 for this!
+      - 酿造药水并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: brewing_stand
   Brew:

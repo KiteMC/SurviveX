@@ -1,7 +1,7 @@
 # 标题
 title: '&e家管理菜单'
 # 打开命令
-openCommand: home_select
+openCommand: home_menu
 # 打开物品
 openItem: compass
 # 打开权限

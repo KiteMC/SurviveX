@@ -1,8 +1,8 @@
 Miner:
-  fullname: Miner
+  fullname: 矿工
   shortname: M
   FullDescription:
-  - "Earns money mining minerals and ores."
+  - "通过挖掘矿石和方块赚取金币。"
   ChatColour: DARK_GRAY
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Miner:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: DarkOne
+      Name: 矿石猎人
       Objectives:
-      - Break;stone;50
-      - Break;granite;50
-      - Break;sandstone;50
+      - Break:coal_ore:20
+      - Break:iron_ore:20
+      - Break:diamond_ore:5
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Break blocks and get money
-      - Get 100 for this!
+      - 挖掘矿石并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: wooden_pickaxe
   TNTBreak:

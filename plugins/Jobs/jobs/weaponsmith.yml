@@ -1,8 +1,8 @@
 Weaponsmith:
-  fullname: Weaponsmith
+  fullname: 武器锻造师
   shortname: W
   FullDescription:
-  - "Earns money from crafting and repairing weapons."
+  - "通过制作和修理武器赚取金币。"
   ChatColour: DARK_PURPLE
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Weaponsmith:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: War never ends
+      Name: 战争永无止境
       Objectives:
       - Craft;wooden_sword;2
       - Craft;iron_chestplate;2
       - Craft;gold_leggings;2
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Craft weapons and get money
-      - Get 100 for this!
+      - 制作武器并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: crafting_table
   Craft:

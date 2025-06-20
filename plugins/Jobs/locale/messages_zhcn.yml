@@ -56,7 +56,7 @@ command:
       alltypereset: '&aAll &e%type% &aboosts turned off'
       jobsboostreset: '&aBoost of &e%boost% &aadded for &e%jobname%!'
       jobstypeboostreset: '&aBoost of &e%boost% &aadded for &e%jobname%!'
-      nothingtoreset: Nothing to reset
+      nothingtoreset: 没有可重置的内容
       boostadded: '&aBoost of &e%boost% &aadded for &e%jobname%!'
       infostats: '&c-----> &a%type% rate x%boost% enabled&c <-------'
       boostStats: '&6%payments% &e%jobname%'
@@ -169,7 +169,7 @@ command:
       list:
         job: '&e职业:'
         jobs: '  -> [&e%jobname%&r]'
-        actions: '    -> [&e%actionname%&r]'
+        actions: '    -> [&e动作:&r]'
         material: '      -> [&e%materialname%&r]      '
         materialRemove: '&c[X]'
         materialAdd: '      -> &e[&2+&e]'
@@ -289,13 +289,12 @@ command:
     help:
       title: '&2*** &eJobs&2 ***'
       info: 显示一个职业的详细信息.
-      penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many
-        players working in it.'
+      penalty: '&e该职业有 &c[penalty]% &e惩罚，因为有太多玩家从事此职业。'
       bonus: '&e这个职业拥有 &2[bonus]% &e加成因为就业人数较少.'
       args: '[jobname] [action]'
       actions: '&e所有可用的动作: &f%actions%'
       max: ' - &e最高等级:&f '
-      newMax: ' &eMax level: &f[max]'
+      newMax: ' &e最高等级: &f[max]'
       jobName: '&7%jobdisplayname%'
       material: '&7%material%'
       levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &a级)'
@@ -317,7 +316,7 @@ command:
       cantJoin: '&c无法加入该职业.'
       max: '&e最高等级:&f '
       infoLore:
-      - '&7Close'
+      - '&7关闭'
     output:
       break:
         info: 破坏

@@ -1,8 +1,8 @@
 Fisherman:
-  fullname: Fisherman
+  fullname: 渔夫
   shortname: Fi
   FullDescription:
-  - "Earns money from fishing."
+  - "通过钓鱼赚取金币。"
   ChatColour: AQUA
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Fisherman:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Catcher
+      Name: 捕手
       Objectives:
       - Fish;cod;2
       - Fish;salmon;2
       - Fish;tropical_fish;2
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Catch fish and get money
-      - Get 100 for this!
+      - 钓鱼并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: fishing_rod
   Fish:

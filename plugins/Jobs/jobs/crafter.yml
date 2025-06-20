@@ -1,8 +1,8 @@
 Crafter:
-  fullname: Crafter
-  shortname: Cr
+  fullname: 工匠
+  shortname: C
   FullDescription:
-  - "Earns money from crafting items."
+  - "通过合成各种物品赚取金币。"
   ChatColour: RED
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Crafter:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Master Crafter
+      Name: 合成达人
       Objectives:
-      - Craft;dispenser;10
-      - Craft;chest;10
-      - Craft;ladder;30
+      - Craft:stick:50
+      - Craft:chest:10
+      - Craft:ladder:20
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Craft and get money
-      - Get 100 for this!
+      - 合成物品并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: crafting_table
   Craft:

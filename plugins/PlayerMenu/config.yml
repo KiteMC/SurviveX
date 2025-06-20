@@ -19,7 +19,7 @@ clock:
   material: clock
   lore:
     - "&f- &7点击打开菜单"
-    - "&f- &7也可以使用指令&a/mc&7打开菜单"
+    - "&f- &7也可以使用指令&a/cd&7打开菜单"
   isEnchant: false
   custom-model-data: 0
   # 使用该物品打开的菜单 如果填写了该配置,menu文件下的所有openItem将会无效,只使用这个

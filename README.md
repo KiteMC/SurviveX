@@ -1,6 +1,6 @@
 # SurviveX 服务端文档
 
-![assets\1870x600.png](assets\1870x600.png)
+![assets/1870x600.png](assets/1870x600.png)
 
 ## 核心功能✨
 - 💡 基于 Leaves 1.21.4 核心版本，运行环境需 Java 21+，提供丰富功能
@@ -9,9 +9,13 @@
 
 > [!TIP]
 > 若基础插件使用 `CMI` 插件, 请进行以下操作:
+> 
 > 1.将 `CMI` 插件上传至 `plugins` 目录下
+> 
 > 2.将 `plugins` 目录下的 `EssentialsX.jar` 重命名为 `EssentialsX.jar[停用]`
+> 
 > 3.将 `plugins` 目录下的 `CMIEInjector.jar[停用]` 重命名为 `CMIEInjector.jar`
+> 
 > 4.将 `plugins\PlayerMenu\menu` 目录下的 `home_select.yml[停用]`  重命名为 `home_select.yml`(需覆盖原文件)
 
 ## 特性与说明📋

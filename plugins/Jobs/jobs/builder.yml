@@ -1,8 +1,8 @@
 Builder:
-  fullname: Builder
+  fullname: 建筑师
   shortname: B
   FullDescription:
-  - "Earns money for building structures."
+  - "通过建造和放置方块赚取金币。"
   ChatColour: WHITE
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Builder:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Architect
+      Name: 建筑大师
       Objectives:
-      - Place;spruce_planks;50
-      - Place;birch_planks;50
-      - Place;wool;50
+      - Place:stone:100
+      - Place:oak_planks:100
+      - Place:glass:50
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Place blocks and get money
-      - Get 100 for this!
+      - 建造建筑并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: brick_stairs
   Place:

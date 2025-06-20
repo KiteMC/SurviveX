@@ -1,8 +1,8 @@
 Enchanter:
-  fullname: Enchanter
+  fullname: 附魔师
   shortname: E
   FullDescription:
-  - "Earns money enchanting weapons."
+  - "通过为武器附魔赚取金币。"
   ChatColour: DARK_BLUE
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Enchanter:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Harry the wizard
+      Name: 哈利巫师
       Objectives:
       - Enchant;wood_sword;1
       - Enchant;diamond_sword;1
       - Enchant;ARROW_DAMAGE;1
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Be a wizard and get money
-      - Get 100 for this!
+      - 成为巫师并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: enchanting_table
   Enchant:

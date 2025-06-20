@@ -1,8 +1,8 @@
 Digger:
-  fullname: Digger
+  fullname: 挖掘者
   shortname: D
   FullDescription:
-  - "Earns money for terraforming the world."
+  - "通过整地赚取金币。"
   ChatColour: GOLD
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Digger:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Ground Mole
+      Name: 地鼠
       Objectives:
       - Break;dirt;50
       - Break;grass_block;50
       - Break;gravel;50
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Dig blocks and get money
-      - Get 100 for this!
+      - 挖掘方块并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: wooden_shovel
   Break:

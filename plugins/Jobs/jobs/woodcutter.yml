@@ -1,8 +1,8 @@
 Woodcutter:
-  fullname: Woodcutter
-  shortname: W
+  fullname: 伐木工
+  shortname: Wc
   FullDescription:
-  - "Earns money felling and planting trees"
+  - "通过砍伐树木赚取金币。"
   ChatColour: GREEN
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Woodcutter:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Woodpecker
+      Name: 森林守护者
       Objectives:
-      - Break;oak_log;50
-      - Break;birch_log;50
-      - Break;jungle_log;50
+      - Break:oak_log:30
+      - Break:birch_log:30
+      - Break:spruce_log:30
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Break logs and get money
-      - Get 100 for this!
+      - 砍伐树木并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: birch_log
   Break:

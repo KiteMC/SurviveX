@@ -1,8 +1,8 @@
 Hunter:
-  fullname: Hunter
+  fullname: 猎人
   shortname: H
   FullDescription:
-  - "Earns money killing animals and monsters."
+  - "通过击杀动物和怪物赚取金币。"
   ChatColour: RED
   chat-display: full
   max-level: 200
@@ -16,17 +16,17 @@ Hunter:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Predator
+      Name: 捕食者
       Objectives:
       - Kill;Wolf;10
       - Kill;Creeper;3
       - Kill;Skeleton;10
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Kill everything what moves and get money
-      - Get 100 for this!
+      - 猎杀一切会动的东西并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: bow
   Tame:

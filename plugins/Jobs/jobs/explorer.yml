@@ -1,8 +1,8 @@
 Explorer:
-  fullname: Explorer
+  fullname: 探险家
   shortname: Ex
   FullDescription:
-  - "Earns money from exploring map."
+  - "通过探索地图赚取金币。"
   ChatColour: AQUA
   chat-display: full
   max-level: 200
@@ -16,15 +16,15 @@ Explorer:
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: Galileo
+      Name: 伽利略
       Objectives:
       - Explore;1;30
       RewardCommands:
       - eco give [playerName] 100
-      - msg [playerName] Completed quest!
+      - msg [playerName] 完成任务！
       RewardDesc:
-      - Go on a trip and get money
-      - Get 100 for this!
+      - 去旅行并获得金币
+      - 完成此任务可获得100金币！
   Gui:
     ItemStack: leather_boots
   Explore:
