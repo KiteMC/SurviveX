@@ -2,8 +2,9 @@ name: Release SurviveX
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - 'ver/*'
+      - 'beta'
 
 jobs:
   build-and-release:
@@ -12,6 +13,23 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v3
 
+      - name: 生成 tag 名称
+        id: tagger
+        run: |
+          if [[ "${GITHUB_REF##*/}" == "beta" ]]; then
+            TAG_NAME="beta-$(date +'%Y%m%d-%H%M%S')"
+          else
+            TAG_NAME="${GITHUB_REF##*/}-$(date +'%Y%m%d-%H%M%S')"
+          fi
+          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
+
+      - name: 打 tag 并推送
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag $TAG_NAME
+          git push origin $TAG_NAME
+
       - name: 打包为SurviveX.zip
         run: |
           zip -r SurviveX.zip . -x '*.git*' '*.github*' '*.DS_Store'
@@ -19,7 +37,28 @@ jobs:
       - name: 发布到GitHub Releases
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: ${{ env.TAG_NAME }}
           files: SurviveX.zip
           body: ${{ github.event.head_commit.message }}
+          prerelease: ${{ contains(github.ref, 'beta') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 升级 beta Release 为正式
+        if: startsWith(github.ref, 'refs/heads/ver/')
+        run: |
+          VERSION="${GITHUB_REF##*/}"
+          BETA_TAG="beta-${VERSION}"
+          RELEASE_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/releases/tags/${BETA_TAG} | jq .id)
+          if [ "$RELEASE_ID" != "null" ] && [ "$RELEASE_ID" != "" ]; then
+            curl -X PATCH -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Content-Type: application/json" \
+              -d '{"prerelease":false}' \
+              https://api.github.com/repos/${{ github.repository }}/releases/$RELEASE_ID
+            echo "已将 $BETA_TAG 的 Release 升级为正式版。"
+          else
+            echo "未找到 beta 预发布 Release: $BETA_TAG"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
