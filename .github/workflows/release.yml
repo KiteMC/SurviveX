@@ -1,0 +1,25 @@
+name: Release SurviveX
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 打包为SurviveX.zip
+        run: |
+          zip -r SurviveX.zip . -x '*.git*' '*.github*' '*.DS_Store'
+
+      - name: 发布到GitHub Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: SurviveX.zip
+          body: ${{ github.event.head_commit.message }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
