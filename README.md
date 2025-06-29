@@ -32,8 +32,8 @@
 
 | 插件类型       | 插件名称及版本                                                                 |
 |----------------|-------------------------------------------------------------------------------|
-| Paper 插件     | nightcore (2.7.4)                                                             |
-| Bukkit 插件    | AntiPopup (10.1), AuthMe (5.6.0-bCUSTOM), BanItem (3.5), BedrockParity (2.0.2), BellCommand (1.2.3), BetterRTP (3.6.13), CMILib (1.5.3.5), Chunky (1.4.28), CommandAPI (9.7.0), Essentials (2.21.0), ExcellentEnchants (4.3.3), Jobs (5.2.4.6), LuckPerms (5.4.145), MiniMOTD (2.1.4), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.5-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.8), Residence (5.1.6.5), SkinsRestorer (15.6.2), TAB (5.0.3), Vault (1.7.3-b131), ViaVersion (5.2.1), WorldAliasVariables (1.0.0), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.3-SNAPSHOT (b109-49bd564)) |
+| Paper 插件     | nightcore (2.7.7)                                                             |
+| Bukkit 插件    | AntiPopup (11), AuthMe (5.6.0-bCUSTOM), BanItem (3.7), BellCommand (1.3.1), BetterRTP (3.6.13), CMILib (1.5.4.2), Chunky (1.4.36), CommandAPI (10.0.1), Essentials (2.21.1), ExcellentEnchants (4.3.3), Jobs (5.2.6.0), LuckPerms (5.4.145), MiniMOTD (2.1.5), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.6-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.9-RELEASE-1), Residence (5.1.7.6), SkinsRestorer (15.6.8), TAB (5.2.2), Vault (1.7.3-b131), ViaVersion (5.3.2), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.4-SNAPSHOT (b116-0e3163c)) |
 
 ### 快速启动
 
