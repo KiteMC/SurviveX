@@ -91,7 +91,7 @@ scoreboard:
   delay-on-join-milliseconds: 0  # 加入时延迟毫秒数
   scoreboards:  # 记分板内容
     scoreboard-1.20.3+:
-      title: <#E0B11E>Plumage服务器</#FF0000>  # 记分板标题
+      title: <#E0B11E>KiteMC服务器</#FF0000>  # 记分板标题
       display-condition: '%player-version-id%>=765;%bedrock%=false'  # 显示条件
       lines:  # 记分板行内容
       - '%animation:MyAnimation1%'  # 动画
@@ -101,7 +101,7 @@ scoreboard:
       - '* &e[金币]&7:||%vault_eco_balance%'  # 金币
       - '||&7&l%animation:MyAnimation1%'  # 动画分隔线
     scoreboard:
-      title: <#E0B11E>Plumage服务器</#FF0000>  # 记分板标题
+      title: <#E0B11E>KiteMC服务器</#FF0000>  # 记分板标题
       lines:  # 记分板行内容
       - '%animation:MyAnimation1%'  # 动画
       - '* &a[在线]&7:||%online%'  # 在线人数

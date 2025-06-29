@@ -21,7 +21,7 @@
 ## 特性与说明📋
 
 > [!TIP]
-> [📚 详细内容请见 SurviveX 在线文档](https://docs.plumage.cc/zh_Hans/survivex/guide/v1)
+> [📚 详细内容请见 SurviveX 在线文档](https://kitemc.com/zh/docs/survivex/guide/v1)
 
 ### 环境搭建
 
@@ -45,7 +45,7 @@
 > 若使用 win 系统, 请重命名为 `start.bat` 后启动
 
 ## 许可证
-[GPLv3 License](LICENSE) © 2025 [PlumageMc](https://github.com/PlumageMc/SurviveX)
+[GPLv3 License](LICENSE) © 2025 [KiteMC](https://github.com/KiteMC/SurviveX)
 
 ## ⭐ Star History
 > [!TIP] 
@@ -53,6 +53,6 @@
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=PlumageMc/SurviveX&type=Date)](https://www.star-history.com/#PlumageMc/SurviveX&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=KiteMC/SurviveX&type=Date)](https://www.star-history.com/#KiteMC/SurviveX&Date)
 
 </div>

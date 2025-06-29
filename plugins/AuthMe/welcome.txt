@@ -1,1 +1,1 @@
-欢迎玩家 {PLAYER} 加入 Plumage 服务器！
+欢迎玩家 {PLAYER} 加入 Kite 服务器！

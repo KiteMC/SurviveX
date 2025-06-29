@@ -33,12 +33,12 @@ MyAnimation1:
 server:
   change-interval: 300
   texts:
-  - '&c&lPlumage服务器'
-  - '&c&n&lPlumage服务器'
-  - '&b&lPlumage服务器'
-  - '&b&l&nPlumage服务器'
-  - '&e&lPlumage服务器'
-  - '&e&n&lPlumage服务器'
+  - '&c&lKiteMC服务器'
+  - '&c&n&lKiteMC服务器'
+  - '&b&lKiteMC服务器'
+  - '&b&l&nKiteMC服务器'
+  - '&e&lKiteMC服务器'
+  - '&e&n&lKiteMC服务器'
 web:
   change-interval: 200
   texts:

@@ -345,7 +345,7 @@ Email:
   # 电子邮件地址，当mailAccount不是账户的电子邮件地址时填写
   mailAddress: ''
   # 自定义发件人名称，替换邮件中的mailAccount名称
-  mailSenderName: 'Plumage 服务器'
+  mailSenderName: 'Kite 服务器'
   # 恢复密码长度
   RecoveryPasswordLength: 8
   # 邮件主题
