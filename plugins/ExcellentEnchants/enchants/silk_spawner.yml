@@ -1,26 +1,25 @@
 Definition:
-  DisplayName: 不幸诅咒
+  DisplayName: 丝绸刷怪笼
   Description:
-  - 有几率不获得掉落物
-  Weight: 5
-  MaxLevel: 3
+  - 有几率挖掘刷怪笼
+  Weight: 1
+  MaxLevel: 1
   MinCost:
-    Base: 3
-    Per_Level: 16
+    Base: 5
+    Per_Level: 56
   MaxCost:
-    Base: 8
-    Per_Level: 16
-  AnvilCost: 3
-  SupportedItems: tools_weapons
-  PrimaryItems: tools_weapons
+    Base: 56
+    Per_Level: 56
+  AnvilCost: 5
+  SupportedItems: mining_tools
+  PrimaryItems: pickaxe
   Exclusives:
-  - minecraft:looting
-  - minecraft:fortune
+  - excellentenchants:smelter
 Distribution:
   Treasure: true
   Tradeable: true
   TradeTypes:
-  - TAIGA_COMMON
+  - JUNGLE_SPECIAL
   On_Mob_Spawn_Equipment: false
   On_Traded_Equipment: false
   On_Random_Loot: true
@@ -34,9 +33,10 @@ Settings:
 Probability:
   Trigger_Chance:
     Base: 0.0
-    Per_Level: 7.0
+    Per_Level: 25.0
     Capacity: 100.0
     Action: ADD
-CurseOfMisfortune:
-  # 控制是否掉落经验值
-  Drop_XP: false
+SilkSpawner:
+  # Spawner item display name.
+  # Use '%type%' for the mob name.
+  Name: <green><lang:"block.minecraft.spawner"> <gray>(<white>%type%</white>)</gray></green>

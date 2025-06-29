@@ -18,9 +18,9 @@ Miner:
     '1':
       Name: 矿石猎人
       Objectives:
-      - Break:coal_ore:20
-      - Break:iron_ore:20
-      - Break:diamond_ore:5
+      - Break;coal_ore;20
+      - Break;iron_ore;20
+      - Break;diamond_ore;5
       RewardCommands:
       - eco give [playerName] 100
       - msg [playerName] 完成任务！

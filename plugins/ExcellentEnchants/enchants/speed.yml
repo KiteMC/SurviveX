@@ -1,24 +1,24 @@
 Definition:
-  DisplayName: 寒铁
+  DisplayName: 速度
   Description:
-  - 有几率对攻击者施加效果
-  Weight: 5
-  MaxLevel: 3
+  - 提供永久效果
+  Weight: 2
+  MaxLevel: 2
   MinCost:
     Base: 5
-    Per_Level: 22
+    Per_Level: 27
   MaxCost:
-    Base: 9
-    Per_Level: 22
-  AnvilCost: 4
-  SupportedItems: chestplate_elytra
-  PrimaryItems: chestplate
+    Base: 12
+    Per_Level: 27
+  AnvilCost: 1
+  SupportedItems: boots
+  PrimaryItems: boots
   Exclusives: []
 Distribution:
   Treasure: false
   Tradeable: true
   TradeTypes:
-  - SNOW_COMMON
+  - DESERT_SPECIAL
   On_Mob_Spawn_Equipment: true
   On_Traded_Equipment: true
   On_Random_Loot: true
@@ -29,19 +29,12 @@ Settings:
   VisualEffects:
     # 启用附魔视觉效果（主要是粒子）
     Enabled: true
-Probability:
-  Trigger_Chance:
-    Base: 10.0
-    Per_Level: 5.0
-    Capacity: 100.0
-    Action: ADD
+Period:
+  # 仅当实体的年龄（生存的tick数）能被给定数字整除时触发
+  # 应该大于并能被主插件配置中的全局'Tick_Interval'整除
+  # [20 ticks = 1 second]
+  Tick_Interval: 100
 PotionEffect:
-  # 效果持续时间（秒）
-  Duration:
-    Base: 4.0
-    Per_Level: 1.0
-    Capacity: 10.0
-    Action: ADD
   # 效果放大器
   Amplifier:
     Base: 0.0

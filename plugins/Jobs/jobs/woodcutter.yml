@@ -18,9 +18,9 @@ Woodcutter:
     '1':
       Name: 森林守护者
       Objectives:
-      - Break:oak_log:30
-      - Break:birch_log:30
-      - Break:spruce_log:30
+      - Break;oak_log;30
+      - Break;birch_log;30
+      - Break;spruce_log;30
       RewardCommands:
       - eco give [playerName] 100
       - msg [playerName] 完成任务！

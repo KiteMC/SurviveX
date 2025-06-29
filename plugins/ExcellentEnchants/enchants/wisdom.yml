@@ -1,24 +1,24 @@
 Definition:
-  DisplayName: 火箭
+  DisplayName: 智慧
   Description:
-  - 有几率将敌人击飞到空中
-  Weight: 5
+  - 生物掉落更多经验值
+  Weight: 2
   MaxLevel: 3
   MinCost:
-    Base: 1
-    Per_Level: 21
+    Base: 5
+    Per_Level: 10
   MaxCost:
-    Base: 6
-    Per_Level: 21
+    Base: 15
+    Per_Level: 10
   AnvilCost: 2
-  SupportedItems: swords_axes
-  PrimaryItems: sword
+  SupportedItems: armor
+  PrimaryItems: helmet
   Exclusives: []
 Distribution:
   Treasure: true
   Tradeable: true
   TradeTypes:
-  - JUNGLE_COMMON
+  - DESERT_COMMON
   On_Mob_Spawn_Equipment: false
   On_Traded_Equipment: false
   On_Random_Loot: true
@@ -29,16 +29,10 @@ Settings:
   VisualEffects:
     # 启用附魔视觉效果（主要是粒子）
     Enabled: true
-Probability:
-  Trigger_Chance:
-    Base: 0.0
-    Per_Level: 2.0
-    Capacity: 100.0
-    Action: ADD
-Rocket:
-  # Firework power. The more power = the higher fly distance.
-  Firework_Power:
+Wisdom:
+  # 经验值修改器。原始经验值将乘以此值
+  XP_Modifier:
     Base: 1.0
-    Per_Level: 0.25
+    Per_Level: 0.5
     Capacity: 3.0
     Action: ADD

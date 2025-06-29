@@ -1,91 +1,38 @@
-Settings:
-  # Rarity affects the chance of getting an enchantment from enchanting or loots depending on rarity weight value.
-  # You can create and edit rarities in the config.yml
-  Rarity: uncommon
-  # Enchantment display name.
-  Name: 经验渔者
-  # Enchantment description.
-  # You can use 'Enchantment' placeholders: https://nightexpress.gitbook.io/excellentenchants/utility/placeholders
+Definition:
+  DisplayName: 经验钓手
   Description:
-  - 钓鱼获得的经验值增加 %amount%%
-  Level:
-    # The maximum level of this enchantment.
-    # Value between 1 and 255 (inclusive).
-    # [*] Reboot required when changed.
-    Max: 4
-  Cost:
-    # The minimum possible cost of this enchantment in levels.
-    # Explanation: https://minecraft.wiki/w/Enchanting_mechanics#How_enchantments_are_chosen
-    # Vanilla costs: https://minecraft.wiki/w/Enchanting/Levels
-    # [*] Reboot required when changed.
-    Min:
-      # The cost for a level I enchantment.
-      Base: 5
-      # The amount of levels added to the Base for each level above level I
-      Per_Level: 14
-    # The maximum possible cost of this enchantment in levels.
-    # Explanation: https://minecraft.wiki/w/Enchanting_mechanics#How_enchantments_are_chosen
-    # Vanilla costs: https://minecraft.wiki/w/Enchanting/Levels
-    # [*] Reboot required when changed.
-    Max:
-      # The cost for a level I enchantment.
-      Base: 11
-      # The amount of levels added to the Base for each level above level I
-      Per_Level: 14
-    # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.
-    # [*] Reboot required when changed.
-    Anvil: 8
-  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  - 增加钓鱼获得的经验值
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 10
+  MaxCost:
+    Base: 15
+    Per_Level: 10
+  AnvilCost: 2
+  SupportedItems: fishing_rod
+  PrimaryItems: fishing_rod
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # 设置此附魔是否在附魔GUI中隐藏
   Hide_From_List: false
   VisualEffects:
-    # Enables enchantment visual effects (mostly particles).
+    # 启用附魔视觉效果（主要是粒子）
     Enabled: true
-  # Amount (in percent) of additional XP from fishing.
+SeasonedAngler:
+  # 钓鱼获得的额外经验值百分比
   XP_Modifier:
-    # Start modifier value.
     Base: 0.0
-    # Additional value calculated by enchantment level step (see below). Formula: <per_level> * <step>
-    Per_Level: 25.0
-    # Defines level step for 'Per_Level' value calculation. Formula: <enchant_level> / <step>
-    Step: 1.0
-    # Sets a limit for the final (base & per level calculations) value.
-    # Set '-1' for no limit.
-    Cap: 300.0
-    # Sets action performed between 'Base' and final 'Per_Level' values.
-    # Available types: ADD, MULTIPLY
+    Per_Level: 50.0
+    Capacity: 300.0
     Action: ADD
-  # Enchantments that are incompatible with this enchantment.
-  # [*] Reboot required when changed.
-  Conflicts: []
-Distribution:
-  # Sets whether this enchantment is a treasure enchantment.
-  # Treasure enchantments are those that can't be obtained using an enchantment table, and won't be generated on randomly enchanted equipment sold by villagers or worn by mobs.
-  # Treasure enchantments can only be received via looting, trading, or fishing.
-  # If a treasure enchantment is tradable, it will have double the price (before capping to 64 emeralds) compared to a non-treasure enchantment of the same level.
-  # [*] Reboot required when changed.
-  Treasure: false
-  # Tradable enchantments are those that can be generated on Enchanted Books sold by librarians.
-  # [*] Reboot required when changed.
-  Tradeable: true
-  # Sets in which village biomes this enchantment can be found in villager trades.
-  # Allowed values: [DESERT_COMMON, DESERT_SPECIAL, PLAINS_COMMON, PLAINS_SPECIAL, SAVANNA_COMMON, SAVANNA_SPECIAL, JUNGLE_COMMON, JUNGLE_SPECIAL, SNOW_COMMON, SNOW_SPECIAL, SWAMP_COMMON, SWAMP_SPECIAL, TAIGA_COMMON, TAIGA_SPECIAL]
-  # https://minecraft.wiki/w/Villager_Trade_Rebalance#Trading
-  # [*] Reboot required when changed.
-  # [**] Has no effect if 'Tradeable' is set on 'false' and Villager Trade Rebalance is disabled.
-  TradeTypes:
-  - TAIGA_COMMON
-  # Sets whether or not this enchantment can be found on spawned mobs' equipment.
-  # [*] Reboot required when changed.
-  # [**] Has no effect if 'Treasure' is set on 'true'.
-  On_Mob_Spawn_Equipment: true
-  # Sets whether or not this enchantment can be found on equipment sold by villagers.
-  # [*] Reboot required when changed.
-  # [**] Has no effect if 'Treasure' is set on 'true'.
-  On_Traded_Equipment: true
-  # Sets whether or not this enchantment can be found on naturally generated equipment from loot tables.
-  # [*] Reboot required when changed.
-  On_Random_Loot: true
-  # Sets whether or not this enchantment can be generated in enchanting table.
-  # [*] Reboot required when changed.
-  # [**] Has no effect if 'Treasure' is set on 'true'.
-  Discoverable: true

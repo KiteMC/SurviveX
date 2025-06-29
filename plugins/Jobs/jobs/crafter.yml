@@ -18,9 +18,9 @@ Crafter:
     '1':
       Name: 合成达人
       Objectives:
-      - Craft:stick:50
-      - Craft:chest:10
-      - Craft:ladder:20
+      - Craft;stick;50
+      - Craft;chest;10
+      - Craft;ladder;20
       RewardCommands:
       - eco give [playerName] 100
       - msg [playerName] 完成任务！

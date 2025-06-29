@@ -18,9 +18,9 @@ Builder:
     '1':
       Name: 建筑大师
       Objectives:
-      - Place:stone:100
-      - Place:oak_planks:100
-      - Place:glass:50
+      - Place;stone;100
+      - Place;oak_planks;100
+      - Place;glass;50
       RewardCommands:
       - eco give [playerName] 100
       - msg [playerName] 完成任务！
@@ -367,10 +367,6 @@ Builder:
       points: 1.5
       experience: 2
     brown_stained_glass:
-      income: 1.5
-      points: 1.5
-      experience: 2
-    green_stained_glass:
       income: 1.5
       points: 1.5
       experience: 2

@@ -1,28 +1,28 @@
 Definition:
-  DisplayName: 饱和
+  DisplayName: 水下呼吸
   Description:
-  - 每隔几秒恢复食物点数
-  Weight: 2
-  MaxLevel: 2
+  - 提供永久效果
+  Weight: 1
+  MaxLevel: 1
   MinCost:
     Base: 3
-    Per_Level: 24
+    Per_Level: 47
   MaxCost:
-    Base: 10
-    Per_Level: 24
-  AnvilCost: 2
+    Base: 47
+    Per_Level: 47
+  AnvilCost: 7
   SupportedItems: helmet
   PrimaryItems: helmet
   Exclusives: []
 Distribution:
-  Treasure: false
+  Treasure: true
   Tradeable: true
   TradeTypes:
-  - SAVANNA_SPECIAL
-  On_Mob_Spawn_Equipment: true
-  On_Traded_Equipment: true
+  - PLAINS_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
   On_Random_Loot: true
-  Discoverable: true
+  Discoverable: false
 Settings:
   # 设置此附魔是否在附魔GUI中隐藏
   Hide_From_List: false
@@ -33,17 +33,11 @@ Period:
   # 仅当实体的年龄（生存的tick数）能被给定数字整除时触发
   # 应该大于并能被主插件配置中的全局'Tick_Interval'整除
   # [20 ticks = 1 second]
-  Tick_Interval: 300
-Saturation:
-  # Amount of food points to restore.
-  Amount:
+  Tick_Interval: 100
+PotionEffect:
+  # 效果放大器
+  Amplifier:
     Base: 0.0
     Per_Level: 1.0
     Capacity: 5.0
-    Action: ADD
-  # Max. food level where saturation stops.
-  Max_Food_Level:
-    Base: 20.0
-    Per_Level: 0.0
-    Capacity: -1.0
     Action: ADD

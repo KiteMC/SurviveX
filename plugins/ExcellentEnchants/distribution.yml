@@ -1,0 +1,55 @@
+Custom_Namespace:
+  # 控制插件是否为新附魔使用自定义'excellentenchants'命名空间
+  # [*] 仅在遇到兼容性问题时切换
+  # [*] 所有使用旧（之前）命名空间的附魔将被永久移除！
+  Enabled: true
+Disabled:
+  # 在此处放置您想要完全禁用和移除的自定义附魔名称
+  # 附魔名称等于'/enchants/'目录中其配置文件的名称
+  # [*] 需要服务器重启
+  # [*] 禁用的附魔将从所有物品中永久移除！
+  Global:
+  - custom_sharpness
+  - example_name
+  # 在此处放置您想要在特定世界中禁用的自定义附魔名称
+  # 要禁用世界中所有附魔，请使用'*'而不是附魔名称
+  # 附魔名称等于'/enchants/'目录中其配置文件的名称
+  # [*] 此设置仅禁用附魔效果，而不是那里的附魔分布！
+  ByWorld:
+    your_world_name:
+    - ice_aspect
+    - enchantment_name
+    another_world:
+    - ice_aspect
+    - another_enchantment
+Anvil:
+  # 如果物品已包含特定数量的自定义附魔，则阻止使用铁砧附魔物品
+  # [默认值为5]
+  Enchant_Limit: 5
+Distribution:
+  # 控制是否可以从附魔台获得优秀附魔
+  # https://minecraft.wiki/w/Enchanting#Enchanting_table
+  # [*] 需要服务器重启
+  # [默认值为true]
+  Enchanting_Table: true
+  # 控制村民是否可以出售优秀附魔
+  # https://minecraft.wiki/w/Trading#Librarian
+  # [*] 需要服务器重启
+  # [默认值为true]
+  Trading: true
+  # 控制生成的生物装备上是否可以找到优秀附魔
+  # https://minecraft.wiki/w/Armor#Armor_equipped_on_mobs
+  # [*] 需要服务器重启
+  # [默认值为true]
+  Mob_Equipment: true
+  # 控制村民出售的装备上是否可以找到优秀附魔
+  # https://minecraft.wiki/w/Trading#Trade_offers
+  # [*] 仅在禁用村民交易重平衡时有效
+  # [*] 需要服务器重启
+  # [默认值为true]
+  Trade_Equipment: true
+  # 控制从战利品表自然生成的装备上是否可以找到优秀附魔
+  # https://minecraft.wiki/w/Loot_table
+  # [*] 需要服务器重启
+  # [默认值为true]
+  Random_Loot: true

@@ -33,7 +33,7 @@
 | 插件类型       | 插件名称及版本                                                                 |
 |----------------|-------------------------------------------------------------------------------|
 | Paper 插件     | nightcore (2.7.7)                                                             |
-| Bukkit 插件    | AntiPopup (11), AuthMe (5.6.0-bCUSTOM), BanItem (3.7), BellCommand (1.3.1), BetterRTP (3.6.13), CMILib (1.5.4.2), Chunky (1.4.36), CommandAPI (10.0.1), Essentials (2.21.1), ExcellentEnchants (4.3.3), Jobs (5.2.6.0), LuckPerms (5.4.145), MiniMOTD (2.1.5), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.6-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.9-RELEASE-1), Residence (5.1.7.6), SkinsRestorer (15.6.8), TAB (5.2.2), Vault (1.7.3-b131), ViaVersion (5.3.2), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.4-SNAPSHOT (b116-0e3163c)) |
+| Bukkit 插件    | AntiPopup (11), AuthMe (5.6.0-bCUSTOM), BanItem (3.7), BellCommand (1.3.1), BetterRTP (3.6.13), CMILib (1.5.4.2), Chunky (1.4.36), CommandAPI (10.0.1), Essentials (2.21.1), ExcellentEnchants (5.0.1), Jobs (5.2.6.0), LuckPerms (5.4.145), MiniMOTD (2.1.5), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.6-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.9-RELEASE-1), Residence (5.1.7.6), SkinsRestorer (15.6.8), TAB (5.2.2), Vault (1.7.3-b131), ViaVersion (5.3.2), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.4-SNAPSHOT (b116-0e3163c)) |
 
 ### 快速启动
 

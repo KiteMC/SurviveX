@@ -1,13 +1,13 @@
 Plugin:
-  # Localized plugin name. It's used in messages and with internal placeholders.
-  Name: Enchants
-  # Plugin prefix. Used in messages.
-  Prefix: <lyellow><b>Enchants</b></lyellow><dgray> » </dgray><gray>
-  # Command names that will be registered as main plugin commands.
-  # Do not leave this empty. Split multiple names with a comma.
+  # 本地化插件名称。用于消息和内部占位符
+  Name: 优秀附魔
+  # 插件前缀。用于消息中
+  Prefix: <lyellow><b>优秀附魔</b></lyellow><dgray> » </dgray><gray>
+  # 将注册为主插件命令的命令名称
+  # 不要留空。用逗号分隔多个名称
   Command_Aliases: eenchants,excellentenchants
-  # Sets the plugin language.
-  # Basically it tells the plugin to use certain messages config from the '/lang/' sub-folder.
-  # If specified language is not available, default one (English) will be used instead.
-  # [Default is System Locale]
+  # 设置插件语言
+  # 基本上告诉插件使用'/lang/'子文件夹中的特定消息配置
+  # 如果指定的语言不可用，将使用默认语言（英语）
+  # [默认值为系统区域设置]
   Language: cn

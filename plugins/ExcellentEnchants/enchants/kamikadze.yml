@@ -1,16 +1,16 @@
 Definition:
-  DisplayName: 寒铁
+  DisplayName: 神风
   Description:
-  - 有几率对攻击者施加效果
+  - 死亡时有几率爆炸
   Weight: 5
   MaxLevel: 3
   MinCost:
-    Base: 5
-    Per_Level: 22
+    Base: 1
+    Per_Level: 19
   MaxCost:
-    Base: 9
-    Per_Level: 22
-  AnvilCost: 4
+    Base: 5
+    Per_Level: 19
+  AnvilCost: 3
   SupportedItems: chestplate_elytra
   PrimaryItems: chestplate
   Exclusives: []
@@ -18,7 +18,7 @@ Distribution:
   Treasure: false
   Tradeable: true
   TradeTypes:
-  - SNOW_COMMON
+  - JUNGLE_COMMON
   On_Mob_Spawn_Equipment: true
   On_Traded_Equipment: true
   On_Random_Loot: true
@@ -31,20 +31,16 @@ Settings:
     Enabled: true
 Probability:
   Trigger_Chance:
-    Base: 10.0
-    Per_Level: 5.0
+    Base: 0.0
+    Per_Level: 3.0
     Capacity: 100.0
     Action: ADD
-PotionEffect:
-  # 效果持续时间（秒）
-  Duration:
-    Base: 4.0
-    Per_Level: 1.0
-    Capacity: 10.0
-    Action: ADD
-  # 效果放大器
-  Amplifier:
-    Base: 0.0
+Kamikadze:
+  # 设置附魔是否在复活时触发（使用图腾时）
+  Apply_On_Resurrect: true
+  # Explosion power.
+  Explosion_Power:
+    Base: 1.0
     Per_Level: 1.0
     Capacity: 5.0
     Action: ADD

@@ -1,0 +1,405 @@
+Categories:
+  helmet:
+    Name: 头盔
+    Slots:
+    - HEAD
+    Items:
+    - chainmail_helmet
+    - netherite_helmet
+    - golden_helmet
+    - diamond_helmet
+    - leather_helmet
+    - iron_helmet
+    - turtle_helmet
+  chestplate:
+    Name: 胸甲
+    Slots:
+    - CHEST
+    Items:
+    - netherite_chestplate
+    - leather_chestplate
+    - iron_chestplate
+    - diamond_chestplate
+    - chainmail_chestplate
+    - golden_chestplate
+  leggings:
+    Name: 护腿
+    Slots:
+    - LEGS
+    Items:
+    - golden_leggings
+    - diamond_leggings
+    - leather_leggings
+    - chainmail_leggings
+    - iron_leggings
+    - netherite_leggings
+  boots:
+    Name: 靴子
+    Slots:
+    - FEET
+    Items:
+    - leather_boots
+    - netherite_boots
+    - iron_boots
+    - golden_boots
+    - chainmail_boots
+    - diamond_boots
+  elytra:
+    Name: 鞘翅
+    Slots:
+    - CHEST
+    Items:
+    - elytra
+  sword:
+    Name: 剑
+    Slots:
+    - HAND
+    Items:
+    - golden_sword
+    - iron_sword
+    - netherite_sword
+    - wooden_sword
+    - stone_sword
+    - diamond_sword
+  axe:
+    Name: 斧头
+    Slots:
+    - HAND
+    Items:
+    - wooden_axe
+    - iron_axe
+    - golden_axe
+    - diamond_axe
+    - netherite_axe
+    - stone_axe
+  hoe:
+    Name: 锄头
+    Slots:
+    - HAND
+    Items:
+    - wooden_hoe
+    - iron_hoe
+    - golden_hoe
+    - diamond_hoe
+    - netherite_hoe
+    - stone_hoe
+  pickaxe:
+    Name: 镐子
+    Slots:
+    - HAND
+    Items:
+    - wooden_pickaxe
+    - diamond_pickaxe
+    - golden_pickaxe
+    - iron_pickaxe
+    - stone_pickaxe
+    - netherite_pickaxe
+  shovel:
+    Name: 铲子
+    Slots:
+    - HAND
+    Items:
+    - iron_shovel
+    - stone_shovel
+    - wooden_shovel
+    - netherite_shovel
+    - diamond_shovel
+    - golden_shovel
+  trident:
+    Name: 三叉戟
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - trident
+  bow:
+    Name: 弓
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - bow
+  crossbow:
+    Name: 弩
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - crossbow
+  fishing_rod:
+    Name: 钓鱼竿
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - fishing_rod
+  shield:
+    Name: 盾牌
+    Slots:
+    - OFF_HAND
+    Items:
+    - shield
+  breakable:
+    Name: 可破坏
+    Slots:
+    - HAND
+    - OFF_HAND
+    - FEET
+    - LEGS
+    - CHEST
+    - HEAD
+    - BODY
+    Items:
+    - leather_boots
+    - golden_sword
+    - chainmail_helmet
+    - netherite_helmet
+    - crossbow
+    - iron_chestplate
+    - diamond_shovel
+    - wooden_axe
+    - iron_axe
+    - shears
+    - warped_fungus_on_a_stick
+    - iron_sword
+    - netherite_sword
+    - chainmail_boots
+    - diamond_boots
+    - golden_leggings
+    - brush
+    - stone_shovel
+    - wooden_sword
+    - diamond_hoe
+    - netherite_axe
+    - diamond_sword
+    - golden_hoe
+    - elytra
+    - leather_leggings
+    - golden_helmet
+    - netherite_shovel
+    - leather_helmet
+    - flint_and_steel
+    - stone_axe
+    - shield
+    - iron_hoe
+    - carrot_on_a_stick
+    - mace
+    - leather_chestplate
+    - golden_pickaxe
+    - wooden_shovel
+    - bow
+    - stone_sword
+    - iron_boots
+    - diamond_leggings
+    - diamond_helmet
+    - golden_boots
+    - diamond_axe
+    - iron_pickaxe
+    - diamond_chestplate
+    - golden_chestplate
+    - iron_helmet
+    - turtle_helmet
+    - stone_pickaxe
+    - netherite_pickaxe
+    - netherite_leggings
+    - golden_shovel
+    - netherite_chestplate
+    - wooden_hoe
+    - fishing_rod
+    - netherite_boots
+    - golden_axe
+    - trident
+    - wooden_pickaxe
+    - diamond_pickaxe
+    - chainmail_leggings
+    - iron_leggings
+    - chainmail_chestplate
+    - stone_hoe
+    - iron_shovel
+    - netherite_hoe
+  armor:
+    Name: 护甲
+    Slots:
+    - HEAD
+    - CHEST
+    - LEGS
+    - FEET
+    Items:
+    - leather_boots
+    - chainmail_helmet
+    - netherite_helmet
+    - leather_chestplate
+    - iron_chestplate
+    - diamond_leggings
+    - iron_boots
+    - diamond_helmet
+    - golden_boots
+    - diamond_chestplate
+    - chainmail_boots
+    - diamond_boots
+    - iron_helmet
+    - turtle_helmet
+    - golden_chestplate
+    - netherite_leggings
+    - netherite_chestplate
+    - golden_leggings
+    - netherite_boots
+    - chainmail_leggings
+    - chainmail_chestplate
+    - iron_leggings
+    - golden_helmet
+    - leather_leggings
+    - leather_helmet
+  tool:
+    Name: 工具
+    Slots:
+    - HAND
+    Items:
+    - iron_hoe
+    - golden_pickaxe
+    - wooden_shovel
+    - diamond_shovel
+    - wooden_axe
+    - iron_axe
+    - shears
+    - diamond_axe
+    - iron_pickaxe
+    - stone_pickaxe
+    - netherite_pickaxe
+    - golden_shovel
+    - wooden_hoe
+    - golden_axe
+    - stone_shovel
+    - wooden_pickaxe
+    - diamond_pickaxe
+    - diamond_hoe
+    - netherite_axe
+    - stone_hoe
+    - iron_shovel
+    - golden_hoe
+    - netherite_shovel
+    - netherite_hoe
+    - stone_axe
+  swords_axes:
+    Name: 武器
+    Slots:
+    - HAND
+    Items:
+    - wooden_axe
+    - golden_sword
+    - iron_axe
+    - golden_axe
+    - iron_sword
+    - diamond_axe
+    - netherite_sword
+    - wooden_sword
+    - stone_sword
+    - netherite_axe
+    - stone_axe
+    - diamond_sword
+  bow_crossbow:
+    Name: 弓 / 弩
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - crossbow
+    - bow
+  chestplate_elytra:
+    Name: 胸甲 / 鞘翅
+    Slots:
+    - CHEST
+    Items:
+    - netherite_chestplate
+    - elytra
+    - leather_chestplate
+    - iron_chestplate
+    - diamond_chestplate
+    - chainmail_chestplate
+    - golden_chestplate
+  weapon:
+    Name: 武器
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - golden_sword
+    - golden_axe
+    - trident
+    - crossbow
+    - mace
+    - wooden_sword
+    - bow
+    - stone_sword
+    - netherite_axe
+    - diamond_sword
+    - wooden_axe
+    - iron_axe
+    - iron_sword
+    - diamond_axe
+    - netherite_sword
+    - stone_axe
+  mining_tools:
+    Name: 挖掘工具
+    Slots:
+    - HAND
+    Items:
+    - golden_axe
+    - stone_shovel
+    - wooden_pickaxe
+    - diamond_pickaxe
+    - golden_pickaxe
+    - wooden_shovel
+    - netherite_axe
+    - diamond_shovel
+    - wooden_axe
+    - iron_shovel
+    - iron_axe
+    - diamond_axe
+    - iron_pickaxe
+    - netherite_shovel
+    - stone_pickaxe
+    - netherite_pickaxe
+    - stone_axe
+    - golden_shovel
+  tools_weapons:
+    Name: 工具和武器
+    Slots:
+    - HAND
+    - OFF_HAND
+    Items:
+    - golden_sword
+    - iron_hoe
+    - crossbow
+    - mace
+    - golden_pickaxe
+    - wooden_shovel
+    - bow
+    - stone_sword
+    - diamond_shovel
+    - wooden_axe
+    - iron_axe
+    - shears
+    - iron_sword
+    - diamond_axe
+    - iron_pickaxe
+    - netherite_sword
+    - stone_pickaxe
+    - netherite_pickaxe
+    - golden_shovel
+    - wooden_hoe
+    - golden_axe
+    - stone_shovel
+    - trident
+    - wooden_pickaxe
+    - diamond_pickaxe
+    - diamond_hoe
+    - wooden_sword
+    - netherite_axe
+    - stone_hoe
+    - diamond_sword
+    - iron_shovel
+    - golden_hoe
+    - netherite_shovel
+    - netherite_hoe
+    - stone_axe
