@@ -1,4 +1,4 @@
-#
+﻿#
 # Edited by roracle to include 1.13 items and item names, prepping for 1.14 as well.
 #
 # Stores information about each job
@@ -76,7 +76,7 @@ exampleJob:
   #   baseincome - the income for the action at level 1 (as set in the configuration).
   #   joblevel - the level the player has attained in the job.
   # NOTE: Please take care of the brackets when modifying this equation.
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+  income-progression-equation: 0
     * ((numjobs-1)*0.05))
   # Equation used for calculating how much points is given per action for the job level.
   # Available parameters:
@@ -124,7 +124,7 @@ exampleJob:
       # Command list to be performed after quest is finished.
       # Use [playerName] to insert players name who finished that quest
       RewardCommands:
-      - eco give [playerName] 500
+      
       - msg [playerName] Completed quest!
       # Quest description to be used to explain quest requirements or rewards for player
       RewardDesc:
@@ -171,7 +171,7 @@ exampleJob:
     # block name/id (with optional sub-type)
     oak_log:
       # base income, can be not used if using point system
-      income: 5.0
+      income: 0.0
       # base points, can be not used if using income system
       points: 5.0
       # base experience
@@ -196,53 +196,53 @@ exampleJob:
   # Payment for collecting things from sweet berry bush, composter or honey. Keep in mind that you need to define item you get it and not block you click on.
   Collect:
     sweet_berries-2:
-      income: 0.2
+      income: 0.0
       points: 0.2
       experience: 0.2
     sweet_berries-3:
-      income: 0.5
+      income: 0.0
       points: 0.5
       experience: 0.5
     bonemeal:
-      income: 1.5
+      income: 0.0
       points: 1.5
       experience: 1.5
     honeycomb:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
     honey_bottle:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     glow_berries:
-      income: 0.5
+      income: 0.0
       points: 0.5
       experience: 0.5
   # Payment for cooking raw foods in camp fire
   Bake:
     beef:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     porkchop:
-      income: 0.5
+      income: 0.0
       points: 0.4
       experience: 1.0
   # Payment for stripping wood logs, only for 1.13+ servers
   StripLogs:
     stripped_acacia_log:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     stripped_oak_log:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
   # Payment for breaking a block with tnt
   TNTBreak:
     oaklog:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
   # Payment for placing a block
@@ -256,252 +256,252 @@ exampleJob:
   # Payment for breaking a block with tnt
   VTrade:
     emerald:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 2.0
     # you can add enchanted book with sub-id
     enchanted_book-12:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 2.0
   # Payment for killing any type of living entity
   Kill:
     Player:
-      income: 7.5
+      income: 0.0
       points: 1.0
       experience: 7.5
   # Payment for killing a MythicMob
   MMKill:
     CustomNameHere:
-      income: 7.5
+      income: 0.0
       points: 1.0
       experience: 7.5
   # Killing player with certain job
   custom-kill:
     Woodcutter:
-      income: 10.0
+      income: 0.0
       points: 1.0
       experience: 10.0
   # Taming animals
   Tame:
     Wolf:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
   # Breeding animals
   Breed:
     Wolf:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
   # Eating food
   Eat:
     cooked_rabbit:
-      income: 5
+      income: 0.0
       points: 1.0
       experience: 5
     baked_potato:
-      income: 5
+      income: 0.0
       points: 1.0
       experience: 5
   # Milking cows
   Milk:
     Cow:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     MushroomCow:
-      income: 5.0
+      income: 0.0
       points: 1.0
       experience: 10.0
   # Shear sheeps by its color
   # You can use 'color-all' identifier to specify all known colors.
   Shear:
     Black:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Blue:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Brown:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Cyan:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Gray:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Green:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Light_Blue:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Lime:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Magenta:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Orange:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Pink:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Purple:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Red:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Light_Gray:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     White:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     Yellow:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 5.0
   # dyeing armor
   Dye:
     leather_boots:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     leather_chestplate:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     leather_helmet:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     leather_leggings:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
   # Catching fish
   Fish:
     raw_fish:
-      income: 20.0
+      income: 0.0
       points: 1.0
       experience: 25.0
     # If you are using below version 1.13
     legacy_raw_fish:
-      income: 20.0
+      income: 0.0
       points: 1.0
       experience: 25.0
   # Catching CUSTOM fish of the PyroFishingPro plugin
   PyroFishingPro:
     CustomTier:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
   # Catching CUSTOM fish of the CustomFishing plugin
   CustomFishing:
     CustomFishId:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
   # Repairing items
   Repair:
     wood_sword:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     iron_sword:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 2.0
   # Crafting items
   Craft:
     wood_sword:
-      income: 1.5
+      income: 0.0
       points: 1.0
       experience: 3.0
     leather_boots:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 6.0
     '!Healing Bandage':
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 6.0
     # If you add ':' after the tipped_arrow then you can use effect names like in example
     tipped_arrow:slowness:
-      income: 3.0
+      income: 0.0
       points: 3.0
       experience: 1.0
   # Smelting ores in any type of furnaces
   Smelt:
     iron_ingot:
-      income: 2.0
+      income: 0.0
       points: 1.0
       experience: 8.0
     gold_ingot:
-      income: 4.5
+      income: 0.0
       points: 1.0
       experience: 12
   # Smelting ores in any type of furnaces
   Enchant:
     wood_sword:
-      income: 1.5
+      income: 0.0
       points: 1.0
       experience: 3.0
     leather_boots:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 6.0
     # Or/and you can give money for each enchantment they got
     DIG_SPEED-1:
-      income: 3.0
+      income: 0.0
       points: 1.0
       experience: 10.0
     dig_speed-2:
-      income: 6.0
+      income: 0.0
       points: 1.0
       experience: 20.0
   # Brewing miscellaneous items
   Brew:
     nether_stalk:
-      income: 5.0
+      income: 0.0
       points: 1.0
       experience: 3.0
     redstone:
-      income: 5.0
+      income: 0.0
       points: 1.0
       experience: 3.0
   # Brushing blocks and getting items from them
   Brush:
     suspicious_sand:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     suspicious_gravel:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     coal:
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
   # Explore options. Each number represents players number in exploring that chunk
@@ -509,23 +509,23 @@ exampleJob:
   # so you can give money not only for first player who discovers that chunk
   Explore:
     '1':
-      income: 5.0
+      income: 0.0
       points: 1.0
       experience: 5.0
     '2':
-      income: 2.5
+      income: 0.0
       points: 1.0
       experience: 2.5
     '3':
-      income: 1.0
+      income: 0.0
       points: 1.0
       experience: 1.0
     '4':
-      income: 0.5
+      income: 0.0
       points: 1.0
       experience: 0.5
     '5':
-      income: 0.1
+      income: 0.0
       points: 1.0
       experience: 0.1
   # permissions granted for joining to a job
@@ -604,3 +604,4 @@ exampleJob:
       ItemStack: DIAMOND_PICKAXE;n{&8Miner_Pickaxe};l{&eBobs_pick\n&710%_bonus_XP};DAMAGE_ALL:1,FIRE_ASPECT:1
       # Level of this job player can start using this item
       level: 5
+

@@ -1,0 +1,34 @@
+# Settings for when the server-sent hashed seed is randomized.
+randomize_hashed_seed:
+  # Whether the seed should be randomized in the login packet.
+  # The login packet is sent before the player sees the world, to send server and join world information.
+  # This is NOT the handshake login packet, so at this point the player already joined the server.
+  login: true
+  # Whether the seed should be randomized in the respawn packet.
+  # The respawn packet is sent when the player respawns after a death, and when they are teleported to a different dimension.
+  # It contains about half the fields the login packet has, mainly the new world information.
+  respawn: true
+
+# Warning: All of these actually modify your world. Only enable them if you are okay with that!
+modifiers:
+  # Modification of end spikes (bedrock) so that they do not conform to known pillar generation seeds.
+  end_spikes:
+    # Whether this feature is enabled.
+    enabled: false
+    # How the end spikes should be modified.
+    # "swap" means that it swaps the bedrock blocks of two spikes, but this comes at the downside of floating bedrock.
+    # "move" means that it moves a random bedrock block down, but makes the positions "illogical".
+    # At the moment there is no check against "move", so by default I recommend "move".
+    mode: move
+    # The worlds end spikes are allowed to be modified in.
+    worlds:
+      - "world_the_end"
+
+  # Modification of end cities' base tower (magenta_stained_glass -> magenta_stained_glass_pane).
+  # This check is only done once per end city; so if someone decides to 'fix' it, the effort is undone.
+  end_cities:
+    # Whether this feature is enabled.
+    enabled: false
+    # The worlds end cities are allowed to be modified in.
+    worlds:
+      - "world_the_end"

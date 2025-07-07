@@ -1,13 +1,13 @@
-Miner:
+﻿Miner:
   fullname: 矿工
   shortname: M
   FullDescription:
-  - "通过挖掘矿石和方块赚取金币。"
+  - "通过挖掘矿石和方块赚取经验。"
   ChatColour: DARK_GRAY
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+  income-progression-equation: 0
     * ((numjobs-1)*0.05))
   points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
     * ((numjobs-1)*0.05))
@@ -22,174 +22,173 @@ Miner:
       - Break;iron_ore;20
       - Break;diamond_ore;5
       RewardCommands:
-      - eco give [playerName] 100
       - msg [playerName] 完成任务！
       RewardDesc:
-      - 挖掘矿石并获得金币
-      - 完成此任务可获得100金币！
+      - 挖掘矿石并获得经验
+      - 完成此任务可获得经验奖励！
   Gui:
     ItemStack: wooden_pickaxe
   TNTBreak:
     stone:
-      income: 0.25
+      income: 0.0
       points: 0.25
       experience: 0.5
     granite:
-      income: 0.25
+      income: 0.0
       points: 0.25
       experience: 0.5
     diorite:
-      income: 0.25
+      income: 0.0
       points: 0.25
       experience: 0.5
     andesite:
-      income: 0.25
+      income: 0.0
       points: 0.25
       experience: 0.5
   Break:
     andesite:
-      income: 1
+      income: 0.0
       points: 1
       experience: 1
     stone:
-      income: 1
+      income: 0.0
       points: 1
       experience: 1
     deepslate:
-      income: 1.25
+      income: 0.0
       points: 1.25
       experience: 1.25
     granite:
-      income: 1
+      income: 0.0
       points: 1
       experience: 1
     diorite:
-      income: 1
+      income: 0.0
       points: 1
       experience: 1
     sandstone:
-      income: 0.15
+      income: 0.0
       points: 0.15
       experience: 0.2
     chiseled_sandstone:
-      income: 0.15
+      income: 0.0
       points: 0.15
       experience: 0.2
     cut_sandstone:
-      income: 0.15
+      income: 0.0
       points: 0.15
       experience: 0.2
     coal_ore:
-      income: 3
+      income: 0.0
       points: 2
       experience: 2
     deepslate_coal_ore:
-      income: 4
+      income: 0.0
       points: 3
       experience: 3
     redstone_ore:
-      income: 2.5
+      income: 0.0
       points: 2
       experience: 2
     deepslate_redstone_ore:
-      income: 3.5
+      income: 0.0
       points: 3
       experience: 3
     copper_ore:
-      income: 3.5
+      income: 0.0
       points: 3
       experience: 2
     deepslate_copper_ore:
-      income: 4.5
+      income: 0.0
       points: 4
       experience: 3
     iron_ore:
-      income: 3.5
+      income: 0.0
       points: 3
       experience: 2
     deepslate_iron_ore:
-      income: 4.5
+      income: 0.0
       points: 4
       experience: 3
     gold_ore:
-      income: 5
+      income: 0.0
       points: 4
       experience: 2
     deepslate_gold_ore:
-      income: 6
+      income: 0.0
       points: 5
       experience: 3
     lapis_ore:
-      income: 7.5
+      income: 0.0
       points: 6
       experience: 2
     deepslate_lapis_ore:
-      income: 8.5
+      income: 0.0
       points: 7
       experience: 3
     diamond_ore:
-      income: 10
+      income: 0.0
       points: 10
       experience: 10
     deepslate_diamond_ore:
-      income: 12.5
+      income: 0.0
       points: 12.5
       experience: 12.5
     emerald_ore:
-      income: 15
+      income: 0.0
       points: 15
       experience: 30
     deepslate_emerald_ore:
-      income: 17.5
+      income: 0.0
       points: 17.5
       experience: 35
     nether_quartz_ore:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
     obsidian:
-      income: 5
+      income: 0.0
       points: 5
       experience: 5
     cobblestone_wall:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
     mossy_cobblestone_wall:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
     nether_bricks:
-      income: 1.0
+      income: 0.0
       points: 1
       experience: 1.0
     nether_brick_stairs:
-      income: 3
+      income: 0.0
       points: 3
       experience: 3
     nether_brick_fence:
-      income: 1
+      income: 0.0
       points: 1
       experience: 1
     netherrack:
-      income: 0.1
+      income: 0.0
       points: 0.1
       experience: 0.1
     prismarine:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
     prismarine_bricks:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
     dark_prismarine:
-      income: 2.5
+      income: 0.0
       points: 2.5
       experience: 2.5
   Place:
     rail:
-      income: 2.0
+      income: 0.0
       points: 2.0
       experience: 2.0
     iron_ore:
@@ -226,6 +225,7 @@ Miner:
       experience: -35
   Kill:
     Player:
-      income: 7.5
+      income: 0.0
       points: 7.5
       experience: 7.5
+
