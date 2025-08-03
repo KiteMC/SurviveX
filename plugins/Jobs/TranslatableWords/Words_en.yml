@@ -1541,6 +1541,36 @@ ItemList:
   RESIN_BRICK_STAIRS: Resin Brick Stairs
   RESIN_BRICK_WALL: Resin Brick Wall
   RESIN_CLUMP: Resin Clump
+  BLUE_EGG: Blue Egg
+  BROWN_EGG: Brown Egg
+  BUSH: Bush
+  CACTUS_FLOWER: Cactus Flower
+  FIREFLY_BUSH: Firefly Bush
+  LEAF_LITTER: Leaf Litter
+  SHORT_DRY_GRASS: Short Dry Grass
+  TALL_DRY_GRASS: Tall Dry Grass
+  WILDFLOWERS: Wildflowers
+  TEST_BLOCK: Test Block
+  TEST_INSTANCE_BLOCK: Test Instance Block
+  DRIED_GHAST: Dried Ghast
+  HAPPY_GHAST_SPAWN_EGG: Happy Ghast Spawn Egg
+  MUSIC_DISC_TEARS: Music Disc Tears
+  BLACK_HARNESS: Black Harness
+  BLUE_HARNESS: Blue Harness
+  BROWN_HARNESS: Brown Harness
+  CYAN_HARNESS: Cyan Harness
+  GRAY_HARNESS: Gray Harness
+  GREEN_HARNESS: Green Harness
+  LIGHT_BLUE_HARNESS: Light Blue Harness
+  LIGHT_GRAY_HARNESS: Light Gray Harness
+  LIME_HARNESS: Lime Harness
+  MAGENTA_HARNESS: Magenta Harness
+  ORANGE_HARNESS: Orange Harness
+  PINK_HARNESS: Pink Harness
+  PURPLE_HARNESS: Purple Harness
+  RED_HARNESS: Red Harness
+  WHITE_HARNESS: White Harness
+  YELLOW_HARNESS: Yellow Harness
   SIGN: Sign
   GRASS: Grass
   LEGACY_STATIONARY_WATER: Legacy Stationary Water
@@ -1658,128 +1688,127 @@ EntityList:
   0-CREAKING: Creaking
   0-PLAYER: Player
 EnchantList:
+  Excellentenchants:curseofmediocrity: Excellentenchants:curseofmediocrity
   Density: Density
+  Excellentenchants:doublecatch: Excellentenchants:doublecatch
+  Excellentenchants:soulbound: Excellentenchants:soulbound
   Swiftsneak: Swiftsneak
-  Poisonedarrows: Poisonedarrows
-  Selfdestruction: Selfdestruction
   Breach: Breach
+  Excellentenchants:silkspawner: Excellentenchants:silkspawner
+  Excellentenchants:survivalist: Excellentenchants:survivalist
+  Excellentenchants:venom: Excellentenchants:venom
+  Excellentenchants:rebound: Excellentenchants:rebound
   Protectionfall: Protectionfall
+  Excellentenchants:rage: Excellentenchants:rage
+  Excellentenchants:curseofmisfortune: Excellentenchants:curseofmisfortune
+  Excellentenchants:hover: Excellentenchants:hover
+  Excellentenchants:sniper: Excellentenchants:sniper
+  Excellentenchants:curseoffragility: Excellentenchants:curseoffragility
+  Excellentenchants:baneofnetherspawn: Excellentenchants:baneofnetherspawn
+  Excellentenchants:paralyze: Excellentenchants:paralyze
+  Excellentenchants:fireshield: Excellentenchants:fireshield
   Arrowinfinite: Arrowinfinite
-  Stoppingforce: Stoppingforce
-  Sonic: Sonic
-  Silkchest: Silkchest
-  Lingering: Lingering
-  Darknesscloak: Darknesscloak
+  Excellentenchants:confusion: Excellentenchants:confusion
+  Excellentenchants:vampiricarrows: Excellentenchants:vampiricarrows
+  Excellentenchants:curseofdrowned: Excellentenchants:curseofdrowned
+  Excellentenchants:elementalprotection: Excellentenchants:elementalprotection
+  Excellentenchants:tunnel: Excellentenchants:tunnel
+  Excellentenchants:wither: Excellentenchants:wither
   Arrowfire: Arrowfire
-  Darknessarrows: Darknessarrows
+  Excellentenchants:speed: Excellentenchants:speed
   Impaling: Impaling
-  Hardened: Hardened
   Protectionenvironmental: Protectionenvironmental
   Knockback: Knockback
   Depthstrider: Depthstrider
-  Thrifty: Thrifty
-  Saturation: Saturation
+  Excellentenchants:exhaust: Excellentenchants:exhaust
+  Excellentenchants:flare: Excellentenchants:flare
   Luck: Luck
-  Telekinesis: Telekinesis
-  Cutter: Cutter
-  Nightvision: Nightvision
   Silktouch: Silktouch
   Loyalty: Loyalty
   Vanishingcurse: Vanishingcurse
-  Autoreel: Autoreel
+  Excellentenchants:thrifty: Excellentenchants:thrifty
+  Excellentenchants:nightvision: Excellentenchants:nightvision
+  Excellentenchants:saturation: Excellentenchants:saturation
+  Excellentenchants:vampire: Excellentenchants:vampire
+  Excellentenchants:curseofdeath: Excellentenchants:curseofdeath
   Protectionfire: Protectionfire
-  Flare: Flare
-  Regrowth: Regrowth
-  Infernus: Infernus
-  Iceaspect: Iceaspect
-  Curseofmediocrity: Curseofmediocrity
-  Explosivearrows: Explosivearrows
-  Wither: Wither
-  Exphunter: Exphunter
+  Excellentenchants:darknesscloak: Excellentenchants:darknesscloak
+  Excellentenchants:haste: Excellentenchants:haste
+  Excellentenchants:coldsteel: Excellentenchants:coldsteel
+  Excellentenchants:silkchest: Excellentenchants:silkchest
+  Excellentenchants:confusingarrows: Excellentenchants:confusingarrows
   Channeling: Channeling
   Bindingcurse: Bindingcurse
-  Vampiricarrows: Vampiricarrows
-  Confusion: Confusion
+  Excellentenchants:luckyminer: Excellentenchants:luckyminer
   Quickcharge: Quickcharge
-  Bomber: Bomber
-  Swiper: Swiper
-  Restore: Restore
+  Excellentenchants:replanter: Excellentenchants:replanter
+  Excellentenchants:rocket: Excellentenchants:rocket
+  Excellentenchants:temper: Excellentenchants:temper
   Damagearthropods: Damagearthropods
-  Soulbound: Soulbound
-  Dragonfirearrows: Dragonfirearrows
   Frostwalker: Frostwalker
-  Treasurehunter: Treasurehunter
-  Seasonedangler: Seasonedangler
-  Rage: Rage
-  Iceshield: Iceshield
+  Excellentenchants:blindness: Excellentenchants:blindness
   Multishot: Multishot
-  Rebound: Rebound
   Protectionprojectile: Protectionprojectile
-  Ghast: Ghast
-  Bunnyhop: Bunnyhop
-  Scavenger: Scavenger
-  Nimble: Nimble
-  Decapitator: Decapitator
+  Excellentenchants:electrifiedarrows: Excellentenchants:electrifiedarrows
   Waterworker: Waterworker
-  Thunder: Thunder
+  Excellentenchants:cutter: Excellentenchants:cutter
   Soulspeed: Soulspeed
-  Haste: Haste
-  Curseofdeath: Curseofdeath
-  Confusingarrows: Confusingarrows
-  Smelter: Smelter
-  Blastmining: Blastmining
-  Villagedefender: Villagedefender
-  Tunnel: Tunnel
-  Curseofbreaking: Curseofbreaking
-  Rivermaster: Rivermaster
-  Exhaust: Exhaust
+  Excellentenchants:iceaspect: Excellentenchants:iceaspect
+  Excellentenchants:veinminer: Excellentenchants:veinminer
+  Excellentenchants:witheredarrows: Excellentenchants:witheredarrows
+  Excellentenchants:kamikadze: Excellentenchants:kamikadze
+  Excellentenchants:waterbreathing: Excellentenchants:waterbreathing
+  Excellentenchants:regrowth: Excellentenchants:regrowth
+  Excellentenchants:infernus: Excellentenchants:infernus
+  Excellentenchants:telekinesis: Excellentenchants:telekinesis
+  Excellentenchants:treefeller: Excellentenchants:treefeller
+  Excellentenchants:flamewalker: Excellentenchants:flamewalker
   Windburst: Windburst
-  Doublestrike: Doublestrike
-  Curseoffragility: Curseoffragility
+  Excellentenchants:stoppingforce: Excellentenchants:stoppingforce
   Lootbonusmobs: Lootbonusmobs
-  Enderbow: Enderbow
-  Curseofdrowned: Curseofdrowned
+  Excellentenchants:jumping: Excellentenchants:jumping
+  Excellentenchants:cure: Excellentenchants:cure
   Damageundead: Damageundead
+  Excellentenchants:autoreel: Excellentenchants:autoreel
+  Excellentenchants:hardened: Excellentenchants:hardened
+  Excellentenchants:enderbow: Excellentenchants:enderbow
   Piercing: Piercing
   Lure: Lure
+  Excellentenchants:poisonedarrows: Excellentenchants:poisonedarrows
+  Excellentenchants:glassbreaker: Excellentenchants:glassbreaker
+  Excellentenchants:smelter: Excellentenchants:smelter
   Riptide: Riptide
-  Vampire: Vampire
-  Sniper: Sniper
-  Blindness: Blindness
-  Surprise: Surprise
-  Survivalist: Survivalist
+  Excellentenchants:wisdom: Excellentenchants:wisdom
+  Excellentenchants:doublestrike: Excellentenchants:doublestrike
   Arrowdamage: Arrowdamage
-  Baneofnetherspawn: Baneofnetherspawn
-  Cure: Cure
-  Witheredarrows: Witheredarrows
-  Elementalprotection: Elementalprotection
-  Veinminer: Veinminer
-  Flamewalker: Flamewalker
-  Doublecatch: Doublecatch
-  Curseofmisfortune: Curseofmisfortune
+  Excellentenchants:curseofbreaking: Excellentenchants:curseofbreaking
+  Excellentenchants:lingering: Excellentenchants:lingering
+  Excellentenchants:seasonedangler: Excellentenchants:seasonedangler
+  Excellentenchants:decapitator: Excellentenchants:decapitator
+  Excellentenchants:darknessarrows: Excellentenchants:darknessarrows
+  Excellentenchants:thunder: Excellentenchants:thunder
+  Excellentenchants:rivermaster: Excellentenchants:rivermaster
+  Excellentenchants:blastmining: Excellentenchants:blastmining
   Protectionexplosions: Protectionexplosions
-  Fireshield: Fireshield
-  Hover: Hover
-  Divinetouch: Divinetouch
+  Excellentenchants:dragonfirearrows: Excellentenchants:dragonfirearrows
   Mending: Mending
   Fireaspect: Fireaspect
-  Luckyminer: Luckyminer
-  Venom: Venom
-  Coldsteel: Coldsteel
+  Excellentenchants:iceshield: Excellentenchants:iceshield
+  Excellentenchants:swiper: Excellentenchants:swiper
   Oxygen: Oxygen
-  Paralyze: Paralyze
-  Temper: Temper
+  Excellentenchants:villagedefender: Excellentenchants:villagedefender
+  Excellentenchants:explosivearrows: Excellentenchants:explosivearrows
   Thorns: Thorns
   Sweepingedge: Sweepingedge
-  Replanter: Replanter
+  Excellentenchants:nimble: Excellentenchants:nimble
   Arrowknockback: Arrowknockback
   Damageall: Damageall
-  Electrifiedarrows: Electrifiedarrows
+  Excellentenchants:bomber: Excellentenchants:bomber
   Digspeed: Digspeed
   Lootbonusblocks: Lootbonusblocks
-  Rocket: Rocket
+  Excellentenchants:restore: Excellentenchants:restore
+  Excellentenchants:ghast: Excellentenchants:ghast
   Durability: Durability
-  Aquaman: Aquaman
 PotionEffects:
   Water: Water
   Mundane: Mundane

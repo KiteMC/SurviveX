@@ -3,3 +3,4 @@ backup-interval: 1728000 # 自动备份间隔（以刻（ticks）为单位，约
 world-name: world # 存储玩家数据的世界名称
 language: zh_CN # 语言
 update-checker: true # 更新检查
+achievement-support: false

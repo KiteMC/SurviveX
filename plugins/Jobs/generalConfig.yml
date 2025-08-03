@@ -661,9 +661,14 @@ Commands:
   JobsInfo:
     # Open up the jobs browse action list, when your performed /jobs info command?
     open-browse: false
+  Stats:
+    # Amount of progress bars to be shown in /jobs stats command
+    BarCount: 50
 BlockOwnership:
   # Set to 0 or lower if you want to disable this. Setting to positive number will mean that player needs to be in this range from owner block to get paid
   Range: 0
   # When enabled by interacting with furncae ownership will get transfered to new player
   # If set to false then furnace will belong to player who interacted with it first until its ownership is removed
   TakeOver: false
+  # When set to true, all checks and actions regarding ownership will no longer be carried out. This mode does not cause a loss of any already existing data.
+  Disabled: false

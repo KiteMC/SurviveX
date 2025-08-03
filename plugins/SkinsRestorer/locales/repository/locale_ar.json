@@ -35,8 +35,7 @@
   "skinsrestorer.help_sr_purge_old_data": "مسح بيانات المظهر القديمة التي يزيد عمرها عن X أيام.",
   "skinsrestorer.help_sr_dump": "تحميل بيانات الدعم إلى bytebin.lucko.me.",
   "skinsrestorer.success_generic": "<dark_green><message>",
-  "skinsrestorer.info_use_quotes": "يجب وضع عناوين URL بين علامتي اقتباس.
-مثال: <yellow>/skin set \"https://example.com/skin.png\"</yellow> (يمكنك الضغط على Tab للإكمال التلقائي لعلامات الاقتباس)",
+  "skinsrestorer.info_use_quotes": "يجب وضع عناوين URL بين علامتي اقتباس.\nمثال: <yellow>/skin set \"https://example.com/skin.png\"</yellow> (يمكنك الضغط على Tab للإكمال التلقائي لعلامات الاقتباس)",
   "skinsrestorer.success_skin_change": "تم تغيير مظهرك.",
   "skinsrestorer.success_skin_change_other": "لقد غيرت مظهر <yellow><name></yellow>.",
   "skinsrestorer.success_skin_undo": "تمت إعادة مظهرك <yellow><skin></yellow> إلى مظهر من <yellow><timestamp></yellow>.",
@@ -64,22 +63,18 @@
   "skinsrestorer.error_no_skin_to_favourite": "ليس لديك مظهر لتعيينه كمفضل!",
   "skinsrestorer.error_skin_disabled": "هذا المظهر معطل من قبل المسؤول.",
   "skinsrestorer.error_skinurl_disallowed": "هذا النطاق غير مسموح به من قبل المسؤول.",
-  "skinsrestorer.error_updating_skin": "حدث خطأ أثناء تحديث مظهرك.
-يرجى المحاولة مرة أخرى لاحقًا!",
-  "skinsrestorer.error_updating_url": "لا يمكنك تحديث مظاهر URL المخصصة!
-<newline><red>اطلب مرة أخرى باستخدام /skin url",
+  "skinsrestorer.error_updating_skin": "حدث خطأ أثناء تحديث مظهرك.\nيرجى المحاولة مرة أخرى لاحقًا!",
+  "skinsrestorer.error_updating_url": "لا يمكنك تحديث مظاهر URL المخصصة!\n<newline><red>اطلب مرة أخرى باستخدام /skin url",
   "skinsrestorer.error_updating_customskin": "لا يمكن تحديث المظهر لأنه مخصص.",
   "skinsrestorer.error_invalid_urlskin": "عنوان URL أو تنسيق المظهر غير صالح،<newline><red>حاول تحميل مظهرك إلى imgur وانقر بزر الماوس الأيمن على 'نسخ عنوان الصورة'<newline><red>للحصول على دليل، انظر: <red><underlined><hover:show_text:'<dark_green>انقر للفتح'><click:open_url:'https://skinsrestorer.net/skinurl'>https://skinsrestorer.net/skinurl</click></hover></underlined>.",
   "skinsrestorer.error_admin_applyskin": "لا يمكن تحديث مظهر اللاعب!",
-  "skinsrestorer.error_ms_full": "انتهت مهلة MineSkin API أثناء تحميل مظهرك.
-يرجى المحاولة مرة أخرى لاحقًا.",
+  "skinsrestorer.error_ms_full": "انتهت مهلة MineSkin API أثناء تحميل مظهرك.\nيرجى المحاولة مرة أخرى لاحقًا.",
   "skinsrestorer.error_ms_api_failed": "MineSkin API محمل بشكل زائد، يرجى المحاولة مرة أخرى لاحقًا!",
   "skinsrestorer.error_ms_api_key_invalid": "مفتاح MineSkin API غير صالح! اتصل بمالك الخادم بخصوص هذا الأمر!",
   "skinsrestorer.error_ms_unknown": "خطأ MineSkin غير معروف!",
   "skinsrestorer.error_no_history": "ليس لديك سجل للمظاهر!",
   "skinsrestorer.error_no_favourites": "ليس لديك مظاهر مفضلة!",
-  "skinsrestorer.error_player_refresh_no_mapping": "لا يمكن تحديث مظهرك لأن إصدار Minecraft هذا غير مدعوم بواسطة SkinsRestorer.
-يرجى إخبار مسؤول الخادم بتحديث الملحق SkinsRestorer.",
+  "skinsrestorer.error_player_refresh_no_mapping": "لا يمكن تحديث مظهرك لأن إصدار Minecraft هذا غير مدعوم بواسطة SkinsRestorer.\nيرجى إخبار مسؤول الخادم بتحديث الملحق SkinsRestorer.",
   "skinsrestorer.not_connected_to_server": "<red>أنت غير متصل بأي خادم.",
   "skinsrestorer.divider": "<dark_aqua>----------------------------------------------",
   "skinsrestorer.admincommand_status_checking": "<gray>جاري تشغيل فحوصات الخدمة...",
@@ -107,8 +102,7 @@
   "skinsrestorer.admincommand_purgeolddata_success": "<green>تم مسح المظاهر القديمة بنجاح!",
   "skinsrestorer.admincommand_purgeolddata_error": "<dark_red>حدث خطأ أثناء مسح المظاهر القديمة!",
   "skinsrestorer.admincommand_dump_uploading": "<green>جاري تحميل البيانات إلى bytebin.lucko.me...",
-  "skinsrestorer.admincommand_dump_success": "<green>تم التحميل بنجاح!
-<yellow><click:open_url:'<url>'><url></click>",
+  "skinsrestorer.admincommand_dump_success": "<green>تم التحميل بنجاح!\n<yellow><click:open_url:'<url>'><url></click>",
   "skinsrestorer.admincommand_dump_error": "<red>خطأ أثناء تحميل البيانات إلى bytebin.lucko.me",
   "skinsrestorer.command_server_not_allowed_message": "<red>تم تعطيل الأوامر للخادم <server>.",
   "skinsrestorer.command_unknown_player": "لاعب غير معروف: <name>",

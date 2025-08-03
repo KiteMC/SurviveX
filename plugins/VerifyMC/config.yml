@@ -1,0 +1,63 @@
+language: zh
+debug: false
+web_port: 8080
+web_server_prefix: 'KiteMC'
+auth_methods:
+  - email
+max_accounts_per_email: 2
+whitelist_mode: bukkit
+web_register_url: https://kitemc.com/
+register:
+  auto_approve: false
+username_regex: "^[a-zA-Z0-9_-]{3,16}$"
+username_case_sensitive: false
+whitelist_bypass_ips:
+  - 127.0.0.1
+admin:
+  password: your_custom_password
+frontend:
+  theme: glassx
+  logo_url: /logo.png
+  announcement: Welcome to KiteMC!
+smtp:
+  host: smtp.qq.com
+  port: 587
+  username: your_email@qq.com
+  password: your_email_password
+  from: your_email@qq.com
+  enable_ssl: true
+whitelist_json_sync: true
+auto_sync_whitelist: true
+auto_cleanup_whitelist: true
+auto_update_config: true
+auto_update_i18n: true
+auto_update_email: true
+auto_update_static: true
+backup_on_update: true 
+enable_email_domain_whitelist: true
+enable_email_alias_limit: false
+email_domain_whitelist:
+  - gmail.com
+  - 163.com
+  - 126.com
+  - qq.com
+  - outlook.com
+  - hotmail.com
+  - icloud.com
+  - yahoo.com
+  - foxmail.com 
+storage:
+  type: data
+  auto_migrate_on_switch: false
+  mysql:
+    host: localhost
+    port: 3306
+    database: verifymc
+    user: root
+    password: yourpassword 
+authme:
+  enabled: true
+  require_password: true
+  auto_register: true
+  auto_unregister: true
+  password_regex: "^[a-zA-Z0-9_]{3,16}$"

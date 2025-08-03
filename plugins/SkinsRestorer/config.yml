@@ -207,7 +207,8 @@ gui:
 # Enable or disable default skins
 # applyForPremium: false will only put a skin on skinless/steve players.
 # If there is more than one, the plugin will choose a random one.
-# [?] Supports custom & url.png skins, read SkinFile Generator below.
+# You can use "<random>" in the defaultSkins list to select a random SkinsRestorer recommended skin.
+# [!] url.png skins will be cached and therefore will not be updated
 storage:
     defaultSkins:
         enabled: false
@@ -256,14 +257,11 @@ server:
     # When a player loads a server resource pack, their skin is reset. By default, SkinsRestorer reapplies the skin when the player reports that the resource pack has been loaded or an error has occurred.
     resourcePackFix: true
     # Dismounts a mounted (on a horse, or sitting) player when their skin is updated, preventing players from becoming desynced.
-    # File override = ./plugins/SkinsRestorer/disableDismountPlayer.txt
     dismountPlayerOnSkinUpdate: true
     # Remounts a player that was dismounted after a skin update (above option must be true).
     # Disabling this is only recommended if you use plugins that allow you ride other players, or use sit. Otherwise you could get errors or players could be kicked for flying.
-    # File override = ./plugins/SkinsRestorer/disableRemountPlayer.txt
     remountPlayerOnSkinUpdate: true
     # Dismounts all passengers mounting a player (such as plugins that let you ride another player), preventing those players from becoming desynced.
-    # File override = ./plugins/SkinsRestorer/enableDismountEntities.txt
     dismountPassengersOnSkinUpdate: false
     sound:
         # Play a sound when a player runs /skin to change their skin.
@@ -272,6 +270,12 @@ server:
         # You can find the allowed format and values at
         # https://javadoc.io/static/com.github.cryptomorin/XSeries/11.0.0/com/cryptomorin/xseries/XSound.html#parse(java.lang.String)
         value: ENTITY_PLAYER_TELEPORT, 0.7
+    # Proxy mode settings. Allows SkinsRestorer to work with proxies.
+    proxyMode:
+        # Proxy mode detection. Valid values are ENABLED, DISABLED, AUTO. Auto will auto detect based on your server configuration.
+        detection: AUTO
+        # Proxy mode API will make server-side plugin calls to SkinsRestorer API possible. Only works if a database is set up instead of file storage.
+        api: true
 login:
     # Stops the process of setting a skin if the LoginEvent was canceled by an AntiBot plugin.
     # [?] Unsure? leave this true for better performance.

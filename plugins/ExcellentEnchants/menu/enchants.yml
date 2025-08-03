@@ -1,22 +1,22 @@
-# ==================== [章节] 设置 ====================
-# > [MenuType] : String | 表示菜单类型。允许的值：https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html
-# > [Title] : String | 设置菜单标题
-# > [Auto_Refresh] : Integer | 定义菜单刷新率（秒）。设置为0以禁用
-# > [PlaceholderAPI -> Enabled] : Boolean | 启用时，为菜单中的所有物品按玩家应用PlaceholderAPI占位符
+# ==================== [SECTION] SETTINGS ====================
+# > [MenuType] : String | Represents the menu type. Allowed values: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html
+# > [Title] : String | Sets menu title.
+# > [Auto_Refresh] : Integer | Defines menu refresh rate in seconds. Set 0 to disable.
+# > [PlaceholderAPI -> Enabled] : Boolean | When enabled, applies PlaceholderAPI placeholders for all items in the menu per player.
 #  
-# ==================== [章节] 内容 ====================
-# 您可以在此章节中自由编辑物品（添加、删除、修改物品）
-# > [Item] : Section | 要显示的物品
-#     [*] 访问 https://nightexpressdev.com/nightcore/configuration/item-formation/ 获取可用选项列表
-# > [Priority] : Integer | 物品优先级。更高的值将覆盖同一槽位中的其他物品
-# > [Slots] : Int Array | 物品槽位，从0开始。用逗号分隔
+# ==================== [SECTION] CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# > [Item] : Section | Item to display.
+#     [*] Navigate to https://nightexpressdev.com/nightcore/configuration/item-formation/ for a list of available options.
+# > [Priority] : Integer | Item priority. Higher values will override other item(s) in the same slot(s).
+# > [Slots] : Int Array | Item slots, starts from 0. Split with commas.
 #     Slots: '0,4,9,10'
-# > [Type] : String | 定义物品点击操作
-#     [*] 可用类型：['close', 'page_next', 'page_previous']
-# > [Click_Commands] : Section | 点击时执行命令，支持PlaceholderAPI
-#     [*] 仅在[Type]未设置（null）时有效
-#     [*] 可用点击类型：[LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, DRAG_N_DROP]
-#     [*] 使用前缀'player:'让玩家执行命令
+# > [Type] : String | Defines item click action.
+#     [*] Available types: ['close', 'page_next', 'page_previous']
+# > [Click_Commands] : Section | Executes commands on click with PlaceholderAPI support.
+#     [*] Works only if [Type] is not set (null).
+#     [*] Available click types: [LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, DRAG_N_DROP]
+#     [*] Use prefix 'player:' to run command by a player.
 #     Click_Commands:
 #       LEFT:
 #       - say Hello
@@ -40,8 +40,8 @@ Enchantment:
     - <dgray>(点击切换等级)</dgray>
     - '%empty-if-above%'
     - <lyellow><b>信息：</b></lyellow>
-    - '<lyellow>▪ <lgray>适用物品：</lgray>%enchantment_fit_item_types%</lyellow>'
-    - '<lyellow>▪ <lgray>等级：</lgray>%enchantment_level_min%<lgray> - </lgray>%enchantment_level_max%</lyellow>'
+    - <lyellow>▪ <lgray>适用物品：</lgray>%enchantment_fit_item_types%</lyellow>
+    - <lyellow>▪ <lgray>等级：</lgray>%enchantment_level_min%<lgray> - </lgray>%enchantment_level_max%</lyellow>
     - '%empty-if-below%'
     - '%charges%'
     - '%empty-if-below%'
@@ -50,7 +50,7 @@ Enchantment:
     - <lred><b>冲突：</b></lred>
     - <lred>✘ </lred><lgray>%name%</lgray>
     Charges:
-    - '<lyellow>▪ <lgray>充能：</lgray>%amount%⚡<lgray> (<white>%item%</white>)</lgray></lyellow>'
+    - <lyellow>▪ <lgray>充能：</lgray>%amount%⚡<lgray> (<white>%item%</white>)</lgray></lyellow>
   Slots: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
 Content:
   page_next:

@@ -125,15 +125,19 @@ Editor:
     Exit:
       Name: <lred><b>Exit</b></lred>
       Description: []
+      Formatted: false
     Return:
       Name: <lgray><b>Return</b></lgray>
       Description: []
+      Formatted: false
     NextPage:
       Name: <lgray><!b>Next Page →</!b></lgray>
       Description: []
+      Formatted: false
     PreviousPage:
       Name: <lgray><!b>← Previous Page</!b></lgray>
       Description: []
+      Formatted: false
 Dialog:
   Header: <lyellow>%time%</lyellow>
   DefaultPrompt: <lgray>Enter <lgreen>[Value]</lgreen></lgray>

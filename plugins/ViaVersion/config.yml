@@ -2,7 +2,7 @@
 # Ensure you look through all these options
 # If you need help:
 # Discord - https://viaversion.com/discord
-# Docs - https://docs.viaversion.com/display/VIAVERSION/Configuration
+# Docs - https://docs.viaversion.com
 #
 #----------------------------------------------------------#
 #                     GLOBAL OPTIONS                       #
@@ -27,6 +27,8 @@ block-disconnect-msg: 你正在使用不支持的 Minecraft 版本！
 reload-disconnect-msg: 服务器重新加载，请重新加入！
 # We warn when there's an error converting item/block or component/nbt data over versions, should we suppress these? (Only suggested if spamming)
 suppress-conversion-warnings: false
+# This can be disabled for debugging purposes if text in chat/entities/items shows an error tag.
+suppress-text-component-conversion-warnings: true
 #
 #----------------------------------------------------------#
 #                  GLOBAL PACKET LIMITER                   #
@@ -69,8 +71,6 @@ hologram-y: -0.96
 # Should we disable piston animation for 1.11/1.11.1 clients?
 # In some cases, when firing lots of pistons, it crashes them.
 piston-animation-patch: false
-# Should we fix nbt for 1.12 and above clients in chat messages (causes invalid item)
-chat-nbt-fix: true
 # Experimental - Should we fix shift quick move action for 1.12 clients (causes shift + double click not to work when moving items) (only works on 1.8-1.11.2 bukkit based servers)
 quick-move-action-fix: false
 # Should we use prefix for team color on 1.13 and above clients?
@@ -147,6 +147,9 @@ hide-scoreboard-numbers: false
 #
 # Fixes 1.21+ clients on 1.20.5 servers placing water/lava buckets at the wrong location when moving fast, NOTE: This may cause issues with anti-cheat plugins.
 fix-1_21-placement-rotation: false
+#
+# If enabled, cancel swing packets sent while having an inventory opened on 1.15.2 and below servers. This can cause false positives with anti-cheat plugins.
+cancel-swing-in-inventory: true
 #
 #----------------------------------------------------------#
 #             1.9+ CLIENTS ON 1.8 SERVERS OPTIONS          #

@@ -201,6 +201,7 @@ command:
         to: ' &eto: &f'
         objectives: Objectives
         rewards: Reward commands
+        rewardAmount: ' &eAmount: &f'
         description: '&eDescription'
         areas: '&eRestricted areas'
   blockinfo:
@@ -327,15 +328,15 @@ command:
       break:
         info: '&eBreak'
         none: '%jobname% does not get money for breaking blocks.'
+      striplogs:
+        info: '&eStrip logs'
+        none: '%jobname% does not get money for stripping logs.'
       tntbreak:
         info: '&eTNTBreak'
         none: '%jobname% does not get money for breaking blocks with TNT.'
       place:
         info: '&ePlace'
         none: '%jobname% does not get money for placing blocks.'
-      striplogs:
-        info: '&eStrip logs'
-        none: '%jobname% does not get money for stripping logs.'
       kill:
         info: '&eKill'
         none: '%jobname% does not get money for killing monsters.'
@@ -354,24 +355,18 @@ command:
       craft:
         info: '&eCraft'
         none: '%jobname% does not get money from crafting.'
+      vtrade:
+        info: '&eVillager trade'
+        none: '%jobname% does not get money for trading a villager.'
       smelt:
         info: '&eSmelt'
         none: '%jobname% does not get money from smelting.'
       brew:
         info: '&eBrew'
         none: '%jobname% does not get money from brewing.'
-      eat:
-        info: '&eEat'
-        none: '%jobname% does not get money from eating food.'
-      dye:
-        info: '&eDye'
-        none: '%jobname% does not get money from dyeing.'
       enchant:
         info: '&eEnchant'
         none: '%jobname% does not get money from enchanting.'
-      vtrade:
-        info: '&eVillager trade'
-        none: '%jobname% does not get money for trading a villager.'
       repair:
         info: '&eRepair'
         none: '%jobname% does not get money from repairing.'
@@ -381,18 +376,24 @@ command:
       tame:
         info: '&eTame'
         none: '%jobname% does not get money from taming.'
-      milk:
-        info: '&eMilk'
-        none: '%jobname% does not get money from milking cows.'
+      dye:
+        info: '&eDye'
+        none: '%jobname% does not get money from dyeing.'
       shear:
         info: '&eShear'
         none: '%jobname% does not get money from shearing sheep.'
+      milk:
+        info: '&eMilk'
+        none: '%jobname% does not get money from milking cows.'
       explore:
         info: '&eExplore'
         none: '%jobname% does not get money from exploring.'
-      custom-kill:
-        info: '&eCustom kill'
-        none: '%jobname% does not get money from custom player kills.'
+      eat:
+        info: '&eEat'
+        none: '%jobname% does not get money from eating food.'
+      customkill:
+        info: '&ecustom-kill'
+        none: '%jobname% does not get money for (custom-kill) action.'
       collect:
         info: '&eCollect'
         none: '%jobname% does not get money for collecting blocks.'
@@ -405,6 +406,9 @@ command:
       brush:
         info: '&eBrush'
         none: '%jobname% does not get money for brushing blocks.'
+      vax:
+        info: '&eVax'
+        none: '%jobname% does not get money for (Vax) action.'
   playerinfo:
     help:
       info: Show how much each job is getting paid and for what on another player.
@@ -547,17 +551,20 @@ command:
     output:
       topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
       list: '&e%number%&a. &e%playerdisplayname% &alvl &e%level% &awith&e %exp% &aexp'
-      show: '&2Show from &e[from] &2until &e[until] &2top list'
   gtop:
     help:
       info: Shows top players by global jobs level.
       args: clear/pageNumber
-    error:
-      nojob: Can't find any information.
     output:
       topline: '&aTop&e %amount% &aplayers by global job level'
       list: '&e%number%&a. &e%playerdisplayname% &alvl &e%level% &awith&e %exp% &aexp'
-      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+  gqtop:
+    help:
+      info: Shows top players by quests done.
+      args: clear/pageNumber
+    output:
+      topline: '&aTop&e %amount% &aplayers by done quests'
+      list: '&e%number%&a. &e%playerdisplayname% &alvl &e%level% &awith&e %exp% &aexp'
   area:
     help:
       info: Modify restricted areas.

@@ -3,8 +3,8 @@ Global:
   # Starts UUID conversion on plugin startup
   # DON'T change this if you are not sure what you doing
   UUIDConvertion: false
-  # STRONGLY not recomended to be used anymore. Only enable if you are sure you want to use this
-  # If you running offline server. Suggestion would be to keep this at false and base residence ownership from UUID and not on players name
+  # STRONGLY recomended to keep it set to false. Only enable if you are sure you want to use outdated methods
+  # Suggestion is to keep this at false so that residence ownership gets determined by UUID and not by players name
   OfflineMode: false
   # Players with residence.versioncheck permission node will be noticed about new residence version on login
   versionCheck: true
@@ -41,7 +41,7 @@ Global:
     # When this is set to true and CanTeleport set to false, players will not have option to teleport to residences in general
     # Keep in mind that this only applies for commands like /res tp
     CanTeleportIncludeOwner: false
-    # Name of your main residence world. Usually normal starting world 'World'. Capitalization essential
+    # Name of your main residence world. Usually normal starting world 'world'. Capitalization essential
     DefaultWorld: world
     DisabledWorlds:
       # List Of Worlds where this plugin is disabled
@@ -239,6 +239,8 @@ Global:
     Use: false
     # For how long player should be offline to delete hes residence
     Days: 60
+    # When enabled in case residence owner can't be determined we will print out some basic information about it into console
+    DetailsOnUnknown: false
     # Extra heavy on server and will lag it out while regeneration is ongoing
     # Do you want to regenerate old residence area
     # This requires world edit to be present

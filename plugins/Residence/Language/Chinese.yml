@@ -351,6 +351,7 @@ Language:
     SellList: ' &6%1&e. &6%2 &e(&6%3&e) - &6%4'
     LeaseExpire: '&e租约到期时间: &2%1'
     LeaseList: '&6%1. &e%2 &2%3 &e%4'
+    NotEnoughMoneyAmount: '&cYou don''t have enough money. (&6%1&c)'
   Expanding:
     North: '&e向北方 (-Z) 扩展 &6%1 &e格'
     West: '&e向西方 (-X) 扩展 &6%1 &e格'
@@ -1623,6 +1624,11 @@ CommandHelp:
               Description: Prevents skulk catalyst spreading
               Info:
               - '&eUsage: &6/res set <residence> skulk true/false/remove'
+            boarding:
+              Translated: boarding
+              Description: Allows or denys animal boarding in residences
+              Info:
+              - '&eUsage: &6/res set <residence> boarding true/false/remove'
         remove:
           Description: 删除领地
           Info:

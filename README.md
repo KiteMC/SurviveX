@@ -1,54 +1,54 @@
-# SurviveX 服务端文档
+# 🎮 SurviveX 服务端介绍
 
-![assets/1870x600.png](assets/1870x600.png)
+## ✨ 核心功能
+- 💡 **基于 Leaves 1.21.4 核心版本**，运行环境需 Java 21+，提供丰富功能
+- 🏠 **基础功能**：Ess（含 home、tpa 等基础插件）、TAB、RTP、MOTD、登录、经济、领地、菜单、皮肤、权限、假人、跨版本、占位符、预加载、世界管理、箱子商店、睡觉时间管理、种子保护、反X射线、数据分析
+- 🔥 **进阶功能**：职业、更多附魔、
+- 🛡️ **安全功能**：VerifyMC 白名单管理（网页注册、自动/手动审核、封禁系统、多主题界面、邮件验证、MySQL支持）
 
-## 核心功能✨
-- 💡 基于 Leaves 1.21.4 核心版本，运行环境需 Java 21+，提供丰富功能
-- 🏠 基础功能：Ess（含 home、tpa 等基础插件）、TAB、RTP、MOTD、登录、经济、领地、菜单、皮肤、权限、假人、跨版本、占位符、预加载、世界管理、箱子商店、睡觉时间管理
-- 🔥 进阶功能：职业、更多附魔
-
-> [!TIP]
+::: tip 💡 重要提示
 > 若基础插件使用 `CMI` 插件, 请进行以下操作:
 > 
-> 1.将 `CMI` 插件上传至 `plugins` 目录下
-> 
-> 2.将 `plugins` 目录下的 `EssentialsX.jar` 重命名为 `EssentialsX.jar[停用]`
-> 
-> 3.将 `plugins` 目录下的 `CMIEInjector.jar[停用]` 重命名为 `CMIEInjector.jar`
-> 
-> 4.将 `plugins\PlayerMenu\menu` 目录下的 `home_select.yml[停用]`  重命名为 `home_select.yml`(需覆盖原文件)
+> 1. 📁 将 `CMI` 插件上传至 `plugins` 目录下
+> 2. 🔄 将 `plugins` 目录下的 `EssentialsX.jar` 重命名为 `EssentialsX.jar[disabled]`
+> 3. 🔄 将 `plugins` 目录下的 `CMIEInjector.jar[disabled]` 重命名为 `CMIEInjector.jar`
+> 4. 🔄 将 `plugins\PlayerMenu\menu` 目录下的 `home_select.yml[disabled]` 重命名为 `home_select.yml`(需覆盖原文件)
+:::
 
-## 特性与说明📋
+## 📋 特性与说明
 
-> [!TIP]
-> [📚 详细内容请见 SurviveX 在线文档](https://kitemc.com/zh/docs/survivex/guide/v1)
+::: tip 📚 详细文档
+> [📚 详细内容请见 SurviveX 在线文档](https://docs.Kite.cc/zh_Hans/survivex/guide/v1)
+:::
 
-### 环境搭建
+### 🛠️ 环境搭建
 
-- 核心版本：Leaves 1.21.4
-- 运行环境：Java 21+
+- 🎯 **核心版本**：Leaves 1.21.4
+- ☕ **运行环境**：Java 21+
 
-### 插件生态
+### 🔌 插件生态
 
 | 插件类型       | 插件名称及版本                                                                 |
 |----------------|-------------------------------------------------------------------------------|
-| Paper 插件     | nightcore (2.7.7)                                                             |
-| Bukkit 插件    | AntiPopup (11), AuthMe (5.6.0-bCUSTOM), BanItem (3.7), BellCommand (1.3.1), BetterRTP (3.6.13), CMILib (1.5.4.2), Chunky (1.4.36), CommandAPI (10.0.1), Essentials (2.21.1), ExcellentEnchants (5.0.1), Jobs (5.2.6.0), LuckPerms (5.4.145), MiniMOTD (2.1.5), PlaceholderAPI (2.11.6), PlayerDataRollback (2.1.6-GA), PlayerMenu (1.2.9), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.9-RELEASE-1), Residence (5.1.7.6), SkinsRestorer (15.6.8), TAB (5.2.2), Vault (1.7.3-b131), ViaVersion (5.3.2), WorldManager (1.4.1), fakeplayer (0.3.13), floodgate (2.2.4-SNAPSHOT (b116-0e3163c)) |
+| 📄 Paper 插件     | ExcellentEnchants (5.2.0), nightcore (2.7.12.4)                            |
+| 🔧 Bukkit 插件    | AntiPopup (12.1), AntiSeedCracker (1.2.1), AuthMe (5.6.0-bCUSTOM), BanItem (3.7), BetterRTP (3.6.13), CMILib (1.5.6.2), Chunky (1.4.40), CommandAPI (10.1.2), Essentials (2.21.1), Jobs (5.2.6.1), LuckPerms (5.5.10), MiniMOTD (2.1.5), Orebfuscator (5.5.4), PlaceholderAPI (2.11.6), Plan (5.6 build 2965), PlayerDataRollback (2.1.6-GA), PlayerMenu (1.6.6), ProtocolLib (5.3.0), QuickShop-Hikari (6.2.0.10), Residence (5.1.7.7), SkinsRestorer (15.7.8), TAB (5.2.5), Vault (1.7.3-b131), VerifyMC (1.2.0), ViaVersion (5.4.2), WorldManager (1.4.1), fakeplayer (0.3.13)          |
 
-### 快速启动
+### 🚀 快速启动
 
 ```bash
 # 启动（服务器需 Java21 环境）
 ./start.sh
 ```
-> [!TIP]
-> 若使用 win 系统, 请重命名为 `start.bat` 后启动
 
-## 许可证
-[GPLv3 License](LICENSE) © 2025 [KiteMC](https://github.com/KiteMC/SurviveX)
+::: tip 💻 Windows 用户
+> 若使用 Windows 系统, 请重命名为 `start.bat` 后启动
+:::
+
+## 📄 许可证
+[GPLv3 License](https://github.com/KiteMC/SurviveX/blob/ver/1.21.5/LICENSE) © 2025 [KiteMC](https://github.com/KiteMC/SurviveX)
 
 ## ⭐ Star History
-> [!TIP] 
+::: tip 🌟 支持我们
 > 如果本项目对您有帮助，或者您关注本项目的未来发展，请给项目 Star，谢谢 
 
 <div align="center">
@@ -56,3 +56,34 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=KiteMC/SurviveX&type=Date)](https://www.star-history.com/#KiteMC/SurviveX&Date)
 
 </div>
+
+:::
+
+## 📸 截图展示
+
+### 🏠 主界面
+![主界面](https://survivex.cn-nb1.rains3.com/guide/v1/x2.png)
+
+### 🚀 传送菜单
+![传送菜单](https://survivex.cn-nb1.rains3.com/guide/v1/x4.png)
+
+### ⚡ 更多附魔
+![更多附魔](https://survivex.cn-nb1.rains3.com/guide/v1/x3.png)
+
+### 💼 职业系统
+![职业](https://survivex.cn-nb1.rains3.com/guide/v1/x5.png)
+
+### 🎭 皮肤菜单
+![皮肤菜单](https://survivex.cn-nb1.rains3.com/guide/v1/x6.png)
+
+### 🏡 家管理
+![家管理](https://survivex.cn-nb1.rains3.com/guide/v1/x7.png)
+
+### 😴 自动调整睡觉所需时间
+![自动调整睡觉所需时间](https://survivex.cn-nb1.rains3.com/guide/v1/x8.png)
+
+## 📥 下载地址
+
+🔗 **[Github仓库](https://github.com/KiteMC/SurviveX)**
+
+⚡ **[Github代理下载地址](https://gh-proxy.com/github.com/KiteMC/SurviveX/archive/refs/heads/ver/1.21.5.zip)**

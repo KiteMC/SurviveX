@@ -198,6 +198,7 @@ command:
         to: ' &eto: &f'
         objectives: Objectives
         rewards: Reward commands
+        rewardAmount: ' &eAmount: &f'
         description: '&eDescription'
         areas: '&eRestricted areas'
   blockinfo:
@@ -321,15 +322,15 @@ command:
       break:
         info: 破坏
         none: '%jobname% 不会从破坏获得报酬'
+      striplogs:
+        info: '&e去皮原木'
+        none: '%jobname% 不会从去皮原木获得报酬.'
       tntbreak:
         info: 爆破
         none: '%jobname% 不会从爆破获得报酬'
       place:
         info: 放置
         none: '%jobname% 不会从放置获得报酬'
-      striplogs:
-        info: '&e去皮原木'
-        none: '%jobname% 不会从去皮原木获得报酬.'
       kill:
         info: 击杀
         none: '%jobname% 不会从击杀获得报酬'
@@ -348,24 +349,18 @@ command:
       craft:
         info: 合成
         none: '%jobname% 不会从合成获得报酬'
+      vtrade:
+        info: '&e村民交易'
+        none: '%jobname% 不会从与村民的交易中获得报酬.'
       smelt:
         info: 熔炼
         none: '%jobname% 不会从熔炼获得报酬'
       brew:
         info: 酿造
         none: '%jobname% 不会从酿造获得报酬'
-      eat:
-        info: 吃
-        none: '%jobname% 不会从进食获得报酬'
-      dye:
-        info: 染色
-        none: '%jobname% 不会从染色获得报酬'
       enchant:
         info: 附魔
         none: '%jobname% 不会从附魔获得报酬'
-      vtrade:
-        info: '&e村民交易'
-        none: '%jobname% 不会从与村民的交易中获得报酬.'
       repair:
         info: 修复
         none: '%jobname% 不会从修复获得报酬'
@@ -375,18 +370,24 @@ command:
       tame:
         info: 驯服
         none: '%jobname% 不会从驯服获得报酬'
-      milk:
-        info: 挤奶
-        none: '%jobname% 不会从挤奶获得报酬'
+      dye:
+        info: 染色
+        none: '%jobname% 不会从染色获得报酬'
       shear:
         info: 剪毛
         none: '%jobname% 不会从剪毛获得报酬'
+      milk:
+        info: 挤奶
+        none: '%jobname% 不会从挤奶获得报酬'
       explore:
         info: 探索
         none: '%jobname% 不会从探索获得报酬'
-      custom-kill:
-        info: 自定义击杀
-        none: '%jobname% 不会从自定义击杀获得报酬'
+      eat:
+        info: 吃
+        none: '%jobname% 不会从进食获得报酬'
+      customkill:
+        info: '&ecustom-kill'
+        none: '%jobname% does not get money for (custom-kill) action.'
       collect:
         info: '&e收集'
         none: '%jobname% 不会从收集方块中获得报酬.'
@@ -399,6 +400,9 @@ command:
       brush:
         info: '&eBrush'
         none: '%jobname% does not get money for brushing blocks.'
+      vax:
+        info: '&eVax'
+        none: '%jobname% does not get money for (Vax) action.'
   playerinfo:
     help:
       info: 查看玩家的职业信息.
@@ -539,17 +543,20 @@ command:
     output:
       topline: '&a前&e %amount% &a个职业为 &e%jobname% &a的玩家'
       list: '&e%number%&a. &e%playername% &a等级 &e%level% &awith&e %exp% &a经验'
-      show: '&2显示 &e[from] &2到 &e[until] &2的排行榜'
   gtop:
     help:
       info: 显示全部职业中最有经验的玩家.
       args: clear/pageNumber
-    error:
-      nojob: 没有找到任何信息, 你这是新服吧23333.
     output:
       topline: '&a全部职业排行前&e %amount% &a的玩家'
       list: '&e%number%&a. &e%playername% &aLV.&e%level% &awith&e %exp% &a经验'
-      show: '&2显示 &e[from] &2到 &e[until] &2的排行榜'
+  gqtop:
+    help:
+      info: Shows top players by quests done.
+      args: clear/pageNumber
+    output:
+      topline: '&aTop&e %amount% &aplayers by done quests'
+      list: '&e%number%&a. &e%playerdisplayname% &alvl &e%level% &awith&e %exp% &aexp'
   area:
     help:
       info: 编辑管制区域.

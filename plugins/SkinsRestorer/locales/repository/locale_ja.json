@@ -35,8 +35,7 @@
   "skinsrestorer.help_sr_purge_old_data": "X日以上前の古いスキンデータを削除します。",
   "skinsrestorer.help_sr_dump": "サポートデータをbytebin.lucko.meにアップロードします。",
   "skinsrestorer.success_generic": "<dark_green><message>",
-  "skinsrestorer.info_use_quotes": "URLは引用符で囲む必要があります。
-例： <yellow>/skin set \"https://example.com/skin.png\"</yellow> (Tabキーを押して引用符をオートコンプリートできます)",
+  "skinsrestorer.info_use_quotes": "URLは引用符で囲む必要があります。\n例： <yellow>/skin set \"https://example.com/skin.png\"</yellow> (Tabキーを押して引用符をオートコンプリートできます)",
   "skinsrestorer.success_skin_change": "スキンが変更されました。",
   "skinsrestorer.success_skin_change_other": "<yellow><name></yellow>のスキンを変更しました。",
   "skinsrestorer.success_skin_undo": "あなたのスキン<yellow><skin></yellow>は<yellow><timestamp></yellow>のスキンに戻されました。",
@@ -64,22 +63,18 @@
   "skinsrestorer.error_no_skin_to_favourite": "お気に入りに設定するスキンがありません！",
   "skinsrestorer.error_skin_disabled": "このスキンは管理者によって無効にされています。",
   "skinsrestorer.error_skinurl_disallowed": "このドメインは管理者によって許可されていません。",
-  "skinsrestorer.error_updating_skin": "スキンの更新中にエラーが発生しました。
-しばらくしてからもう一度お試しください！",
-  "skinsrestorer.error_updating_url": "カスタムURLスキンは更新できません！
-<newline><red>/skin urlを使用して再度要求してください",
+  "skinsrestorer.error_updating_skin": "スキンの更新中にエラーが発生しました。\nしばらくしてからもう一度お試しください！",
+  "skinsrestorer.error_updating_url": "カスタムURLスキンは更新できません！\n<newline><red>/skin urlを使用して再度要求してください",
   "skinsrestorer.error_updating_customskin": "カスタムスキンのため、スキンは更新できません。",
   "skinsrestorer.error_invalid_urlskin": "無効なスキンURLまたは形式です。<newline><red>スキンをimgurにアップロードし、右クリックして「画像アドレスをコピー」してみてください<newline><red>ガイドはこちら： <red><underlined><hover:show_text:'<dark_green>クリックして開く'><click:open_url:'https://skinsrestorer.net/skinurl'>https://skinsrestorer.net/skinurl</click></hover></underlined>。",
   "skinsrestorer.error_admin_applyskin": "プレイヤーのスキンを更新できませんでした！",
-  "skinsrestorer.error_ms_full": "スキンのアップロード中にMineSkin APIがタイムアウトしました。
-しばらくしてからもう一度お試しください。",
+  "skinsrestorer.error_ms_full": "スキンのアップロード中にMineSkin APIがタイムアウトしました。\nしばらくしてからもう一度お試しください。",
   "skinsrestorer.error_ms_api_failed": "MineSkin APIが過負荷です。しばらくしてからもう一度お試しください！",
   "skinsrestorer.error_ms_api_key_invalid": "無効なMineSkin APIキーです！サーバー管理者に連絡してください！",
   "skinsrestorer.error_ms_unknown": "不明なMineSkinエラー！",
   "skinsrestorer.error_no_history": "スキン履歴がありません！",
   "skinsrestorer.error_no_favourites": "お気に入りスキンがありません！",
-  "skinsrestorer.error_player_refresh_no_mapping": "このMinecraftバージョンはSkinsRestorerでサポートされていないため、スキンを更新できませんでした。
-サーバー管理者にSkinsRestorerプラグインの更新を依頼してください。",
+  "skinsrestorer.error_player_refresh_no_mapping": "このMinecraftバージョンはSkinsRestorerでサポートされていないため、スキンを更新できませんでした。\nサーバー管理者にSkinsRestorerプラグインの更新を依頼してください。",
   "skinsrestorer.not_connected_to_server": "<red>どのサーバーにも接続されていません。",
   "skinsrestorer.divider": "<dark_aqua>----------------------------------------------",
   "skinsrestorer.admincommand_status_checking": "<gray>サービスチェックを実行中...",
@@ -107,8 +102,7 @@
   "skinsrestorer.admincommand_purgeolddata_success": "<green>古いスキンが正常に削除されました！",
   "skinsrestorer.admincommand_purgeolddata_error": "<dark_red>古いスキンの削除中にエラーが発生しました！",
   "skinsrestorer.admincommand_dump_uploading": "<green>bytebin.lucko.meにデータをアップロード中...",
-  "skinsrestorer.admincommand_dump_success": "<green>アップロード成功！
-<yellow><click:open_url:'<url>'><url></click>",
+  "skinsrestorer.admincommand_dump_success": "<green>アップロード成功！\n<yellow><click:open_url:'<url>'><url></click>",
   "skinsrestorer.admincommand_dump_error": "<red>bytebin.lucko.meへのデータアップロード中にエラーが発生しました",
   "skinsrestorer.command_server_not_allowed_message": "<red>サーバー<server>ではコマンドが無効になっています。",
   "skinsrestorer.command_unknown_player": "不明なプレイヤー: <name>",
@@ -144,8 +138,7 @@
   "skinsrestorer.skin_edit_message": "<dark_green>あなたのスキンは<u><aqua><hover:show_text:'<dark_green>クリックして開く'><click:open_url:'<url>'>このリンク</click></hover></aqua></u>で編集できます<newline><dark_green>編集したスキンの適用方法については、以下をご覧ください: <newline><green><hover:show_text:'<dark_green>クリックして開く'><click:open_url:'https://skinsrestorer.net/skinedit'>https://skinsrestorer.net/skinedit</click></hover>",
   "skinsrestorer.no_skin_data": "<dark_red>エラー<dark_gray>: <red>スキンデータが見つかりません！",
   "skinsrestorer.outdated": "<dark_red><platform>で実行中のSkinsRestorerは古いバージョンです！<newline><red>Modrinthの最新バージョンに更新してください: <newline><yellow><hover:show_text:'<dark_green>クリックして開く'><click:open_url:'https://modrinth.com/plugin/skinsrestorer'>https://modrinth.com/plugin/skinsrestorer</click></hover>",
-  "skinsrestorer.unsupported_java": "<dark_red><platform>のJavaバージョン(<version>)はSkinsRestorerでサポートされていません！<newline><red>問題なくSkinsRestorerを使用するには、Java 17以上に更新してください。
-新しいJavaバージョンは古いサーバーも実行できるため、Minecraft 1.8サーバーはJava 17で実行できます。詳細についてはコンソール情報を読んでください。",
+  "skinsrestorer.unsupported_java": "<dark_red><platform>のJavaバージョン(<version>)はSkinsRestorerでサポートされていません！<newline><red>問題なくSkinsRestorerを使用するには、Java 17以上に更新してください。\n新しいJavaバージョンは古いサーバーも実行できるため、Minecraft 1.8サーバーはJava 17で実行できます。詳細についてはコンソール情報を読んでください。",
   "skinsrestorer.permission_player_wildcard": "プレイヤーのワイルドカード権限",
   "skinsrestorer.permission_command": "メインの「/skin」コマンドへのアクセスを許可します。",
   "skinsrestorer.permission_command_set": "自分のスキンを変更するアクセスを許可します。",

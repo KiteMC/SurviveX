@@ -1540,5 +1540,35 @@ RESIN_BRICK_SLAB: Resin Brick Slab
 RESIN_BRICK_STAIRS: Resin Brick Stairs
 RESIN_BRICK_WALL: Resin Brick Wall
 RESIN_CLUMP: Resin Clump
+BLUE_EGG: Blue Egg
+BROWN_EGG: Brown Egg
+BUSH: Bush
+CACTUS_FLOWER: Cactus Flower
+FIREFLY_BUSH: Firefly Bush
+LEAF_LITTER: Leaf Litter
+SHORT_DRY_GRASS: Short Dry Grass
+TALL_DRY_GRASS: Tall Dry Grass
+WILDFLOWERS: Wildflowers
+TEST_BLOCK: Test Block
+TEST_INSTANCE_BLOCK: Test Instance Block
+DRIED_GHAST: Dried Ghast
+HAPPY_GHAST_SPAWN_EGG: Happy Ghast Spawn Egg
+MUSIC_DISC_TEARS: Music Disc Tears
+BLACK_HARNESS: Black Harness
+BLUE_HARNESS: Blue Harness
+BROWN_HARNESS: Brown Harness
+CYAN_HARNESS: Cyan Harness
+GRAY_HARNESS: Gray Harness
+GREEN_HARNESS: Green Harness
+LIGHT_BLUE_HARNESS: Light Blue Harness
+LIGHT_GRAY_HARNESS: Light Gray Harness
+LIME_HARNESS: Lime Harness
+MAGENTA_HARNESS: Magenta Harness
+ORANGE_HARNESS: Orange Harness
+PINK_HARNESS: Pink Harness
+PURPLE_HARNESS: Purple Harness
+RED_HARNESS: Red Harness
+WHITE_HARNESS: White Harness
+YELLOW_HARNESS: Yellow Harness
 SIGN: Sign
 GRASS: Grass

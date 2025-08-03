@@ -1,0 +1,51 @@
+# ==================== [SECTION] SETTINGS ====================
+# > [MenuType] : String | Represents the menu type. Allowed values: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html
+# > [Title] : String | Sets menu title.
+# > [Auto_Refresh] : Integer | Defines menu refresh rate in seconds. Set 0 to disable.
+# > [PlaceholderAPI -> Enabled] : Boolean | When enabled, applies PlaceholderAPI placeholders for all items in the menu per player.
+#  
+# ==================== [SECTION] CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# > [Item] : Section | Item to display.
+#     [*] Navigate to https://nightexpressdev.com/nightcore/configuration/item-formation/ for a list of available options.
+# > [Priority] : Integer | Item priority. Higher values will override other item(s) in the same slot(s).
+# > [Slots] : Int Array | Item slots, starts from 0. Split with commas.
+#     Slots: '0,4,9,10'
+# > [Type] : String | Defines item click action.
+#     [*] Available types: ['close', 'decline', 'accept']
+# > [Click_Commands] : Section | Executes commands on click with PlaceholderAPI support.
+#     [*] Works only if [Type] is not set (null).
+#     [*] Available click types: [LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, DRAG_N_DROP]
+#     [*] Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: warp shop
+# ==================================================
+Settings:
+  MenuType: hopper
+  Title: <black>Are you sure?</black>
+  Auto_Refresh: -1
+  PlaceholderAPI:
+    Enabled: false
+  IconSlot: 2
+Content:
+  decline:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lred><b>Cancel</b></lred>
+      Lore: []
+      SkinURL: 27548362a24c0fa8453e4d93e68c5969ddbde57bf6666c0319c1ed1e84d89065
+    Slots: '0'
+    Type: decline
+  accept:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lgreen><b>Accept</b></lgreen>
+      Lore: []
+      SkinURL: a79a5c95ee17abfef45c8dc224189964944d560f19a44f19f8a46aef3fee4756
+    Slots: '4'
+    Type: accept

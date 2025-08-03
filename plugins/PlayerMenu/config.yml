@@ -9,7 +9,7 @@ isCheckUpdateToOpMsg: true
 
 # 禁止打开菜单的世界
 noWorld:
-  - "notWorld"
+- notWorld
 
 # 唯一菜单 进服发送菜单,如果没有就赠送一个
 clock:
@@ -18,8 +18,8 @@ clock:
   name: '   &8[&c服务器菜单&8]'
   material: clock
   lore:
-    - "&f- &7点击打开菜单"
-    - "&f- &7也可以使用指令&a/cd&7打开菜单"
+  - '&f- &7点击打开菜单'
+  - '&f- &7也可以使用指令&a/cd&7打开菜单'
   isEnchant: false
   custom-model-data: 0
   # 使用该物品打开的菜单 如果填写了该配置,menu文件下的所有openItem将会无效,只使用这个
@@ -34,3 +34,6 @@ shift:
     enable: false
     # 使用Shift+F打开的菜单
     menu: menu.yml
+# 使用指令/plm create创建菜单是否自动生成ID
+autoCreateId: true
+version: '1.21.4-36-f553c53 (MC: 1.21.4)'

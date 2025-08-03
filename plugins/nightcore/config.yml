@@ -2,6 +2,8 @@ DataFixer:
   # When enabled, uses Mojang's DataFixer util to update ItemStacks from <= 1.20.4 NBT format to 1.20.5+ NBT format.
   # IMPORTANT NOTE: You need to use this setting only once! Enable it, reboot the server and re-save all configurations that stores compressed item data: shops, crates, etc.
   Enabled: false
+  MissingVersion: 4189
+  UnknownVersion: 10000
 Menu:
   # Sets cooldown (in milliseconds) for player clicks in GUIs.
   # [Default is 150ms]
@@ -48,3 +50,28 @@ Number:
     quadrillion:
       Magnitude: 5
       Name: q
+Profiles:
+  Cache:
+    # Sets expire time (in minutes) for cached player profiles before they will make a call to the Mojang API to update their name and textures.
+    # [*] Profiles with custom skins for heads are excluded from updates.
+    # [*] Profile's expire time is reset on each profile query.
+    # [*] Set -1 to never update until the server reboot.
+    # [Default is 360 (6 hours)]
+    UpdateTime: 360
+    # Sets expire time (in minutes) for cached player profiles before they will be purged from the cache and memory.
+    # [*] Profiles with custom skins for heads are excluded from being purged.
+    # [*] Profile's expire time is reset on each profile query.
+    # [*] Set -1 to never purge until the server reboot.
+    # [Default is 1440 (24 hours)]
+    PurgeTime: 1440
+  # How often (in seconds) to purge cached player profiles.
+  # [Default is 600 (10 minutes)]
+  PurgeInterval: 600
+  # Controls whether cached player profiles should force update when their owner joins the server.
+  # [Default is true]
+  UpdateOnJoin: true
+  # Controls whether profiles with custom textures can query Mojang API to fetch missing properties.
+  # [*] Enable this only if you're experiencing issues with texture loading for custom heads.
+  # [*] Enabling this setting may get you rate limited from Mojang.
+  # [Default is false]
+  FetchCustom: false

@@ -281,6 +281,10 @@ Plugins:
         Enabled: true
     Economy (Vault):
         Enabled: true
+    Essentials:
+        Enabled: true
+    EssentialsEco:
+        Enabled: true
     Factions:
         HideFactions:
           - ExampleFaction
@@ -308,5 +312,3 @@ Plugins:
 # The files are placed in /Plan/web/ if the setting is 'true' when accessed.
 Customized_files:
     Path: "web"
-    Plan:
-        index,html: false

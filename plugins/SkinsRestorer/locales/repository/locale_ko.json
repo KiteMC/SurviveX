@@ -55,10 +55,8 @@
   "skinsrestorer.success_admin_setcustomname": "<yellow><skin></yellow>의 스킨 이름을 <yellow><display_name></yellow>으(로) 설정했어요.",
   "skinsrestorer.success_admin_drop": "<type> 유형의 <target>의 데이터를 드롭했어요.",
   "skinsrestorer.success_admin_reload": "구성과 언어를 다시 불러왔어요!",
-  "skinsrestorer.success_history_line": "<dark_green>- <hover:show_text:'<dark_green>눌러서 <yellow><skin></yellow><dark_green>스킨 사용'><click:run_command:/skin set \"<skin_id>\"><yellow><skin></yellow></click></hover>
-시간: <yellow><timestamp></yellow>",
-  "skinsrestorer.success_favourites_line": "<dark_green>- <hover:show_text:'<dark_green>눌러서 <yellow><skin></yellow><dark_green>스킨 사용'><click:run_command:/skin set \"<skin_id>\"><yellow><skin></yellow></click></hover>
-시간: <yellow><timestamp></yellow>",
+  "skinsrestorer.success_history_line": "<dark_green>- <hover:show_text:'<dark_green>눌러서 <yellow><skin></yellow><dark_green>스킨 사용'><click:run_command:/skin set \"<skin_id>\"><yellow><skin></yellow></click></hover>\n시간: <yellow><timestamp></yellow>",
+  "skinsrestorer.success_favourites_line": "<dark_green>- <hover:show_text:'<dark_green>눌러서 <yellow><skin></yellow><dark_green>스킨 사용'><click:run_command:/skin set \"<skin_id>\"><yellow><skin></yellow></click></hover>\n시간: <yellow><timestamp></yellow>",
   "skinsrestorer.error_generic": "<dark_red>오류<dark_gray>: <red><message>",
   "skinsrestorer.error_generic_skin": "스킨 데이터를 요청하던 도중 오류가 발생했어요. 나중에 다시 시도해 주세요!",
   "skinsrestorer.error_no_undo": "되돌릴 스킨이 없어요!",

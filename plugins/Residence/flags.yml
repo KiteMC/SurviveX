@@ -259,6 +259,8 @@ Global:
     safezone: false
     # Applies to: Residence
     skulk: true
+    # Applies to: Residence
+    boarding: true
   # This sets GUI items to represent each flag, if not given, then gray wool will be used
   FlagGui:
     admin: BEDROCK
@@ -383,6 +385,7 @@ Global:
     harvest: SWEET_BERRIES
     safezone: APPLE
     skulk: SCULK_CATALYST
+    boarding: ACACIA_BOAT
   # These are default flags applied to all residences from any user group.
   ResidenceDefault:
     build: false

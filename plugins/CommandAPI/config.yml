@@ -36,7 +36,7 @@ use-latest-nms-version: false
 # Keep in mind that implementations may vary and actually updating the CommandAPI might be necessary.
 be-lenient-for-minor-versions: false
 
-# Hook into Paper's ServerResourcesReloadedEvent (default: true)
+# Hook into Paper's ServerResourcesReloadedEvent (default: false)
 # If "true", and the CommandAPI detects it is running on a Paper server, it will
 # hook into Paper's ServerResourcesReloadedEvent to detect when /minecraft:reload is run.
 # This allows the CommandAPI to automatically call its custom datapack-reloading
@@ -45,7 +45,7 @@ be-lenient-for-minor-versions: false
 # reloading datapacks.
 hook-paper-reload: true
 
-# Skips the initial datapack reload when the server loads (default: false)
+# Skips the initial datapack reload when the server loads (default: true)
 # If "true", the CommandAPI will not reload datapacks when the server has finished
 # loading. Datapacks will still be reloaded if performed manually when "hook-paper-reload"
 # is set to "true" and /minecraft:reload is run.

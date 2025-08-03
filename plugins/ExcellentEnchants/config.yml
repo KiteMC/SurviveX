@@ -1,8 +1,8 @@
 Arrow_Effects:
-  # 设置箭矢和三叉戟粒子效果轨迹的tick间隔（由附魔添加）
-  # [增加以提高性能；减少以获得更好的视觉效果]
-  # [20 ticks = 1秒]
-  # [默认值为1]
+  # Sets tick interval for arrow & trident particle effect trails added by enchantments.
+  # [Increase for performance; Decrease for better visuals]
+  # [20 ticks = 1 second]
+  # [Default is 1]
   Tick_Interval: 1
 Passive_Enchants:
   # 设置被动附魔的tick间隔
@@ -14,24 +14,28 @@ Passive_Enchants:
   # [20 ticks = 1秒]
   # [默认值为100]
   Tick_Interval: 1
-  # 控制生物是否受到被动附魔效果的影响
-  # [禁用以提高性能；启用以获得更好的体验]
-  # [默认值为true]
+  # Controls whether mobs are affected by effects of passive enchantments.
+  # [Disable for performance; Enable for better experience]
+  # [Default is true]
   AllowForMobs: true
+  # Tick interval for passive enchantments (in seconds).
+  # Passive enchants depends on entity's 'ticksLived' value, changing this value may result in passive enchants not triggered correctly.
+  # [Default is 1]
+  Interval: 1
 Description:
-  # 当为'true'时，在物品描述中的附魔名称下添加附魔描述
+  # When 'true', adds the enchantment description to item lore under enchantment names.
   Enabled: true
-  # 设置是否只有附魔书才有附魔描述
+  # Sets whether or not only enchanted books will have enchantment descriptions.
   Books_Only: false
   Format:
-    # 设置没有充能的附魔描述格式
+    # Sets description format for enchantments without charges.
     Default: <lgray>• %description%</lgray>
-    # 设置启用充能的附魔描述格式
+    # Sets description format for enchantments with charges enabled.
     WithCharges: <lgray>• %description% (%charges%)</lgray>
 Charges:
-  # 启用充能功能：https://nightexpressdev.com/excellentenchants/features/charges
+  # Enables the Charges feature: https://nightexpressdev.com/excellentenchants/features/charges
   Enabled: false
-  # 根据最大充能数量的百分比设置充能格式
+  # Sets charges format based on percent of max. charges amount.
   Format:
     zero:
       Threshold: 0
@@ -46,11 +50,11 @@ Charges:
       Threshold: 75
       Format: <lgreen>(%amount%⚡)</lgreen>
   Fuel:
-    # 控制在检查物品是否为有效燃料时是否忽略物品元数据（如显示名称、描述、模型数据等）
-    # [默认值为false]
+    # Controls if item meta (such as display name, lore, model data, etc.) should be ignored when checks if item is valid fuel.
+    # [Default is false]
     Ignore_Meta: false
-    # 在铁砧上为附魔充能的默认物品
-    # 附魔可以有自己的自定义燃料物品
+    # Default item used to fuel enchantments on anvils.
+    # Enchantments can have their own custom fuel items.
     # https://nightexpressdev.com/nightcore/configuration/item-formation/
     Item:
       Material: minecraft:lapis_lazuli

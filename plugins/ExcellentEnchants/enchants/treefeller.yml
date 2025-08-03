@@ -1,0 +1,36 @@
+Definition:
+  DisplayName: Treefeller
+  Description:
+  - Cuts down an entire tree.
+  Weight: 2
+  MaxLevel: 1
+  MinCost:
+    Base: 3
+    Per_Level: 57
+  MaxCost:
+    Base: 57
+    Per_Level: 57
+  AnvilCost: 3
+  SupportedItems: axe
+  PrimaryItems: axe
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - TAIGA_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Treefaller:
+  # Controls whether enchantment effect can be bypassed by crouching.
+  Disable_On_Crouch: true
+  # Max. blocks to lookup for tree logs (including leaves).
+  Block_Limit: 180

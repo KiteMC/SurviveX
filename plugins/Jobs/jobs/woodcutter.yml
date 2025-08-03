@@ -1,13 +1,13 @@
-﻿Woodcutter:
-  fullname: 浼愭湪宸?  shortname: Wc
+Woodcutter:
+  fullname: 伐木工
+  shortname: Wc
   FullDescription:
-  - "閫氳繃鐮嶄紣鏍戞湪璧氬彇閲戝竵銆?
+  - "通过砍伐树木赚取金币。"
   ChatColour: GREEN
   chat-display: full
   max-level: 200
   leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
   income-progression-equation: 0
-    * ((numjobs-1)*0.05))
   points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
     * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
@@ -15,15 +15,18 @@
   maxDailyQuests: 1
   Quests:
     '1':
-      Name: 妫灄瀹堟姢鑰?      Objectives:
+      Name: 森林守护者
+      Objectives:
       - Break;oak_log;30
       - Break;birch_log;30
       - Break;spruce_log;30
       RewardCommands:
-      
-      - msg [playerName] 瀹屾垚浠诲姟锛?      RewardDesc:
-      - 鐮嶄紣鏍戞湪骞惰幏寰楅噾甯?      - 瀹屾垚姝や换鍔″彲鑾峰緱100閲戝竵锛?  Gui:
-    ItemStack: birch_log
+      - msg [playerName] 完成任务！
+      RewardDesc:
+      - 砍伐树木并获得金币
+      - 完成此任务可获得100金币！
+      Gui:
+        ItemStack: birch_log
   Break:
     materials:
     - oak_log;1.0;1.0;1.0
