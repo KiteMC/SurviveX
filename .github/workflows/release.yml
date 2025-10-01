@@ -1,0 +1,94 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Install PyYAML
+        run: pip install pyyaml
+      
+      - name: Read version info
+        id: version
+        run: |
+          # 读取 version.yml 文件中的信息
+          # 使用 python 来正确解析 YAML
+          RELEASE=$(python3 -c "import yaml; f=open('version.yml'); data=yaml.safe_load(f); f.close(); print(str(data.get('release', 'false')).lower())")
+          VERSION=$(python3 -c "import yaml; f=open('version.yml'); data=yaml.safe_load(f); f.close(); version=data.get('version', ''); print(str(version) if version else '')")
+          echo "release=$RELEASE" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          
+          # 将 release_notes 转换为多行字符串
+          # 使用 python 来正确解析 YAML 多行字符串
+          RELEASE_NOTES=$(python3 -c "import yaml; f=open('version.yml'); data=yaml.safe_load(f); f.close(); notes=data.get('release_notes', ''); print(notes if notes else '')")
+          echo "release_notes<<EOF" >> $GITHUB_OUTPUT
+          echo "$RELEASE_NOTES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Check if release is enabled
+        if: steps.version.outputs.release == 'true'
+        run: |
+          echo "Release is enabled"
+          echo "Version: ${{ steps.version.outputs.version }}"
+
+      - name: Create zip package
+        if: steps.version.outputs.release == 'true'
+        run: |
+          # 创建不包含 .git 和 .github 目录的 zip 包
+          echo "Version from step: ${{ steps.version.outputs.version }}"
+          VERSION=${{ steps.version.outputs.version }}
+          ZIP_NAME="Survive-${{ steps.version.outputs.version }}.zip"
+          echo "Creating $ZIP_NAME"
+          
+          # 创建临时目录并复制文件
+          mkdir -p temp_package
+          # 复制所有文件和目录，排除 .git 和 .github
+          rsync -av --exclude='.git' --exclude='.github' --exclude='temp_package' --exclude='.gitignore' . temp_package/
+          
+          # 创建 zip 包
+          cd temp_package
+          zip -r "../$ZIP_NAME" .
+          cd ..
+          
+          # 显示创建的文件
+          ls -la ../$ZIP_NAME || echo "File not found: ../$ZIP_NAME"
+          
+          # 清理临时目录
+          rm -rf temp_package
+
+      - name: Create Release
+        if: steps.version.outputs.release == 'true'
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          release_name: Release ${{ steps.version.outputs.version }}
+          body: ${{ steps.version.outputs.release_notes }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        if: steps.version.outputs.release == 'true'
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: Survive-${{ steps.version.outputs.version }}.zip
+          asset_name: Survive-${{ steps.version.outputs.version }}.zip
+          asset_content_type: application/zip
